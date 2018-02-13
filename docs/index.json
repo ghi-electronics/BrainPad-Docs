@@ -4,8 +4,8 @@
     "title": "",
     "keywords": "TBD"
   },
-  "csharp/intro.html": {
-    "href": "csharp/intro.html",
+  "index.html": {
+    "href": "index.html",
     "title": "",
     "keywords": "TBD"
   },
@@ -14,8 +14,8 @@
     "title": "Docs",
     "keywords": "Docs This is the repository for our BrainPad docs. To generate the docs locally: Clone/Fork the repo Open the command prompt in the documents' root folder (\"Run as Administrator\" may be necessary) Execute docfx --serve"
   },
-  "index.html": {
-    "href": "index.html",
+  "csharp/intro.html": {
+    "href": "csharp/intro.html",
     "title": "",
     "keywords": "TBD"
   }
