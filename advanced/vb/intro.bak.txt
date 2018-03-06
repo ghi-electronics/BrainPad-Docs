@@ -12,7 +12,7 @@ The first step is to write some very simple code to see if the BrainPad will res
 
 Open Visual Studio.  In the `File` menu select `New` and then `Project` to open the "New Project" dialog box.
 
-![Start New Visual Studio Project](../csharp/images/introduction/StartNewProject.PNG)
+![Start New Visual Studio Project](../csharp/images/introduction/start-new-project.png)
 
 In the left panel of the  "New Project" window you can click on the small triangles to the left of each heading to expand the heading and show the options beneath it.
 
@@ -26,11 +26,11 @@ At the bottom of the "New Project" window you can change the name and location o
 
 Click the `OK` button on the bottom right of the "New Project" window.  This will create a new project with some sample code to get you started.
 
-![Start New Visual C# Project](images/introduction/NewProjectWindow.PNG)
+![Start New Visual C# Project](images/introduction/new-project-window.png)
 
 Once created, you'll be presented with a `Program.vb` tab.
 
-![First C# Project](images/introduction/FirstProject.PNG)  
+![First C# Project](images/introduction/first-project.png)  
 
 In the `Program.vb` tab you should see a short sample program (our "Hello World" code).  This program is automatically loaded when you first create a new project. The lines in green that begin with an apostrophe (`'`) are called comments, and they generally describe what the code does. Take a moment to review them.
 
@@ -40,7 +40,7 @@ So why use comments?  Comments are used to make notes about how a piece of code 
 
 Let's run the program now to see the code come to life. Connect the BrainPad and press the `F5` function key or the 'Start' button (shown below).
 
-![Start Button](../csharp/images/introduction/StartButton.PNG)
+![Start Button](../csharp/images/introduction/start-button.png)
 
 Visual Studio will now tell your BrainPad to run the code.  A few things will happen and the display will now show the text "Hello!" and the light bulb (or LED) will blink.
 
@@ -58,15 +58,15 @@ Let's try changing the program to print your first name on the display.
 
 After deploying the "hello world" program to the BrainPad, Visual Studio is in "debug mode."  We'll learn more about debug mode later, but for now you need to know that you cannot edit code while in debug mode.  To stop debug mode, hit the `Stop` button (as shown below) or hit `Shift` `F5`.
 
-![Stop debugging](../csharp/images/introduction/StopDebugging.PNG)
+![Stop debugging](../csharp/images/introduction/stop-debugging.png)
 
 If you try to edit code and see the message "Managed Compatibility Mode does not support Edit and Continue," you are trying to edit code while in debug mode.  Just stop debug mode (`Stop` button or `Shift` `F5`) and you can edit your program.
 
-![Error trying to edit in debug mode](../csharp/images/introduction/EditDuringDebugError.PNG)
+![Error trying to edit in debug mode](../csharp/images/introduction/edit-during-debug-error.png)
 
 Use the mouse to place the cursor after the exclamation point in the `BrainPad.Display.DrawTextAndShowOnScreen(0, 0, "Hello!")` function call (as shown below).  This should be in line 5 of the program (line numbers are listed near the left edge of the program).
 
-![Place cursor after hello](images/introduction/PlaceCursorAfterHello.PNG)
+![Place cursor after hello](images/introduction/place-cursor-after-hello.png)
 
 Use the `Backspace` key to erase "Hello!" and type in your first name.  Run the program by hitting the `F5` key.  The display on the BrainPad should now display your first name on the BrainPad.
 
@@ -88,7 +88,7 @@ Exit debug mode by hitting the `Stop` button with the mouse or by pressing `Shif
 
 Now place the cursor after the last line of code (`BrainPad.Wait.Seconds(1);`) by pointing and clicking with the mouse as shown below.
 
-![Place cursor after last line](images/introduction/PlaceCursor.PNG)
+![Place cursor after last line](images/introduction/place-cursor.png)
 
 Now hit the `Enter` key.  This will move the cursor past the last line of the program and create a blank line where you can start typing your code.
 
@@ -96,11 +96,11 @@ Now type a "b" for BrainPad.  You will see a drop down box with a list of object
 
 You can keep typing the word "BrainPad," but the easiest way to complete the word is to hit the period key(`.`).  This will complete typing the word "BrainPad" and place a period after it.  You can also use the mouse to select "BrainPad" from the list, or hit the `Space Bar` or `Enter` key.  You can also use the arrow keys to move up and down the list.  After "BrainPad." another small window with a list of objects that are part of the BrainPad object will appear.  Now start typing the word "lightbulb."  Another drop down list will appear.  Select "LightBulb" from the list.
 
-![IntelliSense BrainPad](images/introduction/BrainPadIntelliSense.PNG)
+![IntelliSense BrainPad](images/introduction/brainpad-intellisense.png)
 
 Visual Studio's ability to provide a list of words to complete your code is called "IntelliSense."  IntelliSense makes it easier for programmers to enter code and to know which objects are part of the preceeding object.  Make your code look like the code in the picture below.
 
-![Blinking blue light code](images/introduction/BlueLightBlinkCode.PNG)
+![Blinking blue light code](images/introduction/blue-light-blink-code.png)
 
 When your code looks like the above example, hit the `F5` key to load the program into the BrainPad and run it.  The light bulb should follow the pattern:  White for 1 second, off for 1 second, blue for 1 second and repeat.  There is no delay between the end of the blue blink and the start of the white blink.  Do you know why?
 
@@ -131,7 +131,7 @@ BrainPad.LightBulb.TurnGreen()
 BrainPad.LightBulb.TurnOff()
 ```
 
-![Green Off Green Off Sample](images/introduction/GreenOffGreenOffSampleCode.PNG)
+![Green Off Green Off Sample](images/introduction/green-off-green-off-sample-code.png)
 
 Now, press `F5` to run the code.  You should see the light bulb turn green and stay on. This happens because our code is executing faster than we can see. We never see the light bulb actually blink.  If you shake the BrainPad while looking at the green light you can see that it is actually blinking very rapidly.
 
@@ -144,11 +144,11 @@ Add a breakpoint (stop point) at the first line of code inside of `BrainPadLoop(
 
 You can also click in the grey area where the breakpoints appear (at the left edge of the window) to either remove or create new breakpoints. 
 
-![Adding a Breakpoint](images/introduction/AddingBreakPoint.PNG)
+![Adding a Breakpoint](images/introduction/adding-break-point.png)
 
 Press `F5` to run the application. The project will be built and deployed but then the execution will stop at the breakpoint as shown below.
 
-![Stopping at the Breakpoint](images/introduction/StopBreakPoint.PNG)
+![Stopping at the Breakpoint](images/introduction/stop-break-point.png)
 
 Now hit the `F10` key to step through the code one instruction at a time.  You can follow the program on the screen and watch the BrainPad light bulb turn green and turn off repeatedly as you hit the `F10` key.  Single stepping through a program is a very helpful way to see what is happening inside a program and is often used to fix problems within a program.
 
@@ -172,7 +172,7 @@ BrainPad.Wait.Seconds(1)
 
 Your code should look like the screen shot below:
 
-![Delay Example Code](images/introduction/DelayExampleCode.PNG)
+![Delay Example Code](images/introduction/delay-example-code.png)
 
 This program is the same as the previous program (Example 1) except a delay of one second is added after each instruction.  Run the code by pressing `START` and observe the light bulb again. It should now blink green much more slowly than before.
 
