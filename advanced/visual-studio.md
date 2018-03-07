@@ -26,7 +26,7 @@ If Visual Studio is open, close it before continuing with the TinyCLR installati
 
 The link to the GHI Electronics download page is here: [GHI Electronics Download Page](http://docs.ghielectronics.com/tinyclr/downloads.html#visual-studio-project-system)
 
-[![Install TinyCLR](images/tiny-clr-extension.png)](http://docs.ghielectronics.com/tinyclr/downloads.html#visual-studio-project-system)
+[![Install TinyCLR](images/tinyclr-extension.png)](http://docs.ghielectronics.com/tinyclr/downloads.html#visual-studio-project-system)
 
 Click on the above link and under "Visual Studio Project System" click on the latest release in the top row of the table (v0.6.0 when this document was written). When asked, open the file. If you are asked, allow the program to make changes to your device.
 
