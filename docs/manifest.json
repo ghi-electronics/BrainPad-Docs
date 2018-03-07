@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "D:/Code/BrainPad Docs",
+  "source_base_path": "D:/GHICode/BrainPad Docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -26,11 +26,202 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "csharp/intro.md",
+      "source_relative_path": "advanced/arduino.md",
       "output": {
         ".html": {
-          "relative_path": "csharp/intro.html",
-          "hash": "1slZntMTqEzz/2BXQpjexg=="
+          "relative_path": "advanced/arduino.html",
+          "hash": "0ziRZrRIP0y12yRNGt/LEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidYamlHeader"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "advanced/csharp/csharp.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/csharp/csharp.html",
+          "hash": "2p4yYVA1PXFODpeL14wkuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/csharp/images/introduction/adding-breakpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/csharp/images/introduction/adding-breakpoint.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/csharp/images/introduction/blue-light-blink-code.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/csharp/images/introduction/blue-light-blink-code.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/csharp/images/introduction/brainpad-intellisense.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/csharp/images/introduction/brainpad-intellisense.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/csharp/images/introduction/delay-example-code.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/csharp/images/introduction/delay-example-code.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/csharp/images/introduction/edit-during-debug-error.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/csharp/images/introduction/edit-during-debug-error.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/csharp/images/introduction/first-project.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/csharp/images/introduction/first-project.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/csharp/images/introduction/green-off-green-off-sample-code.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/csharp/images/introduction/green-off-green-off-sample-code.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/csharp/images/introduction/new-project-window.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/csharp/images/introduction/new-project-window.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/csharp/images/introduction/new-project-window.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/csharp/images/introduction/new-project-window.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/csharp/images/introduction/place-cursor-after-hello.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/csharp/images/introduction/place-cursor-after-hello.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/csharp/images/introduction/place-cursor.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/csharp/images/introduction/place-cursor.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/csharp/images/introduction/program-contents-shown.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/csharp/images/introduction/program-contents-shown.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/csharp/images/introduction/start-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/csharp/images/introduction/start-button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/csharp/images/introduction/start-new-project.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/csharp/images/introduction/start-new-project.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/csharp/images/introduction/stop-breakpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/csharp/images/introduction/stop-breakpoint.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/csharp/images/introduction/stop-debugging.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/csharp/images/introduction/stop-debugging.png"
         }
       },
       "is_incremental": false,
@@ -38,11 +229,209 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "csharp/tbd.md",
+      "source_relative_path": "advanced/csharp/threading-and-events.md",
       "output": {
         ".html": {
-          "relative_path": "csharp/tbd.html",
-          "hash": "3Zcf3wFdfw283GI9y+/zfQ=="
+          "relative_path": "advanced/csharp/threading-and-events.html",
+          "hash": "0gklYOup/3rEJA5GT+gq5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/csharp/variables-and-nested-statements.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/csharp/variables-and-nested-statements.html",
+          "hash": "0fWwmB7a92n5wvNPCXxgxQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/images/arduino-logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/images/arduino-logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/images/csharp-logo.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/images/csharp-logo.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/images/download-visual-studio.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/images/download-visual-studio.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/images/install-vsix.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/images/install-vsix.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/images/mbed-logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/images/mbed-logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/images/micropython-logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/images/micropython-logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/images/open-tinyclr.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/images/open-tinyclr.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/images/tinyclr-extension.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/images/tinyclr-extension.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/images/tinyclr-in-vs.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/images/tinyclr-in-vs.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/images/visual-basic-logo.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/images/visual-basic-logo.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/images/visual-studio-logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/images/visual-studio-logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/images/visual-studio-workloads.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/images/visual-studio-workloads.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/intro.html",
+          "hash": "qDcLJO8jGU8p+3uJSn3TXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "advanced/mbed.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/mbed.html",
+          "hash": "pdYv7cuPBmzg1VF1CoXTGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/micropython.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/micropython.html",
+          "hash": "ScxrnXTPA+sUrcbJi78irQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "advanced/plain-coding.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/plain-coding.html",
+          "hash": "LixGLmEjTEQ279TuclUafQ=="
         }
       },
       "is_incremental": false,
@@ -50,11 +439,401 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "csharp/toc.md",
+      "source_relative_path": "advanced/toc.md",
       "output": {
         ".html": {
-          "relative_path": "csharp/toc.html",
-          "hash": "k28ZIfoD5mmQMdi9s37TmA=="
+          "relative_path": "advanced/toc.html",
+          "hash": "bgQH3ZFlCmACkx/zRg4KCw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/vb/images/introduction/adding-breakpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/vb/images/introduction/adding-breakpoint.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/vb/images/introduction/blue-light-blink-code.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/vb/images/introduction/blue-light-blink-code.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/vb/images/introduction/brainpad-intellisense.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/vb/images/introduction/brainpad-intellisense.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/vb/images/introduction/delay-example-code.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/vb/images/introduction/delay-example-code.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/vb/images/introduction/first-project.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/vb/images/introduction/first-project.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/vb/images/introduction/green-off-green-off-sample-code.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/vb/images/introduction/green-off-green-off-sample-code.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/vb/images/introduction/new-project-window.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/vb/images/introduction/new-project-window.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/vb/images/introduction/place-cursor-after-hello.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/vb/images/introduction/place-cursor-after-hello.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/vb/images/introduction/place-cursor.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/vb/images/introduction/place-cursor.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/vb/images/introduction/stop-breakpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/vb/images/introduction/stop-breakpoint.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/vb/images/variables-and-nested-statements/output-window-count.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/vb/images/variables-and-nested-statements/output-window-count.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/vb/images/variables-and-nested-statements/output-window-exercise.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/vb/images/variables-and-nested-statements/output-window-exercise.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/vb/images/variables-and-nested-statements/watch-window.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/vb/images/variables-and-nested-statements/watch-window.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/vb/images/variables-and-nested-statements/write-debug-message-breakpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/vb/images/variables-and-nested-statements/write-debug-message-breakpoint.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/vb/threading-and-events.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/vb/threading-and-events.html",
+          "hash": "Sst8Y4PojRkdz5dFvS5dzQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/vb/variables-and-nested-statements.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/vb/variables-and-nested-statements.html",
+          "hash": "ymmtz2OabxVh+rxV2D7lJw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidYamlHeader"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "advanced/vb/visual-basic.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/vb/visual-basic.html",
+          "hash": "AjNN014uS6b1nGz5VyybEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/visual-studio.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/visual-studio.html",
+          "hash": "mS7tI5nHD9Lvu1IqlNxeiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "beyond/breadboarding.md",
+      "output": {
+        ".html": {
+          "relative_path": "beyond/breadboarding.html",
+          "hash": "iOAljKDaDzb/go/o8pQPiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "beyond/images/breadboard.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "beyond/images/breadboard.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "beyond/images/fm-click.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "beyond/images/fm-click.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "beyond/images/ir-click.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "beyond/images/ir-click.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "beyond/images/mikro-click.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "beyond/images/mikro-click.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "beyond/images/snap-circuits.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "beyond/images/snap-circuits.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "beyond/images/snap-circuits2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "beyond/images/snap-circuits2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "beyond/images/touchclamp-click.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "beyond/images/touchclamp-click.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "beyond/images/wires.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "beyond/images/wires.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "beyond/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "beyond/intro.html",
+          "hash": "CAjwhWu6+Fln8+8rnNabhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidYamlHeader"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "beyond/mikroe-click.md",
+      "output": {
+        ".html": {
+          "relative_path": "beyond/mikroe-click.html",
+          "hash": "+GxHMXNBKiDcd9yJZO4muA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "beyond/robotics.md",
+      "output": {
+        ".html": {
+          "relative_path": "beyond/robotics.html",
+          "hash": "Amr4yAD+8LGUDl8LFGq7OA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "beyond/snap-circuits.md",
+      "output": {
+        ".html": {
+          "relative_path": "beyond/snap-circuits.html",
+          "hash": "l/VDlDGGwlHRzwN0Xt5agA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "beyond/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "beyond/toc.html",
+          "hash": "bfngpIU4n15iKo2SKGVQyg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/brainbot.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/brainbot.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/brainpad.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/brainpad.jpg"
         }
       },
       "is_incremental": false,
@@ -73,10 +852,43 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/ghi-logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/ghi-logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/logo.png",
       "output": {
         "resource": {
           "relative_path": "images/logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/makecode.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/makecode.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/space-invader.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/space-invader.jpg"
         }
       },
       "is_incremental": false,
@@ -88,7 +900,30 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "tHGDkn/w6BCppn2mLz9B2Q=="
+          "hash": "CXIAesIMgAtKRJifffUw9Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "start-making/images/makecode_logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "start-making/images/makecode_logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "start-making/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "start-making/intro.html",
+          "hash": "T5VhiaQALv+ULv59po7vrA=="
         }
       },
       "is_incremental": false,
@@ -100,7 +935,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "2x1xD62fxu9QtsBfH7xEug=="
+          "hash": "NMGknB71eA1AaQmME6APLQ=="
         }
       },
       "is_incremental": false,
@@ -115,11 +950,6 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -127,6 +957,11 @@
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
