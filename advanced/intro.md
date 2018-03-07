@@ -17,7 +17,7 @@ If you are familiar with the Arduino programming environment you can use it to p
 
 [Click here to get started with Arduino on the BrainPad](arduino.md).
 
-## MicroPython <img style="float: right;" src="images/micro-python-logo.png">
+## MicroPython <img style="float: right;" src="images/micropython-logo.png">
 You can also program the BrainPad in MicroPython.  The BrainPad is a great platform for those who know or wish to learn the Python programming language.  The Python computer language emphasizes code readability and allows programmers to write programs using fewer lines of code than most other common computer languages.
 
 [Click here to get started in MicroPython on the BrainPad](micropython.md).

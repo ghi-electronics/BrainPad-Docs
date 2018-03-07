@@ -8,7 +8,7 @@ Visual Basic is a very popular Microsoft .NET programming language. While being 
 
 ## Before you start
 
-You should have already installed Visual Studio on your computer as well as the TinyCLR extension.  If not, please go to [Using Visual Studio with the BrainPad](../visualstudio.md) for instructions on how to do so.
+You should have already installed Visual Studio on your computer as well as the TinyCLR extension.  If not, please go to [Using Visual Studio with the BrainPad](../visual-studio.md) for instructions on how to do so.
 
 Also, you need a BrainPad and a micro USB cable to continue.  Plug the BrainPad into the USB port of your computer.  The red power light on the BrainPad should be on.
 
@@ -147,11 +147,11 @@ Add a breakpoint (stop point) at the first line of code inside of `BrainPadLoop(
 
 You can also click in the grey area where the breakpoints appear (at the left edge of the window) to either remove or create new breakpoints. 
 
-![Adding a Breakpoint](images/introduction/adding-break-point.png)
+![Adding a Breakpoint](images/introduction/adding-breakpoint.png)
 
 Press `F5` to run the application. The project will be built and deployed but then the execution will stop at the breakpoint as shown below.
 
-![Stopping at the Breakpoint](images/introduction/stop-break-point.png)
+![Stopping at the Breakpoint](images/introduction/stop-breakpoint.png)
 
 Now hit the `F10` key to step through the code one instruction at a time.  You can follow the program on the screen and watch the BrainPad light bulb turn green and turn off repeatedly as you hit the `F10` key.  Single stepping through a program is a very helpful way to see what is happening inside a program and is often used to fix problems within a program.
 

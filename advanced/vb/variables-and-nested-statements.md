@@ -166,11 +166,11 @@ End Class
 
 Add a breakpoint in the loop in the previous program and step through code. Move the mouse over the count variable and wait a second. A pop up window will come up showing the value of the count variable.
 
-![Write Debug Message Breakpoint](images/variables_and_nested_statements/WriteDebugMessageBreakpoint.png) 
+![Write Debug Message Breakpoint](images/variables-and-nested-statements/write-debug-message-breakpoint.png) 
 
 The watch windows can be used with important variables that need to be inspected regularly. Locate the watch window and type the variable name in the left sell. This will show the variable value and type.
 
-![Watch window](images/variables_and_nested_statements/Watchwindow.png)
+![Watch window](images/variables-and-nested-statements/watch-window.png)
 
 ## Exercise
 Run the previous program for few loops, then pause the program, or add a breakpoint. Inspect the value on the watch window. It should be something other than 0.  Change the value manually to `0` and then re-run the program and observe how the output window now shows the variable going back counting from 0.
@@ -328,12 +328,12 @@ End Class
 
 The prior example uses a variable type integer that starts at zero and increments by one in every loop. It will then print the variable value in the Output Window.
 
-![Output Window Count](images/variables_and_nested_statements/OutputWindowCount.png)
+![Output Window Count](images/variables-and-nested-statements/output-window-count.png)
 
 ## Exercise
 Show something like this in the output window:
 
-![Output Window Exercise](images/variables_and_nested_statements/OutputWindowExercise.png)
+![Output Window Exercise](images/variables-and-nested-statements/output-window-exercise.png)
 
 ## Finite while-loops
 
