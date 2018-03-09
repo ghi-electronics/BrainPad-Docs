@@ -27,7 +27,7 @@ Mbed is a free online development environment that can be used to program the Br
 
 [Click here to get started using Mbed with the BrainPad](mbed.md)
 
-## Plain C/C++
+## Bare Metal
 You can also write programs from scratch using one of the more traditional C/C++ development tools.  Many of these tools are available for free.  
 
-[Click here to get started using traditional compilers with the BrainPad](bare-metal.md)
+[Click here to get started gitwith bare metal BrainPad programming](bare-metal.md)
