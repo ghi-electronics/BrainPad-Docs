@@ -37,6 +37,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "advanced/bare-metal.md",
+      "output": {
+        ".html": {
+          "relative_path": "advanced/bare-metal.html",
+          "hash": "sNMKTgkQ5qf1p5nt4SSZlw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "log_codes": [
         "InvalidYamlHeader"
       ],
@@ -389,22 +401,19 @@
       "output": {
         ".html": {
           "relative_path": "advanced/intro.html",
-          "hash": "qDcLJO8jGU8p+3uJSn3TXA=="
+          "hash": "GSzbEyLNY2VKMDHv+iTrtQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "advanced/mbed.md",
       "output": {
         ".html": {
           "relative_path": "advanced/mbed.html",
-          "hash": "pdYv7cuPBmzg1VF1CoXTGQ=="
+          "hash": "w+qONeRDikUNFZbKDifLlQ=="
         }
       },
       "is_incremental": false,
@@ -423,15 +432,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
-      "source_relative_path": "advanced/plain-coding.md",
+      "source_relative_path": "advanced/stm32-bootloader.md",
       "output": {
         ".html": {
-          "relative_path": "advanced/plain-coding.html",
-          "hash": "LixGLmEjTEQ279TuclUafQ=="
+          "relative_path": "advanced/stm32-bootloader.html",
+          "hash": "A1CEXk9O9eza1C34ZU5Euw=="
         }
       },
       "is_incremental": false,
@@ -443,7 +449,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/toc.html",
-          "hash": "bgQH3ZFlCmACkx/zRg4KCw=="
+          "hash": "tou5132O3AZoBJoSImgo5w=="
         }
       },
       "is_incremental": false,
@@ -760,7 +766,7 @@
       "output": {
         ".html": {
           "relative_path": "beyond/intro.html",
-          "hash": "CAjwhWu6+Fln8+8rnNabhQ=="
+          "hash": "QHXbQTWMsFIQoipQI6I7EA=="
         }
       },
       "is_incremental": false,
@@ -955,13 +961,13 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }

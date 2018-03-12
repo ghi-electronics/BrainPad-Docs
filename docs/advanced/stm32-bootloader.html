@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Plain C/C++ </title>
+    <title>STM32 Bootloader </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Plain C/C++ ">
+    <meta name="title" content="STM32 Bootloader ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
@@ -75,18 +75,39 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="plain-cc">Plain C/C++</h1>
+<h1 id="stm32-bootloader">STM32 Bootloader</h1>
 
 <hr>
-<p>You can also write programs from scratch using one of the more traditional C/C++ development tools. The easiest option would be to start with the Mbed online compiler and then export your project. You can also use the free open source GNU GCC tools to build your programs, which is what we used to build the TinyCLR OS firmware. Another option is to use a commercial compiler like the Keil compiler and development environment. Keil tools are free for programs up to 32KB (MDK-Lite).</p>
-<div class="TIP"><h5>Tip</h5><p>If you are not adding a SWD-JTAG tool, like ST-Link, follow the <a href="../../../hardware/loaders/stm32_bootloader.md">STM32 bootloader</a> instructions on generating and loading DFU files. </p>
-</div>
-<ul>
-<li><a href="http://www.keil.com/">Keil Website</a></li>
-<li><a href="http://www2.keil.com/mdk5">Keil ARM MDK tools</a></li>
-<li><a href="https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads">GNU ARM Tools (GCC)</a></li>
-<li><a href="../../../hardware/loaders/stm32_bootloader.md">STM 32 Bootloader Instructions</a></li>
-</ul>
+<p>The STM32 Bootloader lives on all STM32 chips. It is necessary to load files (loaders and/or firmware) onto the chip. Several TinyCLR OS supported boards will use this loader to load the software.</p>
+<p>These instructions apply to all STM32 chips with built in USB and DFU features.</p>
+<h2 id="creating-dfu-file">Creating DFU file</h2>
+<p>The STM32 bootloader only accepts DFU file types, which can be generated from a HEX or BIN files. To generate a DFU file, download the &quot;DfuSe USB device firmware upgrade STMicroelectronics extension&quot; <a href="http://www.st.com/en/development-tools/stsw-stm32080.html">software package</a></p>
+<p>Depending on using a HEX or BIN files, the instructions are slightly different.</p>
+<h3 id="from-hex-files">From HEX files</h3>
+<ol>
+<li>Find and open &quot;Dfu file manager&quot; and select &quot;I want to generate a DFU file&quot;.</li>
+<li>Click on &quot;S19 or Hex...&quot; button to select the hex file.</li>
+<li>Click &quot;Generate...&quot;</li>
+<li>You now have the DFU file!</li>
+</ol>
+<h3 id="from-bin-files">From BIN files</h3>
+<ol>
+<li>Find and open &quot;Dfu file manager&quot; and select &quot;I want to generate a DFU file&quot;.</li>
+<li>Click on &quot;Multi BIN...&quot; button to select the bin file.</li>
+<li>Change the address to 08000000</li>
+<li>Click on the &quot;Add to list &gt;&gt;&quot; button then click the &quot;OK&quot; button.</li>
+<li>Click &quot;Generate...&quot;</li>
+<li>You now have the DFU file!</li>
+</ol>
+<h2 id="uploading-dfu-files">Uploading DFU Files</h2>
+<p>To set the STM32 chip in DFU mode, BOOT1 pin (if available) needs to be low and and BOOT0 needs to be high when the system powers up. If your system has a BOOT1 button, just hold the button down while powering the system up. The device manager will see the device &quot;STM Device in DFU Mode&quot;.</p>
+<ol>
+<li>Find and open &quot;Open DfuSe Demo&quot; (from the ST download higher in this page)</li>
+<li>Under &quot;Upgrade and Verify Action&quot;, click the &quot;Chose...&quot; button and select the firmware DFU file you want to load.</li>
+<li>Click the &quot;Upgrade&quot; button.</li>
+<li>Click the &quot;Leave DFU mode&quot; button.</li>
+<li>Congratulations, your board is now running the loaded firmware!</li>
+</ol>
 </article>
           </div>
           
@@ -95,7 +116,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/advanced/plain-coding.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/advanced/stm32-bootloader.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
