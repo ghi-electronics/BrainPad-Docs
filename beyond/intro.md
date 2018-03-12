@@ -1,7 +1,5 @@
 # Beyond the BrainPad.
 ---
-![BrainBot](../images/brainbot.jpg)
-
 One of the things that makes the BrainPad so special is it's expandability.  From Snap Circuits to MikroBUS Click Modules to robotics and solderless breadboarding there is always another way to have fun with the BrainPad!
 
 |  |  |
