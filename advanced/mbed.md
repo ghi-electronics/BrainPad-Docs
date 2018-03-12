@@ -12,5 +12,6 @@ This video shows how to use Mbed with the BrainPad.
 
 * [mbed Website](https://developer.mbed.org/)
 * [Nucleo-F401RE](https://developer.mbed.org/platforms/ST-Nucleo-F401RE/)
+* [STM 32 Bootloader Instructions](stm32-bootloader.md)
 
 
