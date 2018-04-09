@@ -3,7 +3,7 @@
 
 TinyCLR OS is the tiny operating system that lets the BrainPad work with .NET and Microsoft Visual Studio, both in C# and in Visual Basic. This professional development setup requires some system preparation before we can start having fun!
 > [!Tip]
-> You can learn more about TinyCLR OS on the [GHI Electronics website](https://www.ghielectronics.com/tinyclr/features)
+> You can learn more about TinyCLR OS on the [**GHI Electronics website**](https://www.ghielectronics.com/tinyclr/features)
 
 ## Step 1: Install the Necessary Software
 ---
@@ -35,6 +35,39 @@ In the `VSIX Installer` dialog box click the `Install` button.
 
 ![Install VSIX](images/install-vsix.png)
 
+### Download and Install the TinyCLR Nuget Packages
+
+1. Since TinyCLR OS is still so new, we haven't yet uploaded any packages to NuGet.  Download the newest [libraries](downloads.md#libraries), extract the archive, and place them in a [local NuGet feed](https://docs.nuget.org/ndocs/hosting-packages/local-feeds).
+2. Connect your device to your PC using a USB cable (make sure your device has the latest firmware installed).
+3. Start Visual Studio and create a new `TinyCLR Application` under `C# > TinyCLR`. New to Visual Studio or C#? Take a look at the [getting started guide from Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/with-visual-studio).
+4. Right click on your Project in the Solution Explorer and select `Manage NuGet Packages`.  If the Solution Explorer window is not visible, open it by selecting `Solution Explorer` in the `View` menu.
+![View Show Solution Explorer](images/SelectManageNugetPackages.jpg)
+
+5. Select the `Package Source` settings icon. 
+![Setting Nuget Package Source](images/SettingNugetPackageSource.jpg) 
+
+6. Click the `+` button to add a new Package source. 
+![Add Package Source](images/AddPackageSource.jpg)
+
+7. Select the location where the NuGet packages are stored locally, by pressing the `...` button. 
+![Choose Local NuGet Package Folder](images/ChooseLocalNuGetPackageFolder.jpg)
+
+8. After Selecting the local folder where the downloaded NuGet packages are, you can select the `Installed` Tab to view the installed NuGet Packages. 
+![Show Installed NuGet Packages](images/ShowInstalledNuGetPackages.jpg)
+
+9. Selecting the `Browse` tab will show all the NuGet packages located in your local NuGet feed. Those installed are noted with a green check mark in front of the name. 
+![Browse Local NuGet Feed](images/BrowseLocalNuGetFeed.jpg)
+
+10. To install one of the packages click on the package name, click the check box to the right under "Version(s)," and click on the `Install` button.
+![Add Nuget Package](images/AddNuGetPackage.jpg)
+
+11. Accept the licensing agreement to install the package.
+![Accept Agreement for NuGet](images/AcceptAgreementforNuGet.jpg)
+
+And, that's it! You're now ready to start programming using TinyCLR OS.
+
+
+
 ## Step 2: Prepare the BrainPad
 ---
 
@@ -44,7 +77,7 @@ In the `VSIX Installer` dialog box click the `Install` button.
 To prepare the BrainPad you only need to install the latest firmware as shown below.
 
 1. Download and save the TinyCLR OS v0.10 firmware from [Downloads](../resources/downloads.md). We recommend saving the firmware file on your desktop.
-2. Connect the BrainPad to your computer using a micro USB cable. The PWR light on the BrainPad should be on.
+2. Connect the BrainPad to your computer using a micro USB cable. The power (PWR) light on the BrainPad should be on.
 3. Press and hold the RESET button on the BrainPad for at least three seconds until the Light Bulb on the BrainPad lights up green.
 4. A window will open named `BrainPad2`. Drag the firmware file from step 1 into this window.
 5. The Light Bulb on the BrainPad will flicker and a progress gauge will appear on the computer screen.
@@ -55,29 +88,8 @@ To prepare the BrainPad you only need to install the latest firmware as shown be
 > [!Note]
 > The BrainPad comes with a "bootloader" pre-installed. You shouldn't have to reinstall it unless you are an advanced user using advanced programming techniques. Check out our [**bootloader**](../resources/bootloader.md) page to find out more.
 
-
-## Step 3: Test Application
----
-
-Start Visual Studio. Click on the `File` menu, then click on `New` and then `Project`. The `New Project` dialog box will open.
-
-![Start New Visual Studio Project](csharp/images/introduction/start-new-project.png)
-
-The small triangle to the left of each heading in the left column of the dialog box will expand (or show) the options underneath it. Under the `Installed` heading you should find the `Visual C#` and `Visual Basic` programming languages listed. Under each of these languages you should see the `TinyCLR` option.
-
-![TinyCLR in Visual Studio](images/tinyclr-in-vs.png)
-
-From under `Visual C#` select `TinyCLR` and then Select `TinyCLR Application`. Give your project a name and a location. We will name it `BrainPadTest` and place it on the Desktop. Visual Studio will now generate a project that you can deploy to the BrainPad.
-
-Connect the BrainPad to the PC and click `Start` or press the `F5` key. Visual Studio will now compile the project and deploy the application to the BrainPad through the USB cable.
-
-(image)
-
-If you have any problems go back and make sure you followed all the steps listed above.  If you're still having problems go to the [Troubleshooting Guide](../resources/troubleshooting-guide.md).
-
----
 ## Going Beyond!
-Congatulations! You are now ready to start developing like a professional. You have the option of using the [C#](csharp/intro.md) programming language or the [Visual Basic](vb/intro.md) programming language. If you are not sure which one to pick, C# is used more often in the professional world and is recommended for those serious about learning programming. Visual Basic is easier to use -- especially for beginners. We use C# for our own software development, but we usually start with Visual Basic for those who are new to programming.
+Congratulations! You are now ready to start programming like a professional. You have the option of using the [C#](csharp/intro.md) programming language or the [Visual Basic](vb/intro.md) programming language. If you are not sure which one to pick, C# is used more often in the professional world and is recommended for those serious about learning programming. Visual Basic is easier to use -- especially for beginners. We use C# for our own software development, but we usually start with Visual Basic for those who are new to programming.
 
 You are not locked in to one language -- you can freely switch between C# and Visual Basic.
 
