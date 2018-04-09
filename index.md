@@ -2,10 +2,26 @@
 ---
 ![BrainPad](images/brainpad.jpg)
 
-## Join the crowd and start having fun:
-|  |  |
-|--|--|
-| **Start Making** </br> New to programming?  Learn about [**Microsoft MakeCode**](start-making/intro.md). | **Advanced** </br> Ready for something more advanced? [**Look here**](advanced/intro.md) for more options. |
-| [![Start Here](images/makecode.png)](start-making/intro.md) | [![Students](images/space-invader.jpg)](advanced/intro.md) |
-| **Beyond** </br> Ready to expand your BrainPad?  Want to learn robotics?  [**Click here**](beyond/intro.md). |  |
-| [![BrainBot](images/brainbot.jpg)](beyond/intro.md) |  |
+## STEM is a path, not a toy.
+
+**From beginner to expert, the BrainPad evolves to match your abilities. BrainPad: For every age\*, for every skill level -- for everyone!**
+
+\*Adult supervision required for ages 12 and under.
+
+The BrainPad gives you two paths. The table below covers the differences.
+
+| Path | [Start Making](start-making/intro.md) | [Go Beyond](go-beyond/intro.md) |
+|--|--|--|
+| Core | Based on MakeCode | Based on .NET and Visual Studio |
+| Language | Visual Blocks and Javascript | C# and Visual Basic |
+| Setup | Online tools with nothing to install | Requires system setup |
+| Setup Time | Instant | About one hour |
+| Difficulty | Simple to start with and learn | Professional tools |
+| Requirements | Any modern OS | Windows only |
+| Debugging | None | Full featured |
+| Age | 6+ | 12+ |
+
+
+
+---
+You are on the documentation website for the BrainPad. The main website is found at [www.brainpad.com](http://www.brainpad.com/)
