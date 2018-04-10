@@ -1,6 +1,6 @@
 # Start Making
 ---
-![MakeCode Blocks](../images/makecode.png)
+![MakeCode Blocks](images/makecode-screen.png)
 
 To get started with the BrainPad you don't need to install any software. You don't even need a BrainPad -- just use the online simulator! Microsoft MakeCode makes it all possible.
 
@@ -20,7 +20,7 @@ When you get your program working on the simulator, you can just drag and drop i
 ## A Quick Test!
 Run this quick test to verify your BrainPad is ready:
 
-1. Plug your BrainPad into a computer running Windows using a micro USB cable. The red PWR LED on the BrainPad should light up.
+1. Plug your BrainPad into a computer running Windows using a micro USB cable. The red power PWR LED on the BrainPad should light up.
 2. Press and hold the reset button for about 3 seconds. The BrainPad LightBulb should turn green and the computer should find a new drive and open a window for it.
 3. Download [this file]() and save it in the drive that came up in the previous step.
 4. The green LED will flash a little then the board will reset and you will see someting like the image below.

@@ -16,7 +16,7 @@
 ## [Live TicTacToe](projects/live-tictactoe.md)
 ## [3D Cube](projects/3d-cube.md)
 ## [Color Mixer](projects/color-mixer.md)
-## [Electronics Dice](projects/electronics-dice.md)
+## [Electronic Dice](projects/electronics-dice.md)
 ## [Flappy Bird](projects/flappy-bird.md)
 
 # [Other Software](other-software/intro.md)
