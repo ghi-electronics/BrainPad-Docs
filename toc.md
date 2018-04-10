@@ -1,4 +1,3 @@
 # [Start Making](start-making/intro.md)
-# [Advanced](advanced/intro.md)
-# [Beyond](beyond/intro.md)
-
+# [Go Beyond](go-beyond/intro.md)
+# [Resources](resources/intro.md)
