@@ -44,7 +44,7 @@ static void Main() {
 ```
 
 ### Sprites
-In computer programming sprites are small pictures or objects that are shown on the screen and can be moved or manipulated as a single entity. In this game the space ship, the bullets, and the monster are all sprites. We will create a `sprite` class which will be used to keep track of each sprite's position and size. This class will also provide methods to and draw it and erase it.
+In computer programming sprites are small pictures or objects that are shown on the screen and can be moved or manipulated as a single entity. In this game the space ship, the bullets, and the monster are all sprites. We will create a `sprite` class which will be used to keep track of each sprite's position and size. This class will also provide methods to draw it and erase it.
 
 ```
 class Sprite {

@@ -1,7 +1,7 @@
 # System Setup
 ---
+TinyCLR OS is the tiny operating system used by the BrainPad to run your C# and Visual Basic programs. Microsoft Visual Studio is used to write these programs on your computer and is also used by professional programmers the world over. Both TinyCLR and Visual Studio are available for free, but must be set up before they can be used to have fun with the BrainPad.
 
-TinyCLR OS is the tiny operating system that lets the BrainPad work with .NET and Microsoft Visual Studio, both in C# and in Visual Basic. This professional development setup requires some system preparation before we can start having fun!
 > [!Tip]
 > You can learn more about TinyCLR OS on the [**GHI Electronics website**](https://www.ghielectronics.com/tinyclr/features)
 
@@ -41,28 +41,28 @@ In the `VSIX Installer` dialog box click the `Install` button.
 2. Connect your device to your PC using a USB cable (make sure your device has the latest firmware installed).
 3. Start Visual Studio and create a new `TinyCLR Application` under `C# > TinyCLR`. New to Visual Studio or C#? Take a look at the [getting started guide from Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/with-visual-studio).
 4. Right click on your Project in the Solution Explorer and select `Manage NuGet Packages`.  If the Solution Explorer window is not visible, open it by selecting `Solution Explorer` in the `View` menu.
-![View Show Solution Explorer](images/SelectManageNugetPackages.jpg)
+![View Show Solution Explorer](images/select-manage-nuget-packages.jpg)
 
 5. Select the `Package Source` settings icon. 
-![Setting Nuget Package Source](images/SettingNugetPackageSource.jpg) 
+![Setting Nuget Package Source](images/setting-nuget-package-source.jpg) 
 
 6. Click the `+` button to add a new Package source. 
-![Add Package Source](images/AddPackageSource.jpg)
+![Add Package Source](images/add-package-source.jpg)
 
 7. Select the location where the NuGet packages are stored locally, by pressing the `...` button. 
-![Choose Local NuGet Package Folder](images/ChooseLocalNuGetPackageFolder.jpg)
+![Choose Local NuGet Package Folder](images/choose-local-nuget-package-folder.jpg)
 
 8. After Selecting the local folder where the downloaded NuGet packages are, you can select the `Installed` Tab to view the installed NuGet Packages. 
-![Show Installed NuGet Packages](images/ShowInstalledNuGetPackages.jpg)
+![Show Installed NuGet Packages](images/show-installed-nuget-packages.jpg)
 
 9. Selecting the `Browse` tab will show all the NuGet packages located in your local NuGet feed. Those installed are noted with a green check mark in front of the name. 
-![Browse Local NuGet Feed](images/BrowseLocalNuGetFeed.jpg)
+![Browse Local NuGet Feed](images/browse-local-nuget-feed.jpg)
 
 10. To install one of the packages click on the package name, click the check box to the right under "Version(s)," and click on the `Install` button.
-![Add Nuget Package](images/AddNuGetPackage.jpg)
+![Add Nuget Package](images/add-nuget-package.jpg)
 
 11. Accept the licensing agreement to install the package.
-![Accept Agreement for NuGet](images/AcceptAgreementforNuGet.jpg)
+![Accept Agreement for NuGet](images/accept-agreement-for-nuget.jpg)
 
 And, that's it! You're now ready to start programming using TinyCLR OS.
 
@@ -74,7 +74,7 @@ And, that's it! You're now ready to start programming using TinyCLR OS.
 > [!Tip]
 > If you have the original BrainPad Concept/Prototype the setup is slightly different. See the [**Older BrainPad**](..\resources\older-brainpad.md) page for more details.
 
-To prepare the BrainPad you only need to install the latest firmware as shown below.
+To prepare the BrainPad you only need to install the latest firmware as described below.
 
 1. Download and save the TinyCLR OS v0.10 firmware from [Downloads](../resources/downloads.md). We recommend saving the firmware file on your desktop.
 2. Connect the BrainPad to your computer using a micro USB cable. The power (PWR) light on the BrainPad should be on.

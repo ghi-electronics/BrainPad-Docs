@@ -3,13 +3,11 @@
 Visual Basic is a very popular Microsoft .NET programming language. While being as powerful as other programming languages, it is perhaps a little easier for beginners.  Visual Basic is more like plain English than other programming languages, and you don't have to type a semicolon (;) at the end of each line like you do with C, C++, and C#.  
 
 ## Before you start
-
 You should have already installed Visual Studio on your computer as well as the TinyCLR extension.  If not, please start with [System Setup](../system-setup.md) for instructions on how to do so.
 
 Also, you need a BrainPad and a micro USB cable to continue.  Plug the BrainPad into the USB port of your computer.  The red power (PWR) light on the BrainPad should be on.
 
 ## Hello World
-
 The first step is to write some very simple code to see if the BrainPad will respond when we try to program it.  This is usually called a "hello world" program.
 
 ### Start a New Project
@@ -17,7 +15,7 @@ Open Visual Studio.  In the `File` menu select `New` and then `Project` to open 
 
 ![Start New Visual Studio Project](../csharp/images/introduction/start-new-project.png)
 
-In the left panel of the  `New Project` window you can click on the small triangles to the left of each heading to expand the heading and show the options beneath it.
+In the left panel of the  `New Project` window (see below) you can click on the small triangles to the left of each heading to expand the heading and show the options beneath it.
 
 You should see the `Visual Basic` language listed under the `Installed` heading in the left panel of the `New Project` window.
 
@@ -31,12 +29,12 @@ Click the `OK` button on the bottom right of the `New Project` window.  This wil
 
 ![Start New Project](images/introduction/new-project-window.png)
 
-Once created, you'll be presented with a `Program.vb` tab.
+Once created, you'll be presented with a `Module1.vb` tab.
 
 ![First Project](images/introduction/first-project.png)
 
 ### Add the Code  
-In the `Program.vb` tab we will enter short sample program (our "Hello World" code). Cut and paste the following code into the `Program.vb` window.
+In the `Module1.vb` tab we will enter short sample program (our "Hello World" code). Cut and paste the following code into the `Program.vb` window.
 
 ```
 Imports GHIElectronics.TinyCLR.BrainPad
@@ -67,39 +65,53 @@ Public Class BrainPad
 End Class
 ```
 
+Your `Module1.vb` window should look like this:
+![Pasted Code](images/introduction/pasted-code.png)
+
 ### Manage the NuGet Packages
 Visual Basic source files are listed in the `Solution Explorer` window.  If the `Solution Explorer` window is not visible, click on `View > Solution Explorer` to open it.
 
-![Solution Explorer](images/solution-explorer.png)
+![Solution Explorer](images/introduction/solution-explorer.png)
+
+The squiggly red lines under entries in the `Solution Explorer` window and `Module1.vb` window indicate errors. In this case the errors are caused by missing Nuget packages. Let's tell Visual Studio to include the Nuget packages and fix that now.
 
 If you right click on the project name in the Solution Explorer window a drop down menu will appear.  Select `Manage NuGet Packages...` from the menu.
 
-![View Show Solution Explorer](images/manage-nuget-packages-menu.png) 
+![View Show Solution Explorer](images/introduction/manage-nuget-packages-menu.png) 
 
-Now you should see the installed TinyCLR NuGet library (GHIElectronics.TinyCLR.Core).  This is the only library we will need for our "hello world" program.
+Now you should see the installed TinyCLR NuGet library (GHIElectronics.TinyCLR.Core). We need to install a couple more libraries for our program to run.
 
-![Installed NuGet](images/installed-nuget.png)
+![Installed NuGet](images/introduction/click-on-browse.png)
 
-Close the `NuGet...` tab or click on the `Program.cs` tab to edit the source code.  Change the contents as shown below.
+Click on `Browse`.  You should see a list of available Nuget packages in your local feed.
 
-![Hello World Program](images/hello-world-program.png)
+![Browse Nuget Packages](images/introduction/browse-nuget-packages.png)
 
-Make sure your device is plugged into the computer's USB port.  Now hit the start button as shown on the above image (or hit the `F5` key).  If you've done everything correctly the program will compile and deploy to your device.  The message "Hello World!" should appear on the BrainPad display, and the light bulb should start blinking.
+Click on the `GHIElectronics.TinyCLR.BrainPad` package and then click on the `Install` button.
 
-Congratulations!  You're on your way to learning advanced programming on the BrainPad!
+![Click Install Button](images/introduction/click-install-button.png)
+
+Installing the BrainPad Nuget package will automatically install the `GHIElectronics.TinyCLR.Devices` and `GHIElectronics.TinyCLR.Pins` packages as well. Click on `OK`.
+
+![Install Nugets](images/introduction/install-nugets.png)
+
+Now accept the license agreement to install the packages.
+
+![Accept the License Agreement](images/introduction/accept-license.png)
+
+Close the `NuGet...` tab to get back to your `Module1.vb` window.  The red squiggles should now be gone.
+
+![No Red Squiggles](images/introduction/no-red-squiggles.png)
 
 ### Deploy the Program
+Make sure your device is plugged into the computer's USB port. Now hit the start button as shown in the above image (or hit the `F5` key). If you've done everything correctly the program will compile and deploy to your device. The message "Hello World!" should appear on the BrainPad display, and the light bulb should start blinking.
 
-Let's run the program now to see the code come to life. If your BrainPad is not connected to your computer with a micro USB cable connect it now. Press the `F5` function key or the `Start` button (shown below) to copy the program from your computer to your BrainPad.
-
-![Start Button](../csharp/images/introduction/start-button.png)
-
-Visual Studio will now tell your BrainPad to run the code.  A few things will happen and the BrainPad display will now show the text "Hello!" and the light bulb (or LED) will blink.
+Congratulations! You're on your way to learning advanced programming on the BrainPad!
 
 What happened exactly? Our application began by running the `BrainPad.Display.DrawTextAndShowOnScreen(0, 0, "Hello!")` line to instruct the display to show the text "Hello!"
 
-The line `BrainPad.Display.DrawTextAndShowOnScreen(0, 0, "Hello!")` is known as a function call.  The name of the function is "DrawTextAndShowOnScreen()."  This function is part of the "Display" object, which is part of the "BrainPad" object.
+The line `BrainPad.Display.DrawTextAndShowOnScreen(0, 0, "Hello!")` is known as a function call. The name of the function is "DrawTextAndShowOnScreen()." This function is part of the "Display" object, which is part of the "BrainPad" object.
 
-The items listed in parenthesis (0, 0, "Hello!") are called the arguments of the function.  In this case the first zero tells the BrainPad to display the text at the left side of the BrainPad display.  If this number is increased the text will appear further to the right of the screen.  The second zero tells the BrainPad to print the text at the top of the display.  If this number is increased the text will be printed lower on the screen.  The third arugument, "Hello!," tells the BrainPad what text to display on the screen.
+The items listed in parenthesis (0, 0, "Hello!") are called the arguments of the function. In this case the first zero tells the BrainPad to display the text at the left side of the BrainPad display. If this number is increased the text will appear further to the right of the screen. The second zero tells the BrainPad to print the text at the top of the display. If this number is increased the text will be printed lower on the screen. The third arugument, "Hello!," tells the BrainPad what text to display on the screen.
 
 After `BrainPadSetup()` is finished, the `While True` loop starts running. Code placed inside this while loop is executed in an infinite loop. This is why the code that turns the LED on and then off never stops.
