@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Start Making </title>
+    <title>Troubleshooting Guide </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Start Making ">
+    <meta name="title" content="Troubleshooting Guide ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
@@ -75,32 +75,30 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="start-making">Start Making</h1>
+<h1 id="troubleshooting-guide">Troubleshooting Guide</h1>
 
 <hr>
-<p><img src="../images/makecode.png" alt="MakeCode Blocks"></p>
-<p>To get started with the BrainPad you don&#39;t need to install any software. You don&#39;t even need a BrainPad -- just use the online simulator! Microsoft MakeCode makes it all possible.</p>
-<div class="TIP"><h5>Tip</h5><p>The BrainPad can also be programmed in the same way professional developers do. Depending on your goals and skill level, you can <a href="../go-beyond/intro.html"><strong>Go Beyond</strong></a> MakeCode and start coding using .NET and Visual Studio when you are ready.</p>
+<p>This guide will try to take you through every step to troubleshoot any issues. This will also help our support team in helping you, so please go through this first.</p>
+<h1 id="identify-which-brainpad-you-have">Identify which BrainPad you have</h1>
+<p>There are older BrainPad versions that early adopters recieved. If your BrainPad doesn&#39;t look exactly like the image below then check the <a href="older-brainpad.html">Older BrainPad</a> page for more details.</p>
+<div class="TIP"><h5>Tip</h5><p>Note the reset button. If it is small then you have an <a href="older-brainpad.html">Older BrainPad</a></p>
 </div>
-<h2 id="microsoft-makecode">Microsoft MakeCode</h2>
-<p>Microsoft MakeCode is a great way to learn programming. MakeCode allows you to drag and drop blocks to create programs while seeing the results on a simulated BrainPad. MakeCode also has a JavaScript program editor. When you change your block program MakeCode changes your text (JavaScipt) program for you. Changes made to the text program will automatically show up as changes to your block program.</p>
-<p>When you get your program working on the simulator, you can just drag and drop it to run it on the real BrainPad!</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nijKM_TLoxM?rel=0" frameborder="0" allowfullscreen=""></iframe>
-
-<div class="TIP"><h5>Tip</h5><p>The BrainPad has a simlator in MakeCode. This means you can start making even if you do not have a BrainPad yet.</p>
-</div>
-<h2 id="a-quick-test">A Quick Test!</h2>
-<p>Run this quick test to verify your BrainPad is ready:</p>
-<ol>
-<li>Plug your BrainPad into a computer running Windows using a micro USB cable. The red PWR LED on the BrainPad should light up.</li>
-<li>Press and hold the reset button for about 3 seconds. The BrainPad LightBulb should turn green and the computer should find a new drive and open a window for it.</li>
-<li>Download <a href="">this file</a> and save it in the drive that came up in the previous step.</li>
-<li>The green LED will flash a little then the board will reset and you will see someting like the image below.</li>
-</ol>
-<p>If any of the steps above failed, visit this <a href="../resources/troubleshooting-guide.html">Troubleshooting Guide</a></p>
-<h2 id="you-are-ready">You Are Ready</h2>
-<p>The BrainPad MakeCode section has instructions, tutorials, and sample programs:</p>
-<h3 id="makecodebrainpadcomhttpsmakecodebrainpadcom"><a href="https://makecode.brainpad.com"><strong>makecode.brainpad.com</strong></a></h3>
+<p>(image)</p>
+<h1 id="bootloader">Bootloader</h1>
+<p>Push and hold the reset button for about 3 seconds. Does the LightBulb turn Green? If so, you can skip this step.</p>
+<p>To update the bootloader, download the latest bootloader DFU file from the <a href="intro.html#bootloaders">Resources</a> page and then see the <a href="dfu-files.html">DFU Files</a> page for instructions on loading DFU files.</p>
+<p>When the LightBulb turns Green, the BrainPAd will present itself as a virtual storage device. Your computer should see it like any other storage device. The first time this happens, the operating system will need a few seconds to load the needed drivers.
+(image of the drive and maybe device manager)</p>
+<p>This virtual drive comes up with a text file that has some info, like the boot loader version. You can update the loader to the latest verion to get teh latest and greatest features.</p>
+<h1 id="sample-demo">Sample Demo</h1>
+<p>When the virtual drive is up (see Bootloader section), download <a href="">this demo</a> file and drag it into the virtual drive. </p>
+<h1 id="tinyclr-os">TinyCLR OS</h1>
+<p>We recommend starting with MakeCode to verify the hardware is functional first. Then, load the TinyCLR OS as detailed in the <a href="../go-beyond/system-setup.html">System Setup</a>. Once loaded, your PC will detect a TinYCLR Os device.</p>
+<p>(image device manager)</p>
+<p>Visual Studio will also see the device</p>
+<p>(show transport)</p>
+<p>It is important that the TinyCLR OS version on the PC matches what is on the BrainPad. Same goes for the NuGet packages.</p>
+<p>Our experts are ready to help on our <a href="https://forums.ghielectronics.com/c/tinyclr-os">TinyCLR OS forum</a></p>
 <hr>
 <p>You are on the documentation website for the BrainPad. The main website is found at <a href="http://www.brainpad.com/">www.brainpad.com</a></p>
 </article>
@@ -111,7 +109,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/start-making/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/resources/troubleshooting-guide.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Beyond the BrainPad. </title>
+    <title>Tilt Etch A Sketch </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Beyond the BrainPad. ">
+    <meta name="title" content="Tilt Etch A Sketch ">
     <meta name="generator" content="docfx 2.29.1.0">
     
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
-    <meta property="docfx:rel" content="../">
+    <meta property="docfx:rel" content="../../">
     <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -75,37 +75,55 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="beyond-the-brainpad">Beyond the BrainPad.</h1>
+<h1 id="tilt-etch-a-sketch">Tilt Etch A Sketch</h1>
 
-<hr>
-<p>One of the things that makes the BrainPad so special is it&#39;s expandability.  From Snap Circuits to MikroBUS Click Modules to robotics and solderless breadboarding there is always another way to have fun with the BrainPad!</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Snap Circuits makes learning electronics easy and fun! <a href="snap-circuits.html">Find out more...</a></td>
-<td>Choose from hundreds of MikroBUS Click Modules you can use with your BrainPad.  <a href="mikroe-click.html">Learn more...</a></td>
-</tr>
-<tr>
-<td><a href="snap-circuits.html"><img src="images/snap-circuits.jpg" alt="Snap Circuits"></a></td>
-<td><a href="mikroe-click.html"><img src="images/mikro-click.jpg" alt="MikroBUS Click Modules"></a></td>
-</tr>
-<tr>
-<td>Use the BrainPad to build your own robot! <a href="robotics.html">Find out more...</a></td>
-<td>Use solderless breadboards to design your own circuits. <a href="breadboarding.html">Learn more...</a></td>
-</tr>
-<tr>
-<td><a href="robotics.html"><img src="../images/brainbot.jpg" alt="BrainBot Robot"></a></td>
-<td><a href="breadboarding.html"><img src="images/wires.jpg" alt="Direct Wiring"></a></td>
-</tr>
-</tbody>
-</table>
-</article>
+<p>This classic game now works on the BrainPad. Simply tilt the screen to show the sketch and press down to erase it.</p>
+<p>Difficulty: Easy
+Objective: Gaming, Drawing</p>
+<h1 id="how-it-works">How It Works</h1>
+<p>Very simply, we draw a circle on the screen. The circle moves when we tilt the BrainPad by checking the accelerometer. Acceleration is basically the earth gravity.</p>
+<h1 id="the-code">The Code</h1>
+<pre><code>using GHIElectronics.TinyCLR.BrainPad;
+
+namespace Etch_A_Sketch {
+    class Program {
+        static void Main() {
+            BrainPad.Display.DrawSmallText(0, 57, &quot;Tilt: Draw - D: Erase&quot;);
+            BrainPad.Display.DrawLine(0, 55, 127, 55);
+            int x = 64, y = 32;
+            const double ACC_TOLERANCE = .20;
+            while (true) {
+                if (BrainPad.Accelerometer.ReadY() &gt; ACC_TOLERANCE) y--;
+                if (BrainPad.Accelerometer.ReadY() &lt; ACC_TOLERANCE * -1) y++;
+                if (BrainPad.Accelerometer.ReadX() &gt; ACC_TOLERANCE) x++;
+                if (BrainPad.Accelerometer.ReadX() &lt; ACC_TOLERANCE * -1) x--;
+                if (x &lt; 0) x = 0;
+                if (y &lt; 0) y = 0;
+                if (x &gt; 127) x = 127;
+                if (y &gt; 50) y = 50;
+                BrainPad.Display.DrawCircle(x, y, 1);
+
+                if (BrainPad.Buttons.IsDownPressed())
+                    BrainPad.Display.ClearPartOfScreen(0, 0, 128, 55);
+
+                BrainPad.Display.ShowOnScreen();
+                BrainPad.Wait.Minimum();
+            }
+        }
+    }
+    public static class BrainPad {
+        public static Accelerometer Accelerometer { get; } = new Accelerometer();
+        public static Buttons Buttons { get; } = new Buttons();
+        public static Buzzer Buzzer { get; } = new Buzzer();
+        public static Display Display { get; } = new Display();
+        public static LightBulb LightBulb { get; } = new LightBulb();
+        public static LightSensor LightSensor { get; } = new LightSensor();
+        public static ServoMotors ServoMotors { get; } = new ServoMotors();
+        public static TemperatureSensor TemperatureSensor { get; } = new TemperatureSensor();
+        public static Wait Wait { get; } = new Wait();
+    }
+}
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -113,7 +131,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/beyond/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/go-beyond/projects/tilt-etch-a-sketch.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -139,8 +157,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
 </html>

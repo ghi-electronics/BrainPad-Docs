@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/bare-metal.html",
-          "hash": "sNMKTgkQ5qf1p5nt4SSZlw=="
+          "hash": "PyMNDKsazjc3zKcuF/oQCg=="
         }
       },
       "is_incremental": false,
@@ -135,6 +135,17 @@
       "output": {
         "resource": {
           "relative_path": "advanced/csharp/images/introduction/green-off-green-off-sample-code.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "advanced/csharp/images/introduction/new-project-window.gif",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/csharp/images/introduction/new-project-window.gif"
         }
       },
       "is_incremental": false,
@@ -413,7 +424,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/mbed.html",
-          "hash": "w+qONeRDikUNFZbKDifLlQ=="
+          "hash": "ljgmKwN5SXSHndL7wJM0Fw=="
         }
       },
       "is_incremental": false,
@@ -662,111 +673,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "beyond/breadboarding.md",
+      "source_relative_path": "get-inspiderd/ai.md",
       "output": {
         ".html": {
-          "relative_path": "beyond/breadboarding.html",
-          "hash": "iOAljKDaDzb/go/o8pQPiw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "beyond/images/breadboard.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "beyond/images/breadboard.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "beyond/images/fm-click.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "beyond/images/fm-click.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "beyond/images/ir-click.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "beyond/images/ir-click.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "beyond/images/mikro-click.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "beyond/images/mikro-click.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "beyond/images/snap-circuits.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "beyond/images/snap-circuits.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "beyond/images/snap-circuits2.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "beyond/images/snap-circuits2.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "beyond/images/touchclamp-click.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "beyond/images/touchclamp-click.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "beyond/images/wires.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "beyond/images/wires.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "beyond/intro.md",
-      "output": {
-        ".html": {
-          "relative_path": "beyond/intro.html",
-          "hash": "QHXbQTWMsFIQoipQI6I7EA=="
+          "relative_path": "get-inspiderd/ai.html",
+          "hash": "qtRnDXirMeqBtH7GVcFfYA=="
         }
       },
       "is_incremental": false,
@@ -777,11 +688,125 @@
         "InvalidYamlHeader"
       ],
       "type": "Conceptual",
-      "source_relative_path": "beyond/mikroe-click.md",
+      "source_relative_path": "get-inspiderd/electronics.md",
       "output": {
         ".html": {
-          "relative_path": "beyond/mikroe-click.html",
-          "hash": "+GxHMXNBKiDcd9yJZO4muA=="
+          "relative_path": "get-inspiderd/electronics.html",
+          "hash": "Zl9G9SKPta7PKjvAVxdZJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "get-inspiderd/images/csharp-logo.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "get-inspiderd/images/csharp-logo.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "get-inspiderd/images/fm-click.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "get-inspiderd/images/fm-click.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "get-inspiderd/images/ir-click.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "get-inspiderd/images/ir-click.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "get-inspiderd/images/mikro-click.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "get-inspiderd/images/mikro-click.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "get-inspiderd/images/snap-circuits.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "get-inspiderd/images/snap-circuits.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "get-inspiderd/images/snap-circuits2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "get-inspiderd/images/snap-circuits2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "get-inspiderd/images/touchclamp-click.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "get-inspiderd/images/touchclamp-click.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "get-inspiderd/images/visual-basic-logo.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "get-inspiderd/images/visual-basic-logo.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "get-inspiderd/images/visual-studio-logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "get-inspiderd/images/visual-studio-logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidYamlHeader"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "get-inspiderd/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "get-inspiderd/intro.html",
+          "hash": "7r5zsqFhx8OBdSxbev/XJQ=="
         }
       },
       "is_incremental": false,
@@ -789,11 +814,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "beyond/robotics.md",
+      "source_relative_path": "get-inspiderd/iot.md",
       "output": {
         ".html": {
-          "relative_path": "beyond/robotics.html",
-          "hash": "Amr4yAD+8LGUDl8LFGq7OA=="
+          "relative_path": "get-inspiderd/iot.html",
+          "hash": "A2slb89SIywtB3yaFyKnzw=="
         }
       },
       "is_incremental": false,
@@ -801,11 +826,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "beyond/snap-circuits.md",
+      "source_relative_path": "get-inspiderd/robotics.md",
       "output": {
         ".html": {
-          "relative_path": "beyond/snap-circuits.html",
-          "hash": "l/VDlDGGwlHRzwN0Xt5agA=="
+          "relative_path": "get-inspiderd/robotics.html",
+          "hash": "kWbHTF2JiI8RTxLLf0txxQ=="
         }
       },
       "is_incremental": false,
@@ -813,11 +838,1029 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "beyond/toc.md",
+      "source_relative_path": "get-inspiderd/toc.md",
       "output": {
         ".html": {
-          "relative_path": "beyond/toc.html",
-          "hash": "bfngpIU4n15iKo2SKGVQyg=="
+          "relative_path": "get-inspiderd/toc.html",
+          "hash": "PHLmcsk17/ZMcNu3Eu5IpQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/adding-breakpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/adding-breakpoint.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/blue-light-blink-code.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/blue-light-blink-code.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/brainpad-intellisense.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/brainpad-intellisense.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/browse-nuget-packages.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/browse-nuget-packages.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/click-install-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/click-install-button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/click-on-browse.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/click-on-browse.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/delay-example-code.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/delay-example-code.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/edit-during-debug-error.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/edit-during-debug-error.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/first-project.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/first-project.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/green-off-green-off-sample-code.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/green-off-green-off-sample-code.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/manage-nuget-packages-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/manage-nuget-packages-menu.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/new-project-window.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/new-project-window.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/no-red-squiggles.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/no-red-squiggles.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/pasted-code.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/pasted-code.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/place-cursor-after-hello.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/place-cursor-after-hello.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/place-cursor.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/place-cursor.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/program-contents-shown.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/program-contents-shown.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/solution-explorer.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/solution-explorer.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/start-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/start-button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/stop-breakpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/stop-breakpoint.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/stop-debugging.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/stop-debugging.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/csharp/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/csharp/intro.html",
+          "hash": "I72P8omJL7gzGDe6BPXHyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/csharp/vb-to-csharp.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/csharp/vb-to-csharp.html",
+          "hash": "dHaRR/AiRwQiuB1V74jhOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/images/accept-agreement-for-nuget.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/images/accept-agreement-for-nuget.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/images/add-nuget-package.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/images/add-nuget-package.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/images/add-package-source.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/images/add-package-source.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/images/breadboard.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/images/breadboard.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/images/browse-local-nuget-feed.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/images/browse-local-nuget-feed.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/images/choose-local-nuget-package-folder.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/images/choose-local-nuget-package-folder.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/images/download-visual-studio.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/images/download-visual-studio.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/images/install-vsix-step1.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/images/install-vsix-step1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/images/install-vsix-step2.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/images/install-vsix-step2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/images/install-vsix.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/images/install-vsix.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/images/select-manage-nuget-packages.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/images/select-manage-nuget-packages.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/images/setting-nuget-package-source.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/images/setting-nuget-package-source.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/images/show-installed-nuget-packages.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/images/show-installed-nuget-packages.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/images/tinyclr-in-vs.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/images/tinyclr-in-vs.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/images/visual-studio-workloads.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/images/visual-studio-workloads.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/images/wires.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/images/wires.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidYamlHeader"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/intro.html",
+          "hash": "jgsTwCmjF3iaUZ4Eahbvuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/other-software/arduino.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/other-software/arduino.html",
+          "hash": "BDc6me5kWv5tFBP6JaG6Bg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/other-software/bare-metal.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/other-software/bare-metal.html",
+          "hash": "QuJ5sstHC4YA5rvqdu2vmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/other-software/images/arduino-logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/other-software/images/arduino-logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/other-software/images/mbed-logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/other-software/images/mbed-logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/other-software/images/micropython-logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/other-software/images/micropython-logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/other-software/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/other-software/intro.html",
+          "hash": "0r2vdw099GgSh+DvNQf3JA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/other-software/mbed.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/other-software/mbed.html",
+          "hash": "FFCQjzq25Qx6DvWsSG9guQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/other-software/micropython.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/other-software/micropython.html",
+          "hash": "/TfHlcWDUW4cFhpBDvcj6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/projects/3d-cube.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/projects/3d-cube.html",
+          "hash": "bZ5u+0JHO7vCwIhhiGRtZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/projects/color-mixer.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/projects/color-mixer.html",
+          "hash": "IKmJ8Q4AKyMHPqkxv4C1Xg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/projects/electronics-dice.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/projects/electronics-dice.html",
+          "hash": "wcaUd/gkA2qVhDEqL2doQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/projects/etch-a-sketch.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/projects/etch-a-sketch.html",
+          "hash": "2gz9763auyQSjBeoWwU3pQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/projects/flappy-bird.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/projects/flappy-bird.html",
+          "hash": "GHYh2bdwM2YfgcaUaWK+Qw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/projects/images/space-invasion.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/projects/images/space-invasion.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/projects/images/test.gif",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/projects/images/test.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidYamlHeader"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/projects/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/projects/intro.html",
+          "hash": "Jpq/sgcEEIKI21Ziv4X6bQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/projects/live-tictactoe.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/projects/live-tictactoe.html",
+          "hash": "c8jxMmEF2cANIiMdj6XXRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/projects/pong.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/projects/pong.html",
+          "hash": "3cVORBGGRhUAZros8aCKrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/projects/screen-tictactoe.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/projects/screen-tictactoe.html",
+          "hash": "W3Lj7YIsNLkLjdRnPzLfvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidYamlHeader"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/projects/space-invasion.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/projects/space-invasion.html",
+          "hash": "bB9qtvHof4omxTbViZNZsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/projects/tilt-etch-a-sketch.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/projects/tilt-etch-a-sketch.html",
+          "hash": "jvJer0TDe6TLVmMBeOMy8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidYamlHeader",
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/system-setup.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/system-setup.html",
+          "hash": "1mva1nF480gXStpb7N0qog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "go-beyond/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/toc.html",
+          "hash": "tmgAu6vdF7feKe5N6E2J4g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/vb/csharp-to-vb.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/vb/csharp-to-vb.html",
+          "hash": "t20BspQBX+MqqlI4+zbHeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/accept-license.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/accept-license.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/adding-breakpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/adding-breakpoint.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/blue-light-blink-code.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/blue-light-blink-code.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/brainpad-intellisense.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/brainpad-intellisense.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/browse-nuget-packages.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/browse-nuget-packages.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/click-install-button.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/click-install-button.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/click-on-browse.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/click-on-browse.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/delay-example-code.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/delay-example-code.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/first-project.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/first-project.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/green-off-green-off-sample-code.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/green-off-green-off-sample-code.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/install-nugets.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/install-nugets.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/manage-nuget-packages-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/manage-nuget-packages-menu.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/new-project-window.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/new-project-window.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/no-red-squiggles.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/no-red-squiggles.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/pasted-code.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/pasted-code.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/place-cursor-after-hello.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/place-cursor-after-hello.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/place-cursor.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/place-cursor.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/solution-explorer.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/solution-explorer.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/start-new-project.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/start-new-project.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/introduction/stop-breakpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/introduction/stop-breakpoint.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/variables-and-nested-statements/output-window-count.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/variables-and-nested-statements/output-window-count.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/variables-and-nested-statements/output-window-exercise.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/variables-and-nested-statements/output-window-exercise.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/variables-and-nested-statements/watch-window.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/variables-and-nested-statements/watch-window.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/vb/images/variables-and-nested-statements/write-debug-message-breakpoint.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/vb/images/variables-and-nested-statements/write-debug-message-breakpoint.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/vb/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/vb/intro.html",
+          "hash": "mmkeA9bAoBEA18KkpY78Gw=="
         }
       },
       "is_incremental": false,
@@ -901,12 +1944,105 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidYamlHeader"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "CXIAesIMgAtKRJifffUw9Q=="
+          "hash": "AKUd2X/qhf9/tFPcbqei7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "resources/bootloader.md",
+      "output": {
+        ".html": {
+          "relative_path": "resources/bootloader.html",
+          "hash": "QUeAZS7YXgRvaSZ5GbCiiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "resources/dfu-files.md",
+      "output": {
+        ".html": {
+          "relative_path": "resources/dfu-files.html",
+          "hash": "MOb/8X8nF+GG/NpRvymuJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "resources/downloads.md",
+      "output": {
+        ".html": {
+          "relative_path": "resources/downloads.html",
+          "hash": "y+w91Idcq/RsJnKyq7mlUA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "resources/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "resources/intro.html",
+          "hash": "Mm5pKzjGquaAL+P6coogqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidYamlHeader"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "resources/older-brainpad.md",
+      "output": {
+        ".html": {
+          "relative_path": "resources/older-brainpad.html",
+          "hash": "XKpHM2N3CgTfWnebgKnM2w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "resources/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "resources/toc.html",
+          "hash": "wB0PIT85I630Sj+9iVjnzg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidYamlHeader"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "resources/troubleshooting-guide.md",
+      "output": {
+        ".html": {
+          "relative_path": "resources/troubleshooting-guide.html",
+          "hash": "jLs3ZyzHjn6zaTsEzX/Zbw=="
         }
       },
       "is_incremental": false,
@@ -924,12 +2060,42 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidYamlHeader"
+      ],
       "type": "Conceptual",
       "source_relative_path": "start-making/intro.md",
       "output": {
         ".html": {
           "relative_path": "start-making/intro.html",
-          "hash": "T5VhiaQALv+ULv59po7vrA=="
+          "hash": "karj0U29RaDty0E7rvvEXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidYamlHeader"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "start-making/projects.md",
+      "output": {
+        ".html": {
+          "relative_path": "start-making/projects.html",
+          "hash": "YwSbU2VbYUCT5Ov/eIZ5Uw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "start-making/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "start-making/toc.html",
+          "hash": "5TX1o9W2LfGCk8uSxS5MSA=="
         }
       },
       "is_incremental": false,
@@ -941,7 +2107,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "NMGknB71eA1AaQmME6APLQ=="
+          "hash": "AjN0XYZ8lMOwRnbwgwr6cQ=="
         }
       },
       "is_incremental": false,

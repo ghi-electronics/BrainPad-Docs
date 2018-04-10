@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Mbed </title>
+    <title>Etch A Sketch </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Mbed ">
+    <meta name="title" content="Etch A Sketch ">
     <meta name="generator" content="docfx 2.29.1.0">
     
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
-    <meta property="docfx:rel" content="../">
+    <meta property="docfx:rel" content="../../">
     <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -75,21 +75,50 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="mbed">Mbed</h1>
+<h1 id="etch-a-sketch">Etch A Sketch</h1>
 
-<hr>
-<h2 id="using-mbed-with-the-brainpad">Using Mbed with the BrainPad</h2>
-<p>Mbed is an online compiler platform. There is nothing to install, just log in and start coding!</p>
-<p>When using Mbed to program the BrainPad, select the Nucleo-F401RE as your target platform.  The F401RE uses the same processor as the BrainPad.  When you have written and compiled your program, follow the instructions on the <a href="stm32-bootloader.html">STM32 bootloader page</a> to transfer the program to your BrainPad.</p>
-<p>This video shows how to use Mbed with the BrainPad.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8qcKctDvV_4" frameborder="0" allowfullscreen=""></iframe>
+<p>This classic game now works on the BrainPad. Simply use the buttons to sketch.</p>
+<p>Difficulty: Easy
+Objective: Gaming, Drawing</p>
+<h1 id="how-it-works">How It Works</h1>
+<p>Very simply, we draw a circle on the screen. The circle moves when the buttons are pressed.</p>
+<h1 id="the-code">The Code</h1>
+<pre><code>using GHIElectronics.TinyCLR.BrainPad;
 
-<ul>
-<li><a href="https://developer.mbed.org/">mbed Website</a></li>
-<li><a href="https://developer.mbed.org/platforms/ST-Nucleo-F401RE/">Nucleo-F401RE</a></li>
-<li><a href="stm32-bootloader.html">STM 32 Bootloader Instructions</a></li>
-</ul>
-</article>
+namespace Etch_A_Sketch {
+    class Program {
+        static void Main() {
+            BrainPad.Display.DrawSmallText(0, 57, &quot;Use Buttons to Draw&quot;);
+            BrainPad.Display.DrawLine(0, 55, 127, 55);
+            int x = 64, y = 32;
+            while (true) {
+                if (BrainPad.Buttons.IsDownPressed()) y++;
+                if (BrainPad.Buttons.IsUpPressed()) y--;
+                if (BrainPad.Buttons.IsLeftPressed()) x--;
+                if (BrainPad.Buttons.IsRightPressed()) x++;
+                if (x &lt; 0) x = 0;
+                if (y &lt; 0) y = 0;
+                if (x &gt; 127) x = 127;
+                if (y &gt; 50) y = 50;
+                BrainPad.Display.DrawCircle(x, y, 1);
+                BrainPad.Display.ShowOnScreen();
+                BrainPad.Wait.Minimum();
+            }
+        }
+    }
+    public static class BrainPad {
+        public static Accelerometer Accelerometer { get; } = new Accelerometer();
+        public static Buttons Buttons { get; } = new Buttons();
+        public static Buzzer Buzzer { get; } = new Buzzer();
+        public static Display Display { get; } = new Display();
+        public static LightBulb LightBulb { get; } = new LightBulb();
+        public static LightSensor LightSensor { get; } = new LightSensor();
+        public static ServoMotors ServoMotors { get; } = new ServoMotors();
+        public static TemperatureSensor TemperatureSensor { get; } = new TemperatureSensor();
+        public static Wait Wait { get; } = new Wait();
+    }
+}
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -97,7 +126,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/advanced/mbed.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/go-beyond/projects/etch-a-sketch.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -123,8 +152,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>3D Cube </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="3D Cube ">
+    <meta name="generator" content="docfx 2.29.1.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="3d-cube">3D Cube</h1>
+
+<p>Simple 3D drawing</p>
+<p>Difficulty: Easy
+Objective: 3D Math</p>
+<h1 id="how-it-works">How It Works</h1>
+<h1 id="the-code">The Code</h1>
+<pre><code>using System;
+using GHIElectronics.TinyCLR.BrainPad;
+
+namespace Cube {
+    class Program {
+            class Vector3 {
+                public double X;
+                public double Y;
+                public double Z;
+                public Vector3(double X, double Y, double Z) {
+                    this.X = X;
+                    this.Y = Y;
+                    this.Z = Z;
+                }
+            }
+            class Vector2 {
+                public double X;
+                public double Y;
+                public Vector2(double X, double Y) {
+                    this.X = X;
+                    this.Y = Y;
+                }
+            }
+            static void Translate3Dto2D(Vector3[] Points3D, Vector2[] Points2D, Vector3 Rotate, Vector3 Position) {
+                int OFFSETX = 64;
+                int OFFSETY = 32;
+                int OFFSETZ = 50;
+
+                double sinax = Math.Sin(Rotate.X * Math.PI / 180);
+                double cosax = Math.Cos(Rotate.X * Math.PI / 180);
+                double sinay = Math.Sin(Rotate.Y * Math.PI / 180);
+                double cosay = Math.Cos(Rotate.Y * Math.PI / 180);
+                double sinaz = Math.Sin(Rotate.Z * Math.PI / 180);
+                double cosaz = Math.Cos(Rotate.Z * Math.PI / 180);
+
+                for (int i = 0; i &lt; 8; i++) {
+                    double x = Points3D[i].X;
+                    double y = Points3D[i].Y;
+                    double z = Points3D[i].Z;
+
+                    double yt = y * cosax - z * sinax; // rotate around the x axis
+                    double zt = y * sinax + z * cosax; // using the Y and Z for the rotation
+                    y = yt;
+                    z = zt;
+
+                    double xt = x * cosay - z * sinay; // rotate around the Y axis
+                    zt = x * sinay + z * cosay; // using X and Z
+                    x = xt;
+                    z = zt;
+
+                    xt = x * cosaz - y * sinaz; // finaly rotate around the Z axis
+                    yt = x * sinaz + y * cosaz; // using X and Y
+                    x = xt;
+                    y = yt;
+
+                    x = x + Position.X;         // add the object position offset
+                    y = y + Position.Y;         // for both x and y
+                    z = z + OFFSETZ - Position.Z;     // as well as Z
+
+                    Points2D[i].X = (x * 64 / z) + OFFSETX;
+                    Points2D[i].Y = (y * 64 / z) + OFFSETY;
+                    //BrainPad.ImageBuffer.DrawPoint((int)Points2D[i].X, (int)Points2D[i].Y);
+                }
+
+            }        
+        static void Main() {
+            // our object in 3D space
+            Vector3[] cube_points = new Vector3[8]
+            {
+            new Vector3(10,10,-10),
+            new Vector3(-10,10,-10),
+            new Vector3(-10,-10,-10),
+            new Vector3(10,-10,-10),
+            new Vector3(10,10,10),
+            new Vector3(-10,10,10),
+            new Vector3(-10,-10,10),
+            new Vector3(10,-10,10),
+            };
+            // what we get back in 2D space!
+            Vector2[] cube2 = new Vector2[8]
+                {
+            new Vector2(0,0),
+            new Vector2(0,0),
+            new Vector2(0,0),
+            new Vector2(0,0),
+            new Vector2(0,0),
+            new Vector2(0,0),
+            new Vector2(0,0),
+            new Vector2(0,0),
+            };
+
+            // the connections between the &quot;dots&quot;
+            int[] start = new int[12] { 0, 1, 2, 3, 4, 5, 6, 7, 0, 1, 2, 3 };
+            int[] end = new int[12] { 1, 2, 3, 0, 5, 6, 7, 4, 4, 5, 6, 7 };
+
+            Vector3 rot = new Vector3(0, 0, 0);
+            Vector3 pos = new Vector3(0, 0, 0);
+
+            while (true) {
+                double accelX = BrainPad.Accelerometer.ReadX();
+                double accelY = BrainPad.Accelerometer.ReadY();
+                BrainPad.Display.ClearScreen();
+                //rot.Z += 5;
+                //rot.X += 5;
+                rot.X = 360 - accelY * 50;
+                rot.Y = accelX * 50;
+                //pos.X += 1;
+                Translate3Dto2D(cube_points, cube2, rot, pos);
+
+                for (int i = 0; i &lt; start.Length; i++)      // draw the lines that make up the object
+                {
+                    int vertex = start[i];         // temp = start vertex for this line\
+                    int sx = (int)cube2[vertex].X;        // set line start x to vertex[i] x position
+                    int sy = (int)cube2[vertex].Y;        // set line start y to vertex[i] y position
+                    vertex = end[i];         // temp = end vertex for this line
+                    int ex = (int)cube2[vertex].X;   // set line end x to vertex[i+1] x position
+                    int ey = (int)cube2[vertex].Y;   // set line end y to vertex[i+1] y position
+                    BrainPad.Display.DrawLine(sx, sy, ex, ey);
+                }
+
+                BrainPad.Display.DrawSmallText(0, 55, &quot;X: &quot; + (accelX * 100).ToString(&quot;F0&quot;));
+                BrainPad.Display.DrawSmallText(80, 55, &quot;Y: &quot; + (accelY * 100).ToString(&quot;F0&quot;));
+                BrainPad.Display.ShowOnScreen();
+                BrainPad.Wait.Minimum();
+            }
+        }
+    }
+
+    public static class BrainPad {
+        public static Accelerometer Accelerometer { get; } = new Accelerometer();
+        public static Buttons Buttons { get; } = new Buttons();
+        public static Buzzer Buzzer { get; } = new Buzzer();
+        public static Display Display { get; } = new Display();
+        public static LightBulb LightBulb { get; } = new LightBulb();
+        public static LightSensor LightSensor { get; } = new LightSensor();
+        public static ServoMotors ServoMotors { get; } = new ServoMotors();
+        public static TemperatureSensor TemperatureSensor { get; } = new TemperatureSensor();
+        public static Wait Wait { get; } = new Wait();
+    }
+}
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/go-beyond/projects/3d-cube.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 GHI Electronics, LLC<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

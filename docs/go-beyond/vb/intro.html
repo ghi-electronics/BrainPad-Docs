@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Introduction to Visual Basic </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Introduction to Visual Basic ">
+    <meta name="generator" content="docfx 2.29.1.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="introduction-to-visual-basic">Introduction to Visual Basic</h1>
+
+<hr>
+<p>Visual Basic is a very popular Microsoft .NET programming language. While being as powerful as other programming languages, it is perhaps a little easier for beginners.  Visual Basic is more like plain English than other programming languages, and you don&#39;t have to type a semicolon (;) at the end of each line like you do with C, C++, and C#.  </p>
+<h2 id="before-you-start">Before you start</h2>
+<p>You should have already installed Visual Studio on your computer as well as the TinyCLR extension.  If not, please start with <a href="../system-setup.html">System Setup</a> for instructions on how to do so.</p>
+<p>Also, you need a BrainPad and a micro USB cable to continue.  Plug the BrainPad into the USB port of your computer.  The red power (PWR) light on the BrainPad should be on.</p>
+<h2 id="hello-world">Hello World</h2>
+<p>The first step is to write some very simple code to see if the BrainPad will respond when we try to program it.  This is usually called a &quot;hello world&quot; program.</p>
+<h3 id="start-a-new-project">Start a New Project</h3>
+<p>Open Visual Studio.  In the <code>File</code> menu select <code>New</code> and then <code>Project</code> to open the <code>New Project</code> dialog box.</p>
+<p><img src="../csharp/images/introduction/start-new-project.png" alt="Start New Visual Studio Project"></p>
+<p>In the left panel of the  <code>New Project</code> window (see below) you can click on the small triangles to the left of each heading to expand the heading and show the options beneath it.</p>
+<p>You should see the <code>Visual Basic</code> language listed under the <code>Installed</code> heading in the left panel of the <code>New Project</code> window.</p>
+<p>Under <code>Visual Basic</code> select the <code>TinyCLR</code> option.</p>
+<p>In the center panel of the <code>New Project</code> window select <code>TinyCLR Application</code>.</p>
+<p>At the bottom of the <code>New Project</code> window you can change the name and location of your application or just stick with the default.  When starting out you may wish to click on the <code>Browse</code> button and select the folder <code>Desktop</code> (in the left panel) to make your application easier to find.</p>
+<p>Click the <code>OK</code> button on the bottom right of the <code>New Project</code> window.  This will create a new blank project.</p>
+<p><img src="images/introduction/new-project-window.png" alt="Start New Project"></p>
+<p>Once created, you&#39;ll be presented with a <code>Module1.vb</code> tab.</p>
+<p><img src="images/introduction/first-project.png" alt="First Project"></p>
+<h3 id="add-the-code">Add the Code</h3>
+<p>In the <code>Module1.vb</code> tab we will enter short sample program (our &quot;Hello World&quot; code). Cut and paste the following code into the <code>Program.vb</code> window.</p>
+<pre><code>Imports GHIElectronics.TinyCLR.BrainPad
+
+Module Module1
+    Public Sub Main()
+        BrainPad.Display.DrawTextAndShowOnScreen(0, 0, &quot;Hello!&quot;)
+
+        While True
+            BrainPad.LightBulb.TurnWhite()
+            BrainPad.Wait.Seconds(1)
+            BrainPad.LightBulb.TurnOff()
+            BrainPad.Wait.Seconds(1)
+        End While
+    End Sub
+End Module
+
+Public Class BrainPad
+    Public Shared ReadOnly Property Accelerometer As Accelerometer = New Accelerometer()
+    Public Shared ReadOnly Property Buttons As Buttons = New Buttons()
+    Public Shared ReadOnly Property Buzzer As Buzzer = New Buzzer()
+    Public Shared ReadOnly Property Display As Display = New Display()
+    Public Shared ReadOnly Property LightBulb As LightBulb = New LightBulb()
+    Public Shared ReadOnly Property LightSensor As LightSensor = New LightSensor()
+    Public Shared ReadOnly Property ServoMotors As ServoMotors = New ServoMotors()
+    Public Shared ReadOnly Property TemperatureSensor As TemperatureSensor = New TemperatureSensor()
+    Public Shared ReadOnly Property Wait As Wait = New Wait()
+End Class
+</code></pre><p>Your <code>Module1.vb</code> window should look like this:
+<img src="images/introduction/pasted-code.png" alt="Pasted Code"></p>
+<h3 id="manage-the-nuget-packages">Manage the NuGet Packages</h3>
+<p>Visual Basic source files are listed in the <code>Solution Explorer</code> window.  If the <code>Solution Explorer</code> window is not visible, click on <code>View &gt; Solution Explorer</code> to open it.</p>
+<p><img src="images/introduction/solution-explorer.png" alt="Solution Explorer"></p>
+<p>The squiggly red lines under entries in the <code>Solution Explorer</code> window and <code>Module1.vb</code> window indicate errors. In this case the errors are caused by missing Nuget packages. Let&#39;s tell Visual Studio to include the Nuget packages and fix that now.</p>
+<p>If you right click on the project name in the Solution Explorer window a drop down menu will appear.  Select <code>Manage NuGet Packages...</code> from the menu.</p>
+<p><img src="images/introduction/manage-nuget-packages-menu.png" alt="View Show Solution Explorer"> </p>
+<p>Now you should see the installed TinyCLR NuGet library (GHIElectronics.TinyCLR.Core). We need to install a couple more libraries for our program to run.</p>
+<p><img src="images/introduction/click-on-browse.png" alt="Installed NuGet"></p>
+<p>Click on <code>Browse</code>.  You should see a list of available Nuget packages in your local feed.</p>
+<p><img src="images/introduction/browse-nuget-packages.png" alt="Browse Nuget Packages"></p>
+<p>Click on the <code>GHIElectronics.TinyCLR.BrainPad</code> package and then click on the <code>Install</code> button.</p>
+<p><img src="images/introduction/click-install-button.png" alt="Click Install Button"></p>
+<p>Installing the BrainPad Nuget package will automatically install the <code>GHIElectronics.TinyCLR.Devices</code> and <code>GHIElectronics.TinyCLR.Pins</code> packages as well. Click on <code>OK</code>.</p>
+<p><img src="images/introduction/install-nugets.png" alt="Install Nugets"></p>
+<p>Now accept the license agreement to install the packages.</p>
+<p><img src="images/introduction/accept-license.png" alt="Accept the License Agreement"></p>
+<p>Close the <code>NuGet...</code> tab to get back to your <code>Module1.vb</code> window.  The red squiggles should now be gone.</p>
+<p><img src="images/introduction/no-red-squiggles.png" alt="No Red Squiggles"></p>
+<h3 id="deploy-the-program">Deploy the Program</h3>
+<p>Make sure your device is plugged into the computer&#39;s USB port. Now hit the start button as shown in the above image (or hit the <code>F5</code> key). If you&#39;ve done everything correctly the program will compile and deploy to your device. The message &quot;Hello World!&quot; should appear on the BrainPad display, and the light bulb should start blinking.</p>
+<p>Congratulations! You&#39;re on your way to learning advanced programming on the BrainPad!</p>
+<p>What happened exactly? Our application began by running the <code>BrainPad.Display.DrawTextAndShowOnScreen(0, 0, &quot;Hello!&quot;)</code> line to instruct the display to show the text &quot;Hello!&quot;</p>
+<p>The line <code>BrainPad.Display.DrawTextAndShowOnScreen(0, 0, &quot;Hello!&quot;)</code> is known as a function call. The name of the function is &quot;DrawTextAndShowOnScreen().&quot; This function is part of the &quot;Display&quot; object, which is part of the &quot;BrainPad&quot; object.</p>
+<p>The items listed in parenthesis (0, 0, &quot;Hello!&quot;) are called the arguments of the function. In this case the first zero tells the BrainPad to display the text at the left side of the BrainPad display. If this number is increased the text will appear further to the right of the screen. The second zero tells the BrainPad to print the text at the top of the display. If this number is increased the text will be printed lower on the screen. The third arugument, &quot;Hello!,&quot; tells the BrainPad what text to display on the screen.</p>
+<p>After <code>BrainPadSetup()</code> is finished, the <code>While True</code> loop starts running. Code placed inside this while loop is executed in an infinite loop. This is why the code that turns the LED on and then off never stops.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/go-beyond/vb/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 GHI Electronics, LLC<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

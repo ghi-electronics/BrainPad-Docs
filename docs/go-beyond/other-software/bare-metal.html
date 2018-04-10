@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Robotics </title>
+    <title>Bare Metal </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Robotics ">
+    <meta name="title" content="Bare Metal ">
     <meta name="generator" content="docfx 2.29.1.0">
     
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
-    <meta property="docfx:rel" content="../">
+    <meta property="docfx:rel" content="../../">
     <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -75,63 +75,16 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="robotics">Robotics</h1>
+<h1 id="bare-metal">Bare Metal</h1>
 
 <hr>
-<p><img src="../images/brainbot.jpg" alt="BrainBot"> </p>
-<p>As a demo, we built this robot with a chassis we ordered from Amazon <a href="http://a.co/dwzywoI">http://a.co/dwzywoI</a> The continuous servo motors simply plug in. Pay attention to wires, where the orange wire should be connected to the pin labeled with ~. We then used a breadboard with an ultrasonic distance sensor. This will be used to detect objects, to back up the robot.</p>
-<pre><code class="lang-csharp">BrainPad.ServoMotors.ServoOne.ConfigureAsContinuous(false);
-BrainPad.ServoMotors.ServoTwo.ConfigureAsContinuous(true);
-
-BrainPad.Display.DrawSmallTextAndShowOnScreen(0, 20, &quot;Press Left&quot;);
-while (BrainPad.Buttons.IsLeftPressed() == false)
-{
-    // Beep 
-    BrainPad.Buzzer.Beep();
-    BrainPad.Wait.Seconds(0.3);
-}
-BrainPad.Display.ClearScreen();
-BrainPad.Display.DrawSmallTextAndShowOnScreen(40, 20, &quot;Go!&quot;);
-
-//BrainPad.ServoMotorsIsServoTwoInverted(true);
-
-bool dirrection = true;
-BrainPad.ServoMotors.ServoOne.Set(50);
-BrainPad.Display.DrawSmallTextAndShowOnScreen(40, 20, &quot;Reflect&quot;);
-
-// using reflector
-bool use_builtin = true;
-if (use_builtin)
-{
-    GpioPulseReaderWriter echolen = new GpioPulseReaderWriter(
-        GpioPulseReaderWriter.Mode.EchoDuration,
-        true, 10, BrainPad.Expansion.GpioPin.Mosi,
-        true, BrainPad.Expansion.GpioPin.Miso);
-
-    Move(100, 60);
-
-
-    //dance!
-    while (true)
-    {
-
-
-        double l = echolen.Read();
-        BrainPad.Display.DrawSmallTextAndShowOnScreen(0, 0, l.ToString());
-        if (l &lt; 600)
-        {
-            Move(-100, -100);
-            BrainPad.Wait.Seconds(1);
-            Move(-100, 100);
-            BrainPad.Wait.Seconds(0.5);
-            Move(100, 60);
-        }
-
-        BrainPad.Wait.Seconds(0.3);
-    }
-}
-</code></pre><p>This other demo video talk about stepper motors and uses the BrainPad.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SdUkC9XtTSo" frameborder="0" allowfullscreen=""></iframe>
+<p>You can also write programs from scratch using one of the more traditional C/C++ development tools. The easiest option would be to start with the Mbed online compiler and then export your project. You can also use the free open source GNU GCC tools to build your programs, which is what we used to build the TinyCLR OS firmware. Another option is to use a commercial compiler like the Keil compiler and development environment. Keil tools are free for programs up to 32KB (MDK-Lite).</p>
+<ul>
+<li><a href="http://www.keil.com/">Keil Website</a></li>
+<li><a href="http://www2.keil.com/mdk5">Keil ARM MDK tools</a></li>
+<li><a href="https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads">GNU ARM Tools (GCC)</a></li>
+<li><a href="../../resources/dfu-files.html">DFU Files</a></li>
+</ul>
 </article>
           </div>
           
@@ -140,7 +93,7 @@ if (use_builtin)
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/beyond/robotics.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/go-beyond/other-software/bare-metal.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -166,8 +119,8 @@ if (use_builtin)
       </footer>
     </div>
     
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Pong </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Pong ">
+    <meta name="generator" content="docfx 2.29.1.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="pong">Pong</h1>
+
+<p>The classic pong game, the godfather of all games!</p>
+<p>Difficulty: Easy
+Objective: Gaming, Retro</p>
+<h1 id="how-it-works">How It Works</h1>
+<p>Suprisingly, this very simple game requires about as much code is the <a href="space-invasion.html">Space Invasion</a>. It all starts with the ball that needs to bounce off walls and the player sticks. When teh ball bounce off the left or right walls, a score is increased for one of the players. Once the score reaches 5, you become a winner or a loser as the game is plaied vs. the computer.</p>
+<h1 id="an-exercise">An Exercise</h1>
+<p>Modify the code to so tilt (the accelerometer) is used instread of buttons. Hint: Use the <a href="tilt-etch-a-sketch.html">Tilt Ech A Sketch</a> for ideas.</p>
+<h1 id="the-code">The Code</h1>
+<pre><code>using System;
+using System.Collections;
+using System.Text;
+using System.Threading;
+using GHIElectronics.TinyCLR.BrainPad;
+
+namespace Pong {
+    class Program {
+        static void Main() {
+            double BallX = 10, BallY = 10, BallDX = 2.3, BallDY = 2.8;
+            int ScoreL = 0, ScoreR = 0;
+            int PlayerPos=30;
+            int CompPros = 30;
+            BrainPad.Display.DrawRectangle(0, 0, 128, 64);
+            while (true) {
+                // The Ball
+                BrainPad.Display.ClearPartOfScreen((int)BallX, (int)BallY, 4, 4);
+                BallX += BallDX;
+                BallY += BallDY;
+                if (BallX &lt; 10 ) {
+                    BallDX *= -1;
+                    if (BallY &gt;= CompPros - 1 &amp;&amp; BallY &lt;= CompPros + 12) {
+                        // hit back
+                        BrainPad.Buzzer.Beep();
+                    }
+                    else {
+                        //win
+                        for (int i = 0; i &lt; 3; i++) {
+                            for (int f = 1000; f &lt; 6000; f += 500) {
+                                BrainPad.Buzzer.StartBuzzing(f);
+                                BrainPad.Wait.Minimum();
+                            }
+                        }
+                        ScoreR++;
+                        BrainPad.Buzzer.StopBuzzing();
+                        BrainPad.Wait.Seconds(0.5);
+                    }
+                }
+                if (BallX &gt; 115) {
+                    BallDX *= -1;
+                    if (BallY &gt;= PlayerPos-1 &amp;&amp; BallY &lt;= PlayerPos + 12) {
+                        // hit back
+                        BrainPad.Buzzer.Beep();
+                    }
+                    else {
+                        // Loss
+                        for (int f = 2000; f &gt; 200; f -= 200) {
+                            BrainPad.Buzzer.StartBuzzing(f);
+                            BrainPad.Wait.Minimum();
+                        }
+                        ScoreL++;
+                        BrainPad.Wait.Seconds(0.5);
+                        BrainPad.Buzzer.StopBuzzing();
+                    }
+                }
+                if (BallY &lt; 5 || BallY &gt; 55) {
+                    BallDY *= -1;
+                    BrainPad.Buzzer.Beep();
+                }
+                BrainPad.Display.DrawFilledRectangle((int)BallX, (int)BallY, 4, 4);
+                // The Field
+                for (var y = 0; y &lt; 64; y += 10) {
+                    // net
+                    BrainPad.Display.DrawLine(64, y, 64, y + 5);
+                }
+                // Player
+                BrainPad.Display.ClearPartOfScreen(120, PlayerPos, 2, 10);
+                if (BrainPad.Buttons.IsUpPressed()) PlayerPos -= 4;
+                if (BrainPad.Buttons.IsDownPressed()) PlayerPos += 4;
+                if (PlayerPos &lt; 5) PlayerPos = 5;
+                if (PlayerPos &gt; 50) PlayerPos = 50;
+                BrainPad.Display.DrawFilledRectangle(120, PlayerPos, 2, 10);
+                // Computer
+                BrainPad.Display.ClearPartOfScreen(10, CompPros, 2, 10);
+                if (BallY &gt; CompPros+10) CompPros += 2;
+                if (BallY &lt; CompPros) CompPros -= 2;
+                if (CompPros &lt; 5) CompPros = 5;
+                if (CompPros &gt; 50) CompPros = 50;
+                BrainPad.Display.DrawFilledRectangle(10, CompPros, 2, 10);
+
+                // Score
+                BrainPad.Display.DrawSmallNumber(50, 5, ScoreL);
+                BrainPad.Display.DrawSmallNumber(74, 5, ScoreR);
+
+                if (ScoreL &gt;= 5) {
+                    BrainPad.Display.DrawScaledText(0, 40, &quot;You Lose!&quot;, 3, 1);
+                    BrainPad.Display.ShowOnScreen();
+                    BrainPad.Wait.Seconds(-1);
+                }
+                if (ScoreR &gt;= 5) {
+                    BrainPad.Display.DrawScaledText(0, 40, &quot;You Win!&quot;, 3, 1);
+                    BrainPad.Display.ShowOnScreen();
+                    BrainPad.Wait.Seconds(-1);
+                }
+                BrainPad.Display.ShowOnScreen();
+                BrainPad.Wait.Minimum();
+            }
+
+        }
+    }
+    public static class BrainPad {
+        public static Accelerometer Accelerometer { get; } = new Accelerometer();
+        public static Buttons Buttons { get; } = new Buttons();
+        public static Buzzer Buzzer { get; } = new Buzzer();
+        public static Display Display { get; } = new Display();
+        public static LightBulb LightBulb { get; } = new LightBulb();
+        public static LightSensor LightSensor { get; } = new LightSensor();
+        public static ServoMotors ServoMotors { get; } = new ServoMotors();
+        public static TemperatureSensor TemperatureSensor { get; } = new TemperatureSensor();
+        public static Wait Wait { get; } = new Wait();
+    }
+}
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/go-beyond/projects/pong.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 GHI Electronics, LLC<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
