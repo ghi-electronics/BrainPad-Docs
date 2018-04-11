@@ -1,5 +1,5 @@
 # Flappy Bird
-
+---
 Difficulty: Easy
 Objective: Game
 

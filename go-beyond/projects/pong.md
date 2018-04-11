@@ -1,18 +1,21 @@
 # Pong
+---
+The classic Pong game -- the grandfather of all games! Now over 45 years old!
 
-The classic pong game, the godfather of all games!
+**Difficulty: Easy**
 
-Difficulty: Easy
-Objective: Gaming, Retro
+**Objective: Retro gaming**
 
-# How It Works
-Suprisingly, this very simple game requires about as much code is the [Space Invasion](space-invasion.md). It all starts with the ball that needs to bounce off walls and the player sticks. When teh ball bounce off the left or right walls, a score is increased for one of the players. Once the score reaches 5, you become a winner or a loser as the game is plaied vs. the computer.
+## How It Works
+Suprisingly, this very simple game requires about as much code as the [Space Invasion](space-invasion.md) game.
 
-# An Exercise
+In this game a single player plays against the BrainPad.  The player uses the up and down buttons to move his paddle (on the right side of the screen) and tries to hit a moving ball across the net (the dashed line) to the other side of the court. You score points when the BrainPad misses the ball. The BrainPad scores when you miss the ball. The first player (you or the BrainPad) to get five points wins. 
 
-Modify the code to so tilt (the accelerometer) is used instread of buttons. Hint: Use the [Tilt Ech A Sketch](tilt-etch-a-sketch.md) for ideas.
+## An Exercise
 
-# The Code
+Modify the code to so tilt (the accelerometer) is used instead of buttons. Hint: Use the [Tilt Etch A Sketch](tilt-etch-a-sketch.md) for help.
+
+## The Code
 ```
 using System;
 using System.Collections;
@@ -27,14 +30,18 @@ namespace Pong {
             int ScoreL = 0, ScoreR = 0;
             int PlayerPos=30;
             int CompPros = 30;
+            
             BrainPad.Display.DrawRectangle(0, 0, 128, 64);
+            
             while (true) {
                 // The Ball
                 BrainPad.Display.ClearPartOfScreen((int)BallX, (int)BallY, 4, 4);
                 BallX += BallDX;
                 BallY += BallDY;
+                
                 if (BallX < 10 ) {
                     BallDX *= -1;
+                    
                     if (BallY >= CompPros - 1 && BallY <= CompPros + 12) {
                         // hit back
                         BrainPad.Buzzer.Beep();
@@ -52,8 +59,10 @@ namespace Pong {
                         BrainPad.Wait.Seconds(0.5);
                     }
                 }
+                
                 if (BallX > 115) {
                     BallDX *= -1;
+                    
                     if (BallY >= PlayerPos-1 && BallY <= PlayerPos + 12) {
                         // hit back
                         BrainPad.Buzzer.Beep();
@@ -69,16 +78,19 @@ namespace Pong {
                         BrainPad.Buzzer.StopBuzzing();
                     }
                 }
+                
                 if (BallY < 5 || BallY > 55) {
                     BallDY *= -1;
                     BrainPad.Buzzer.Beep();
                 }
+                
                 BrainPad.Display.DrawFilledRectangle((int)BallX, (int)BallY, 4, 4);
                 // The Field
                 for (var y = 0; y < 64; y += 10) {
                     // net
                     BrainPad.Display.DrawLine(64, y, 64, y + 5);
                 }
+                
                 // Player
                 BrainPad.Display.ClearPartOfScreen(120, PlayerPos, 2, 10);
                 if (BrainPad.Buttons.IsUpPressed()) PlayerPos -= 4;
@@ -86,6 +98,7 @@ namespace Pong {
                 if (PlayerPos < 5) PlayerPos = 5;
                 if (PlayerPos > 50) PlayerPos = 50;
                 BrainPad.Display.DrawFilledRectangle(120, PlayerPos, 2, 10);
+                
                 // Computer
                 BrainPad.Display.ClearPartOfScreen(10, CompPros, 2, 10);
                 if (BallY > CompPros+10) CompPros += 2;
@@ -103,17 +116,19 @@ namespace Pong {
                     BrainPad.Display.ShowOnScreen();
                     BrainPad.Wait.Seconds(-1);
                 }
+                
                 if (ScoreR >= 5) {
                     BrainPad.Display.DrawScaledText(0, 40, "You Win!", 3, 1);
                     BrainPad.Display.ShowOnScreen();
                     BrainPad.Wait.Seconds(-1);
                 }
+                
                 BrainPad.Display.ShowOnScreen();
                 BrainPad.Wait.Minimum();
             }
-
         }
     }
+
     public static class BrainPad {
         public static Accelerometer Accelerometer { get; } = new Accelerometer();
         public static Buttons Buttons { get; } = new Buttons();

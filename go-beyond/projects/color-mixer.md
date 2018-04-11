@@ -1,4 +1,5 @@
 # Color Mixer
+---
 Did you know that you can get any color by simply mixing differnt levels of Red, Green and Blue.
 
 Difficulty: Easy

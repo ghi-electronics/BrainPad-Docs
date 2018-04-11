@@ -1,13 +1,15 @@
 # Tilt Etch A Sketch
-This classic game now works on the BrainPad. Simply tilt the screen to show the sketch and press down to erase it.
+---
+A BrainPad version of the classic mechanical drawing toy. Simply tilt the screen to show the sketch and press the down button to erase it.
 
-Difficulty: Easy
-Objective: Gaming, Drawing
+**Difficulty: Easy**
 
-# How It Works
-Very simply, we draw a circle on the screen. The circle moves when we tilt the BrainPad by checking the accelerometer. Acceleration is basically the earth gravity.
+**Objective: Gaming, Drawing**
 
-# The Code
+## How It Works
+This program is simple. We draw a circle on the screen and move it when the BrainPad is tilted. We measure the force of the Earth's gravity on the BrainPad's accelerometer to measure how much the BrainPad is tilted.
+
+## The Code
 
 ```
 using GHIElectronics.TinyCLR.BrainPad;
@@ -19,15 +21,18 @@ namespace Etch_A_Sketch {
             BrainPad.Display.DrawLine(0, 55, 127, 55);
             int x = 64, y = 32;
             const double ACC_TOLERANCE = .20;
+            
             while (true) {
                 if (BrainPad.Accelerometer.ReadY() > ACC_TOLERANCE) y--;
                 if (BrainPad.Accelerometer.ReadY() < ACC_TOLERANCE * -1) y++;
                 if (BrainPad.Accelerometer.ReadX() > ACC_TOLERANCE) x++;
                 if (BrainPad.Accelerometer.ReadX() < ACC_TOLERANCE * -1) x--;
+                
                 if (x < 0) x = 0;
                 if (y < 0) y = 0;
                 if (x > 127) x = 127;
                 if (y > 50) y = 50;
+                
                 BrainPad.Display.DrawCircle(x, y, 1);
 
                 if (BrainPad.Buttons.IsDownPressed())
@@ -38,6 +43,7 @@ namespace Etch_A_Sketch {
             }
         }
     }
+
     public static class BrainPad {
         public static Accelerometer Accelerometer { get; } = new Accelerometer();
         public static Buttons Buttons { get; } = new Buttons();

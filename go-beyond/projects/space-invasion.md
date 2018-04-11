@@ -2,9 +2,9 @@
 ---
 ![Space Invasion](images/space-invasion.jpg)
 
-Difficulty: Medium
+**Difficulty: Medium**
 
-Objective: Retro gaming
+**Objective: Retro gaming**
 
 ---
 
