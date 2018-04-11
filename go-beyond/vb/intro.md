@@ -13,7 +13,7 @@ The first step is to write some very simple code to see if the BrainPad will res
 ### Start a New Project
 Open Visual Studio.  In the `File` menu select `New` and then `Project` to open the `New Project` dialog box.
 
-![Start New Visual Studio Project](../csharp/images/introduction/start-new-project.png)
+![Start New Visual Studio Project](images/introduction/start-new-project.png)
 
 In the left panel of the  `New Project` window (see below) you can click on the small triangles to the left of each heading to expand the heading and show the options beneath it.
 
