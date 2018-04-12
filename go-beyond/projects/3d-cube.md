@@ -1,30 +1,16 @@
 # 3D Cube
 ---
-A simple 3D wire-frame drawing of a cube that rotates when you tilt the BrainPad.
+A simple wire-frame drawing of a three-dimensional cube.
 
 **Difficulty: Easy**
 
 **Objective: 3D Math**
 
 ## How It Works
-With the advent of fast computers and powerful video game systems, 3D graphics have become commonplace. It used to be much more difficult for older, slower computers to display three dimensional (3D) graphics, and early attempts were rendered using a wire-frame representation -- just like this sample program does.
 
-To display this cube on the BrainPad, first a 3D model of the cube must be created. This model consists of X, Y, and Z coordinates for the location of each of the eight corners of the cube.
-
-The BrainPad display, as well as computer monitors and videogame displays, is only two dimensional. The three dimensional cube must be translated into two dimensions before it can be displayed on the screen. This is done mathematically using geometry.
-
-An easy way to understand this is to pretend you are looking at the 3D cube through a window with one eye closed. The window would represent the BrainPad display or a computer screen. Now draw an imaginary line from each corner of the cube through the window to your open eye. Each of the corners of the 3D cube will have a corresponding point on the window where the imaginary line from that corner goes through (or intersects) the window.
-
-Each corner of the 3D cube is represented by three coordinates (X,Y, and Z). Each point on the 2D window is represented by only two coordinates (X and Y). Thus, we now have a 2D representation (the points on the window) of a 3D object (the cube outside of the window).
-
-Now we can draw lines representing the edges of the cube by connecting the points on the window which represent the corners of the cube. We now have a wire-frame 2D image of the 3D cube. Every time the cube is rotated we must make a new 2D translation.
-
-Todays computers are so fast that they can render complex, almost life-like three dimensional models quickly enough to make the realistic video games we have today. The computing power needed to do this is enormous -- some video game systems are capable of performing hundreds of billions of calculations per second! Yet the math used is all based on the same math we used to render this cube.
+This program renders a three-dimensional cube on the BrainPad screen. As you tilt the BrainPad the cube is rotated simulating what it would look like if you were rotating the cube itself. The output of the X and Y axes of the accelerometer is also shown.
 
 ## The Code
-
-Cut and paste this code into Visual Studio. Once it is pasted in Visual Studio the code will be easier to read because of the color coding and longer line lengths.
-
 ```
 using System;
 using GHIElectronics.TinyCLR.BrainPad;
@@ -168,3 +154,19 @@ namespace Cube {
     }
 }
 ```
+
+## More Information About 3D Graphics
+
+With the advent of fast computers and powerful video game systems, three dimensional (3D) graphics have become commonplace. It used to be much more difficult for older, slower computers to display 3D graphics.  Early attempts were rendered using a wire-frame representation -- just like this sample program does.
+
+To display this cube on the BrainPad, first a 3D model of the cube must be created. This model consists of X, Y, and Z coordinates for the location of each of the eight corners of the cube.
+
+The BrainPad display, as well as computer monitors and videogame displays, is only two dimensional. The three-dimensional cube must be translated into two dimensions before it can be displayed on the screen. This is done mathematically using geometry.
+
+An easy way to understand this is to pretend you are looking at the 3D cube through a window with one eye closed. The window would represent the BrainPad display or a computer screen. Now draw an imaginary line from each corner of the cube through the window to your open eye. Each of the corners of the 3D cube will have a corresponding point on the window where the imaginary line from that corner goes through (or intersects) the window.
+
+Each corner of the 3D cube is represented by three coordinates (X,Y, and Z). Each point on the 2D window is represented by only two coordinates (X and Y). Thus, we now have a 2D representation (the points on the window) of a 3D object (the cube outside of the window).
+
+Now we can draw the lines that represent the edges of the cube between the points on the window. We now have a wire-frame 2D image of the 3D cube. Every time the cube is rotated we must make a new 3D to 2D translation.
+
+Todays computers are so fast that they can render complex, almost life-like three-dimensional models quickly enough to make the realistic video games we have today. The computing power needed to do this is enormous -- some video game systems are capable of performing hundreds of billions of calculations per second! Yet the math used is all based on the same math we used to render this cube.

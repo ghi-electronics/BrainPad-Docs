@@ -24,7 +24,7 @@ This virtual drive comes up with a text file that has some info, like the boot l
 When the virtual drive is up (see Bootloader section), download [this demo]() file and drag it into the virtual drive. 
 
 ## TinyCLR OS
-We recommend starting with MakeCode to verify the hardware is functional first. Then, load the TinyCLR OS as detailed in the [System Setup](../go-beyond/system-setup.md). Once loaded, your PC will detect a TinyCLR OS device.
+We recommend starting with MakeCode to verify the hardware is functional first. Then, load TinyCLR OS as detailed in the [System Setup](../go-beyond/system-setup.md). Once loaded, your PC will detect a TinyCLR OS device.
 
 (image device manager)
 

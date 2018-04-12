@@ -1,11 +1,11 @@
-# Older BrainPad
+# Older BrainPads
 ---
-Some early adopters have received original concept and prototype BrainPads. We appreciate your support and want to thank you for helping make the BrainPad the best path for STEM education.
+Some early adopters have original concept and prototype BrainPads. We appreciate your support and want to thank you for helping make the BrainPad the best path for STEM education.
 
 We highly recommend switching to the production BrainPad. If you are still using an older BrainPad this page will explain the differences.
 
-# Pre-production BrainPad
-(image)
+## Pre-production BrainPad
+![Pre-production BrainPad](images/brainpad.jpg)
 
 This version is identical to the production BrainPad except for a different reset circuit. The pre-production BrainPad as a smaller reset button.
 
@@ -13,8 +13,8 @@ Pressing and holding the reset button on the production BrainPad will put it in 
 
 In other words, whenever you are instructed to press and hold reset for three seconds, you will follow the instructions above instead. In all other respects this BrainPad is the same as the production BrainPad.
 
-# Concept BrainPad
-(image)
+## Concept BrainPad
+![Concept BrainPad](images/concept-brainpad.jpg)
 
 This BrainPad was much larger. You can identify it by the Traffic Light in the top right Corner. This version uses the G30 chipset.
 
@@ -22,7 +22,7 @@ Unfortunately, this version only works with TinyCLR OS. It does not work with Ma
 
 To use with TinyCLR OS, follow the instructions on the GHI Electronics [G30 support page](http://docs.ghielectronics.com/hardware/scm/g30.html). From there you can use all C# and VB examples as is or with minor changes.
 
-# Other Concepts and Prototypes
+## Other Concepts and Prototypes
 There were some other concept and prototype BrainPads as well. Those BrainPads are very rare and will no longer be supported.
 
 ---

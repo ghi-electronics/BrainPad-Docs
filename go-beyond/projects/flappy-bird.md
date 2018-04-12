@@ -1,11 +1,12 @@
 # Flappy Bird
 ---
-Difficulty: Easy
-Objective: Game
+**Difficulty: Easy**
 
-# How It Works
+**Objective: Game**
 
-# The Code
+## How It Works
+
+## The Code
 
 ```
 ```
