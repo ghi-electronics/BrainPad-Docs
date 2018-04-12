@@ -1,6 +1,6 @@
 # Get started with the BrainPad!
 ---
-![BrainPad](images/brainpad.jpg)
+![BrainPad](images/new-brainpad.jpg)
 
 ## STEM is a path, not a toy.
 
@@ -21,6 +21,9 @@
 | **Requirements** | Any operating system with any modern web browser | Windows (version 7 or newer) computers only |
 | **Debugging** | None | Full featured |
 | **Ages** | 6+ | 12+ |
+
+---
+**Additional BrainPad Resouces can be found** [**here**](resources/intro.md).
 
 ---
 You are on the documentation website for the BrainPad. The main website is found at [www.brainpad.com](http://www.brainpad.com/)

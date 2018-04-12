@@ -1,5 +1,16 @@
 # DFU Files
 ---
+
+**Mobile Friendly Menu**
+* [Resources](intro.md)
+* [Downloads](downloads.md)
+* [Bootloader](bootloader.md)
+* [Older BrainPads](older-brainpad.md)
+* [Troubleshooting](troubleshooting-guide.md)
+* [**DFU Files**](dfu-files.md)
+
+---
+
 The microcontroller (processor) on the BrainPad can be updated with a DFU file over a USB cable. This is an advanced feature and should not be needed by most BrainPad users.
 
 ST Microelectronics, the microcontroller manufacturer, provides the tools needed for the following steps. Download and install the "DfuSe USB device firmware upgrade STMicroelectronics extension" [software package](http://www.st.com/en/development-tools/stsw-stm32080.html)

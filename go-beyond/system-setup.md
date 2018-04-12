@@ -1,5 +1,17 @@
 # System Setup
 ---
+
+**Mobile Friendly Menu**
+
+* [Introduction](intro.md)
+* [**System Setup**](system-setup.md)
+* [Visual Basic](vb/intro.md)
+* [C#](csharp/intro.md)
+* [Projects](projects/intro.md)
+* [Other Software](other-software/intro.md)
+
+---
+
 TinyCLR OS is the tiny operating system used by the BrainPad to run your C# and Visual Basic programs. Microsoft Visual Studio is used to write these programs on your computer and is also used by professional programmers the world over. Both TinyCLR and Visual Studio are available for free, but must be set up before they can be used to have fun with the BrainPad.
 
 > [!Tip]

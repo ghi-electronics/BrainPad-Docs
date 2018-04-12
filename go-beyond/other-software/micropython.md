@@ -1,5 +1,21 @@
 # MicroPython
 ---
+
+**Mobile Friendly Menu**
+
+* [Introduction](../intro.md)
+* [System Setup](../system-setup.md)
+* [Visual Basic](../vb/intro.md)
+* [C#](../csharp/intro.md)
+* [Projects](../projects/intro.md)
+* [Other Software](intro.md)
+    * [Arduino](arduino.md)
+    * [**MicroPython**](micropython.md)
+    * [Mbed](mbed.md)
+    * [Bare Metal](bare-metal.md)
+
+---
+
 ## Using MicroPython with the BrainPad
 
 MicroPython allows tiny systems to run Python 3, with a small subset of the standard library.

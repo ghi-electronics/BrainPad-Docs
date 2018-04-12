@@ -16,11 +16,11 @@
 ## [Live TicTacToe](projects/live-tictactoe.md)
 ## [3D Cube](projects/3d-cube.md)
 ## [Color Mixer](projects/color-mixer.md)
-## [Electronic Dice](projects/electronics-dice.md)
+## [Electronic Dice](projects/electronic-dice.md)
 ## [Flappy Bird](projects/flappy-bird.md)
 
 # [Other Software](other-software/intro.md)
 ## [Arduino](other-software/arduino.md)
 ## [MicroPython](other-software/micropython.md)
-## [MBED](other-software/mbed.md)
+## [Mbed](other-software/mbed.md)
 ## [Bare Metal](other-software/bare-metal.md)

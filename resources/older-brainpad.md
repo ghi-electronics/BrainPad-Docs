@@ -1,5 +1,16 @@
 # Older BrainPads
 ---
+
+**Mobile Friendly Menu**
+* [Resources](intro.md)
+* [Downloads](downloads.md)
+* [Bootloader](bootloader.md)
+* [**Older BrainPads**](older-brainpad.md)
+* [Troubleshooting](troubleshooting-guide.md)
+* [DFU Files](dfu-files.md)
+
+---
+
 Some early adopters have original concept and prototype BrainPads. We appreciate your support and want to thank you for helping make the BrainPad the best path for STEM education.
 
 We highly recommend switching to the production BrainPad. If you are still using an older BrainPad this page will explain the differences.

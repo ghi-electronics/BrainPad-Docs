@@ -1,5 +1,21 @@
 # Arduino
 ---
+
+**Mobile Friendly Menu**
+
+* [Introduction](../intro.md)
+* [System Setup](../system-setup.md)
+* [Visual Basic](../vb/intro.md)
+* [C#](../csharp/intro.md)
+* [Projects](../projects/intro.md)
+* [Other Software](intro.md)
+    * [**Arduino**](arduino.md)
+    * [MicroPython](micropython.md)
+    * [Mbed](mbed.md)
+    * [Bare Metal](bare-metal.md)
+
+---
+
 ## Using Arduino with the BrainPad
 
 Arduino is simplified multi-platform IDE/C++ combo, with a community STM32 options. 

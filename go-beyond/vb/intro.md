@@ -1,5 +1,17 @@
 # Introduction to Visual Basic
 ---
+
+**Mobile Friendly Menu**
+
+* [Introduction](../intro.md)
+* [System Setup](../system-setup.md)
+* [**Visual Basic**](intro.md)
+* [C#](../csharp/intro.md)
+* [Projects](../projects/intro.md)
+* [Other Software](../other-software/intro.md)
+
+---
+
 Visual Basic is a very popular Microsoft .NET programming language. While being as powerful as other programming languages, it is perhaps a little easier for beginners.  Visual Basic is more like plain English than other programming languages, and you don't have to type a semicolon (;) at the end of each line like you do with C, C++, and C#.  
 
 ## Before you start

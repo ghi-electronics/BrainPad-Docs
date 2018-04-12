@@ -1,5 +1,17 @@
 # Introduction to C# (C sharp)
 ---
+
+**Mobile Friendly Menu**
+
+* [Introduction](../intro.md)
+* [System Setup](../system-setup.md)
+* [Visual Basic](../vb/intro.md)
+* [**C#**](intro.md)
+* [Projects](../projects/intro.md)
+* [Other Software](../other-software/intro.md)
+
+---
+
 It is not a secret that C and C++ are the most popular programming languages among professionals. This is particularly true for programmers that work with small digital systems.
 
 C# is the modern cousin of the C and C++ family. Its syntax is very close to JAVA, another very popular programming language.

@@ -15,12 +15,12 @@ When you get your program working on the simulator, you can just drag and drop i
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nijKM_TLoxM?rel=0" frameborder="0" allowfullscreen></iframe>
 
 > [!Tip]
-> The BrainPad has a simlator in MakeCode. This means you can start making even if you do not have a BrainPad yet.
+> The BrainPad has a simulator in [**MakeCode**](https://makecode.brainpad.com). This means you can start making even if you do not have a BrainPad yet.
 
 ## A Quick Test!
 Run this quick test to verify your BrainPad is ready:
 
-1. Plug your BrainPad into a computer running Windows using a micro USB cable. The red power PWR LED on the BrainPad should light up.
+1. Plug your BrainPad into a computer running Windows using a micro USB cable. The red power (PWR) LED on the BrainPad should light up.
 2. Press and hold the reset button for about 3 seconds. The BrainPad LightBulb should turn green and the computer should find a new drive and open a window for it.
 3. Download [this file]() and save it in the drive that came up in the previous step.
 4. The green LED will flash a little then the board will reset and you will see someting like the image below.
