@@ -7,7 +7,7 @@ C# is the modern cousin of the C and C++ family. Its syntax is very close to JAV
 ## Before you start
 You should have already installed Visual Studio on your computer as well as the TinyCLR extension. If not, please start with [System Setup](../system-setup.md) for instructions on how to do so.
 
-Also, you need a BrainPad and a micro USB cable to continue. Plug the BrainPad into the USB port of your computer. The red power light on the BrainPad should be on.
+Also, you need a BrainPad and a micro USB cable to continue. Plug the BrainPad into the USB port of your computer. The red power (PWR) light on the BrainPad should be on.
 
 ## Hello World
 The first step is to write some very simple code to see if your BrainPad will respond when we try to program it. This is usually called a "hello world" program.

@@ -1,7 +1,7 @@
 # Projects
 ---
 
-This is a collection of C# projects ranging from easy to advanced. If you want to use Visual Basic, then refer to the [C# to VB](../vb/csharp-to-vb.md) page.
+This is a collection of C# projects ranging from easy to advanced. If you want to use Visual Basic, please refer to the [C# to Visual Basic](../vb/csharp-to-vb.md) page.
 
 > [!Tip]
 > Also see the simpler [MakeCode Projects](../../start-making/projects.md)
