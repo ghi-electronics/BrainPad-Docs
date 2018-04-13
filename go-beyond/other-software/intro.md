@@ -1,21 +1,5 @@
 # Other Software Options
 ---
-
-**Mobile Friendly Menu**
-
-* [Introduction](../intro.md)
-* [System Setup](../system-setup.md)
-* [Visual Basic](../vb/intro.md)
-* [C#](../csharp/intro.md)
-* [Projects](../projects/intro.md)
-* [**Other Software**](intro.md)
-    * [Arduino](arduino.md)
-    * [MicroPython](micropython.md)
-    * [Mbed](mbed.md)
-    * [Bare Metal](bare-metal.md)
-
----
-
 The BrainPad focuses on Start Making (link) with MakeCode and lets you Go Beyond (link) with TinyCLR OS and .NET. However, there are other software options that also work on the BrainPad. We only give you a starting point in case you want to test the other possibilities.
 
 ---

@@ -1,21 +1,5 @@
 # Mbed
 ---
-
-**Mobile Friendly Menu**
-
-* [Introduction](../intro.md)
-* [System Setup](../system-setup.md)
-* [Visual Basic](../vb/intro.md)
-* [C#](../csharp/intro.md)
-* [Projects](../projects/intro.md)
-* [Other Software](intro.md)
-    * [Arduino](arduino.md)
-    * [MicroPython](micropython.md)
-    * [**Mbed**](mbed.md)
-    * [Bare Metal](bare-metal.md)
-
----
-
 ## Using Mbed with the BrainPad
 
 Mbed is an online compiler platform. There is nothing to install, just log in and start coding!

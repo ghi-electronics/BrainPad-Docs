@@ -1,6 +1,6 @@
 # Get started with the BrainPad!
 ---
-![BrainPad](images/new-brainpad.jpg)
+![BrainPad](images/production-brainpad.jpg)
 
 ## STEM is a path, not a toy.
 
@@ -8,7 +8,7 @@
 
 \*Adult supervision required for ages 12 and under.
 
-### There are two main paths for programming the BrainPad:
+### There are two main paths to get started with the BrainPad:
 
 |  | [Start Making](start-making/intro.md) | [Go Beyond](go-beyond/intro.md) |
 |--|--|--|
