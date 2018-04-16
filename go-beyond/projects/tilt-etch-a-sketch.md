@@ -14,37 +14,45 @@ This program is simple. We draw a circle on the screen and move it when the Brai
 ```
 using GHIElectronics.TinyCLR.BrainPad;
 
-namespace Etch_A_Sketch {
-    class Program {
-        static void Main() {
+namespace Etch_A_Sketch
+{
+    class Program
+    {
+        static void Main()
+        {
             BrainPad.Display.DrawSmallText(0, 57, "Tilt: Draw - D: Erase");
             BrainPad.Display.DrawLine(0, 55, 127, 55);
             int x = 64, y = 32;
             const double ACC_TOLERANCE = .20;
-            
-            while (true) {
-                if (BrainPad.Accelerometer.ReadY() > ACC_TOLERANCE) y--;
-                if (BrainPad.Accelerometer.ReadY() < ACC_TOLERANCE * -1) y++;
+
+            while (true)
+            {
+                if (BrainPad.Accelerometer.ReadY() > -ACC_TOLERANCE) y--;
+                if (BrainPad.Accelerometer.ReadY() < ACC_TOLERANCE) y++;
                 if (BrainPad.Accelerometer.ReadX() > ACC_TOLERANCE) x++;
-                if (BrainPad.Accelerometer.ReadX() < ACC_TOLERANCE * -1) x--;
-                
+                if (BrainPad.Accelerometer.ReadX() < -ACC_TOLERANCE) x--;
+
                 if (x < 0) x = 0;
                 if (y < 0) y = 0;
                 if (x > 127) x = 127;
                 if (y > 50) y = 50;
-                
-                BrainPad.Display.DrawCircle(x, y, 1);
+
+                BrainPad.Display.ClearPoint(x, y);
+                BrainPad.Display.ShowOnScreen();
 
                 if (BrainPad.Buttons.IsDownPressed())
                     BrainPad.Display.ClearPartOfScreen(0, 0, 128, 55);
 
-                BrainPad.Display.ShowOnScreen();
                 BrainPad.Wait.Minimum();
+
+                BrainPad.Display.DrawPoint(x, y);
+                BrainPad.Display.ShowOnScreen();
             }
         }
     }
 
-    public static class BrainPad {
+    public static class BrainPad
+    {
         public static Accelerometer Accelerometer { get; } = new Accelerometer();
         public static Buttons Buttons { get; } = new Buttons();
         public static Buzzer Buzzer { get; } = new Buzzer();
