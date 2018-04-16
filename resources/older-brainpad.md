@@ -7,7 +7,7 @@ We highly recommend switching to the production BrainPad. If you are still using
 ## Pre-production BrainPad
 ![Pre-production BrainPad](images/brainpad.jpg)
 
-This version is identical to the production BrainPad except for a different reset circuit. The pre-production BrainPad as a smaller reset button.
+This version has "BP2 Rev A" printed in the lower left corner. This version is identical to the production BrainPad except for a different reset circuit. The pre-production BrainPad as a smaller reset button.
 
 Pressing and holding the reset button on the production BrainPad will put it in loader mode. To do the same on the pre-production board (with the smaller reset button), press and hold the left button, press and release the reset button, wait a second, and release the left button. 
 

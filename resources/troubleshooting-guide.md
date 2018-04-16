@@ -3,7 +3,7 @@
 Use this guide to troubleshoot any issues with your BrainPad. Please follow the steps on this page before going to [BrainPad Discussion Forum](https://forums.ghielectronics.com/c/brainpad) for help.
 
 ## Identify which BrainPad you have
-A small number of early adopters received older versions of the BrainPad. If your BrainPad doesn't look exactly like the image below, check the [Older BrainPad](older-brainpad.md) page for more details.
+A small number of early adopters received older versions of the BrainPad. The current production BrainPad has "BP2 Rev B" printed in the lower left corner. If your BrainPad doesn't look exactly like the image below, check the [Older BrainPad](older-brainpad.md) page for more details.
 
 > [!Tip]
 > Check the reset button. If it is smaller than the directional buttons you have an [**Older BrainPad**](older-brainpad.md).

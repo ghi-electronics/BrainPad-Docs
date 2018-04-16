@@ -2,7 +2,7 @@
 ---
 ![Pong](images/pong.gif)
 
-The classic Pong game -- the grandfather of all games! Now over 45 years old!
+The classic Pong game -- the grandfather of all video games! Now over 45 years old!
 
 **Difficulty: Easy**
 
