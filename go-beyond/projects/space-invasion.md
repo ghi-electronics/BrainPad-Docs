@@ -1,6 +1,6 @@
 # Space Invasion
 ---
-![Space Invasion](images/space-invasion.jpg)
+![Space Invasion](images/space-invasion.gif)
 
 **Difficulty: Medium**
 

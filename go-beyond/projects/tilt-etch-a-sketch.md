@@ -1,5 +1,7 @@
 # Tilt Etch A Sketch
 ---
+![Tilt Etch A Sketch](images/tilt-etch-a-sketch.gif)
+
 A BrainPad version of the classic mechanical drawing toy. Simply tilt the screen to show the sketch and press the down button to erase it.
 
 **Difficulty: Easy**

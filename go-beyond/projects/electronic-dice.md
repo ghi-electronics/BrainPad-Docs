@@ -1,5 +1,7 @@
 # Electronic Dice
 ---
+![Electronic Dice](images/electronic-dice.gif)
+
 You do not need a real dice. BrainPad Electronic Dice is a more fun, plus you can cheat by changing the program!
 
 **Difficulty: Easy**

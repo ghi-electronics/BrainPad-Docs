@@ -1,5 +1,7 @@
 # 3D Cube
 ---
+![3D Cube](images/3d-cube.gif)
+
 A simple wire-frame drawing of a three-dimensional cube.
 
 **Difficulty: Easy**
