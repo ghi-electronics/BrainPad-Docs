@@ -25,12 +25,9 @@ using System.Text;
 using System.Threading;
 using GHIElectronics.TinyCLR.BrainPad;
 
-namespace Pong
-{
-    class Program
-    {
-        static void Main()
-        {
+namespace Pong {
+    class Program {
+        static void Main() {
             double BallX = 10, BallY = 10, BallDX = 2.3, BallDY = 2.8;
             int ScoreL = 0, ScoreR = 0;
             int PlayerPos = 30;
@@ -38,29 +35,23 @@ namespace Pong
 
             BrainPad.Display.DrawRectangle(0, 0, 128, 64);
 
-            while (true)
-            {
+            while (true) {
                 // The Ball
                 BrainPad.Display.ClearPartOfScreen((int)BallX, (int)BallY, 4, 4);
                 BallX += BallDX;
                 BallY += BallDY;
 
-                if (BallX < 10)
-                {
+                if (BallX < 10) {
                     BallDX *= -1;
 
-                    if (BallY >= CompPros - 1 && BallY <= CompPros + 12)
-                    {
+                    if (BallY >= CompPros - 1 && BallY <= CompPros + 12) {
                         // hit back
                         BrainPad.Buzzer.Beep();
                     }
-                    else
-                    {
+                    else {
                         //win
-                        for (int i = 0; i < 3; i++)
-                        {
-                            for (int f = 1000; f < 6000; f += 500)
-                            {
+                        for (int i = 0; i < 3; i++) {
+                            for (int f = 1000; f < 6000; f += 500) {
                                 BrainPad.Buzzer.StartBuzzing(f);
                                 BrainPad.Wait.Minimum();
                             }
@@ -71,20 +62,16 @@ namespace Pong
                     }
                 }
 
-                if (BallX > 115)
-                {
+                if (BallX > 115) {
                     BallDX *= -1;
 
-                    if (BallY >= PlayerPos - 1 && BallY <= PlayerPos + 12)
-                    {
+                    if (BallY >= PlayerPos - 1 && BallY <= PlayerPos + 12) {
                         // hit back
                         BrainPad.Buzzer.Beep();
                     }
-                    else
-                    {
+                    else {
                         // Loss
-                        for (int f = 2000; f > 200; f -= 200)
-                        {
+                        for (int f = 2000; f > 200; f -= 200) {
                             BrainPad.Buzzer.StartBuzzing(f);
                             BrainPad.Wait.Minimum();
                         }
@@ -94,16 +81,14 @@ namespace Pong
                     }
                 }
 
-                if (BallY < 5 || BallY > 55)
-                {
+                if (BallY < 5 || BallY > 55) {
                     BallDY *= -1;
                     BrainPad.Buzzer.Beep();
                 }
 
                 BrainPad.Display.DrawFilledRectangle((int)BallX, (int)BallY, 4, 4);
                 // The Field
-                for (var y = 0; y < 64; y += 10)
-                {
+                for (var y = 0; y < 64; y += 10) {
                     // net
                     BrainPad.Display.DrawLine(64, y, 64, y + 5);
                 }
@@ -128,15 +113,13 @@ namespace Pong
                 BrainPad.Display.DrawSmallNumber(50, 5, ScoreL);
                 BrainPad.Display.DrawSmallNumber(74, 5, ScoreR);
 
-                if (ScoreL >= 5)
-                {
+                if (ScoreL >= 5) {
                     BrainPad.Display.DrawScaledText(0, 40, "You Lose!", 3, 1);
                     BrainPad.Display.ShowOnScreen();
                     BrainPad.Wait.Seconds(-1);
                 }
 
-                if (ScoreR >= 5)
-                {
+                if (ScoreR >= 5) {
                     BrainPad.Display.DrawScaledText(0, 40, "You Win!", 3, 1);
                     BrainPad.Display.ShowOnScreen();
                     while (true) BrainPad.Wait.Seconds(1);
@@ -148,8 +131,7 @@ namespace Pong
         }
     }
 
-    public static class BrainPad
-    {
+    public static class BrainPad {
         public static Accelerometer Accelerometer { get; } = new Accelerometer();
         public static Buttons Buttons { get; } = new Buttons();
         public static Buzzer Buzzer { get; } = new Buzzer();
