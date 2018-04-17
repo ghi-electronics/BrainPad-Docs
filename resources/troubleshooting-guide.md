@@ -13,7 +13,7 @@ A small number of early adopters received older versions of the BrainPad. The cu
 ## Bootloader
 Push and hold the reset button for about 3 seconds. Does the LightBulb turn Green? If so you have a working bootloader and can skip the rest of this section.
 
-If you did not get a green light in the step above, try updating the bootloader. To update the bootloader, download the latest bootloader DFU file from the [Resources](intro.md#bootloaders) page and then go to the [DFU Files](dfu-files.md) page for instructions on loading DFU files.
+If you did not get a green light in the step above, try updating the bootloader. To update the bootloader, download the latest bootloader DFU file from the [Downloads](downloads.md#bootloader) page and then go to the [DFU Files](dfu-files.md) page for instructions on loading DFU files.
 
 When the LightBulb turns Green, the BrainPad will present itself as a virtual storage device. Your computer should see it like any other storage device. The first time this happens, the operating system will need a few seconds to load the needed drivers.
 ![BrainPad virtual drive](images/brainpad-virtual-drive.png)

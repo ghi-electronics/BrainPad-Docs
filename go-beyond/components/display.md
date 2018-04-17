@@ -1,6 +1,6 @@
 # Display
 ---
-The BrainPad display is an output device. The BrainPad has commands allowing you to display numbers and text and draw simple pictures and shapes. These shapes including points, lines, circles and rectangles. All display commands use pixels as units.
+The BrainPad display is an output device. The BrainPad has commands allowing you to display numbers and text and draw simple pictures and shapes. These shapes including points, lines, circles and rectangles. All display commands use pixels (screen dots) as units.
 
 Display commands in this section only change the memory buffer of the display and are not seen until you also call the BrainPad.Display.ShowOnScreen() method.  
  
@@ -20,11 +20,11 @@ Display commands in this section only change the memory buffer of the display an
 
 * BrainPad.Display.DrawText(int x, int y, string text) - Displays a string in small text at the given x and y coordinates.
 
-* BrainPad.Display.DrawScaledText(int x, int y, string text, int HScale, int VScale) - Displays text that can be made larger. Text size is multiplied by HScale to determing horizontal size and VScale to determine vertical size.
+* BrainPad.Display.DrawScaledText(int x, int y, string text, int HScale, int VScale) - Displays text that can be made larger. Text size is multiplied by HScale to determing horizontal size and VScale to determine vertical size. For example setting HScale to two will print text that is twice as wide.
  
 * BrainPad.Display.CreatePicture(int width, int height, byte[] data) - Used to store a picture for the DrawPicture commands.
 
-* BrainPad.Display.CreateScaledPicture(int width, int height, byte[] data, int scale) - Used to store a picture that will be displayed larger by a factor of scale. For
+* BrainPad.Display.CreateScaledPicture(int width, int height, byte[] data, int scale) - Used to store a picture that will be displayed larger by a factor of scale. For example setting scale to two will display the picture at twice its original size.
  
 * BrainPad.Display.DrawCircle(int x, int y, int r) - Draws a circle of radius r with the center located at the given x and y coordinates.  
 
@@ -48,7 +48,7 @@ Display commands in this section only change the memory buffer of the display an
 
 * BrainPad.Display.DrawPictureRotated90Degrees(int x, int y, Picture picture) - Rotates the given picture 90 degrees clockwise and draws it at the given x and y coordinates.
                          
-* BrainPad.Display.ClearPartOfScreen(int x, int y, int width, int height) - Clears a rectangular section of the display where x and y are the top left corner of the rectangle of given width and height 
+* BrainPad.Display.ClearPartOfScreen(int x, int y, int width, int height) - Clears a rectangular section of the display where x and y are the top left corner of the rectangle of given width and height.
  
 * BrainPad.Display.ClearPoint(int x, int y) - Clears the pixel located at the given x and y coordinates.  
 

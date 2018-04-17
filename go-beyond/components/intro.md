@@ -6,7 +6,7 @@ If information flows into the processor it is considered an input device. For ex
 
 The buzzer is an output device. When you program the BrainPad to produce sound, the sound information is *output* from the processor to the buzzer.
 
-In humans, an ear is an input device, and our mouth is an output device. Together they allow us to communicate.
+In humans, the ear is an input device, and the mouth is an output device. Together they allow us to communicate. Just like the BrainPad, your brain gets input from your ears, processes it and figures out what to say, and then sends output to your mouth and vocal cords to generate speech.
 
 The BrainPad has all of its inputs arranged on the left side of the board:
 * [Accelerometer](accelerometer.md)
@@ -20,4 +20,4 @@ All of the output devices are on the right side of the BrainPad:
 * [Light Bulb](light-bulb.md)
 * [Servo Motors](servo-motors.md)
 
-So the flow of information on the BrainPad goes from left to right. Inputs come in from the sensors on the left side of the BrainPad, are processed by the "brain," and then sent to the output devices on the right side of the board. Note that most devices are not set up this way -- we did this to make it a little easier to learn and understand programming and electronics.
+So the flow of information on the BrainPad goes from left to right. Inputs come in from the sensors on the left side of the BrainPad, are processed by the "brain," and then sent to the output devices on the right side of the board. Note that most devices are not set up this way -- we did this to make it a little easier to learn and understand how the BrainPad works.
