@@ -1,13 +1,17 @@
-# Electronics Dice
-You do nto need a real dice. This electronics dice is a lot more fun, plus you can cheat!
+# Electronic Dice
+---
+![Electronic Dice](images/electronic-dice.gif)
 
-Difficulty: Easy
-Objective: Math
+You do not need a real dice. BrainPad Electronic Dice is a more fun, plus you can cheat by changing the program!
 
-# How It Works
-A simple box is drawn to show the shape of a dice. Then, we go in a loop generating random numbrs and showing them on the display. Our loop has a delay that increases giving a cool effect.
+**Difficulty: Easy**
 
-# The Code
+**Objective: Math**
+
+## How It Works
+A simple box is drawn to show the shape of a die. Then, we go in a loop generating random numbers and showing them as a die on the  display. Our loop has a an increasing delay giving a cool effect.
+
+## The Code
 
 ```
 using System;
@@ -17,27 +21,50 @@ namespace Dice {
     class Program {
         const int DICE_BASE_X = 55;
         const int DICE_BASE_Y = 10;
+
+        static void Main() {
+            var Rnd = new Random();
+            while (true) {
+                BrainPad.Display.DrawSmallText(10, 55, "Shake or Up to roll");
+                BrainPad.Display.DrawRectangle(DICE_BASE_X - 5, DICE_BASE_Y - 5, 31, 31);
+
+                for (var i = 0; i < 100; i += 5) {
+                    ShowDice(Rnd.Next(6) + 1);
+                    BrainPad.Buzzer.Beep();
+                    BrainPad.Wait.Milliseconds(i);
+                    BrainPad.Display.ShowOnScreen();
+                }
+                while (BrainPad.Accelerometer.ReadX() < 1 && BrainPad.Buttons.IsUpPressed() == false) BrainPad.Wait.Minimum();
+                BrainPad.Wait.Minimum();
+            }
+        }
+
         static void ShowDice(int num) {
             BrainPad.Display.ClearPartOfScreen(DICE_BASE_X + 3, DICE_BASE_Y + 3, 16, 16);
-            switch(num) {
+
+            switch (num) {
                 case 1:
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 10, DICE_BASE_Y + 10, 2);
                     break;
+
                 case 2:
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 5, DICE_BASE_Y + 5, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 15, DICE_BASE_Y + 15, 2);
                     break;
+
                 case 3:
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 5, DICE_BASE_Y + 5, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 10, DICE_BASE_Y + 10, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 15, DICE_BASE_Y + 15, 2);
                     break;
+
                 case 4:
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 5, DICE_BASE_Y + 5, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 5, DICE_BASE_Y + 15, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 15, DICE_BASE_Y + 15, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 15, DICE_BASE_Y + 5, 2);
                     break;
+
                 case 5:
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 5, DICE_BASE_Y + 5, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 5, DICE_BASE_Y + 15, 2);
@@ -45,6 +72,7 @@ namespace Dice {
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 15, DICE_BASE_Y + 5, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 10, DICE_BASE_Y + 10, 2);
                     break;
+
                 case 6:
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 5, DICE_BASE_Y + 5, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 5, DICE_BASE_Y + 10, 2);
@@ -53,23 +81,6 @@ namespace Dice {
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 15, DICE_BASE_Y + 10, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 15, DICE_BASE_Y + 15, 2);
                     break;
-            }
-        }
-        static void Main() {
-            var Rnd = new Random();
-            while(true) {
-                BrainPad.Display.DrawSmallText(10, 55, "Shake or Up to roll");
-                BrainPad.Display.DrawRectangle(DICE_BASE_X-5, DICE_BASE_Y-5, 31, 31);
-                for(var i = 0; i < 100; i+=5) {
-                    ShowDice(Rnd.Next(6) + 1);
-                    BrainPad.Buzzer.Beep();
-                    BrainPad.Wait.Milliseconds(i);
-                    BrainPad.Display.ShowOnScreen();
-                }
-                while (BrainPad.Accelerometer.ReadX() < 1 && BrainPad.Buttons.IsUpPressed() == false)
-                    BrainPad.Wait.Minimum();
-
-                BrainPad.Wait.Minimum();
             }
         }
     }

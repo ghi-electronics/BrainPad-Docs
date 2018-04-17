@@ -1,9 +1,10 @@
 # Space Invasion
 ---
-![Space Invasion](images/space-invasion.jpg)
+![Space Invasion](images/space-invasion.gif)
 
-Difficulty: Medium
-Objective: Gaming, Retro
+**Difficulty: Medium**
+
+**Objective: Retro gaming**
 
 ---
 
@@ -15,13 +16,12 @@ Start a C# TinyCLR Application project. You can also use VB if you want to conve
 When you finish this section, you will have a ship on the screen that can be moved using the left and right buttons.
 
 ### The Main Loop
-In our project, we need to have a loop where we process the different things we have moving on screen, like the ship.
+In this game we have a loop where we process the objects we have moving on screen, like the ship.
 
-Once everything is processed, we can `ShowOnScreen`. As always, we need to add a minimum delay to give the system time to proccess any other internal tasks.
+Once everything is processed, we `ShowOnScreen`. As always, we need to add a minimum delay to give the system time to process any other internal tasks.
 
 ```
 static void Main() {
-            
     while(true) {
         ProcessShip();
         BrainPad.Display.ShowOnScreen();
@@ -30,11 +30,12 @@ static void Main() {
 }
 ```
 
-We also want to add two lines defining the play area
+We also want to draw two lines to define the area of play.
 ```
 static void Main() {
     BrainPad.Display.DrawLine(90, 0, 90, 64);
     BrainPad.Display.DrawLine(0, 0, 0, 64);
+
     while (true) {
         ProcessShip();
         BrainPad.Display.ShowOnScreen();
@@ -52,14 +53,17 @@ class Sprite {
     public int X, Y;
     public int Width = 8;
     public int Height = 5;
+    
     public Sprite(Picture p) {
         Pic = p;
         Width = p.Width;
         Height = p.Height;
     }
+
     public void Clear() {
         BrainPad.Display.ClearPartOfScreen(X, Y, Pic.Width, Pic.Height);
     }
+
     public void Draw() {
         BrainPad.Display.DrawPicture(X, Y, Pic);
     }
@@ -80,17 +84,15 @@ static Sprite Ship = new Sprite(BrainPad.Display.CreatePicture(8, 5, new byte[] 
 ```
 
 ### Moving The Ship
-The ship will always be at the bottom of the screen. Its Y location never changes. It's Y (vertical) position was set at the display max height (64) minus the ship height (5) when we created it.
+The ship will always be at the bottom of the screen. Its Y or vertical position never changes. The ship's Y position is set at the display's maximum height (64) minus the height of the ship (5).  The ship's Y position is set when we create it.
 
 We now need to check the buttons and update the ship's X (horizontal) position. We also check the X position to make sure the ship stays within the playing area.
 
 ```
 static void ProcessShip() {
     Ship.Clear();
-    if (BrainPad.Buttons.IsLeftPressed())
-        Ship.X -= 5;
-    if (BrainPad.Buttons.IsRightPressed())
-        Ship.X += 5;
+    if (BrainPad.Buttons.IsLeftPressed()) Ship.X -= 5;
+    if (BrainPad.Buttons.IsRightPressed()) Ship.X += 5;
     if (Ship.X < 5) Ship.X = 5;
     if (Ship.X > 85 - Ship.Width) Ship.X = 85 - Ship.Width;
     Ship.Draw();
@@ -99,7 +101,7 @@ static void ProcessShip() {
 
 ### Testing The Ship
 
-Time to load the code and test it out. Here is the complete code.
+Time to load the code and test it out. Here is the code so far.
 
 ```
 using GHIElectronics.TinyCLR.BrainPad;
@@ -114,13 +116,16 @@ namespace SpaceInvasion {
             Width = p.Width;
             Height = p.Height;
         }
+
         public void Clear() {
             BrainPad.Display.ClearPartOfScreen(X, Y, Pic.Width, Pic.Height);
         }
+
         public void Draw() {
             BrainPad.Display.DrawPicture(X, Y, Pic);
         }
     }
+
     class Program {
         static Sprite Ship = new Sprite(BrainPad.Display.CreatePicture(8, 5, new byte[] {
             0,0,0,1,1,0,0,0,
@@ -128,28 +133,29 @@ namespace SpaceInvasion {
             0,1,1,1,1,1,1,0,
             1,1,1,1,1,1,1,1,
             1,0,0,0,0,0,0,1,
-            })) { Y = 64 - 5 , X = 50};
+            })) { Y = 64 - 5, X = 50 };
+
         static void ProcessShip() {
             Ship.Clear();
-            if (BrainPad.Buttons.IsLeftPressed())
-                Ship.X -= 5;
-            if (BrainPad.Buttons.IsRightPressed())
-                Ship.X += 5;
+            if (BrainPad.Buttons.IsLeftPressed()) Ship.X -= 5;
+            if (BrainPad.Buttons.IsRightPressed()) Ship.X += 5;
             if (Ship.X < 5) Ship.X = 5;
             if (Ship.X > 85 - Ship.Width) Ship.X = 85 - Ship.Width;
             Ship.Draw();
         }
-        
-    static void Main() {
-    BrainPad.Display.DrawLine(90, 0, 90, 64);
-    BrainPad.Display.DrawLine(0, 0, 0, 64);
-    while (true) {
-        ProcessShip();
-        BrainPad.Display.ShowOnScreen();
-        BrainPad.Wait.Minimum();
+
+        static void Main() {
+            BrainPad.Display.DrawLine(90, 0, 90, 64);
+            BrainPad.Display.DrawLine(0, 0, 0, 64);
+
+            while (true) {
+                ProcessShip();
+                BrainPad.Display.ShowOnScreen();
+                BrainPad.Wait.Minimum();
+            }
+        }
     }
-}
-    }
+
     public static class BrainPad {
         public static Accelerometer Accelerometer { get; } = new Accelerometer();
         public static Buttons Buttons { get; } = new Buttons();
@@ -161,15 +167,14 @@ namespace SpaceInvasion {
         public static TemperatureSensor TemperatureSensor { get; } = new TemperatureSensor();
         public static Wait Wait { get; } = new Wait();
     }
-
 }
 ```
 
 ## The Bullet
-This section will add a bullet that shoots when the up button is pressed. A sound is added after.
+This section will add a bullet that shoots when the up button is pressed. The sound will be added later.
 
 ### Creating The Bullet
-The bullet will start at -10, outside the screeen. This way the player will not see it and it is also an indication to our code to not process it
+The bullet's Y positions starts at -10, outside of the screen boundries. This is done so the bullet will not be seen until the player shoots at the monster. The Y position of the bullet is also used to tell the program not to process it until it is fired at the monster.
 
 ```
 static Sprite Bullet = new Sprite(BrainPad.Display.CreatePicture(2, 2, new byte[] {
@@ -179,9 +184,9 @@ static Sprite Bullet = new Sprite(BrainPad.Display.CreatePicture(2, 2, new byte[
 ```
 
 ### Moving The Bullet
-The bullet will always start at the middle of the ship and will go up untill it is outside the screen.
+The bullet will always start at the middle of the ship and will move upwards until it is leaves the screen boundries.
 
-To generate a shooting sound, we somewhat cheat and use the Y location to calculate a sweeping frequency!
+To generate a shooting sound, we cheat somewhat and use the Y location to generate a sweeping frequency!
 
 ```
 static void ProcessBullet() {
@@ -196,14 +201,13 @@ static void ProcessBullet() {
         if (BrainPad.Buttons.IsUpPressed()) {
             Bullet.X = Ship.X + Ship.Width / 2;
             Bullet.Y = 55;
-                    
         }
     }
 }
 ```
 ### Testing The Bullet
 
-This is the complete code. Things are getting more exciting!
+This is the game code so far. Things are getting more interesting!
 
 ```
 using GHIElectronics.TinyCLR.BrainPad;
@@ -218,13 +222,16 @@ namespace SpaceInvasion {
             Width = p.Width;
             Height = p.Height;
         }
+        
         public void Clear() {
             BrainPad.Display.ClearPartOfScreen(X, Y, Pic.Width, Pic.Height);
         }
+        
         public void Draw() {
             BrainPad.Display.DrawPicture(X, Y, Pic);
         }
     }
+
     class Program {
         static Sprite Ship = new Sprite(BrainPad.Display.CreatePicture(8, 5, new byte[] {
             0,0,0,1,1,0,0,0,
@@ -233,39 +240,41 @@ namespace SpaceInvasion {
             1,1,1,1,1,1,1,1,
             1,0,0,0,0,0,0,1,
             })) { Y = 64 - 5 , X = 50};
+        
         static Sprite Bullet = new Sprite(BrainPad.Display.CreatePicture(2, 2, new byte[] {
             1,1,
             1,1,
             })) { Y = - 10 };
+        
         static void ProcessBullet() {
             if (Bullet.Y > - 5) {
                 Bullet.Clear();
                 Bullet.Y -= 5;
                 Bullet.Draw();
                 BrainPad.Buzzer.StartBuzzing(3000 - Bullet.Y * 30);
-             }
+            }
             else {
                 BrainPad.Buzzer.StopBuzzing();
                 if (BrainPad.Buttons.IsUpPressed()) {
                     Bullet.X = Ship.X + Ship.Width / 2;
                     Bullet.Y = 55;
-                    
                 }
             }
         }
+
         static void ProcessShip() {
             Ship.Clear();
-            if (BrainPad.Buttons.IsLeftPressed())
-                Ship.X -= 5;
-            if (BrainPad.Buttons.IsRightPressed())
-                Ship.X += 5;
+            if (BrainPad.Buttons.IsLeftPressed()) Ship.X -= 5;
+            if (BrainPad.Buttons.IsRightPressed()) Ship.X += 5;
             if (Ship.X < 5) Ship.X = 5;
             if (Ship.X > 85 - Ship.Width) Ship.X = 85 - Ship.Width;
             Ship.Draw();
         }
+
         static void Main() {
             BrainPad.Display.DrawLine(90, 0, 90, 64);
             BrainPad.Display.DrawLine(0, 0, 0, 64);
+            
             while (true) {
                 ProcessShip();
                 ProcessBullet();
@@ -274,6 +283,7 @@ namespace SpaceInvasion {
             }
         }
     }
+
     public static class BrainPad {
         public static Accelerometer Accelerometer { get; } = new Accelerometer();
         public static Buttons Buttons { get; } = new Buttons();
@@ -285,13 +295,12 @@ namespace SpaceInvasion {
         public static TemperatureSensor TemperatureSensor { get; } = new TemperatureSensor();
         public static Wait Wait { get; } = new Wait();
     }
-
 }
 ```
 
 
 ## The Monster
-The monster (invador) simply goes left and right on the screen, while lowering closer and closer to our ship.
+The monster (invader) will move left and right on the screen. Every time it hits the edge of the area of play it will reverse direction and descend a little, getting closer and closer to our ship.
 
 ### Creating The Monster
 ```
@@ -312,6 +321,7 @@ static int MonsterDelta = 5;
 static void ProcessMonster() {
     Monster.Clear();
     Monster.X += MonsterDelta;
+
     if (Monster.X < 5 || Monster.X > 85-Monster.Width) {
         MonsterDelta *= -1;// Reverse
         Monster.Y += 10;
@@ -320,7 +330,7 @@ static void ProcessMonster() {
 }
 ```
 ### Testing The Monster
-The monster will move down and go out of view. We do not process collisions yet. You can reset the board to see the monster again!
+The monster will move down and go out of view off the bottom of the screen. We are not checking for collisions yet. You have to reset the BrainPad to see the monster again.
 
 ```
 using GHIElectronics.TinyCLR.BrainPad;
@@ -335,13 +345,16 @@ namespace SpaceInvasion {
             Width = p.Width;
             Height = p.Height;
         }
+        
         public void Clear() {
             BrainPad.Display.ClearPartOfScreen(X, Y, Pic.Width, Pic.Height);
         }
+        
         public void Draw() {
             BrainPad.Display.DrawPicture(X, Y, Pic);
         }
     }
+    
     class Program {
         static Sprite Ship = new Sprite(BrainPad.Display.CreatePicture(8, 5, new byte[] {
             0,0,0,1,1,0,0,0,
@@ -350,10 +363,12 @@ namespace SpaceInvasion {
             1,1,1,1,1,1,1,1,
             1,0,0,0,0,0,0,1,
             })) { Y = 64 - 5 , X = 50};
+        
         static Sprite Bullet = new Sprite(BrainPad.Display.CreatePicture(2, 2, new byte[] {
             1,1,
             1,1,
             })) { Y = - 10 };
+        
         static Sprite Monster = new Sprite(BrainPad.Display.CreatePicture(8, 8, new byte[] {
             0,0,0,1,1,0,0,0,
             0,0,1,1,1,1,0,0,
@@ -364,33 +379,34 @@ namespace SpaceInvasion {
             0,1,0,1,1,0,1,0,
             1,0,1,0,0,1,0,1,
             })) { X = 41 };
+       
         static void ProcessBullet() {
             if (Bullet.Y > - 5) {
                 Bullet.Clear();
                 Bullet.Y -= 5;
                 Bullet.Draw();
                 BrainPad.Buzzer.StartBuzzing(3000 - Bullet.Y * 30);
-             }
+            }
             else {
                 BrainPad.Buzzer.StopBuzzing();
                 if (BrainPad.Buttons.IsUpPressed()) {
                     Bullet.X = Ship.X + Ship.Width / 2;
-                    Bullet.Y = 55;
-                    
+                    Bullet.Y = 55;        
                 }
             }
         }
+
         static void ProcessShip() {
             Ship.Clear();
-            if (BrainPad.Buttons.IsLeftPressed())
-                Ship.X -= 5;
-            if (BrainPad.Buttons.IsRightPressed())
-                Ship.X += 5;
+            if (BrainPad.Buttons.IsLeftPressed()) Ship.X -= 5;
+            if (BrainPad.Buttons.IsRightPressed()) Ship.X += 5;
             if (Ship.X < 5) Ship.X = 5;
             if (Ship.X > 85 - Ship.Width) Ship.X = 85 - Ship.Width;
             Ship.Draw();
         }
+
         static int MonsterDelta = 5;
+
         static void ProcessMonster() {
             Monster.Clear();
             Monster.X += MonsterDelta;
@@ -400,9 +416,11 @@ namespace SpaceInvasion {
             }
             Monster.Draw();
         }
+
         static void Main() {
             BrainPad.Display.DrawLine(90, 0, 90, 64);
             BrainPad.Display.DrawLine(0, 0, 0, 64);
+
             while (true) {
                 ProcessShip();
                 ProcessBullet();
@@ -412,6 +430,7 @@ namespace SpaceInvasion {
             }
         }
     }
+
     public static class BrainPad {
         public static Accelerometer Accelerometer { get; } = new Accelerometer();
         public static Buttons Buttons { get; } = new Buttons();
@@ -423,11 +442,13 @@ namespace SpaceInvasion {
         public static TemperatureSensor TemperatureSensor { get; } = new TemperatureSensor();
         public static Wait Wait { get; } = new Wait();
     }
-
 }
 ```
-## Processing Collisions
-Finally, we want to see if the bullet has hit our monster. In both cases, we want to play some cool sound effects.
+
+## Checking for Collisions
+Finally, we want to see if the bullet has hit our monster or if the monster has hit the player. In both cases, we want to play some cool sound effects.
+
+Check to see if bullet has hit the monster:
 ```
 if (Bullet.X >= Monster.X && Bullet.X <= Monster.X + Monster.Width &&
             Bullet.Y >= Monster.Y && Bullet.Y <= Monster.Y + Monster.Height) {
@@ -444,7 +465,8 @@ if (Bullet.X >= Monster.X && Bullet.X <= Monster.X + Monster.Width &&
     Bullet.Y = -5;
 }
 ```
-Or if the monster has hit us!
+
+Or, if the monster has hit us:
 ```
 if (Monster.Y > 40) {
     if (Ship.X > Monster.X && Ship.X < Monster.X + Ship.Width) {
@@ -474,13 +496,16 @@ namespace SpaceInvasion {
             Width = p.Width;
             Height = p.Height;
         }
+        
         public void Clear() {
             BrainPad.Display.ClearPartOfScreen(X, Y, Pic.Width, Pic.Height);
         }
+        
         public void Draw() {
             BrainPad.Display.DrawPicture(X, Y, Pic);
         }
     }
+    
     class Program {
         static Sprite Ship = new Sprite(BrainPad.Display.CreatePicture(8, 5, new byte[] {
             0,0,0,1,1,0,0,0,
@@ -489,10 +514,12 @@ namespace SpaceInvasion {
             1,1,1,1,1,1,1,1,
             1,0,0,0,0,0,0,1,
             })) { Y = 64 - 5 , X = 50};
+        
         static Sprite Bullet = new Sprite(BrainPad.Display.CreatePicture(2, 2, new byte[] {
             1,1,
             1,1,
             })) { Y = - 10 };
+        
         static Sprite Monster = new Sprite(BrainPad.Display.CreatePicture(8, 8, new byte[] {
             0,0,0,1,1,0,0,0,
             0,0,1,1,1,1,0,0,
@@ -503,6 +530,7 @@ namespace SpaceInvasion {
             0,1,0,1,1,0,1,0,
             1,0,1,0,0,1,0,1,
             })) { X = 41 };
+        
         static void ProcessBullet() {
             if (Bullet.Y > - 5) {
                 Bullet.Clear();
@@ -515,20 +543,19 @@ namespace SpaceInvasion {
                 if (BrainPad.Buttons.IsUpPressed()) {
                     Bullet.X = Ship.X + Ship.Width / 2;
                     Bullet.Y = 55;
-                    
                 }
             }
         }
+
         static void ProcessShip() {
             Ship.Clear();
-            if (BrainPad.Buttons.IsLeftPressed())
-                Ship.X -= 5;
-            if (BrainPad.Buttons.IsRightPressed())
-                Ship.X += 5;
+            if (BrainPad.Buttons.IsLeftPressed()) Ship.X -= 5;
+            if (BrainPad.Buttons.IsRightPressed()) Ship.X += 5;
             if (Ship.X < 5) Ship.X = 5;
             if (Ship.X > 85 - Ship.Width) Ship.X = 85 - Ship.Width;
             Ship.Draw();
         }
+
         static int MonsterDelta = 5;
         static void ProcessMonster() {
             Monster.Clear();
@@ -539,6 +566,7 @@ namespace SpaceInvasion {
             }
             Monster.Draw();
         }
+
         static void ProcessCollisions() {
             // Check the bullet
             if (Bullet.X >= Monster.X && Bullet.X <= Monster.X + Monster.Width &&
@@ -555,6 +583,7 @@ namespace SpaceInvasion {
                 Monster.Y = 0;
                 Bullet.Y = -5;
             }
+
             // Did we lose?
             if (Monster.Y > 40) {
                 if (Ship.X > Monster.X && Ship.X < Monster.X + Ship.Width) {
@@ -569,9 +598,11 @@ namespace SpaceInvasion {
                 }
             }
         }
+
         static void Main() {
             BrainPad.Display.DrawLine(90, 0, 90, 64);
             BrainPad.Display.DrawLine(0, 0, 0, 64);
+
             while (true) {
                 ProcessCollisions();
                 ProcessShip();
@@ -582,6 +613,7 @@ namespace SpaceInvasion {
             }
         }
     }
+
     public static class BrainPad {
         public static Accelerometer Accelerometer { get; } = new Accelerometer();
         public static Buttons Buttons { get; } = new Buttons();
@@ -593,16 +625,15 @@ namespace SpaceInvasion {
         public static TemperatureSensor TemperatureSensor { get; } = new TemperatureSensor();
         public static Wait Wait { get; } = new Wait();
     }
-
 }
 ```
 
 ## What Is Next?
-In the area on the right we need to show how many lives you have left. Perhaps show three ships on the top right that represent three lives?
+In the area on the right we need to show how many lives are left. Perhaps we could draw three ships at the upper right of the screen to represent three lives?
 
 We also need to show the score. Would the lower right corner be good place?
 
-Just like before, add ProcessLives() and ProcessScore(). This should be a fun exercise.
+Just like before, add ProcessLives() and ProcessScore() methods. This should be a fun exercise!
 
-Need more of a challange? The monster should run faster as the score increases.
+Need more of a challenge? Make the monster should move faster as the score increases.
 

@@ -1,9 +1,9 @@
 # Projects
 ---
 > [!Tip]
-> Also see the more advanced [TinyCLR OS Projects](..\go-beyond\projects\intro.md)
+> Also see the more advanced [**TinyCLR OS Projects**](..\go-beyond\projects\intro.md)
 
-(image of projects, simulator)
+![MakeCode Screen Image](images/makecode-screen.png)
 
 All MakeCode projects, curriculum and lessons are found at [makecode.brainpad.com](https://makecode.brainpad.com/)
 
