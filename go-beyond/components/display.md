@@ -22,9 +22,9 @@ Display commands in this section only change the memory buffer of the display an
 
 * BrainPad.Display.DrawScaledText(int x, int y, string text, int HScale, int VScale) - Displays text that can be made larger. Text size is multiplied by HScale to determing horizontal size and VScale to determine vertical size.
  
-* BrainPad.Display.CreatePicture(int width, int height, byte[] data) - Used to store a picture for DrawPicture commands.
+* BrainPad.Display.CreatePicture(int width, int height, byte[] data) - Used to store a picture for the DrawPicture commands.
 
-* BrainPad.Display.CreateScaledPicture(int width, int height, byte[] data, int scale) - Used to store a picture that will be displayed larger by a factor of scale.
+* BrainPad.Display.CreateScaledPicture(int width, int height, byte[] data, int scale) - Used to store a picture that will be displayed larger by a factor of scale. For
  
 * BrainPad.Display.DrawCircle(int x, int y, int r) - Draws a circle of radius r with the center located at the given x and y coordinates.  
 
