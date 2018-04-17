@@ -77,41 +77,55 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="tilt-etch-a-sketch">Tilt Etch A Sketch</h1>
 
-<p>This classic game now works on the BrainPad. Simply tilt the screen to show the sketch and press down to erase it.</p>
-<p>Difficulty: Easy
-Objective: Gaming, Drawing</p>
-<h1 id="how-it-works">How It Works</h1>
-<p>Very simply, we draw a circle on the screen. The circle moves when we tilt the BrainPad by checking the accelerometer. Acceleration is basically the earth gravity.</p>
-<h1 id="the-code">The Code</h1>
+<hr>
+<p><img src="images/tilt-etch-a-sketch.gif" alt="Tilt Etch A Sketch"></p>
+<p>A BrainPad version of the classic mechanical drawing toy. Simply tilt the screen to show the sketch and press the down button to erase it.</p>
+<p><strong>Difficulty: Easy</strong></p>
+<p><strong>Objective: Gaming, Drawing</strong></p>
+<h2 id="how-it-works">How It Works</h2>
+<p>This program is simple. We draw a circle on the screen and move it when the BrainPad is tilted. We measure the force of the Earth&#39;s gravity on the BrainPad&#39;s accelerometer to measure how much the BrainPad is tilted.</p>
+<h2 id="the-code">The Code</h2>
 <pre><code>using GHIElectronics.TinyCLR.BrainPad;
 
-namespace Etch_A_Sketch {
-    class Program {
-        static void Main() {
+namespace Etch_A_Sketch
+{
+    class Program
+    {
+        static void Main()
+        {
             BrainPad.Display.DrawSmallText(0, 57, &quot;Tilt: Draw - D: Erase&quot;);
             BrainPad.Display.DrawLine(0, 55, 127, 55);
             int x = 64, y = 32;
             const double ACC_TOLERANCE = .20;
-            while (true) {
-                if (BrainPad.Accelerometer.ReadY() &gt; ACC_TOLERANCE) y--;
-                if (BrainPad.Accelerometer.ReadY() &lt; ACC_TOLERANCE * -1) y++;
+
+            while (true)
+            {
+                if (BrainPad.Accelerometer.ReadY() &gt; -ACC_TOLERANCE) y--;
+                if (BrainPad.Accelerometer.ReadY() &lt; ACC_TOLERANCE) y++;
                 if (BrainPad.Accelerometer.ReadX() &gt; ACC_TOLERANCE) x++;
-                if (BrainPad.Accelerometer.ReadX() &lt; ACC_TOLERANCE * -1) x--;
+                if (BrainPad.Accelerometer.ReadX() &lt; -ACC_TOLERANCE) x--;
+
                 if (x &lt; 0) x = 0;
                 if (y &lt; 0) y = 0;
                 if (x &gt; 127) x = 127;
                 if (y &gt; 50) y = 50;
-                BrainPad.Display.DrawCircle(x, y, 1);
+
+                BrainPad.Display.ClearPoint(x, y);
+                BrainPad.Display.ShowOnScreen();
 
                 if (BrainPad.Buttons.IsDownPressed())
                     BrainPad.Display.ClearPartOfScreen(0, 0, 128, 55);
 
-                BrainPad.Display.ShowOnScreen();
                 BrainPad.Wait.Minimum();
+
+                BrainPad.Display.DrawPoint(x, y);
+                BrainPad.Display.ShowOnScreen();
             }
         }
     }
-    public static class BrainPad {
+
+    public static class BrainPad
+    {
         public static Accelerometer Accelerometer { get; } = new Accelerometer();
         public static Buttons Buttons { get; } = new Buttons();
         public static Buzzer Buzzer { get; } = new Buzzer();

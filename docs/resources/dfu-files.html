@@ -78,28 +78,28 @@
 <h1 id="dfu-files">DFU Files</h1>
 
 <hr>
-<p>The microcontroller (processor) on the BrainPad can be updated over USB cable using a DFU file. This is an advanced feature and should not be needed by most BrainPad users.</p>
-<p>ST Microelectronics, the microcontroller manufacture, provides the tools needed for the following steps. Download and install the &quot;DfuSe USB device firmware upgrade STMicroelectronics extension&quot; <a href="http://www.st.com/en/development-tools/stsw-stm32080.html">software package</a></p>
-<h1 id="loading-dfu-files">Loading DFU Files</h1>
+<p>The microcontroller (processor) on the BrainPad can be updated with a DFU file over a USB cable. This is an advanced feature and should not be needed by most BrainPad users.</p>
+<p>ST Microelectronics, the microcontroller manufacturer, provides the tools needed for the following steps. Download and install the &quot;DfuSe USB device firmware upgrade STMicroelectronics extension&quot; <a href="http://www.st.com/en/development-tools/stsw-stm32080.html">software package</a></p>
+<h2 id="loading-dfu-files-on-the-brainpad">Loading DFU Files on the BrainPad</h2>
 <ol>
-<li>Press and hold the BOOT0 button. While continuing to hold the BOOT0 button, press and release the reset button quickly. Wait for a second then release BOO0 button.</li>
+<li>Press and hold the BOOT0 button. While continuing to hold the BOOT0 button, press and release the reset button. Wait for a second then release BOOT0 button.</li>
 <li>Optionally, check the device manager to verify it shows &quot;STM Device in DFU Mode&quot;.</li>
 <li>Find and open &quot;Open DfuSe Demo&quot; (from the ST download higher in this page)</li>
-<li>Under &quot;Upgrade and Verify Action&quot;, click the &quot;Chose...&quot; button and select the DFU file you want to load.</li>
+<li>Under &quot;Upgrade and Verify Action&quot;, click the &quot;Choose...&quot; button and select the DFU file you want to load.</li>
 <li>Click the &quot;Upgrade&quot; button.</li>
 <li>Click the &quot;Leave DFU mode&quot; button.</li>
 </ol>
-<h1 id="creating-dfu-file">Creating DFU file</h1>
+<h2 id="creating-dfu-file">Creating DFU file</h2>
 <p>If you have a DFU file to load then these steps are not necessary. For example, the BrainPad bootloader is already a DFU file.</p>
-<p>Depending on using a HEX or BIN files, the instructions are slightly different.</p>
-<h2 id="from-hex-files">From HEX files</h2>
+<p>The instructions are slightly different depending on whether you are starting with a HEX file or a BIN file.</p>
+<h3 id="from-hex-files">From HEX files</h3>
 <ol>
 <li>Find and open &quot;Dfu file manager&quot; and select &quot;I want to generate a DFU file&quot;.</li>
 <li>Click on &quot;S19 or Hex...&quot; button to select the hex file.</li>
 <li>Click &quot;Generate...&quot;</li>
 <li>You now have the DFU file!</li>
 </ol>
-<h2 id="from-bin-files">From BIN files</h2>
+<h3 id="from-bin-files">From BIN files</h3>
 <ol>
 <li>Find and open &quot;Dfu file manager&quot; and select &quot;I want to generate a DFU file&quot;.</li>
 <li>Click on &quot;Multi BIN...&quot; button to select the bin file.</li>

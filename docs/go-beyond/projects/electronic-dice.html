@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Electronics Dice </title>
+    <title>Electronic Dice </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Electronics Dice ">
+    <meta name="title" content="Electronic Dice ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
@@ -75,14 +75,16 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="electronics-dice">Electronics Dice</h1>
+<h1 id="electronic-dice">Electronic Dice</h1>
 
-<p>You do nto need a real dice. This electronics dice is a lot more fun, plus you can cheat!</p>
-<p>Difficulty: Easy
-Objective: Math</p>
-<h1 id="how-it-works">How It Works</h1>
-<p>A simple box is drawn to show the shape of a dice. Then, we go in a loop generating random numbrs and showing them on the display. Our loop has a delay that increases giving a cool effect.</p>
-<h1 id="the-code">The Code</h1>
+<hr>
+<p><img src="images/electronic-dice.gif" alt="Electronic Dice"></p>
+<p>You do not need a real dice. BrainPad Electronic Dice is a more fun, plus you can cheat by changing the program!</p>
+<p><strong>Difficulty: Easy</strong></p>
+<p><strong>Objective: Math</strong></p>
+<h2 id="how-it-works">How It Works</h2>
+<p>A simple box is drawn to show the shape of a die. Then, we go in a loop generating random numbers and showing them as a die on the  display. Our loop has a an increasing delay giving a cool effect.</p>
+<h2 id="the-code">The Code</h2>
 <pre><code>using System;
 using GHIElectronics.TinyCLR.BrainPad;
 
@@ -90,27 +92,50 @@ namespace Dice {
     class Program {
         const int DICE_BASE_X = 55;
         const int DICE_BASE_Y = 10;
+
+        static void Main() {
+            var Rnd = new Random();
+            while (true) {
+                BrainPad.Display.DrawSmallText(10, 55, &quot;Shake or Up to roll&quot;);
+                BrainPad.Display.DrawRectangle(DICE_BASE_X - 5, DICE_BASE_Y - 5, 31, 31);
+
+                for (var i = 0; i &lt; 100; i += 5) {
+                    ShowDice(Rnd.Next(6) + 1);
+                    BrainPad.Buzzer.Beep();
+                    BrainPad.Wait.Milliseconds(i);
+                    BrainPad.Display.ShowOnScreen();
+                }
+                while (BrainPad.Accelerometer.ReadX() &lt; 1 &amp;&amp; BrainPad.Buttons.IsUpPressed() == false) BrainPad.Wait.Minimum();
+                BrainPad.Wait.Minimum();
+            }
+        }
+
         static void ShowDice(int num) {
             BrainPad.Display.ClearPartOfScreen(DICE_BASE_X + 3, DICE_BASE_Y + 3, 16, 16);
-            switch(num) {
+
+            switch (num) {
                 case 1:
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 10, DICE_BASE_Y + 10, 2);
                     break;
+
                 case 2:
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 5, DICE_BASE_Y + 5, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 15, DICE_BASE_Y + 15, 2);
                     break;
+
                 case 3:
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 5, DICE_BASE_Y + 5, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 10, DICE_BASE_Y + 10, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 15, DICE_BASE_Y + 15, 2);
                     break;
+
                 case 4:
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 5, DICE_BASE_Y + 5, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 5, DICE_BASE_Y + 15, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 15, DICE_BASE_Y + 15, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 15, DICE_BASE_Y + 5, 2);
                     break;
+
                 case 5:
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 5, DICE_BASE_Y + 5, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 5, DICE_BASE_Y + 15, 2);
@@ -118,6 +143,7 @@ namespace Dice {
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 15, DICE_BASE_Y + 5, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 10, DICE_BASE_Y + 10, 2);
                     break;
+
                 case 6:
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 5, DICE_BASE_Y + 5, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 5, DICE_BASE_Y + 10, 2);
@@ -126,23 +152,6 @@ namespace Dice {
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 15, DICE_BASE_Y + 10, 2);
                     BrainPad.Display.DrawCircle(DICE_BASE_X + 15, DICE_BASE_Y + 15, 2);
                     break;
-            }
-        }
-        static void Main() {
-            var Rnd = new Random();
-            while(true) {
-                BrainPad.Display.DrawSmallText(10, 55, &quot;Shake or Up to roll&quot;);
-                BrainPad.Display.DrawRectangle(DICE_BASE_X-5, DICE_BASE_Y-5, 31, 31);
-                for(var i = 0; i &lt; 100; i+=5) {
-                    ShowDice(Rnd.Next(6) + 1);
-                    BrainPad.Buzzer.Beep();
-                    BrainPad.Wait.Milliseconds(i);
-                    BrainPad.Display.ShowOnScreen();
-                }
-                while (BrainPad.Accelerometer.ReadX() &lt; 1 &amp;&amp; BrainPad.Buttons.IsUpPressed() == false)
-                    BrainPad.Wait.Minimum();
-
-                BrainPad.Wait.Minimum();
             }
         }
     }
@@ -167,7 +176,7 @@ namespace Dice {
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/go-beyond/projects/electronics-dice.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/go-beyond/projects/electronic-dice.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

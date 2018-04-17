@@ -5,19 +5,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Resources </title>
+    <title>Buttons </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Resources ">
+    <meta name="title" content="Buttons ">
     <meta name="generator" content="docfx 2.29.1.0">
     
-    <link rel="shortcut icon" href="../images/favicon.ico">
-    <link rel="stylesheet" href="../styles/docfx.vendor.css">
-    <link rel="stylesheet" href="../styles/docfx.css">
-    <link rel="stylesheet" href="../styles/main.css">
-    <meta property="docfx:navrel" content="../toc.html">
-    <meta property="docfx:tocrel" content="toc.html">
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
     
-    <meta property="docfx:rel" content="../">
+    <meta property="docfx:rel" content="../../">
     <meta property="docfx:newtab" content="true">
   </head>
   <body data-spy="scroll" data-target="#affix">
@@ -34,8 +34,8 @@
                 <span class="icon-bar"></span>
               </button>
               
-              <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -75,19 +75,37 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="resources">Resources</h1>
+<h1 id="buttons">Buttons</h1>
 
 <hr>
-<p>This is a quick reference page for miscellaneous BrainPad resources.</p>
-<h2 id="communities">Communities</h2>
+<p>The four directional buttons (up, down, left and right) are used as inputs and can be read by your program to determine if the button is being pressed or not. They can be checked in two different ways. One way is to just check once to see if the button is being pressed. This works well, but it is possible to miss a button press if your program doesn&#39;t check often enough. Sometimes this is not a problem, but for some programs it may be an issue. The other way of checking buttons is to use an event handler.</p>
+<p>An event handler will continuously check to see if a button has been pressed or released. A button is released when the person pushing the button stops pushing (or releases) the button. Once an event handler is set up, the BrainPad will start an event listener that will check the button for you. This allows your program to do other tasks without you worrying about missing a button event. Once the button is pushed (or released) the event listener will call your event handler. The event handler is code you write to tell the BrainPad how to react when a button is pushed (or released).</p>
+<p>While an event handler is a little harder to set up, it has the advantage allowing the program to take care of other tasks while never missing a button event.</p>
 <ul>
-<li><a href="https://forums.ghielectronics.com/c/brainpad">BrainPad Discussion Forum</a></li>
-<li><a href="https://makecode.brainpad.com/">MakeCode for the BrainPad</a></li>
-</ul>
-<h2 id="brainpad-microcontroller-information">BrainPad Microcontroller Information</h2>
-<ul>
-<li>STM32F401RE <a href="http://www.st.com/en/microcontrollers/stm32f401re.html">Product Page</a></li>
-<li>STM32F401RE <a href="http://www.st.com/resource/en/datasheet/stm32f401re.pdf">Datasheet</a></li>
+<li><p>BrainPad.Buttons.IsUpPressed() - returns a boolean true if the up button is pressed and a boolean false otherwise.</p>
+</li>
+<li><p>BrainPad.Buttons.IsLeftPressed() - returns a boolean true if the left button is pressed and a boolean false otherwise.</p>
+</li>
+<li><p>BrainPad.Buttons.IsRightPressed() - returns a boolean true if the right button is pressed and a boolean false otherwise.</p>
+</li>
+<li><p>BrainPad.Buttons.IsDownPressed() - returns a boolean true if the down button is pressed and a boolean false otherwise.</p>
+</li>
+<li><p>ButtonEventHandler WhenDownButtonReleased </p>
+</li>
+<li><p>ButtonEventHandler WhenUpButtonPressed </p>
+</li>
+<li><p>ButtonEventHandler WhenUpButtonReleased </p>
+</li>
+<li><p>ButtonEventHandler WhenRightButtonPressed </p>
+</li>
+<li><p>ButtonEventHandler WhenRightButtonReleased </p>
+</li>
+<li><p>ButtonEventHandler WhenDownButtonPressed </p>
+</li>
+<li><p>ButtonEventHandler WhenLeftButtonReleased </p>
+</li>
+<li><p>ButtonEventHandler WhenLeftButtonPressed </p>
+</li>
 </ul>
 </article>
           </div>
@@ -97,7 +115,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/resources/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/go-beyond/components/buttons.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
@@ -123,8 +141,8 @@
       </footer>
     </div>
     
-    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
-    <script type="text/javascript" src="../styles/docfx.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
   </body>
 </html>

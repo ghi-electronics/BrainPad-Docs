@@ -77,36 +77,49 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="etch-a-sketch">Etch A Sketch</h1>
 
+<hr>
 <p>This classic game now works on the BrainPad. Simply use the buttons to sketch.</p>
-<p>Difficulty: Easy
-Objective: Gaming, Drawing</p>
-<h1 id="how-it-works">How It Works</h1>
-<p>Very simply, we draw a circle on the screen. The circle moves when the buttons are pressed.</p>
-<h1 id="the-code">The Code</h1>
+<p><strong>Difficulty: Easy</strong></p>
+<p><strong>Objective: Gaming, Drawing</strong></p>
+<h2 id="how-it-works">How It Works</h2>
+<p>This program is simple. We draw a circle on the screen and move it when the buttons are pressed.</p>
+<h2 id="the-code">The Code</h2>
 <pre><code>using GHIElectronics.TinyCLR.BrainPad;
 
-namespace Etch_A_Sketch {
-    class Program {
-        static void Main() {
+namespace Etch_A_Sketch
+{
+    class Program
+    {
+        static void Main()
+        {
             BrainPad.Display.DrawSmallText(0, 57, &quot;Use Buttons to Draw&quot;);
             BrainPad.Display.DrawLine(0, 55, 127, 55);
             int x = 64, y = 32;
-            while (true) {
+
+            while (true)
+            {
                 if (BrainPad.Buttons.IsDownPressed()) y++;
                 if (BrainPad.Buttons.IsUpPressed()) y--;
                 if (BrainPad.Buttons.IsLeftPressed()) x--;
                 if (BrainPad.Buttons.IsRightPressed()) x++;
+
                 if (x &lt; 0) x = 0;
                 if (y &lt; 0) y = 0;
                 if (x &gt; 127) x = 127;
                 if (y &gt; 50) y = 50;
-                BrainPad.Display.DrawCircle(x, y, 1);
+
+                BrainPad.Display.ClearPoint(x, y);
                 BrainPad.Display.ShowOnScreen();
                 BrainPad.Wait.Minimum();
+
+                BrainPad.Display.DrawPoint(x, y);
+                BrainPad.Display.ShowOnScreen();
             }
         }
     }
-    public static class BrainPad {
+
+    public static class BrainPad
+    {
         public static Accelerometer Accelerometer { get; } = new Accelerometer();
         public static Buttons Buttons { get; } = new Buttons();
         public static Buzzer Buzzer { get; } = new Buzzer();

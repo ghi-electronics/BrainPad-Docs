@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Display </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Display ">
+    <meta name="generator" content="docfx 2.29.1.0">
+    
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="display">Display</h1>
+
+<hr>
+<p>The BrainPad display is an output device. The BrainPad has commands allowing you to display numbers and text and draw simple pictures and shapes. These shapes including points, lines, circles and rectangles. All display commands use pixels as units.</p>
+<p>Display commands in this section only change the memory buffer of the display and are not seen until you also call the BrainPad.Display.ShowOnScreen() method.  </p>
+<ul>
+<li><p>BrainPad.Display.Height() - returns the BrainPad display&#39;s height in pixels (64). </p>
+</li>
+<li><p>BrainPad.Display.Width() - returns the BrainPad display&#39;s width in pixels (128).</p>
+</li>
+<li><p>BrainPad.Display.DrawSmallNumber(int x, int y, long number) - Displays a number of type long in small text at the given x and y coordinates. [Example: BrainPad.Display.DrawSmallNumber(10, 20, 52)]</p>
+</li>
+<li><p>BrainPad.Display.DrawSmallNumber(int x, int y, double number) - Displays a number of type double in small text at the given x and y coordinates.</p>
+</li>
+<li><p>BrainPad.Display.DrawNumber(int x, int y, long number) - Displays a number of type long in large text at the given x and y coordinates.</p>
+</li>
+<li><p>BrainPad.Display.DrawNumber(int x, int y, double number) - Displays a number of type double in large text at the given x and y coordinates. </p>
+</li>
+<li><p>BrainPad.Display.DrawSmallText(int x, int y, string text) - Displays a string in small text at the given x and y coordinates. [Example: BrainPad.Display.DrawSmallText(20, 20, &quot;Hello&quot;)]  </p>
+</li>
+<li><p>BrainPad.Display.DrawText(int x, int y, string text) - Displays a string in small text at the given x and y coordinates.</p>
+</li>
+<li><p>BrainPad.Display.DrawScaledText(int x, int y, string text, int HScale, int VScale) - Displays text that can be made larger. Text size is multiplied by HScale to determing horizontal size and VScale to determine vertical size.</p>
+</li>
+<li><p>BrainPad.Display.CreatePicture(int width, int height, byte[] data) - Used to store a picture for the DrawPicture commands.</p>
+</li>
+<li><p>BrainPad.Display.CreateScaledPicture(int width, int height, byte[] data, int scale) - Used to store a picture that will be displayed larger by a factor of scale. For</p>
+</li>
+<li><p>BrainPad.Display.DrawCircle(int x, int y, int r) - Draws a circle of radius r with the center located at the given x and y coordinates.  </p>
+</li>
+<li><p>BrainPad.Display.DrawRectangle(int x, int y, int width, int height) - Draws a box at the given x and y coordinates.</p>
+</li>
+<li><p>BrainPad.Display.DrawFilledRectangle(int x, int y, int width, int height) - Draws a filled box at the given x and y coordinates.   </p>
+</li>
+<li><p>BrainPad.Display.DrawLine(int x0, int y0, int x1, int y1) - Draws a line from (x0, y0) to (x1, y1).  </p>
+</li>
+<li><p>BrainPad.Display.DrawPoint(int x, int y) - Turns on a single pixel at the given x and y coordinates.</p>
+</li>
+<li><p>BrainPad.Display.DrawPicture(int x, int y, Picture picture) - Draws the given picture at the given x and y coordinates.</p>
+</li>
+<li><p>BrainPad.Display.DrawPictureFlippedHorizontally(int x, int y, Picture picture) - Flips the given picture horizontally and draws it at the given x and y coordinates.</p>
+</li>
+<li><p>BrainPad.Display.DrawPictureFlippedVertically(int x, int y, Picture picture) - Flips the given picture vertically and draws it at the given x and y coordinates. </p>
+</li>
+<li><p>BrainPad.Display.DrawPictureRotated180Degrees(int x, int y, Picture picture) - Rotates the given picture 180 degrees and draws it at the given x and y coordinates. </p>
+</li>
+<li><p>BrainPad.Display.DrawPictureRotated270Degrees(int x, int y, Picture picture) - Rotates the given picture 270 degrees clockwise and draws it at the given x and y coordinates.</p>
+</li>
+<li><p>BrainPad.Display.DrawPictureRotated90Degrees(int x, int y, Picture picture) - Rotates the given picture 90 degrees clockwise and draws it at the given x and y coordinates.</p>
+</li>
+<li><p>BrainPad.Display.ClearPartOfScreen(int x, int y, int width, int height) - Clears a rectangular section of the display where x and y are the top left corner of the rectangle of given width and height </p>
+</li>
+<li><p>BrainPad.Display.ClearPoint(int x, int y) - Clears the pixel located at the given x and y coordinates.  </p>
+</li>
+<li><p>BrainPad.Display.ClearScreen() - Clears the entire screen buffer. </p>
+</li>
+<li><p>BrainPad.Display.InvertColors(bool invert) - Inverts the colors of the entire screen.</p>
+</li>
+<li><p>BrainPad.Display.ShowOnScreen() - Writes the entire display buffer to the display. Used to show what has been drawn to the screen buffer on the display.</p>
+</li>
+</ul>
+<p>The above display commands only affect the BrainPad&#39;s display&#39;s memory/buffer, and must be &#39;committed&#39; to the display by running the method BrainPad.Display.ShowOnScreen().</p>
+<p>The display methods below have the ShowOnScreen() method built in and don&#39;t require the use of BrainPad.Display.ShowOnScreen(). Keep in mind though that these methods also clear the entire screen before displaying new text. The following commands run 3 methods consecutively: BrainPad.Display.ClearScreen(), BrainPad.Display.Draw..., and finally BrainPad.Display.ShowOnScreen().  </p>
+<ul>
+<li><p>BrainPad.Display.DrawNumberAndShowOnScreen(int x, int y, long number) - Clears the screen, draws a number of type long at the given x and y coordinates, and displays the number on the BrainPad display.</p>
+</li>
+<li><p>BrainPad.Display.DrawNumberAndShowOnScreen(int x, int y, double number) - Clears the screen, draws a number of type double at the given x and y coordinates, and displays the number on the BrainPad display.</p>
+</li>
+<li><p>BrainPad.Display.DrawSmallNumberAndShowOnScreen(int x, int y, long number) - Clears the screen, draws a number of type long at the given x and y coordinates in small text, and displays the number on the BrainPad display.</p>
+</li>
+<li><p>BrainPad.Display.DrawSmallNumberAndShowOnScreen(int x, int y, double number) - Clears the screen, draws a number of type double at the given x and y coordinates in small text, and displays the number on the BrainPad display.</p>
+</li>
+<li><p>BrainPad.Display.DrawTextAndShowOnScreen(int x, int y, string text) - Clears the screen, draws a number of string at the given x and y coordinates, and displays the number on the BrainPad display.    </p>
+</li>
+<li><p>BrainPad.Display.DrawSmallTextAndShowOnScreen(int x, int y, string text) - Clears the screen, draws a string at the given x and y coordinates in small text, and displays the number on the BrainPad display.    </p>
+</li>
+<li><p>BrainPad.Display.DrawScaledTextAndShowOnScreen(int x, int y, string text, int HScale, int VScale) - Clears the screen, draws a string at the given x and y coordinates in scaled text, and displays the number on the BrainPad display.    </p>
+</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/go-beyond/components/display.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 GHI Electronics, LLC<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

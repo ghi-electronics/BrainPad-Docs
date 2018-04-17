@@ -77,43 +77,59 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="pong">Pong</h1>
 
-<p>The classic pong game, the godfather of all games!</p>
-<p>Difficulty: Easy
-Objective: Gaming, Retro</p>
-<h1 id="how-it-works">How It Works</h1>
-<p>Suprisingly, this very simple game requires about as much code is the <a href="space-invasion.html">Space Invasion</a>. It all starts with the ball that needs to bounce off walls and the player sticks. When teh ball bounce off the left or right walls, a score is increased for one of the players. Once the score reaches 5, you become a winner or a loser as the game is plaied vs. the computer.</p>
-<h1 id="an-exercise">An Exercise</h1>
-<p>Modify the code to so tilt (the accelerometer) is used instread of buttons. Hint: Use the <a href="tilt-etch-a-sketch.html">Tilt Ech A Sketch</a> for ideas.</p>
-<h1 id="the-code">The Code</h1>
+<hr>
+<p><img src="images/pong.gif" alt="Pong"></p>
+<p>The classic Pong game -- the grandfather of all video games! Now over 45 years old!</p>
+<p><strong>Difficulty: Easy</strong></p>
+<p><strong>Objective: Retro gaming</strong></p>
+<h2 id="how-it-works">How It Works</h2>
+<p>Suprisingly, this very simple game requires about as much code as the <a href="space-invasion.html">Space Invasion</a> game.</p>
+<p>In this game a single player plays against the BrainPad.  The player uses the up and down buttons to move his paddle (on the right side of the screen) and tries to hit a moving ball across the net (the dashed line) to the other side of the court. You score points when the BrainPad misses the ball. The BrainPad scores when you miss the ball. The first player (you or the BrainPad) to get five points wins. </p>
+<h2 id="an-exercise">An Exercise</h2>
+<p>Modify the code to so tilt (the accelerometer) is used instead of buttons. Hint: Use the <a href="tilt-etch-a-sketch.html">Tilt Etch A Sketch</a> for help.</p>
+<h2 id="the-code">The Code</h2>
 <pre><code>using System;
 using System.Collections;
 using System.Text;
 using System.Threading;
 using GHIElectronics.TinyCLR.BrainPad;
 
-namespace Pong {
-    class Program {
-        static void Main() {
+namespace Pong
+{
+    class Program
+    {
+        static void Main()
+        {
             double BallX = 10, BallY = 10, BallDX = 2.3, BallDY = 2.8;
             int ScoreL = 0, ScoreR = 0;
-            int PlayerPos=30;
+            int PlayerPos = 30;
             int CompPros = 30;
+
             BrainPad.Display.DrawRectangle(0, 0, 128, 64);
-            while (true) {
+
+            while (true)
+            {
                 // The Ball
                 BrainPad.Display.ClearPartOfScreen((int)BallX, (int)BallY, 4, 4);
                 BallX += BallDX;
                 BallY += BallDY;
-                if (BallX &lt; 10 ) {
+
+                if (BallX &lt; 10)
+                {
                     BallDX *= -1;
-                    if (BallY &gt;= CompPros - 1 &amp;&amp; BallY &lt;= CompPros + 12) {
+
+                    if (BallY &gt;= CompPros - 1 &amp;&amp; BallY &lt;= CompPros + 12)
+                    {
                         // hit back
                         BrainPad.Buzzer.Beep();
                     }
-                    else {
+                    else
+                    {
                         //win
-                        for (int i = 0; i &lt; 3; i++) {
-                            for (int f = 1000; f &lt; 6000; f += 500) {
+                        for (int i = 0; i &lt; 3; i++)
+                        {
+                            for (int f = 1000; f &lt; 6000; f += 500)
+                            {
                                 BrainPad.Buzzer.StartBuzzing(f);
                                 BrainPad.Wait.Minimum();
                             }
@@ -123,15 +139,21 @@ namespace Pong {
                         BrainPad.Wait.Seconds(0.5);
                     }
                 }
-                if (BallX &gt; 115) {
+
+                if (BallX &gt; 115)
+                {
                     BallDX *= -1;
-                    if (BallY &gt;= PlayerPos-1 &amp;&amp; BallY &lt;= PlayerPos + 12) {
+
+                    if (BallY &gt;= PlayerPos - 1 &amp;&amp; BallY &lt;= PlayerPos + 12)
+                    {
                         // hit back
                         BrainPad.Buzzer.Beep();
                     }
-                    else {
+                    else
+                    {
                         // Loss
-                        for (int f = 2000; f &gt; 200; f -= 200) {
+                        for (int f = 2000; f &gt; 200; f -= 200)
+                        {
                             BrainPad.Buzzer.StartBuzzing(f);
                             BrainPad.Wait.Minimum();
                         }
@@ -140,16 +162,21 @@ namespace Pong {
                         BrainPad.Buzzer.StopBuzzing();
                     }
                 }
-                if (BallY &lt; 5 || BallY &gt; 55) {
+
+                if (BallY &lt; 5 || BallY &gt; 55)
+                {
                     BallDY *= -1;
                     BrainPad.Buzzer.Beep();
                 }
+
                 BrainPad.Display.DrawFilledRectangle((int)BallX, (int)BallY, 4, 4);
                 // The Field
-                for (var y = 0; y &lt; 64; y += 10) {
+                for (var y = 0; y &lt; 64; y += 10)
+                {
                     // net
                     BrainPad.Display.DrawLine(64, y, 64, y + 5);
                 }
+
                 // Player
                 BrainPad.Display.ClearPartOfScreen(120, PlayerPos, 2, 10);
                 if (BrainPad.Buttons.IsUpPressed()) PlayerPos -= 4;
@@ -157,9 +184,10 @@ namespace Pong {
                 if (PlayerPos &lt; 5) PlayerPos = 5;
                 if (PlayerPos &gt; 50) PlayerPos = 50;
                 BrainPad.Display.DrawFilledRectangle(120, PlayerPos, 2, 10);
+
                 // Computer
                 BrainPad.Display.ClearPartOfScreen(10, CompPros, 2, 10);
-                if (BallY &gt; CompPros+10) CompPros += 2;
+                if (BallY &gt; CompPros + 10) CompPros += 2;
                 if (BallY &lt; CompPros) CompPros -= 2;
                 if (CompPros &lt; 5) CompPros = 5;
                 if (CompPros &gt; 50) CompPros = 50;
@@ -169,23 +197,28 @@ namespace Pong {
                 BrainPad.Display.DrawSmallNumber(50, 5, ScoreL);
                 BrainPad.Display.DrawSmallNumber(74, 5, ScoreR);
 
-                if (ScoreL &gt;= 5) {
+                if (ScoreL &gt;= 5)
+                {
                     BrainPad.Display.DrawScaledText(0, 40, &quot;You Lose!&quot;, 3, 1);
                     BrainPad.Display.ShowOnScreen();
                     BrainPad.Wait.Seconds(-1);
                 }
-                if (ScoreR &gt;= 5) {
+
+                if (ScoreR &gt;= 5)
+                {
                     BrainPad.Display.DrawScaledText(0, 40, &quot;You Win!&quot;, 3, 1);
                     BrainPad.Display.ShowOnScreen();
-                    BrainPad.Wait.Seconds(-1);
+                    while (true) BrainPad.Wait.Seconds(1);
                 }
+
                 BrainPad.Display.ShowOnScreen();
                 BrainPad.Wait.Minimum();
             }
-
         }
     }
-    public static class BrainPad {
+
+    public static class BrainPad
+    {
         public static Accelerometer Accelerometer { get; } = new Accelerometer();
         public static Buttons Buttons { get; } = new Buttons();
         public static Buzzer Buzzer { get; } = new Buzzer();

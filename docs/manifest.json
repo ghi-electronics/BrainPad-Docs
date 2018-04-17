@@ -849,6 +849,126 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/brainpad-class-reference.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/brainpad-class-reference.html",
+          "hash": "lyh5psqx1R7oA2sItf3MOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/components/accelerometer.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/components/accelerometer.html",
+          "hash": "Lm79/g2z9QpFJCQSCO57aQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/components/buttons.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/components/buttons.html",
+          "hash": "pylmKctfizLF6HDnFmh8hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/components/buzzer.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/components/buzzer.html",
+          "hash": "U/d+kACHvs/VpthiPGgdgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/components/display.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/components/display.html",
+          "hash": "nsOOmo7j/BpfcBYQkFSdKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/components/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/components/intro.html",
+          "hash": "XjzAOelOqyHV9jU4dkkK8w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/components/light-bulb.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/components/light-bulb.html",
+          "hash": "I2m33Q2fAITCVZzqN0itJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/components/light-sensor.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/components/light-sensor.html",
+          "hash": "i9c8qIEo5LLWQ39ni5wj3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/components/servo-motors.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/components/servo-motors.html",
+          "hash": "YL755gAUldl5Qm6wlLQfgA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/components/temperature-sensor.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/components/temperature-sensor.html",
+          "hash": "1jxG0TKuaF037+D7b/JrdA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "go-beyond/csharp/images/introduction/adding-breakpoint.png",
       "output": {
@@ -1085,7 +1205,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/csharp/intro.html",
-          "hash": "I72P8omJL7gzGDe6BPXHyw=="
+          "hash": "TVm+8SNoDPv50uNtEmU8uQ=="
         }
       },
       "is_incremental": false,
@@ -1259,6 +1379,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "go-beyond/images/visual-studio-screen.png",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/images/visual-studio-screen.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "go-beyond/images/visual-studio-workloads.png",
       "output": {
         "resource": {
@@ -1288,7 +1419,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/intro.html",
-          "hash": "jgsTwCmjF3iaUZ4Eahbvuw=="
+          "hash": "ovaBw+HTINJnNmQuVgldSg=="
         }
       },
       "is_incremental": false,
@@ -1352,12 +1483,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidYamlHeader"
+      ],
       "type": "Conceptual",
       "source_relative_path": "go-beyond/other-software/intro.md",
       "output": {
         ".html": {
           "relative_path": "go-beyond/other-software/intro.html",
-          "hash": "0r2vdw099GgSh+DvNQf3JA=="
+          "hash": "Ht5fwRWMuTSboybVP8a3kQ=="
         }
       },
       "is_incremental": false,
@@ -1393,7 +1527,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/projects/3d-cube.html",
-          "hash": "bZ5u+0JHO7vCwIhhiGRtZA=="
+          "hash": "F8huTRaykRrHhZwj+ulZmw=="
         }
       },
       "is_incremental": false,
@@ -1405,7 +1539,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/projects/color-mixer.html",
-          "hash": "IKmJ8Q4AKyMHPqkxv4C1Xg=="
+          "hash": "GyJW77+ktuoCroc5UAYPzQ=="
         }
       },
       "is_incremental": false,
@@ -1413,11 +1547,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "go-beyond/projects/electronics-dice.md",
+      "source_relative_path": "go-beyond/projects/electronic-dice.md",
       "output": {
         ".html": {
-          "relative_path": "go-beyond/projects/electronics-dice.html",
-          "hash": "wcaUd/gkA2qVhDEqL2doQg=="
+          "relative_path": "go-beyond/projects/electronic-dice.html",
+          "hash": "GnLfx2Eecky1OiOm+pR3QQ=="
         }
       },
       "is_incremental": false,
@@ -1429,7 +1563,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/projects/etch-a-sketch.html",
-          "hash": "2gz9763auyQSjBeoWwU3pQ=="
+          "hash": "F9plMGiy2oimLuyCmpA9tw=="
         }
       },
       "is_incremental": false,
@@ -1441,7 +1575,51 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/projects/flappy-bird.html",
-          "hash": "GHYh2bdwM2YfgcaUaWK+Qw=="
+          "hash": "wY+obOFLEKePM/DI9AF4WQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/projects/images/3d-cube.gif",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/projects/images/3d-cube.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/projects/images/electronic-dice.gif",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/projects/images/electronic-dice.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/projects/images/pong.gif",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/projects/images/pong.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/projects/images/space-invasion.gif",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/projects/images/space-invasion.gif"
         }
       },
       "is_incremental": false,
@@ -1470,6 +1648,17 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "go-beyond/projects/images/tilt-etch-a-sketch.gif",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/projects/images/tilt-etch-a-sketch.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "log_codes": [
         "InvalidYamlHeader"
       ],
@@ -1478,7 +1667,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/projects/intro.html",
-          "hash": "Jpq/sgcEEIKI21Ziv4X6bQ=="
+          "hash": "c06MRzahQGnQR+s4C323YQ=="
         }
       },
       "is_incremental": false,
@@ -1490,7 +1679,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/projects/live-tictactoe.html",
-          "hash": "c8jxMmEF2cANIiMdj6XXRQ=="
+          "hash": "EXWLYjKpEX127YHPpoU9NA=="
         }
       },
       "is_incremental": false,
@@ -1502,7 +1691,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/projects/pong.html",
-          "hash": "3cVORBGGRhUAZros8aCKrw=="
+          "hash": "frM1Xw5yBpmwFnci228Bjw=="
         }
       },
       "is_incremental": false,
@@ -1514,7 +1703,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/projects/screen-tictactoe.html",
-          "hash": "W3Lj7YIsNLkLjdRnPzLfvw=="
+          "hash": "NwrZLqkRwh0xnLEt/GeatQ=="
         }
       },
       "is_incremental": false,
@@ -1529,7 +1718,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/projects/space-invasion.html",
-          "hash": "bB9qtvHof4omxTbViZNZsw=="
+          "hash": "b/ALwoTrb2vLAslOaeMWNg=="
         }
       },
       "is_incremental": false,
@@ -1541,7 +1730,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/projects/tilt-etch-a-sketch.html",
-          "hash": "jvJer0TDe6TLVmMBeOMy8g=="
+          "hash": "rZaSMcYNBNbtl/bh1tLeFw=="
         }
       },
       "is_incremental": false,
@@ -1557,7 +1746,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/system-setup.html",
-          "hash": "1mva1nF480gXStpb7N0qog=="
+          "hash": "6HCiZsD4QZ407Ohe2Jvhpw=="
         }
       },
       "is_incremental": false,
@@ -1569,7 +1758,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/toc.html",
-          "hash": "tmgAu6vdF7feKe5N6E2J4g=="
+          "hash": "2OxQ34z+7S4Ror51Dio3og=="
         }
       },
       "is_incremental": false,
@@ -1852,15 +2041,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "go-beyond/vb/intro.md",
       "output": {
         ".html": {
           "relative_path": "go-beyond/vb/intro.html",
-          "hash": "mmkeA9bAoBEA18KkpY78Gw=="
+          "hash": "G9YallT9XoOexZAdeKyWmQ=="
         }
       },
       "is_incremental": false,
@@ -1883,6 +2069,17 @@
       "output": {
         "resource": {
           "relative_path": "images/brainpad.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/c-sharp-code.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/c-sharp-code.png"
         }
       },
       "is_incremental": false,
@@ -1923,10 +2120,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/makecode-blocks.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/makecode-blocks.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/makecode.png",
       "output": {
         "resource": {
           "relative_path": "images/makecode.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/production-brainpad.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/production-brainpad.jpg"
         }
       },
       "is_incremental": false,
@@ -1952,7 +2171,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "AKUd2X/qhf9/tFPcbqei7A=="
+          "hash": "wRgmKz6o0pcYJN5XTsov5A=="
         }
       },
       "is_incremental": false,
@@ -1964,7 +2183,7 @@
       "output": {
         ".html": {
           "relative_path": "resources/bootloader.html",
-          "hash": "QUeAZS7YXgRvaSZ5GbCiiw=="
+          "hash": "6BKm6dfLNxgtABjsEd+vwg=="
         }
       },
       "is_incremental": false,
@@ -1976,7 +2195,7 @@
       "output": {
         ".html": {
           "relative_path": "resources/dfu-files.html",
-          "hash": "MOb/8X8nF+GG/NpRvymuJQ=="
+          "hash": "PVEajmwKxguAyw9qfzdgmQ=="
         }
       },
       "is_incremental": false,
@@ -1988,7 +2207,62 @@
       "output": {
         ".html": {
           "relative_path": "resources/downloads.html",
-          "hash": "y+w91Idcq/RsJnKyq7mlUA=="
+          "hash": "94wurDKN/vw7IVIf3+j3hw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/brainpad-virtual-drive.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/brainpad-virtual-drive.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/brainpad.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/brainpad.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/concept-brainpad.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/concept-brainpad.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/deployment-transport.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/deployment-transport.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/images/device-manager.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/images/device-manager.png"
         }
       },
       "is_incremental": false,
@@ -2000,7 +2274,19 @@
       "output": {
         ".html": {
           "relative_path": "resources/intro.html",
-          "hash": "Mm5pKzjGquaAL+P6coogqw=="
+          "hash": "OBURWZolejSoIiSMMed9Dg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "resources/media.md",
+      "output": {
+        ".html": {
+          "relative_path": "resources/media.html",
+          "hash": "J00s4y6mbmy1golVym2skA=="
         }
       },
       "is_incremental": false,
@@ -2015,7 +2301,7 @@
       "output": {
         ".html": {
           "relative_path": "resources/older-brainpad.html",
-          "hash": "XKpHM2N3CgTfWnebgKnM2w=="
+          "hash": "vk+HeBYceCfW4CssVDX1/g=="
         }
       },
       "is_incremental": false,
@@ -2027,7 +2313,7 @@
       "output": {
         ".html": {
           "relative_path": "resources/toc.html",
-          "hash": "wB0PIT85I630Sj+9iVjnzg=="
+          "hash": "EbglrjARCKEDAVVWzb7lwA=="
         }
       },
       "is_incremental": false,
@@ -2042,7 +2328,18 @@
       "output": {
         ".html": {
           "relative_path": "resources/troubleshooting-guide.html",
-          "hash": "jLs3ZyzHjn6zaTsEzX/Zbw=="
+          "hash": "ZQ2MZqQs5tRBvAg1clfKDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "start-making/images/makecode-screen.png",
+      "output": {
+        "resource": {
+          "relative_path": "start-making/images/makecode-screen.png"
         }
       },
       "is_incremental": false,
@@ -2068,7 +2365,7 @@
       "output": {
         ".html": {
           "relative_path": "start-making/intro.html",
-          "hash": "karj0U29RaDty0E7rvvEXQ=="
+          "hash": "IQM29K8nralV7nxVUAac8Q=="
         }
       },
       "is_incremental": false,
@@ -2083,7 +2380,7 @@
       "output": {
         ".html": {
           "relative_path": "start-making/projects.html",
-          "hash": "YwSbU2VbYUCT5Ov/eIZ5Uw=="
+          "hash": "N8HBIsjqhL6AsONMFRjyuQ=="
         }
       },
       "is_incremental": false,
