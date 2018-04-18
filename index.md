@@ -23,7 +23,7 @@
 | **Ages** | 6+ | 12+ |
 
 ---
-**Additional BrainPad Resouces can be found** [**here**](resources/intro.md).
+**Additional BrainPad Resources can be found** [**here**](resources/intro.md).
 
 ---
 You are on the documentation website for the BrainPad. The main website is found at [www.brainpad.com](http://www.brainpad.com/)

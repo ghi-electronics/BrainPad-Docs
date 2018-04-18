@@ -1,8 +1,8 @@
 # Light Bulb
 ---
-The BrainPad Light Bulb actually contains three light emitting diodes (LEDs) in one package. One LED is red, one is green, and one is blue. These can turned on independantly at varying intensities to create up to one million different colors.
+The BrainPad Light Bulb actually contains three light emitting diodes (LEDs) in one package. One LED is red, one is green, and one is blue. These can independently set to varying intensities to create up to one million different colors.
 
-BrainPad.LightBulb.TurnColor(double r, double g, double b) - Used to create a variety of colors based on varying degrees of red, green and blue. The minimum color intensity is 0 (off) and the maximum is 100. 
+* BrainPad.LightBulb.TurnColor(double r, double g, double b) - Used to create a variety of colors by controlling the brightness of the red, green and blue LEDs. The minimum color intensity is 0 (off) and the maximum is 100. 
 
 * BrainPad.LightBulb.TurnRed() - Turns the light bulb red at full intensity.
 

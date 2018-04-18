@@ -1,7 +1,7 @@
 # Temperature Sensor
 ---
-The BrainPad temperature sensor is basically a digital thermometer. The commands for reading the temperature can report the temperature in either Celsius or Fahrenheit.
+The BrainPad temperature sensor is basically a digital thermometer. There are seperate commands for reading the temperature in Celsius and Fahrenheit.
  
-* BrainPad.TemperatureSensor.ReadTemperatureInCelsius() - Returns the temp in Celsius from the BrainPad's sensor. Returns temperature as type double.  
+* BrainPad.TemperatureSensor.ReadTemperatureInCelsius() - Returns the temperature in Celsius from the BrainPad's sensor. Returns the temperature as type double.  
 
-* BrainPad.TemperatureSensor.ReadTemperatureInFahrenheit() - Returns the temp in Fahrenheit from the BrainPad's sensor. Returns temperature as type double.
+* BrainPad.TemperatureSensor.ReadTemperatureInFahrenheit() - Returns the temperature in Fahrenheit from the BrainPad's sensor. Returns the temperature as type double.

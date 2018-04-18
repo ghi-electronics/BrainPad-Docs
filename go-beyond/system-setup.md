@@ -66,8 +66,6 @@ In the `VSIX Installer` dialog box click the `Install` button.
 
 And, that's it! You're now ready to start programming using TinyCLR OS.
 
-
-
 ## Step 2: Prepare the BrainPad
 ---
 
@@ -76,7 +74,7 @@ And, that's it! You're now ready to start programming using TinyCLR OS.
 
 To prepare the BrainPad you only need to install the latest firmware as described below.
 
-1. Download and save the TinyCLR OS v0.10 firmware from [Downloads](../resources/downloads.md). We recommend saving the firmware file on your desktop.
+1. Download and save the latest TinyCLR OS firmware for the BrainPad from [Downloads](../resources/downloads.md#tinyclr-os-firmware). We recommend saving the firmware file on your desktop.
 2. Connect the BrainPad to your computer using a micro USB cable. The power (PWR) light on the BrainPad should be on.
 3. Press and hold the RESET button on the BrainPad for at least three seconds until the Light Bulb on the BrainPad lights up green.
 4. A window will open named `BrainPad2`. Drag the firmware file from step 1 into this window.
@@ -108,7 +106,7 @@ namespace Counter {
 }
 ```
 
-And here is equivalent code in Visual Basic:
+And here is the equivalent code in Visual Basic:
 ```
 Class Program
     Public Sub Main()
