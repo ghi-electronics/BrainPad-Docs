@@ -14,18 +14,18 @@ While an event handler is a little harder to set up, it has the advantage allowi
 
 * BrainPad.Buttons.IsDownPressed() - returns a boolean true if the down button is pressed and a boolean false otherwise.
 
-* ButtonEventHandler WhenDownButtonReleased 
+* ButtonEventHandler WhenUpButtonPressed
 
-* ButtonEventHandler WhenUpButtonPressed 
+* ButtonEventHandler WhenUpButtonReleased
 
-* ButtonEventHandler WhenUpButtonReleased 
+* ButtonEventHandler WhenLeftButtonPressed
 
-* ButtonEventHandler WhenRightButtonPressed 
+* ButtonEventHandler WhenLeftButtonReleased
 
-* ButtonEventHandler WhenRightButtonReleased 
+* ButtonEventHandler WhenRightButtonPressed
 
-* ButtonEventHandler WhenDownButtonPressed 
+* ButtonEventHandler WhenRightButtonReleased
+ 
+* ButtonEventHandler WhenDownButtonPressed
 
-* ButtonEventHandler WhenLeftButtonReleased 
-
-* ButtonEventHandler WhenLeftButtonPressed 
+* ButtonEventHandler WhenDownButtonReleased
