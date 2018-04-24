@@ -866,7 +866,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/accelerometer.html",
-          "hash": "Lm79/g2z9QpFJCQSCO57aQ=="
+          "hash": "dJRKcnCBN2FyOvTlk5Kw0w=="
         }
       },
       "is_incremental": false,
@@ -878,7 +878,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/buttons.html",
-          "hash": "pylmKctfizLF6HDnFmh8hw=="
+          "hash": "X6vRvP9Hs2ZqIHc8D/0Xzw=="
         }
       },
       "is_incremental": false,
@@ -890,7 +890,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/buzzer.html",
-          "hash": "U/d+kACHvs/VpthiPGgdgg=="
+          "hash": "f1zYTpBYu2RnsNy3NgtUpg=="
         }
       },
       "is_incremental": false,
@@ -902,7 +902,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/display.html",
-          "hash": "nsOOmo7j/BpfcBYQkFSdKg=="
+          "hash": "nXq3NUzXWC5+cBRTBAKe5Q=="
         }
       },
       "is_incremental": false,
@@ -914,7 +914,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/intro.html",
-          "hash": "XjzAOelOqyHV9jU4dkkK8w=="
+          "hash": "fJd/wSPIDIGY8WdRj72FEA=="
         }
       },
       "is_incremental": false,
@@ -926,7 +926,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/light-bulb.html",
-          "hash": "I2m33Q2fAITCVZzqN0itJQ=="
+          "hash": "bfvwnBEidQ/OjuB1zeF7+w=="
         }
       },
       "is_incremental": false,
@@ -938,7 +938,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/light-sensor.html",
-          "hash": "i9c8qIEo5LLWQ39ni5wj3Q=="
+          "hash": "+C7aU0p5HFW50Yr/YYjeBQ=="
         }
       },
       "is_incremental": false,
@@ -950,7 +950,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/servo-motors.html",
-          "hash": "YL755gAUldl5Qm6wlLQfgA=="
+          "hash": "tsp0YbMlGNCv1zXGuly++g=="
         }
       },
       "is_incremental": false,
@@ -962,7 +962,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/temperature-sensor.html",
-          "hash": "1jxG0TKuaF037+D7b/JrdA=="
+          "hash": "eNGx5slfSqZkfT1SI7PSOA=="
         }
       },
       "is_incremental": false,
@@ -1217,7 +1217,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/csharp/vb-to-csharp.html",
-          "hash": "dHaRR/AiRwQiuB1V74jhOw=="
+          "hash": "ijyd6nDSfZaNNRJt/JZuew=="
         }
       },
       "is_incremental": false,
@@ -1379,6 +1379,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "go-beyond/images/visual-languages.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/images/visual-languages.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "go-beyond/images/visual-studio-screen.png",
       "output": {
         "resource": {
@@ -1431,7 +1442,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/other-software/arduino.html",
-          "hash": "BDc6me5kWv5tFBP6JaG6Bg=="
+          "hash": "yt2NCM2Vi3ubU+FKT642jA=="
         }
       },
       "is_incremental": false,
@@ -1503,7 +1514,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/other-software/mbed.html",
-          "hash": "FFCQjzq25Qx6DvWsSG9guQ=="
+          "hash": "Rmp3Lv/UkMZn47BeCM8sHw=="
         }
       },
       "is_incremental": false,
@@ -1515,7 +1526,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/other-software/micropython.html",
-          "hash": "/TfHlcWDUW4cFhpBDvcj6A=="
+          "hash": "3Ywdn3Bm0WdpJul4l3/HtA=="
         }
       },
       "is_incremental": false,
@@ -1563,7 +1574,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/projects/etch-a-sketch.html",
-          "hash": "F9plMGiy2oimLuyCmpA9tw=="
+          "hash": "i3Kl4juYOYne22UVh0nL7Q=="
         }
       },
       "is_incremental": false,
@@ -1575,7 +1586,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/projects/flappy-bird.html",
-          "hash": "wY+obOFLEKePM/DI9AF4WQ=="
+          "hash": "dF1AUdAhIVfCWaACh+DWKA=="
         }
       },
       "is_incremental": false,
@@ -1691,7 +1702,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/projects/pong.html",
-          "hash": "frM1Xw5yBpmwFnci228Bjw=="
+          "hash": "0D7IpVXfYkJfZFvHIsbPKg=="
         }
       },
       "is_incremental": false,
@@ -1730,7 +1741,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/projects/tilt-etch-a-sketch.html",
-          "hash": "rZaSMcYNBNbtl/bh1tLeFw=="
+          "hash": "Sxrx8IUhmSwLufwLIOhCvQ=="
         }
       },
       "is_incremental": false,
@@ -1738,15 +1749,14 @@
     },
     {
       "log_codes": [
-        "InvalidYamlHeader",
-        "InvalidFileLink"
+        "InvalidYamlHeader"
       ],
       "type": "Conceptual",
       "source_relative_path": "go-beyond/system-setup.md",
       "output": {
         ".html": {
           "relative_path": "go-beyond/system-setup.html",
-          "hash": "6HCiZsD4QZ407Ohe2Jvhpw=="
+          "hash": "OIdmGmFDqMy6LiZGzIfYzA=="
         }
       },
       "is_incremental": false,
@@ -1770,7 +1780,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/vb/csharp-to-vb.html",
-          "hash": "t20BspQBX+MqqlI4+zbHeQ=="
+          "hash": "X3UaPpSCaor04aNJC8SgDA=="
         }
       },
       "is_incremental": false,
@@ -2046,7 +2056,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/vb/intro.html",
-          "hash": "G9YallT9XoOexZAdeKyWmQ=="
+          "hash": "YYXc2llOhNZFOKUoMI7HFg=="
         }
       },
       "is_incremental": false,
@@ -2171,7 +2181,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "wRgmKz6o0pcYJN5XTsov5A=="
+          "hash": "d4BOsNwj433l7r1rlblskQ=="
         }
       },
       "is_incremental": false,
@@ -2183,7 +2193,7 @@
       "output": {
         ".html": {
           "relative_path": "resources/bootloader.html",
-          "hash": "6BKm6dfLNxgtABjsEd+vwg=="
+          "hash": "7wW+Wu4f//lwCplCDvtmNg=="
         }
       },
       "is_incremental": false,
@@ -2328,7 +2338,7 @@
       "output": {
         ".html": {
           "relative_path": "resources/troubleshooting-guide.html",
-          "hash": "ZQ2MZqQs5tRBvAg1clfKDw=="
+          "hash": "lqoMuGU3YJjBaWCZ3mTOQg=="
         }
       },
       "is_incremental": false,
@@ -2424,13 +2434,13 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build"
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }

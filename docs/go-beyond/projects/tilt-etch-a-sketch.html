@@ -87,19 +87,15 @@
 <h2 id="the-code">The Code</h2>
 <pre><code>using GHIElectronics.TinyCLR.BrainPad;
 
-namespace Etch_A_Sketch
-{
-    class Program
-    {
-        static void Main()
-        {
+namespace Etch_A_Sketch {
+    class Program {
+        static void Main() {
             BrainPad.Display.DrawSmallText(0, 57, &quot;Tilt: Draw - D: Erase&quot;);
             BrainPad.Display.DrawLine(0, 55, 127, 55);
             int x = 64, y = 32;
             const double ACC_TOLERANCE = .20;
 
-            while (true)
-            {
+            while (true) {
                 if (BrainPad.Accelerometer.ReadY() &gt; -ACC_TOLERANCE) y--;
                 if (BrainPad.Accelerometer.ReadY() &lt; ACC_TOLERANCE) y++;
                 if (BrainPad.Accelerometer.ReadX() &gt; ACC_TOLERANCE) x++;
@@ -124,8 +120,7 @@ namespace Etch_A_Sketch
         }
     }
 
-    public static class BrainPad
-    {
+    public static class BrainPad {
         public static Accelerometer Accelerometer { get; } = new Accelerometer();
         public static Buttons Buttons { get; } = new Buttons();
         public static Buzzer Buzzer { get; } = new Buzzer();
