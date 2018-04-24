@@ -1,7 +1,7 @@
 # C# to Visual Basic
 ---
 
-(image)
+![C# to Visual Basic](../images/visual-languages.jpg)
 
 C# and Visual Basic are very similar. They are so similar that there are online converters that will convert C# to Visual Basic and vice versa.  Here is one such [Code Converter](http://converter.telerik.com/).
 

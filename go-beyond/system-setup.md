@@ -37,7 +37,7 @@ In the `VSIX Installer` dialog box click the `Install` button.
 
 ### Download and Install the TinyCLR Nuget Packages
 
-1. Since TinyCLR OS is still so new, we haven't yet uploaded any packages to NuGet.  Download the newest [libraries](downloads.md#libraries), extract the archive, and place them in a [local NuGet feed](https://docs.nuget.org/ndocs/hosting-packages/local-feeds).
+1. Since TinyCLR OS is still so new, we haven't yet uploaded any packages to NuGet.  Download the newest [libraries](../resources/downloads.md#libraries), extract the archive, and place them in a [local NuGet feed](https://docs.nuget.org/ndocs/hosting-packages/local-feeds).
 2. Connect your device to your PC using a USB cable (make sure your device has the latest firmware installed).
 3. Start Visual Studio and create a new `TinyCLR Application` under `C# > TinyCLR`. New to Visual Studio or C#? Take a look at the [getting started guide from Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/with-visual-studio).
 4. Right click on your Project in the Solution Explorer and select `Manage NuGet Packages`.  If the Solution Explorer window is not visible, open it by selecting `Solution Explorer` in the `View` menu.
@@ -70,7 +70,7 @@ And, that's it! You're now ready to start programming using TinyCLR OS.
 ---
 
 > [!Tip]
-> If you have the original BrainPad Concept/Prototype the setup is slightly different. See the [**Older BrainPad**](..\resources\older-brainpad.md) page for more details.
+> If you have the original BrainPad Concept/Prototype the setup is slightly different. See the [**Older BrainPad**](../resources/older-brainpad.md) page for more details.
 
 To prepare the BrainPad you only need to install the latest firmware as described below.
 
