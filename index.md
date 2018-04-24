@@ -13,13 +13,13 @@
 |  | [Start Making](start-making/intro.md) | [Go Beyond](go-beyond/intro.md) |
 |--|--|--|
 |  | [![Block Code](images/makecode-blocks.png)](start-making/intro.md) | [![C# code](images/c-sharp-code.png)](go-beyond/intro.md) |
-| **Core** | Based on Microsoft MakeCode | Based on .NET and Visual Studio |
+| **Platform** | Based on Microsoft MakeCode | Based on .NET and Visual Studio |
 | **Language** | Drag and drop blocks and Javascript | C# and Visual Basic |
 | **Setup** | Online tools with nothing to install | Requires system setup |
 | **Setup Time** | Instant | About an hour |
-| **Difficulty** | Simple to start with and learn | Professional tools |
+| **Skill Level** | Beginner.  Easy to start with and learn | Beginner through professional |
 | **Requirements** | Any operating system with any modern web browser | Windows (version 7 or newer) computers only |
-| **Debugging** | None | Full featured |
+| **Troubleshooting** | Limited | Full featured debugging tools |
 | **Ages** | 6+ | 12+ |
 
 ---
