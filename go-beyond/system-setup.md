@@ -24,7 +24,7 @@ After installation is complete, click on the `Launch` button. You will be asked 
 
 If Visual Studio is open, close it before continuing with the TinyCLR installation.
 
-Download the [TinyCLR Visual Studio Project System 0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Extensions/TinyCLR%20OS%20Project%20System%20v0.10.0.vsix). After the download is complete, click on the up arrow next to the download name at the bottom of the screen as shown below.
+Download the [TinyCLR Visual Studio Project System](http://files.ghielectronics.com/downloads/TinyCLR/Extensions/TinyCLR%20OS%20Project%20System%20v0.10.0.vsix). After the download is complete, click on the up arrow next to the download name at the bottom of the screen as shown below.
 
 ![Install VSIX Step 1](images/install-vsix-step1.png)
 
@@ -74,7 +74,7 @@ And, that's it! You're now ready to start programming using TinyCLR OS.
 
 To prepare the BrainPad you only need to install the latest firmware as described below.
 
-1. Download and save the latest TinyCLR OS firmware for the BrainPad from [Downloads](../resources/downloads.md#tinyclr-os-firmware). We recommend saving the firmware file on your desktop.
+1. Download and save the latest TinyCLR OS firmware for the BrainPad from [Downloads](../resources/downloads.md#tinyclr-os-brainpad-firmware). We recommend saving the firmware file on your desktop.
 2. Connect the BrainPad to your computer using a micro USB cable. The power (PWR) light on the BrainPad should be on.
 3. Press and hold the RESET button on the BrainPad for at least three seconds until the Light Bulb on the BrainPad lights up green.
 4. A window will open named `BrainPad2`. Drag the firmware file from step 1 into this window.
