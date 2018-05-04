@@ -1678,7 +1678,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/projects/intro.html",
-          "hash": "c06MRzahQGnQR+s4C323YQ=="
+          "hash": "TWG77TemFpGOfeAles0NIQ=="
         }
       },
       "is_incremental": false,
@@ -1737,6 +1737,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "go-beyond/projects/stepper-motors.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/projects/stepper-motors.html",
+          "hash": "1nnbalhBc5KE4gZ4tZa2bg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "go-beyond/projects/tilt-etch-a-sketch.md",
       "output": {
         ".html": {
@@ -1768,7 +1780,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/toc.html",
-          "hash": "2OxQ34z+7S4Ror51Dio3og=="
+          "hash": "DrY5+PVfB9/oXkMh6BoNbA=="
         }
       },
       "is_incremental": false,
@@ -2429,6 +2441,11 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -2436,11 +2453,6 @@
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
