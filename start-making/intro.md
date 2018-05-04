@@ -22,10 +22,13 @@ Run this quick test to verify your BrainPad is ready:
 
 1. Plug your BrainPad into a computer running Windows using a micro USB cable. The red power (PWR) LED on the BrainPad should light up.
 2. Press and hold the reset button for about 3 seconds. The BrainPad Light Bulb should turn green and the computer should find a new drive and open a window for it.
-3. Download [this file]() and save it in the drive that came up in the previous step.
-4. The green LED will flash a little then the board will reset and you will see someting like the image below.
+3. Download [this file](http://files.ghielectronics.com/downloads/BrainPad/BrainPad%20Loader%20Test.uf2) and save it in the drive that came up in the previous step.
+4. The green LED will flash a little then the board will reset.
+5. The display should show the text "Your BrainPad is ready to go!" and the Light Bulb should be lit blue something like the image below.
 
-If any of the steps above failed, visit this [Troubleshooting Guide](..\resources\troubleshooting-guide.md)
+![Quick Test Results](images/quick-test.jpg)
+
+If any of the steps above failed, visit this [Troubleshooting Guide](../resources/troubleshooting-guide.md)
 
 ## You Are Ready
 The BrainPad MakeCode section has instructions, tutorials, and sample programs:
