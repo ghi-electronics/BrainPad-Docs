@@ -28,6 +28,7 @@
 ## [Color Mixer](projects/color-mixer.md)
 ## [Electronic Dice](projects/electronic-dice.md)
 ## [Flappy Bird](projects/flappy-bird.md)
+## [Stepper Motors](projects/stepper-motors.md)
 
 # [Other Software](other-software/intro.md)
 ## [Arduino](other-software/arduino.md)
