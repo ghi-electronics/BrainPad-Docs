@@ -6,6 +6,7 @@ The extension is what gets loaded on Visual Studio to allow it to communicate wi
 
 File | Date | MD5
 --- | --- | ---
+[v0.11.0](http://files.ghielectronics.com/downloads/TinyCLR/Extensions/TinyCLR%20OS%20Project%20System%20v0.11.0.vsix) | 2018-05-10 | ECED507FCAF84B7104A8470126769F48
 [v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Extensions/TinyCLR%20OS%20Project%20System%20v0.10.0.vsix) | 2018-04-05 | 5C98F6BF930FFF5BB050903381858327
 
 # Libraries
@@ -13,6 +14,7 @@ Libraries are hosted though a local NuGet feed for now as we are a lot of change
 
 File | Date | MD5
 --- | --- | ---
+[v0.11.0](http://files.ghielectronics.com/downloads/TinyCLR/Libraries/TinyCLR%20OS%20Libraries%20v0.11.0.zip) | 2018-05-10 | 041ED0458AC82595BD33C34284BF6661
 [v0.10.0](http://files.ghielectronics.com/downloads/TinyCLR/Libraries/TinyCLR%20OS%20Libraries%20v0.10.0.zip) | 2018-04-05 | A0A227517C9D58B28279336FF759AB9D
 
 ## TinyCLR OS BrainPad Firmware
@@ -20,6 +22,7 @@ This is the TinyCLR OS [BrainPad](http://www.brainpad.com) firmware. For install
 
 File | Date | MD5
 --- | --- | ---
+[v0.11.0](http://files.ghielectronics.com/downloads/BrainPad/Firmwares/TinyCLR/BrainPad%20Firmware%20v0.10.0.uf2) | 2018-05-10 | 4285FFAD09CF4C4C1B3C676FBC53807A
 [v0.10.0](http://files.ghielectronics.com/downloads/BrainPad/Firmwares/TinyCLR/BrainPad%20Firmware%20v0.10.0.uf2) | 2018-04-05 | EB0ADCBFF3AE0E9483C78854FB45FEAA
 
 
