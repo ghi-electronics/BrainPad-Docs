@@ -6,9 +6,9 @@ Visual Basic is a very popular Microsoft .NET programming language. While being 
 The instructions on this page describe how to run your first Visual Basic program (a "hello world" program) on the BrainPad. The steps are as follows:
 
   * [Start a new project](#start-a-new-project).
-  * [Add the BrainPad helper code](#add-the-brainpad-helper-code).
   * [Manage the NuGet packages](#manage-the-nuget-packages).
-  * [Add the code](#add-the-code).
+  * [Add the BrainPad helper code](#add-the-brainpad-helper-code).
+  * [Add the sample program](#add-the-sample-program).
   * [Deploy the program](#deploy-the-program)
 
 ## Before you start
@@ -42,18 +42,12 @@ Once created, you'll be presented with a `Module1.vb` tab.
 
 ![First Project](images/introduction/first-project.png)
 
-### Add the BrainPad Helper Code
-
-The BrainPad Helper code provides needed definitions for some BrainPad objects. To add this file to your program, select `Add New Item...` in the `Project` menu. Then in the `Add New Item` dialog box click on `BrainPad Helper` and then click on the `Add` button. You will see a tab labeled `BrainPad1.vb` with contents as shown below.
-
-![BrainPad Helper](images/introduction/brainpad-helper.jpg)
-
 ### Manage the NuGet Packages
 Visual Basic source files are listed in the `Solution Explorer` window. If the `Solution Explorer` window is not visible, click on `View > Solution Explorer` to open it.
 
 ![Solution Explorer](images/introduction/solution-explorer.png)
 
-The squiggly red lines under items in the `Solution Explorer` and `BrainPad1.vb` windows indicate errors. In this case the errors are caused by missing Nuget packages. Let's tell Visual Studio to include the Nuget packages and fix that now.
+The squiggly red lines under items in the `Solution Explorer` window indicate errors. In this case the errors are caused by missing Nuget packages. Let's tell Visual Studio to include the Nuget packages and fix that now.
 
 If you right click on the project name in the Solution Explorer window a drop down menu will appear. Select `Manage NuGet Packages...` from the menu.
 
@@ -81,7 +75,13 @@ Now accept the license agreement to install the packages.
 
 Close the `NuGet...` tab to get back to your `BrainPad1.vb` window. The red squiggles should now be gone.
 
-### Add the Code  
+### Add the BrainPad Helper Code
+
+The BrainPad Helper code provides needed definitions for some BrainPad objects. To add this file to your program, select `Add New Item...` in the `Project` menu. Then in the `Add New Item` dialog box click on `BrainPad Helper` and then click on the `Add` button. You will see a tab labeled `BrainPad1.vb` with contents as shown below.
+
+![BrainPad Helper](images/introduction/brainpad-helper.jpg)
+
+### Add the Sample Program  
 In the `Module1.vb` tab we will enter short sample program (our "Hello World" code). Cut and paste the following code into the `Module1.vb` window.
 
 ```
@@ -105,6 +105,8 @@ End Module
 Your `Module1.vb` window should look like this:
 ![Pasted Code](images/introduction/pasted-code.png)
 
+
+
 ### Deploy the Program
 Make sure your BrainPad is plugged into the computer's USB port. Now hit the start button as shown in the above image (or hit the `F5` key). If you've done everything correctly the program will compile and deploy to your device. The message "Hello World!" should appear on the BrainPad display, and the light bulb should start blinking.
 
@@ -116,4 +118,4 @@ The line `BrainPad.Display.DrawText(0, 0, "Hello!")` is known as a function call
 
 The items listed in parenthesis (0, 0, "Hello!") are called the arguments of the function. In this case the first zero tells the BrainPad to display the text at the left side of the BrainPad display. If this number is increased the text will appear farther to the right on the screen. The second zero tells the BrainPad to print the text at the top of the display. If this number is increased the text will be printed lower on the screen. The third arugument, "Hello!," tells the BrainPad what text to display on the screen.
 
-After `BrainPadSetup()` is finished, the `While True` loop starts running. Code placed inside this while loop is executed in an infinite loop. This is why the LED keeps blinking and never stops.
+After display lines are finished, the `While True` loop starts running. Code placed inside this while loop is executed in an infinite loop. This is why the LED keeps blinking and never stops.

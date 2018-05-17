@@ -37,7 +37,10 @@ After installation is complete, click on the `Launch` button. You will be asked 
 
 If Visual Studio is open, close it before continuing with the TinyCLR installation.
 
-Download the [TinyCLR Visual Studio Project System](http://files.ghielectronics.com/downloads/TinyCLR/Extensions/TinyCLR%20OS%20Project%20System%20v0.10.0.vsix). After the download is complete, click on the up arrow next to the download name at the bottom of the screen as shown below.
+Download the [TinyCLR Visual Studio Project System](../resources/downloads.md#visual-studio-project-system) from our [Downloads](../resources/downloads.md) page.
+![Download Visual Studio Project System](images/download-vs-project-system.png)
+
+After the download is complete, click on the up arrow next to the download name at the bottom of the screen as shown below.
 
 ![Install VSIX Step 1](images/install-vsix-step1.png)
 
@@ -45,7 +48,6 @@ Then select `Open` from the pop-up menu.
 ![Install VSIX Step 2](images/install-vsix-step2.png)
 
 In the `VSIX Installer` dialog box click the `Install` button.
-
 ![Install VSIX](images/install-vsix.png)
 
 ### Install the TinyCLR Nuget Packages
