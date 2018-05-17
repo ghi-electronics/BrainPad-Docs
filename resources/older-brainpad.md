@@ -18,7 +18,7 @@ In other words, whenever you are instructed to press and hold reset for three se
 
 This BrainPad was much larger. You can identify it by the Traffic Light in the top right Corner. This version uses the G30 chipset.
 
-Unfortunately, this version only works with TinyCLR OS. It does not work with MakeCode or any other software. We try to keep the the latest TinyCLR OS BrainPad libraries compatible and workable with this board but we recommend switching to the production BrainPad.
+Unfortunately, this version only works with TinyCLR OS. It does not work with Microsoft MakeCode or any other software. We try to keep the the latest TinyCLR OS BrainPad libraries compatible and workable with this board but we recommend switching to the production BrainPad.
 
 To use with TinyCLR OS, follow the instructions on the GHI Electronics [G30 support page](http://docs.ghielectronics.com/hardware/scm/g30.html). From there you can use all C# and VB examples as is or with minor changes.
 

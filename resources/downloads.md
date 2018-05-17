@@ -2,14 +2,14 @@
 ---
 
 ## Visual Studio Project System
-The extension is what gets loaded on Visual Studio to allow it to communicate with the BrainPad. For installation instructions [click here](../go-beyond/system-setup.md#tinyclr-os-project-system).
+This extension is what gets loaded into Visual Studio to allow it to communicate with the BrainPad. For installation instructions [click here](../go-beyond/system-setup.md#tinyclr-os-project-system).
 
 File | Date | MD5
 --- | --- | ---
 [v0.11.0](http://files.ghielectronics.com/downloads/TinyCLR/Extensions/TinyCLR%20OS%20Project%20System%20v0.11.0.vsix) | 2018-05-10 | ECED507FCAF84B7104A8470126769F48
 
-## Nuget Libraries
-Libraries are hosted though a local NuGet feed for now as we are a lot of changes still. These libraries will be hosted on http://www.nuget.org/ in the future. For installation instructions [click here](../go-beyond/system-setup.md#download-and-install-the-tinyclr-nuget-packages)
+## NuGet Libraries
+Libraries are hosted though a local NuGet feed for now as we are making lot of changes still. These libraries will be hosted on http://www.nuget.org/ in the future. For installation instructions [click here](../go-beyond/system-setup.md#download-and-install-the-tinyclr-nuget-packages).
 
 File | Date | MD5
 --- | --- | ---
@@ -25,7 +25,7 @@ File | Date | MD5
 
 ## Bootloader
 This is the TinyCLR OS [BrainPad](http://www.brainpad.com) bootloader.
-See the [DFU Files](dfu-files.md) page for instructions on loading the loader's DFU file.
+See the [DFU Files](dfu-files.md) page for instructions on loading DFU files.
 
 File | Date | MD5
 --- | --- | ---

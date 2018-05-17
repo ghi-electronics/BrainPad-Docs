@@ -23,5 +23,3 @@ Positional servo motors only accept position commands. Positional servo motors o
 * `BrainPad.ServoMotors.ServoOne.Stop()`
 
 * `BrainPad.ServoMotors.ServoTwo.Stop()`
-
-* `BrainPad.ServoMotors.Servo{*One* or *Two*}.Stop()`

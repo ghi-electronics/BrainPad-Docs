@@ -38,7 +38,7 @@ After installation is complete, click on the `Launch` button. You will be asked 
 If Visual Studio is open, close it before continuing with the TinyCLR installation.
 
 Download the [TinyCLR Visual Studio Project System](../resources/downloads.md#visual-studio-project-system) from our [Downloads](../resources/downloads.md) page.
-![Download Visual Studio Project System](images/download-vs-project-system.png)
+[![Download Visual Studio Project System](images/download-vs-project-system.png)](../resources/downloads.md#visual-studio-project-system)
 
 After the download is complete, click on the up arrow next to the download name at the bottom of the screen as shown below.
 
