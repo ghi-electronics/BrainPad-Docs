@@ -8,7 +8,7 @@
     <title>Robotics </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Robotics ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.19.2.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
   </head>
@@ -83,7 +82,7 @@
 <pre><code class="lang-csharp">BrainPad.ServoMotors.ServoOne.ConfigureAsContinuous(false);
 BrainPad.ServoMotors.ServoTwo.ConfigureAsContinuous(true);
 
-BrainPad.Display.DrawSmallTextAndShowOnScreen(0, 20, &quot;Press Left&quot;);
+BrainPad.Display.DrawSmallTextAndRefreshScreen(0, 20, &quot;Press Left&quot;);
 while (BrainPad.Buttons.IsLeftPressed() == false)
 {
     // Beep 
@@ -91,13 +90,13 @@ while (BrainPad.Buttons.IsLeftPressed() == false)
     BrainPad.Wait.Seconds(0.3);
 }
 BrainPad.Display.ClearScreen();
-BrainPad.Display.DrawSmallTextAndShowOnScreen(40, 20, &quot;Go!&quot;);
+BrainPad.Display.DrawSmallTextAndRefreshScreen(40, 20, &quot;Go!&quot;);
 
 //BrainPad.ServoMotorsIsServoTwoInverted(true);
 
 bool dirrection = true;
 BrainPad.ServoMotors.ServoOne.Set(50);
-BrainPad.Display.DrawSmallTextAndShowOnScreen(40, 20, &quot;Reflect&quot;);
+BrainPad.Display.DrawSmallTextAndRefreshScreen(40, 20, &quot;Reflect&quot;);
 
 // using reflector
 bool use_builtin = true;
@@ -117,7 +116,7 @@ if (use_builtin)
 
 
         double l = echolen.Read();
-        BrainPad.Display.DrawSmallTextAndShowOnScreen(0, 0, l.ToString());
+        BrainPad.Display.DrawSmallTextAndRefreshScreen(0, 0, l.ToString());
         if (l &lt; 600)
         {
             Move(-100, -100);

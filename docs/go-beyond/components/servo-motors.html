@@ -8,7 +8,7 @@
     <title>Servo Motors </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Servo Motors ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.19.2.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../../styles/main.css">
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
-    
     <meta property="docfx:rel" content="../../">
     <meta property="docfx:newtab" content="true">
   </head>
@@ -81,15 +80,25 @@
 <p>The BrainPad has built in support for two servo motors. These can be either continuous or positional servo motors. Continuous servo motors can have their speed and direction controlled but there is no control over their position. They are capabable of rotating continously in either direction.</p>
 <p>Positional servo motors only accept position commands. Positional servo motors only rotate part way through a revolution, usually turning up to half of a revolution (180 degrees). While you can tell a servo motor to go to a specific position, you have no control over how fast it will get there. The positional servo motor will move to a given position as quickly as possible, but it&#39;s speed depends on how much load is put on the motor.</p>
 <ul>
-<li><p><code>BrainPad.ServoMotors.ConfigureAsContinuous(bool inverted)</code> </p>
+<li><p><code>BrainPad.ServoMotors.ServoOne.ConfigureAsContinuous(bool inverted)</code></p>
 </li>
-<li><p><code>BrainPad.ServoMotors.ConfigureAsPositional(bool inverted)</code></p>
+<li><p><code>BrainPad.ServoMotors.ServoTwo.ConfigureAsContinuous(bool inverted)</code> </p>
 </li>
-<li><p><code>BrainPad.ServoMotors.ConfigurePulseParameters(double minimumPulseWidth, double maximumPulseWidth)</code> </p>
+<li><p><code>BrainPad.ServoMotors.ServoOne.ConfigureAsPositional(bool inverted)</code></p>
 </li>
-<li><p><code>BrainPad.ServoMotors.Set(double value)</code></p>
+<li><p><code>BrainPad.ServoMotors.ServoTwo.ConfigureAsPositional(bool inverted)</code></p>
 </li>
-<li><p><code>BrainPad.ServoMotors.Stop()</code></p>
+<li><p><code>BrainPad.ServoMotors.ServoOne.ConfigurePulseParameters(double minimumPulseWidth, double maximumPulseWidth)</code></p>
+</li>
+<li><p><code>BrainPad.ServoMotors.ServoTwo.ConfigurePulseParameters(double minimumPulseWidth, double maximumPulseWidth)</code></p>
+</li>
+<li><p><code>BrainPad.ServoMotors.ServoOne.Set(double value)</code></p>
+</li>
+<li><p><code>BrainPad.ServoMotors.ServoTwo.Set(double value)</code></p>
+</li>
+<li><p><code>BrainPad.ServoMotors.ServoOne.Stop()</code></p>
+</li>
+<li><p><code>BrainPad.ServoMotors.ServoTwo.Stop()</code></p>
 </li>
 </ul>
 </article>

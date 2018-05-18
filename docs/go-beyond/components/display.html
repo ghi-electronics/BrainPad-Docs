@@ -8,7 +8,7 @@
     <title>Display </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Display ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.19.2.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../../styles/main.css">
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
-    
     <meta property="docfx:rel" content="../../">
     <meta property="docfx:newtab" content="true">
   </head>
@@ -79,7 +78,7 @@
 
 <hr>
 <p>The BrainPad display is an output device. The BrainPad has commands allowing you to display numbers and text and draw simple pictures and shapes. These shapes including points, lines, circles and rectangles. All display commands use pixels (screen dots) as units.</p>
-<p>Display commands in this section only change the memory buffer of the display and are not seen until you also call the BrainPad.Display.ShowOnScreen() method.  </p>
+<p>Display commands in this section only change the memory buffer of the display and are not seen until you also call the BrainPad.Display.RefreshScreen() method.  </p>
 <ul>
 <li><p><code>BrainPad.Display.Height()</code> - returns the BrainPad display&#39;s height in pixels (64). </p>
 </li>
@@ -133,25 +132,7 @@
 </li>
 <li><p><code>BrainPad.Display.InvertColors(bool invert)</code> - Inverts each pixel on the entire screen. Pixels that are on will be turned off, and pixels that are off will be turned on.</p>
 </li>
-<li><p><code>BrainPad.Display.ShowOnScreen()</code> - Writes the entire display buffer to the display. Used to show what has been drawn to the screen buffer on the display.</p>
-</li>
-</ul>
-<p>The above commands only affect the BrainPad&#39;s display memory (or buffer) and will not be shown on the display until <code>BrainPad.Display.ShowOnScreen()</code> is executed.</p>
-<p>The methods below have the <code>ShowOnScreen()</code> method built in and don&#39;t require the use of <code>BrainPad.Display.ShowOnScreen()</code>. These methods also clear the entire screen before displaying new text. The following commands run three methods consecutively: <code>BrainPad.Display.ClearScreen()</code>, <code>BrainPad.Display.Draw...</code>, and finally <code>BrainPad.Display.ShowOnScreen()</code>.  </p>
-<ul>
-<li><p><code>BrainPad.Display.DrawNumberAndShowOnScreen(int x, int y, long number)</code> - Clears the screen, draws a number of type long at the given x and y coordinates, and displays the number on the BrainPad display.</p>
-</li>
-<li><p><code>BrainPad.Display.DrawNumberAndShowOnScreen(int x, int y, double number)</code> - Clears the screen, draws a number of type double at the given x and y coordinates, and displays the number on the BrainPad display.</p>
-</li>
-<li><p><code>BrainPad.Display.DrawSmallNumberAndShowOnScreen(int x, int y, long number)</code> - Clears the screen, draws a number of type long at the given x and y coordinates in small text, and displays the number on the BrainPad display.</p>
-</li>
-<li><p><code>BrainPad.Display.DrawSmallNumberAndShowOnScreen(int x, int y, double number)</code> - Clears the screen, draws a number of type double at the given x and y coordinates in small text, and displays the number on the BrainPad display.</p>
-</li>
-<li><p><code>BrainPad.Display.DrawTextAndShowOnScreen(int x, int y, string text)</code> - Clears the screen, draws a string at the given x and y coordinates, and displays the string on the BrainPad display.    </p>
-</li>
-<li><p><code>BrainPad.Display.DrawSmallTextAndShowOnScreen(int x, int y, string text)</code> - Clears the screen, draws a string at the given x and y coordinates in small text, and displays the string on the BrainPad display.    </p>
-</li>
-<li><p><code>BrainPad.Display.DrawScaledTextAndShowOnScreen(int x, int y, string text, int HScale, int VScale)</code> - Clears the screen, draws a string at the given x and y coordinates in scaled text, and displays the string on the BrainPad display.    </p>
+<li><p><code>BrainPad.Display.RefreshScreen()</code> - Writes the entire display buffer to the display. Used to show what has been drawn to the screen buffer on the display.</p>
 </li>
 </ul>
 </article>

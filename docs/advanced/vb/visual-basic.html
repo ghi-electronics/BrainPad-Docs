@@ -8,7 +8,7 @@
     <title>Introduction to Visual Basic on the BrainPad </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Introduction to Visual Basic on the BrainPad ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.19.2.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../../styles/main.css">
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
-    
     <meta property="docfx:rel" content="../../">
     <meta property="docfx:newtab" content="true">
   </head>
@@ -102,8 +101,8 @@
 <p>Let&#39;s run the program now to see the code come to life. Connect the BrainPad and press the <code>F5</code> function key or the &#39;Start&#39; button (shown below).</p>
 <p><img src="../csharp/images/introduction/start-button.png" alt="Start Button"></p>
 <p>Visual Studio will now tell your BrainPad to run the code.  A few things will happen and the display will now show the text &quot;Hello!&quot; and the light bulb (or LED) will blink.</p>
-<p>What happened exactly? Our application began by running the <code>BrainPadSetup()</code> function. This function is runs one time, when the application starts, and is used to set things up. In this case, it executed the <code>BrainPad.Display.DrawTextAndShowOnScreen(0, 0, &quot;Hello!&quot;)</code> line to instruct the display to show the text &quot;Hello.&quot;</p>
-<p>The line <code>BrainPad.Display.DrawTextAndShowOnScreen(0, 0, &quot;Hello!&quot;)</code> is known as a function call.  The name of the funtion is &quot;DrawTextAndShowOnScreen().&quot;  This function is part of the &quot;Display&quot; object, which is part of the &quot;BrainPad&quot; object.</p>
+<p>What happened exactly? Our application began by running the <code>BrainPadSetup()</code> function. This function is runs one time, when the application starts, and is used to set things up. In this case, it executed the <code>BrainPad.Display.DrawTextAndRefreshScreen(0, 0, &quot;Hello!&quot;)</code> line to instruct the display to show the text &quot;Hello.&quot;</p>
+<p>The line <code>BrainPad.Display.DrawTextAndRefreshScreen(0, 0, &quot;Hello!&quot;)</code> is known as a function call.  The name of the funtion is &quot;DrawTextAndRefreshScreen().&quot;  This function is part of the &quot;Display&quot; object, which is part of the &quot;BrainPad&quot; object.</p>
 <p>The items listed in parenthesis (0, 0, &quot;Hello!&quot;) are called the arguments of the function.  In this case the first zero tells the BrainPad to display the text at the left side of the BrainPad display.  If this number is increased the text will appear further to the right of the screen.  The second zero tells the BrainPad to print the text at the top of the display.  If this number is increased the text will be printed lower on the screen.  The third arugument, &quot;Hello!,&quot; tells the BrainPad what text to display on the screen.</p>
 <p>After <code>BrainPadSetup()</code> is finished, the application calls <code>BrainPadLoop()</code>. Code placed inside this function is executed in an infinite loop. This is why the code that turns the LED on and then off again and never stops.</p>
 <h2 id="making-changes-to-the-code">Making changes to the code</h2>
@@ -112,7 +111,7 @@
 <p><img src="../csharp/images/introduction/stop-debugging.png" alt="Stop debugging"></p>
 <p>If you try to edit code and see the message &quot;Managed Compatibility Mode does not support Edit and Continue,&quot; you are trying to edit code while in debug mode.  Just stop debug mode (<code>Stop</code> button or <code>Shift</code> <code>F5</code>) and you can edit your program.</p>
 <p><img src="../csharp/images/introduction/edit-during-debug-error.png" alt="Error trying to edit in debug mode"></p>
-<p>Use the mouse to place the cursor after the exclamation point in the <code>BrainPad.Display.DrawTextAndShowOnScreen(0, 0, &quot;Hello!&quot;)</code> function call (as shown below).  This should be in line 5 of the program (line numbers are listed near the left edge of the program).</p>
+<p>Use the mouse to place the cursor after the exclamation point in the <code>BrainPad.Display.DrawTextAndRefreshScreen(0, 0, &quot;Hello!&quot;)</code> function call (as shown below).  This should be in line 5 of the program (line numbers are listed near the left edge of the program).</p>
 <p><img src="images/introduction/place-cursor-after-hello.png" alt="Place cursor after hello"></p>
 <p>Use the <code>Backspace</code> key to erase &quot;Hello!&quot; and type in your first name.  Run the program by hitting the <code>F5</code> key.  The display on the BrainPad should now display your first name on the BrainPad.</p>
 <p>Can you make the BrainPad display your name near the center of the screen?</p>

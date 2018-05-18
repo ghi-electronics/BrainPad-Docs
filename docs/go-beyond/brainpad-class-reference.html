@@ -8,7 +8,7 @@
     <title>BrainPad Class Reference </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="BrainPad Class Reference ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.19.2.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../styles/main.css">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
-    
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
   </head>
@@ -105,7 +104,7 @@ ButtonEventHandler WhenLeftButtonPressed </p>
 BrainPad.Buzzer.StopBuzzing() � Stops the buzzer if it is currently playing.</p>
 <h2 id="brainpaddisplay">BrainPad.Display</h2>
 <p>The BrainPad display is an output device. The BrainPad has commands allowing you to display numbers and text and draw simple pictures and shapes including points, lines, circles and rectangles.</p>
-<p>Display commands in this section only change the memory buffer of the display and are not seen until you also call the BrainPad.Display.ShowOnScreen() method.  </p>
+<p>Display commands in this section only change the memory buffer of the display and are not seen until you also call the BrainPad.Display.RefreshScreen() method.  </p>
 <p>BrainPad.Display.Height() � returns the BrainPad display&#39;s height in pixels (64). 
 BrainPad.Display.Width() - returns the BrainPad display&#39;s width in pixels (128).</p>
 <p>BrainPad.Display.DrawSmallNumber(int x, int y, long number) - Displays a number of type long in small text at the given x and y coordinates. [Example: BrainPad.Display.DrawSmallNumber(10, 20, 52)]
@@ -127,16 +126,7 @@ BrainPad.Display.DrawPictureRotated90Degrees(int x, int y, Picture picture); </p
 <p>BrainPad.Display.ClearPartOfScreen(int x, int y, int width, int height); - Clears a rectangular section of the display where x and y are the top left corner of the rectangle of given width and height </p>
 <p>BrainPad.Display.ClearPoint(int x, int y); - Clears a pixel located at the display�s x and y coordinate.<br>BrainPad.Display.ClearScreen() - Clears the entire screen buffer. </p>
 <p>BrainPad.Display.InvertColors(bool invert); 
-BrainPad.Display.ShowOnScreen() </p>
-<p>The above display commands only affect the BrainPad�s display&#39;s memory/buffer, and must be �committed� to the display by running the method BrainPad.Display.ShowOnScreen(). The display methods below have the ShowOnScreen() method built in and don�t require the use of BrainPad.Display.ShowOnScreen(). Keep in mind though that these methods also clear the entire screen before displaying new text. </p>
-<p>Display commands in this section change the memory/buffer and display to the BrainPad display instantly.  They do this by running 3 methods consecutively BrainPad.Display.ClearScreen(), BrainPad.Display.Draw...etc() and finally BrainPad.Display.ShowOnScreen().  </p>
-<p>BrainPad.Display.DrawNumberAndShowOnScreen(int x, int y, long number); 
-BrainPad.Display.DrawNumberAndShowOnScreen(int x, int y, double number); 
-BrainPad.Display.DrawSmallNumberAndShowOnScreen(int x, int y, long number); 
-BrainPad.Display.DrawSmallNumberAndShowOnScreen(int x, int y, double number); 
-BrainPad.Display.DrawTextAndShowOnScreen(int x, int y, string text); 
-BrainPad.Display.DrawSmallTextAndShowOnScreen(int x, int y, string text); 
-BrainPad.Display.DrawScaledTextAndShowOnScreen(int x, int y, string text, int HScale, int VScale); </p>
+BrainPad.Display.RefreshScreen() </p>
 <h2 id="brainpadlightbulb">BrainPad.LightBulb.</h2>
 <p>The BrainPad Light Bulb is actually three light emitting diodes (LEDs) in one package. One LED is red, one is green, and one is blue. These can turned on independantly at varying intensities to create up to one million different colors.</p>
 <p>BrainPad.LightBulb.TurnColor(double r, double g, double b) � Used to create a variety of colors based on varying degrees of red, green and blue (min. 0 � max 100) 

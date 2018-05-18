@@ -8,7 +8,7 @@
     <title>Introduction to C# (C sharp) </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Introduction to C# (C sharp) ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.19.2.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="../../styles/main.css">
     <meta property="docfx:navrel" content="../../toc.html">
     <meta property="docfx:tocrel" content="../toc.html">
-    
     <meta property="docfx:rel" content="../../">
     <meta property="docfx:newtab" content="true">
   </head>
@@ -80,6 +79,15 @@
 <hr>
 <p>It is not a secret that C and C++ are the most popular programming languages among professionals. This is particularly true for programmers that work with small digital systems.</p>
 <p>C# is the modern cousin of the C and C++ family. Its syntax is very close to JAVA, another very popular programming language.</p>
+<h2 id="c-introduction-overview">C# Introduction Overview</h2>
+<p>The instructions on this page describe how to run your first C# program (a &quot;hello world&quot; program) on the BrainPad. The steps are as follows:</p>
+<ul>
+<li><a href="#start-a-new-project">Start a new project</a>.</li>
+<li><a href="#manage-the-nuget-packages">Manage the NuGet packages</a>.</li>
+<li><a href="#add-the-brainpad-helper-code">Add the BrainPad helper code</a>.</li>
+<li><a href="#add-the-sample-program">Add the sample program</a>.</li>
+<li><a href="#deploy-the-program">Deploy the program</a></li>
+</ul>
 <h2 id="before-you-start">Before you start</h2>
 <p>You should have already installed Visual Studio on your computer as well as the TinyCLR extension. If not, please start with <a href="../system-setup.html">System Setup</a> for instructions on how to do so.</p>
 <p>Also, you need a BrainPad and a micro USB cable to continue. Plug the BrainPad into the USB port of your computer. The red power (PWR) light on the BrainPad should be on.</p>
@@ -97,14 +105,35 @@
 <p><img src="images/introduction/new-project-window.png" alt="Start New Visual C# Project"></p>
 <p>Once created, you&#39;ll be presented with a <code>Program.cs</code> tab.</p>
 <p><img src="images/introduction/first-project.png" alt="First C# Project"></p>
-<h3 id="add-the-code">Add the Code</h3>
+<h3 id="manage-the-nuget-packages">Manage the NuGet Packages</h3>
+<p>C# source files are listed in the <code>Solution Explorer</code> window. If the <code>Solution Explorer</code> window is not visible, click on <code>View &gt; Solution Explorer</code> to open it.</p>
+<p><img src="images/introduction/solution-explorer.png" alt="Solution Explorer"></p>
+<p>The squiggly red lines under items in the <code>Solution Explorer</code> window indicate errors. In this case the errors are caused by missing Nuget packages. Let&#39;s tell Visual Studio to include the Nuget packages and fix that now.</p>
+<p>If you right click on the project name in the Solution Explorer window a drop down menu will appear. Select <code>Manage NuGet Packages...</code> from the menu.</p>
+<p><img src="images/introduction/manage-nuget-packages-menu.png" alt="View Show Solution Explorer"> </p>
+<p>Now you should see the installed TinyCLR NuGet library (GHIElectronics.TinyCLR.Core). We need to install a couple more libraries for our program to run.</p>
+<p><img src="images/introduction/click-on-browse.png" alt="Installed NuGet"></p>
+<p>Click on <code>Browse</code>. You should see a list of available Nuget packages in your local feed.</p>
+<p><img src="../vb/images/introduction/browse-nuget-packages.jpg" alt="Browse Nuget Packages"></p>
+<p>Click on the <code>GHIElectronics.TinyCLR.BrainPad</code> package and then click on the <code>Install</code> button.</p>
+<p><img src="../vb/images/introduction/click-install-button.png" alt="Click Install Button"></p>
+<p>Installing the BrainPad Nuget package will automatically install the <code>GHIElectronics.TinyCLR.Devices</code> and <code>GHIElectronics.TinyCLR.Pins</code> packages as well. Click on <code>OK</code>.</p>
+<p><img src="../vb/images/introduction/install-nugets.png" alt="Install Nugets"></p>
+<p>Now accept the license agreement to install the packages.</p>
+<p><img src="../vb/images/introduction/accept-license.png" alt="Accept the License Agreement"></p>
+<p>Close the <code>NuGet...</code> tab to get back to your <code>Program.cs</code> window. The red squiggles should now be gone.</p>
+<h3 id="add-the-brainpad-helper-code">Add the BrainPad Helper Code</h3>
+<p>The BrainPad Helper code provides needed definitions for some BrainPad objects. To add this file to your program, select <code>Add New Item...</code> in the <code>Project</code> menu. Then in the <code>Add New Item</code> dialog box click on <code>BrainPad Helper</code> and then click on the <code>Add</code> button. You will see a tab labeled <code>BrainPad1.cs</code> with contents as shown below.</p>
+<p><img src="images/introduction/brainpad-helper.jpg" alt="BrainPad Helper"></p>
+<h3 id="add-the-sample-program">Add the Sample Program</h3>
 <p>In the <code>Program.cs</code> tab we will enter short sample program (our &quot;Hello World&quot; code). Cut and paste the following code into the <code>Program.cs</code> window.</p>
 <pre><code>using GHIElectronics.TinyCLR.BrainPad;
 
 namespace BrainPadDemo {
     class Program {
         static void Main() {
-            BrainPad.Display.DrawTextAndShowOnScreen(0, 0, &quot;Hello!&quot;);
+            BrainPad.Display.DrawText(0, 0, &quot;Hello!&quot;);
+            BrainPad.Display.RefreshScreen();
 
             while (true) {
                 BrainPad.LightBulb.TurnWhite();
@@ -115,45 +144,15 @@ namespace BrainPadDemo {
         }
     }
 }
-
-public static class BrainPad {
-    public static Accelerometer Accelerometer { get; } = new Accelerometer();
-    public static Buttons Buttons { get; } = new Buttons();
-    public static Buzzer Buzzer { get; } = new Buzzer();
-    public static Display Display { get; } = new Display();
-    public static LightBulb LightBulb { get; } = new LightBulb();
-    public static LightSensor LightSensor { get; } = new LightSensor();
-    public static ServoMotors ServoMotors { get; } = new ServoMotors();
-    public static TemperatureSensor TemperatureSensor { get; } = new TemperatureSensor();
-    public static Wait Wait { get; } = new Wait();
-}
 </code></pre><p>Your <code>Program.cs</code> window should look like this:
 <img src="images/introduction/pasted-code.png" alt="Pasted Code"></p>
-<h3 id="manage-the-nuget-packages">Manage the NuGet Packages</h3>
-<p>C# source files are listed in the <code>Solution Explorer</code> window. If the <code>Solution Explorer</code> window is not visible, click on <code>View &gt; Solution Explorer</code> to open it.</p>
-<p><img src="images/introduction/solution-explorer.png" alt="Solution Explorer"></p>
-<p>The squiggly red lines under items in the <code>Solution Explorer</code> window and <code>Program.cs</code> window indicate errors. In this case the errors are caused by missing Nuget packages. Let&#39;s tell Visual Studio to include the Nuget packages and fix that now.</p>
-<p>If you right click on the project name in the Solution Explorer window a drop down menu will appear. Select <code>Manage NuGet Packages...</code> from the menu.</p>
-<p><img src="images/introduction/manage-nuget-packages-menu.png" alt="View Show Solution Explorer"> </p>
-<p>Now you should see the installed TinyCLR NuGet library (GHIElectronics.TinyCLR.Core). We need to install a couple more libraries for our program to run.</p>
-<p><img src="images/introduction/click-on-browse.png" alt="Installed NuGet"></p>
-<p>Click on <code>Browse</code>. You should see a list of available Nuget packages in your local feed.</p>
-<p><img src="images/introduction/browse-nuget-packages.png" alt="Browse Nuget Packages"></p>
-<p>Click on the <code>GHIElectronics.TinyCLR.BrainPad</code> package and then click on the <code>Install</code> button.</p>
-<p><img src="images/introduction/click-install-button.png" alt="Click Install Button"></p>
-<p>Installing the BrainPad Nuget package will automatically install the <code>GHIElectronics.TinyCLR.Devices</code> and <code>GHIElectronics.TinyCLR.Pins</code> packages as well. Click on <code>OK</code>.</p>
-<p><img src="../vb/images/introduction/install-nugets.png" alt="Install Nugets"></p>
-<p>Now accept the license agreement to install the packages.</p>
-<p><img src="../vb/images/introduction/accept-license.png" alt="Accept the License Agreement"></p>
-<p>Close the <code>NuGet...</code> tab to get back to your <code>Program.cs</code> window. The red squiggles should now be gone.</p>
-<p><img src="images/introduction/no-red-squiggles.png" alt="No Red Squiggles"></p>
 <h3 id="deploy-the-program">Deploy the Program</h3>
 <p>Make sure your BrainPad is plugged into the computer&#39;s USB port. Now hit the start button as shown in the above image (or hit the <code>F5</code> key). If you&#39;ve done everything correctly the program will compile and deploy to your device. The message &quot;Hello World!&quot; should appear on the BrainPad display, and the light bulb should start blinking.</p>
 <p>Congratulations! You&#39;re on your way to learning advanced programming on the BrainPad!</p>
-<p>What happened exactly? Our application began by running the <code>BrainPad.Display.DrawTextAndShowOnScreen(0, 0, &quot;Hello!&quot;)</code> line to instruct the display to show the text &quot;Hello!&quot;</p>
-<p>The line <code>BrainPad.Display.DrawTextAndShowOnScreen(0, 0, &quot;Hello!&quot;)</code> is known as a function call. The name of the function is &quot;DrawTextAndShowOnScreen().&quot; This function is part of the &quot;Display&quot; object, which is part of the &quot;BrainPad&quot; object.</p>
+<p>What happened exactly? Our application began by running the <code>BrainPad.Display.DrawText(0, 0, &quot;Hello!&quot;)</code> and <code>BrainPad.Display.RefreshScreen()</code> lines to instruct the display to show the text &quot;Hello!&quot;</p>
+<p>The line <code>BrainPad.Display.DrawText(0, 0, &quot;Hello!&quot;)</code> is known as a function call. The name of the function is &quot;DrawText().&quot; This function is part of the &quot;Display&quot; object, which is part of the &quot;BrainPad&quot; object.</p>
 <p>The items listed in parenthesis (0, 0, &quot;Hello!&quot;) are called the arguments of the function. In this case the first zero tells the BrainPad to display the text at the left side of the BrainPad display. If this number is increased the text will appear farther to the right on the screen. The second zero tells the BrainPad to print the text at the top of the display. If this number is increased the text will be printed lower on the screen. The third arugument, &quot;Hello!,&quot; tells the BrainPad what text to display on the screen.</p>
-<p>After <code>BrainPadSetup()</code> is finished, the <code>While True</code> loop starts running. Code placed inside this while loop is executed in an infinite loop. This is why the LED keeps blinking and never stops.</p>
+<p>After the display lines are finished, the <code>While True</code> loop starts running. Code placed inside this while loop is executed in an infinite loop. This is why the LED keeps blinking and never stops.</p>
 </article>
           </div>
           
