@@ -25,7 +25,7 @@ The Visual Studio Community Edition is free and can be found here: [Microsoft Vi
 
 [![VisualStudio](images/download-visual-studio.png)](https://www.visualstudio.com/vs/community/)
 
-Click on the above link an then click on the **Download VS Community 2017** button. After downloading is complete, run the file. If you are asked, allow the program to make changes to your device.
+Click on the above link an then click on the **Download VS Community 2017** button. After downloading is complete, open or run the file. If you are asked, allow the program to make changes to your device.
 
 When the installation program shows the `Workloads` screen, select `.NET desktop development` (you should see a check mark in the `.NET desktop development` box) and then click the `Install` button.
 
@@ -40,12 +40,7 @@ If Visual Studio is open, close it before continuing with the TinyCLR installati
 Download the [TinyCLR Visual Studio Project System](../resources/downloads.md#visual-studio-project-system) from our [Downloads](../resources/downloads.md) page.
 [![Download Visual Studio Project System](images/download-vs-project-system.png)](../resources/downloads.md#visual-studio-project-system)
 
-After the download is complete, click on the up arrow next to the download name at the bottom of the screen as shown below.
-
-![Install VSIX Step 1](images/install-vsix-step1.png)
-
-Then select `Open` from the pop-up menu.
-![Install VSIX Step 2](images/install-vsix-step2.png)
+After the download is complete, open or run the downloaded file.
 
 In the `VSIX Installer` dialog box click the `Install` button.
 ![Install VSIX](images/install-vsix.png)
@@ -55,34 +50,30 @@ In the `VSIX Installer` dialog box click the `Install` button.
 1. Since TinyCLR OS is still so new, we haven't yet uploaded any packages to NuGet. Click [here](../resources/downloads.md#nuget-libraries) and download the latest Nuget library.
 [![Download Nuget Library](images/download-nuget.png)](../resources/downloads.md#nuget-libraries)
 
-2. On the lower left of the screen click on the up arrow next to the downloaded filename.
-![Click on up arrow](images/click-library.png)
+2. Open or run the downloaded file.
 
-3. Now click `Open` in the pop-up menu.
-![Click on "open"](images/click-open.png)
-
-4. A window will pop up with a list of the files in the library. Click on the `Extract all` button.
+3. A window will pop up with a list of the files in the library. Click on the `Extract all` button.
 ![Extract all](images/extract-all.png)
 
-5. A dialog box will appear allowing you to select a folder to save the files. You can change the folder location or accept the default location. You will need to remember the folder location for step 11. Click on the `Extract` button to extract and save the files.
+4. A dialog box will appear allowing you to select a folder to save the files. You can change the folder location or accept the default location. You will need to remember the folder location for step 11. Click on the `Extract` button to extract and save the files.
 ![Select location to save files](images/select-location.png)
 
-6. If a window with the files appears, you can close it before continuing.
+5. If a window with the files appears, you can close it before continuing.
 
-7. Start Visual Studio. From the `Tools` menu select `NuGet Package Manager` and then select `Package Manager Settings`.
+6. Start Visual Studio. From the `Tools` menu select `NuGet Package Manager` and then select `Package Manager Settings`.
 
-8. In the left panel under `Nuget Package Manager` select `Package Sources`.
+7. In the left panel under `Nuget Package Manager` select `Package Sources`.
 
-9. Click on the button with the green plus sign near the upper right corner of the `options` dialog box. A new package source will be created in the `Available package sources` box.
+8. Click on the button with the green plus sign near the upper right corner of the `Options` dialog box. A new package source will be created in the `Available package sources` box.
 ![Click green plus sign button](images/click-green-plus-sign.png)
 
-10. Change the name of the package source from "package source" to "offline." You may have to click on the package source (in the available package sources box) before you can change the name.
+9. Change the name of the package source from "package source" to "offline." You may have to click on the package source (in the available package sources box) before you can change the name.
 
-11. Now change the folder name in the text box to the right of `Source:` to the folder where you saved the NuGet packages in step 5. You can either type in the folder name or click on the `...` button to search for the folder.
+10. Now change the folder name in the text box to the right of `Source:` to the folder where you saved the NuGet packages in step 5. You can either type in the folder name or click on the `...` button to search for the folder.
 
-12. Click on the `Update` button. The folder name should now appear under the `offline` entry under `Available package sources`.
+11. Click on the `Update` button. The folder name should now appear under the `offline` entry under `Available package sources`.
 
-13. Click the `OK` button.
+12. Click the `OK` button.
 ![Click the OK button](images/click-ok.png) 
 
 ## Step 2: Setup Your BrainPad
@@ -95,13 +86,14 @@ In the `VSIX Installer` dialog box click the `Install` button.
 
 To prepare the BrainPad you only need to install the latest firmware as described below.
 
-1. Download and save the latest TinyCLR OS firmware for the BrainPad from [Downloads](../resources/downloads.md#tinyclr-os-brainpad-firmware). We recommend saving the firmware file on your desktop.
-2. Connect the BrainPad to your computer using a micro USB cable. The power (PWR) light on the BrainPad should be on.
-3. Press and hold the RESET button on the BrainPad for at least three seconds until the Light Bulb on the BrainPad lights up green.
-4. A window will open named `BrainPad2`. Drag the firmware file from step 1 into this window.
-5. The Light Bulb on the BrainPad will flicker and a progress gauge will appear on the computer screen.
-6. It only takes a few seconds for the firmware to be copied to the BrainPad. When it is done, the green light on the BrainPad will stop flickering and the `BrainPad2` window will close.
-7. Congratulations! Your BrainPad is now running the latest firmware!
+1. Download the latest TinyCLR OS firmware for the BrainPad from [Downloads](../resources/downloads.md#tinyclr-os-brainpad-firmware).
+2. Select `Show in folder` or `Save` and `Open folder` (depending on your browser).
+3. Connect the BrainPad to your computer using a micro USB cable. The power (PWR) light on the BrainPad should be on.
+4. Press and hold the RESET button on the BrainPad for at least three seconds until the Light Bulb on the BrainPad lights up green.
+5. A window will open named `BrainPad2`. Copy or drag the firmware file from the folder in step 2 into this window.
+6. The Light Bulb on the BrainPad will flicker and a progress gauge will appear on the computer screen.
+7. It only takes a few seconds for the firmware to be copied to the BrainPad. When it is done, the green light on the BrainPad will stop flickering and the `BrainPad2` window will close.
+8. Congratulations! Your BrainPad is now running the latest firmware!
 
 
 > [!Note]
