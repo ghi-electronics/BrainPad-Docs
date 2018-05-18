@@ -50,9 +50,9 @@ Let's run the program now to see the code come to life. Connect the BrainPad and
 
 Visual Studio will now tell your BrainPad to run the code.  A few things will happen and the display will now show the text "Hello!" and the light bulb (or LED) will blink.
 
-What happened exactly? Our application began by running the `BrainPadSetup()` function. This function is runs one time, when the application starts, and is used to set things up. In this case, it executed the `BrainPad.Display.DrawTextAndShowOnScreen(0, 0, "Hello!")` line to instruct the display to show the text "Hello."
+What happened exactly? Our application began by running the `BrainPadSetup()` function. This function is runs one time, when the application starts, and is used to set things up. In this case, it executed the `BrainPad.Display.DrawTextAndRefreshScreen(0, 0, "Hello!")` line to instruct the display to show the text "Hello."
 
-The line `BrainPad.Display.DrawTextAndShowOnScreen(0, 0, "Hello!")` is known as a function call.  The name of the funtion is "DrawTextAndShowOnScreen()."  This function is part of the "Display" object, which is part of the "BrainPad" object.
+The line `BrainPad.Display.DrawTextAndRefreshScreen(0, 0, "Hello!")` is known as a function call.  The name of the funtion is "DrawTextAndRefreshScreen()."  This function is part of the "Display" object, which is part of the "BrainPad" object.
 
 The items listed in parenthesis (0, 0, "Hello!") are called the arguments of the function.  In this case the first zero tells the BrainPad to display the text at the left side of the BrainPad display.  If this number is increased the text will appear further to the right of the screen.  The second zero tells the BrainPad to print the text at the top of the display.  If this number is increased the text will be printed lower on the screen.  The third arugument, "Hello!," tells the BrainPad what text to display on the screen.
 
@@ -70,7 +70,7 @@ If you try to edit code and see the message "Managed Compatibility Mode does not
 
 ![Error trying to edit in debug mode](../csharp/images/introduction/edit-during-debug-error.png)
 
-Use the mouse to place the cursor after the exclamation point in the `BrainPad.Display.DrawTextAndShowOnScreen(0, 0, "Hello!")` function call (as shown below).  This should be in line 5 of the program (line numbers are listed near the left edge of the program).
+Use the mouse to place the cursor after the exclamation point in the `BrainPad.Display.DrawTextAndRefreshScreen(0, 0, "Hello!")` function call (as shown below).  This should be in line 5 of the program (line numbers are listed near the left edge of the program).
 
 ![Place cursor after hello](images/introduction/place-cursor-after-hello.png)
 

@@ -43,7 +43,7 @@ BrainPad.Buzzer.StopBuzzing() – Stops the buzzer if it is currently playing.
 ## BrainPad.Display 
 The BrainPad display is an output device. The BrainPad has commands allowing you to display numbers and text and draw simple pictures and shapes including points, lines, circles and rectangles.
 
-Display commands in this section only change the memory buffer of the display and are not seen until you also call the BrainPad.Display.ShowOnScreen() method.  
+Display commands in this section only change the memory buffer of the display and are not seen until you also call the BrainPad.Display.RefreshScreen() method.  
  
 BrainPad.Display.Height() – returns the BrainPad display's height in pixels (64). 
 BrainPad.Display.Width() - returns the BrainPad display's width in pixels (128).
@@ -79,19 +79,7 @@ BrainPad.Display.ClearPoint(int x, int y); - Clears a pixel located at the displ
 BrainPad.Display.ClearScreen() - Clears the entire screen buffer. 
 
 BrainPad.Display.InvertColors(bool invert); 
-BrainPad.Display.ShowOnScreen() 
- 
-The above display commands only affect the BrainPad’s display's memory/buffer, and must be ‘committed’ to the display by running the method BrainPad.Display.ShowOnScreen(). The display methods below have the ShowOnScreen() method built in and don’t require the use of BrainPad.Display.ShowOnScreen(). Keep in mind though that these methods also clear the entire screen before displaying new text. 
- 
-Display commands in this section change the memory/buffer and display to the BrainPad display instantly.  They do this by running 3 methods consecutively BrainPad.Display.ClearScreen(), BrainPad.Display.Draw...etc() and finally BrainPad.Display.ShowOnScreen().  
- 
-BrainPad.Display.DrawNumberAndShowOnScreen(int x, int y, long number); 
-BrainPad.Display.DrawNumberAndShowOnScreen(int x, int y, double number); 
-BrainPad.Display.DrawSmallNumberAndShowOnScreen(int x, int y, long number); 
-BrainPad.Display.DrawSmallNumberAndShowOnScreen(int x, int y, double number); 
-BrainPad.Display.DrawTextAndShowOnScreen(int x, int y, string text); 
-BrainPad.Display.DrawSmallTextAndShowOnScreen(int x, int y, string text); 
-BrainPad.Display.DrawScaledTextAndShowOnScreen(int x, int y, string text, int HScale, int VScale); 
+BrainPad.Display.RefreshScreen() 
  
 ## BrainPad.LightBulb. 
 The BrainPad Light Bulb is actually three light emitting diodes (LEDs) in one package. One LED is red, one is green, and one is blue. These can turned on independantly at varying intensities to create up to one million different colors.

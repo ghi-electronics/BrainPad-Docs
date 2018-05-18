@@ -2,7 +2,7 @@
 ---
 The BrainPad display is an output device. The BrainPad has commands allowing you to display numbers and text and draw simple pictures and shapes. These shapes including points, lines, circles and rectangles. All display commands use pixels (screen dots) as units.
 
-Display commands in this section only change the memory buffer of the display and are not seen until you also call the BrainPad.Display.ShowOnScreen() method.  
+Display commands in this section only change the memory buffer of the display and are not seen until you also call the BrainPad.Display.RefreshScreen() method.  
  
 * `BrainPad.Display.Height()` - returns the BrainPad display's height in pixels (64). 
 
@@ -56,22 +56,5 @@ Display commands in this section only change the memory buffer of the display an
 
 * `BrainPad.Display.InvertColors(bool invert)` - Inverts each pixel on the entire screen. Pixels that are on will be turned off, and pixels that are off will be turned on.
 
-* `BrainPad.Display.ShowOnScreen()` - Writes the entire display buffer to the display. Used to show what has been drawn to the screen buffer on the display.
- 
-The above commands only affect the BrainPad's display memory (or buffer) and will not be shown on the display until `BrainPad.Display.ShowOnScreen()` is executed.
-
-The methods below have the `ShowOnScreen()` method built in and don't require the use of `BrainPad.Display.ShowOnScreen()`. These methods also clear the entire screen before displaying new text. The following commands run three methods consecutively: `BrainPad.Display.ClearScreen()`, `BrainPad.Display.Draw...`, and finally `BrainPad.Display.ShowOnScreen()`.  
- 
-* `BrainPad.Display.DrawNumberAndShowOnScreen(int x, int y, long number)` - Clears the screen, draws a number of type long at the given x and y coordinates, and displays the number on the BrainPad display.
-
-* `BrainPad.Display.DrawNumberAndShowOnScreen(int x, int y, double number)` - Clears the screen, draws a number of type double at the given x and y coordinates, and displays the number on the BrainPad display.
-
-* `BrainPad.Display.DrawSmallNumberAndShowOnScreen(int x, int y, long number)` - Clears the screen, draws a number of type long at the given x and y coordinates in small text, and displays the number on the BrainPad display.
-
-* `BrainPad.Display.DrawSmallNumberAndShowOnScreen(int x, int y, double number)` - Clears the screen, draws a number of type double at the given x and y coordinates in small text, and displays the number on the BrainPad display.
-
-* `BrainPad.Display.DrawTextAndShowOnScreen(int x, int y, string text)` - Clears the screen, draws a string at the given x and y coordinates, and displays the string on the BrainPad display.    
-
-* `BrainPad.Display.DrawSmallTextAndShowOnScreen(int x, int y, string text)` - Clears the screen, draws a string at the given x and y coordinates in small text, and displays the string on the BrainPad display.    
-
-* `BrainPad.Display.DrawScaledTextAndShowOnScreen(int x, int y, string text, int HScale, int VScale)` - Clears the screen, draws a string at the given x and y coordinates in scaled text, and displays the string on the BrainPad display.    
+* `BrainPad.Display.RefreshScreen()` - Writes the entire display buffer to the display. Used to show what has been drawn to the screen buffer on the display.
+   

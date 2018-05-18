@@ -7,7 +7,7 @@ To continue, start by installing Visual Studio on your computer. Instructions ar
 ![VB sample code](images/visual-studio-screen.png)
 
 > [!Tip]
-> An easier path to [**Start Making**](../start-making/intro.md) with the BrainPad is through MakeCode, an online tool with nothing to install. It's your choice depending on your goals and skill level.
+> An easier path to [**Start Making**](../start-making/intro.md) with the BrainPad is through Microsoft MakeCode, an online tool with nothing to install. It's your choice depending on your goals and skill level.
 
 ---
 You are on the documentation website for the BrainPad. The main website is found at [www.brainpad.com](http://www.brainpad.com/)

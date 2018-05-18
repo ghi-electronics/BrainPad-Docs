@@ -1,18 +1,31 @@
 # System Setup
 ---
-TinyCLR OS is the tiny operating system used by the BrainPad to run your C# and Visual Basic programs. Microsoft Visual Studio is used to write these programs on your computer and is also used by professional programmers the world over. Both TinyCLR and Visual Studio are available for free, but must be set up before using them to program the BrainPad and start having fun.
+TinyCLR OS is the tiny operating system used by the BrainPad to run your C# and Visual Basic programs. Microsoft Visual Studio is used to write these programs on your computer and is also used by professional programmers the world over. Both TinyCLR and Visual Studio are available for free, but must be set up before using them to program the BrainPad to start having fun.
 
 > [!Tip]
 > You can learn more about TinyCLR OS on the [**GHI Electronics website**](https://www.ghielectronics.com/tinyclr/features)
 
-## Step 1: Install the Necessary Software
+## System Setup Overview
+The instructions on this page describe how to setup your computer to start programming the BrainPad using Visual Studio. The steps are as follows:
+
+**Step 1: Setup Your Computer**
+  * [Install Visual Studio](#install-visual-studio).
+  * [Install the TinyCLR Project System](#install-the-tinyclr-project-system).
+  * [Install the TinyCLR NuGet packages](#install-the-tinyclr-nuget-packages).
+
+**Step 2: Setup Your Brainpad**
+  * [Install the BrainPad firmware](#install-the-brainpad-firmware).
+
 ---
-### Visual Studio
+
+## Step 1: Setup Your Computer
+---
+### Install Visual Studio
 The Visual Studio Community Edition is free and can be found here: [Microsoft Visual Studio 2017 Community Edition.](https://www.visualstudio.com/vs/community/)
 
 [![VisualStudio](images/download-visual-studio.png)](https://www.visualstudio.com/vs/community/)
 
-Click on the above link an then click on the **Download VS Community 2017** button. After downloading is complete, run the file. If you are asked, allow the program to make changes to your device.
+Click on the above link an then click on the **Download VS Community 2017** button. After downloading is complete, open or run the file. If you are asked, allow the program to make changes to your device.
 
 When the installation program shows the `Workloads` screen, select `.NET desktop development` (you should see a check mark in the `.NET desktop development` box) and then click the `Install` button.
 
@@ -20,67 +33,67 @@ When the installation program shows the `Workloads` screen, select `.NET desktop
 
 After installation is complete, click on the `Launch` button. You will be asked to sign in or sign up for Visual Studio developer services. You can either sign in (or sign up) now or click the 'Not now, maybe later' option. You will then be asked to pick a color scheme and Visual Studio will start.
 
-### TinyCLR OS Project System.
+### Install the TinyCLR Project System
 
 If Visual Studio is open, close it before continuing with the TinyCLR installation.
 
-Download the [TinyCLR Visual Studio Project System](http://files.ghielectronics.com/downloads/TinyCLR/Extensions/TinyCLR%20OS%20Project%20System%20v0.10.0.vsix). After the download is complete, click on the up arrow next to the download name at the bottom of the screen as shown below.
+Download the TinyCLR [Visual Studio Project System](../resources/downloads.md#visual-studio-project-system) from our [Downloads](../resources/downloads.md) page.
+[![Download Visual Studio Project System](images/download-vs-project-system.png)](../resources/downloads.md#visual-studio-project-system)
 
-![Install VSIX Step 1](images/install-vsix-step1.png)
-
-Then select `Open` from the pop-up menu.
-![Install VSIX Step 2](images/install-vsix-step2.png)
+After the download is complete, open or run the downloaded file.
 
 In the `VSIX Installer` dialog box click the `Install` button.
-
 ![Install VSIX](images/install-vsix.png)
 
-### Download and Install the TinyCLR Nuget Packages
+### Install the TinyCLR Nuget Packages
 
-1. Since TinyCLR OS is still so new, we haven't yet uploaded any packages to NuGet.  Download the newest [libraries](../resources/downloads.md#libraries), extract the archive, and place them in a [local NuGet feed](https://docs.nuget.org/ndocs/hosting-packages/local-feeds).
-2. Connect your device to your PC using a USB cable (make sure your device has the latest firmware installed).
-3. Start Visual Studio and create a new `TinyCLR Application` under `C# > TinyCLR`. New to Visual Studio or C#? Take a look at the [getting started guide from Microsoft](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/with-visual-studio).
-4. Right click on your Project in the Solution Explorer and select `Manage NuGet Packages`.  If the Solution Explorer window is not visible, open it by selecting `Solution Explorer` in the `View` menu.
-![View Show Solution Explorer](images/select-manage-nuget-packages.jpg)
+1. Since TinyCLR OS is still so new, we haven't yet uploaded any packages to NuGet. Click [here](../resources/downloads.md#nuget-libraries) and download the latest Nuget library.
+[![Download Nuget Library](images/download-nuget.png)](../resources/downloads.md#nuget-libraries)
 
-5. Select the `Package Source` settings icon. 
-![Setting Nuget Package Source](images/setting-nuget-package-source.jpg) 
+2. Open or run the downloaded file.
 
-6. Click the `+` button to add a new Package source. 
-![Add Package Source](images/add-package-source.jpg)
+3. A window will pop up with a list of the files in the library. Click on the `Extract all` button.
+![Extract all](images/extract-all.png)
 
-7. Select the location where the NuGet packages are stored locally, by pressing the `...` button. 
-![Choose Local NuGet Package Folder](images/choose-local-nuget-package-folder.jpg)
+4. A dialog box will appear allowing you to select a folder to save the files. You can change the folder location or accept the default location. You will need to remember the folder location for step 11. Click on the `Extract` button to extract and save the files.
+![Select location to save files](images/select-location.png)
 
-8. After Selecting the local folder where the downloaded NuGet packages are, you can select the `Installed` Tab to view the installed NuGet Packages. 
-![Show Installed NuGet Packages](images/show-installed-nuget-packages.jpg)
+5. If a window with the files appears, you can close it before continuing.
 
-9. Selecting the `Browse` tab will show all the NuGet packages located in your local NuGet feed. Those installed are noted with a green check mark in front of the name. 
-![Browse Local NuGet Feed](images/browse-local-nuget-feed.jpg)
+6. Start Visual Studio. From the `Tools` menu select `NuGet Package Manager` and then select `Package Manager Settings`.
 
-10. To install one of the packages click on the package name, click the check box to the right under "Version(s)," and click on the `Install` button.
-![Add Nuget Package](images/add-nuget-package.jpg)
+7. In the left panel under `Nuget Package Manager` select `Package Sources`.
 
-11. Accept the licensing agreement to install the package.
-![Accept Agreement for NuGet](images/accept-agreement-for-nuget.jpg)
+8. Click on the button with the green plus sign near the upper right corner of the `Options` dialog box. A new package source will be created in the `Available package sources` box.
+![Click green plus sign button](images/click-green-plus-sign.png)
 
-And, that's it! You're now ready to start programming using TinyCLR OS.
+9. Change the name of the package source from "package source" to "offline." You may have to click on the package source (in the available package sources box) before you can change the name.
 
-## Step 2: Prepare the BrainPad
+10. Now change the folder name in the text box to the right of `Source:` to the folder where you saved the NuGet packages in step 5. You can either type in the folder name or click on the `...` button to search for the folder.
+
+11. Click on the `Update` button. The folder name should now appear under the `offline` entry under `Available package sources`.
+
+12. Click the `OK` button.
+![Click the OK button](images/click-ok.png) 
+
+## Step 2: Setup Your BrainPad
 ---
 
 > [!Tip]
-> If you have the original BrainPad Concept/Prototype the setup is slightly different. See the [**Older BrainPad**](../resources/older-brainpad.md) page for more details.
+> If you have an older concept or prototype BrainPad the setup is slightly different. See the [**Older BrainPads**](../resources/older-brainpad.md) page for more details.
+
+### Install the BrainPad Firmware
 
 To prepare the BrainPad you only need to install the latest firmware as described below.
 
-1. Download and save the latest TinyCLR OS firmware for the BrainPad from [Downloads](../resources/downloads.md#tinyclr-os-brainpad-firmware). We recommend saving the firmware file on your desktop.
-2. Connect the BrainPad to your computer using a micro USB cable. The power (PWR) light on the BrainPad should be on.
-3. Press and hold the RESET button on the BrainPad for at least three seconds until the Light Bulb on the BrainPad lights up green.
-4. A window will open named `BrainPad2`. Drag the firmware file from step 1 into this window.
-5. The Light Bulb on the BrainPad will flicker and a progress gauge will appear on the computer screen.
-6. It only takes a few seconds for the firmware to be copied to the BrainPad. When it is done, the green light on the BrainPad will stop flickering and the `BrainPad2` window will close.
-7. Congratulations! Your BrainPad is now running the latest firmware!
+1. Download the latest TinyCLR OS firmware for the BrainPad from [Downloads](../resources/downloads.md#tinyclr-os-brainpad-firmware).
+2. Select `Show in folder` or `Save` and `Open folder` (depending on your browser).
+3. Connect the BrainPad to your computer using a micro USB cable. The power (PWR) light on the BrainPad should be on.
+4. Press and hold the RESET button on the BrainPad for at least three seconds until the Light Bulb on the BrainPad lights up green.
+5. A window will open named `BrainPad2`. Copy or drag the firmware file from the folder in step 2 into this window.
+6. The Light Bulb on the BrainPad will flicker and a progress gauge will appear on the computer screen.
+7. It only takes a few seconds for the firmware to be copied to the BrainPad. When it is done, the green light on the BrainPad will stop flickering and the `BrainPad2` window will close.
+8. Congratulations! Your BrainPad is now running the latest firmware!
 
 
 > [!Note]
@@ -98,7 +111,8 @@ namespace Counter {
     class Program {
         public void Main() {
             for (int count = 1; count < 11; count++) {
-                BrainPad.Display.DrawNumberAndShowOnScreen(0, 0, count);
+                BrainPad.Display.DrawNumber(0, 0, count);
+                BrainPad.Display.RefreshScreen();
                 BrainPad.Wait.Seconds(1);
             }
         }
@@ -111,7 +125,8 @@ And here is the equivalent code in Visual Basic:
 Class Program
     Public Sub Main()
         For count = 1 To 10
-            BrainPad.Display.DrawNumberAndShowOnScreen(0, 0, count)
+            BrainPad.Display.DrawNumber(0, 0, count)
+            BrainPad.Display.RefreshScreen()
             BrainPad.Wait.Seconds(1)
         Next count
     End Sub

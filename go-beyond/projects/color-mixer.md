@@ -66,22 +66,10 @@ namespace ColorMixer {
 
                 // Set the color and show the screen
                 BrainPad.LightBulb.TurnColor(LightBulbColor[0], LightBulbColor[1], LightBulbColor[2]);
-                BrainPad.Display.ShowOnScreen();
+                BrainPad.Display.RefreshScreen();
                 BrainPad.Wait.Minimum();
             }
         }
-    }
-
-    public static class BrainPad {
-        public static Accelerometer Accelerometer { get; } = new Accelerometer();
-        public static Buttons Buttons { get; } = new Buttons();
-        public static Buzzer Buzzer { get; } = new Buzzer();
-        public static Display Display { get; } = new Display();
-        public static LightBulb LightBulb { get; } = new LightBulb();
-        public static LightSensor LightSensor { get; } = new LightSensor();
-        public static ServoMotors ServoMotors { get; } = new ServoMotors();
-        public static TemperatureSensor TemperatureSensor { get; } = new TemperatureSensor();
-        public static Wait Wait { get; } = new Wait();
     }
 }
 ```

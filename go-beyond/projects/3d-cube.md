@@ -56,24 +56,24 @@ namespace Cube {
                 double y = Points3D[i].Y;
                 double z = Points3D[i].Z;
 
-                double yt = y * cosax - z * sinax; // rotate around the x axis
-                double zt = y * sinax + z * cosax; // using the Y and Z for the rotation
+                double yt = y * cosax - z * sinax;  // rotate around the x axis
+                double zt = y * sinax + z * cosax;  // using the Y and Z for the rotation
                 y = yt;
                 z = zt;
 
-                double xt = x * cosay - z * sinay; // rotate around the Y axis
-                zt = x * sinay + z * cosay; // using X and Z
+                double xt = x * cosay - z * sinay;  // rotate around the Y axis
+                zt = x * sinay + z * cosay;         // using X and Z
                 x = xt;
                 z = zt;
 
-                xt = x * cosaz - y * sinaz; // finaly rotate around the Z axis
-                yt = x * sinaz + y * cosaz; // using X and Y
+                xt = x * cosaz - y * sinaz;         // finally rotate around the Z axis
+                yt = x * sinaz + y * cosaz;         // using X and Y
                 x = xt;
                 y = yt;
 
-                x = x + Position.X;         // add the object position offset
-                y = y + Position.Y;         // for both x and y
-                z = z + OFFSETZ - Position.Z;     // as well as Z
+                x = x + Position.X;                 // add the object position offset
+                y = y + Position.Y;                 // for both x and y
+                z = z + OFFSETZ - Position.Z;       // as well as Z
 
                 Points2D[i].X = (x * 64 / z) + OFFSETX;
                 Points2D[i].Y = (y * 64 / z) + OFFSETY;
@@ -126,33 +126,21 @@ namespace Cube {
                 //pos.X += 1;
                 Translate3Dto2D(cube_points, cube2, rot, pos);
 
-                for (int i = 0; i < start.Length; i++) {        // draw the lines that make up the object
-                    int vertex = start[i];                      // temp = start vertex for this line\
-                    int sx = (int)cube2[vertex].X;              // set line start x to vertex[i] x position
-                    int sy = (int)cube2[vertex].Y;              // set line start y to vertex[i] y position
-                    vertex = end[i];                            // temp = end vertex for this line
-                    int ex = (int)cube2[vertex].X;              // set line end x to vertex[i+1] x position
-                    int ey = (int)cube2[vertex].Y;              // set line end y to vertex[i+1] y position
+                for (int i = 0; i < start.Length; i++) {    // draw the lines that make up the object
+                    int vertex = start[i];                  // temp = start vertex for this line
+                    int sx = (int)cube2[vertex].X;          // set line start x to vertex[i] x position
+                    int sy = (int)cube2[vertex              // set line start y to vertex[i] y position
+                    vertex = end[i];                        // temp = end vertex for this line
+                    int ex = (int)cube2[vertex].X;          // set line end x to vertex[i+1] x position
+                    int ey = (int)cube2[vertex].Y           // set line end y to vertex[i+1] y position
                     BrainPad.Display.DrawLine(sx, sy, ex, ey);
                 }
                 BrainPad.Display.DrawSmallText(0, 55, "X: " + (accelX * 100).ToString("F0"));
                 BrainPad.Display.DrawSmallText(80, 55, "Y: " + (accelY * 100).ToString("F0"));
-                BrainPad.Display.ShowOnScreen();
+                BrainPad.Display.RefreshScreen();
                 BrainPad.Wait.Minimum();
             }
         }
-    }
-
-    public static class BrainPad {
-        public static Accelerometer Accelerometer { get; } = new Accelerometer();
-        public static Buttons Buttons { get; } = new Buttons();
-        public static Buzzer Buzzer { get; } = new Buzzer();
-        public static Display Display { get; } = new Display();
-        public static LightBulb LightBulb { get; } = new LightBulb();
-        public static LightSensor LightSensor { get; } = new LightSensor();
-        public static ServoMotors ServoMotors { get; } = new ServoMotors();
-        public static TemperatureSensor TemperatureSensor { get; } = new TemperatureSensor();
-        public static Wait Wait { get; } = new Wait();
     }
 }
 ```

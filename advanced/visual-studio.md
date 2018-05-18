@@ -1,6 +1,6 @@
 # Using Visual Studio with the BrainPad
 ---
-We recommend trying Microsoft Visual Studio when you're ready to move beyond MakeCode.  Visual Studio is the most popular desktop program development environment and is used by professional programmers the world over. The experience you gain programming the BrainPad in Visual Studio also applies to programming desktop computers and smart phones, and Visual Studio's advanced debugging and code completion features make writing code a breeze!
+We recommend trying Microsoft Visual Studio when you're ready to move beyond Microsoft MakeCode.  Visual Studio is the most popular desktop program development environment and is used by professional programmers the world over. The experience you gain programming the BrainPad in Visual Studio also applies to programming desktop computers and smart phones, and Visual Studio's advanced debugging and code completion features make writing code a breeze!
 
 ### Step 1: Install Visual Studio on your computer.
 

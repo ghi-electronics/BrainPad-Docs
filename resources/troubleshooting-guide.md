@@ -24,7 +24,7 @@ This virtual drive opens a window containing a text file that contains informati
 When the BrainPad virtual drive window is open (see Bootloader section), download [this demo]() file and drag it into the virtual drive window. 
 
 ## TinyCLR OS
-We recommend starting with MakeCode to verify the hardware is functional first. Then, load TinyCLR OS as detailed in the [System Setup](../go-beyond/system-setup.md). Once loaded, your PC will detect a TinyCLR OS device as shown below.
+We recommend starting with Microsoft MakeCode to verify the hardware is functional first. Then, load TinyCLR OS as detailed in the [System Setup](../go-beyond/system-setup.md). Once loaded, your PC will detect a TinyCLR OS device as shown below.
 
 ![Device Manager](images/device-manager.png)
 

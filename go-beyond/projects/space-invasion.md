@@ -18,13 +18,13 @@ When you finish this section, you will have a ship on the screen that can be mov
 ### The Main Loop
 In this game we have a loop where we process the objects we have moving on screen, like the ship.
 
-Once everything is processed, we `ShowOnScreen`. As always, we need to add a minimum delay to give the system time to process any other internal tasks.
+Once everything is processed, we `RefreshScreen`. As always, we need to add a minimum delay to give the system time to process any other internal tasks.
 
 ```
 static void Main() {
     while(true) {
         ProcessShip();
-        BrainPad.Display.ShowOnScreen();
+        BrainPad.Display.RefreshScreen();
         BrainPad.Wait.Minimum();
     }
 }
@@ -38,7 +38,7 @@ static void Main() {
 
     while (true) {
         ProcessShip();
-        BrainPad.Display.ShowOnScreen();
+        BrainPad.Display.RefreshScreen();
         BrainPad.Wait.Minimum();
     }
 }
@@ -150,22 +150,10 @@ namespace SpaceInvasion {
 
             while (true) {
                 ProcessShip();
-                BrainPad.Display.ShowOnScreen();
+                BrainPad.Display.RefreshScreen();
                 BrainPad.Wait.Minimum();
             }
         }
-    }
-
-    public static class BrainPad {
-        public static Accelerometer Accelerometer { get; } = new Accelerometer();
-        public static Buttons Buttons { get; } = new Buttons();
-        public static Buzzer Buzzer { get; } = new Buzzer();
-        public static Display Display { get; } = new Display();
-        public static LightBulb LightBulb { get; } = new LightBulb();
-        public static LightSensor LightSensor { get; } = new LightSensor();
-        public static ServoMotors ServoMotors { get; } = new ServoMotors();
-        public static TemperatureSensor TemperatureSensor { get; } = new TemperatureSensor();
-        public static Wait Wait { get; } = new Wait();
     }
 }
 ```
@@ -278,22 +266,10 @@ namespace SpaceInvasion {
             while (true) {
                 ProcessShip();
                 ProcessBullet();
-                BrainPad.Display.ShowOnScreen();
+                BrainPad.Display.RefreshScreen();
                 BrainPad.Wait.Minimum();
             }
         }
-    }
-
-    public static class BrainPad {
-        public static Accelerometer Accelerometer { get; } = new Accelerometer();
-        public static Buttons Buttons { get; } = new Buttons();
-        public static Buzzer Buzzer { get; } = new Buzzer();
-        public static Display Display { get; } = new Display();
-        public static LightBulb LightBulb { get; } = new LightBulb();
-        public static LightSensor LightSensor { get; } = new LightSensor();
-        public static ServoMotors ServoMotors { get; } = new ServoMotors();
-        public static TemperatureSensor TemperatureSensor { get; } = new TemperatureSensor();
-        public static Wait Wait { get; } = new Wait();
     }
 }
 ```
@@ -425,22 +401,10 @@ namespace SpaceInvasion {
                 ProcessShip();
                 ProcessBullet();
                 ProcessMonster();
-                BrainPad.Display.ShowOnScreen();
+                BrainPad.Display.RefreshScreen();
                 BrainPad.Wait.Minimum();
             }
         }
-    }
-
-    public static class BrainPad {
-        public static Accelerometer Accelerometer { get; } = new Accelerometer();
-        public static Buttons Buttons { get; } = new Buttons();
-        public static Buzzer Buzzer { get; } = new Buzzer();
-        public static Display Display { get; } = new Display();
-        public static LightBulb LightBulb { get; } = new LightBulb();
-        public static LightSensor LightSensor { get; } = new LightSensor();
-        public static ServoMotors ServoMotors { get; } = new ServoMotors();
-        public static TemperatureSensor TemperatureSensor { get; } = new TemperatureSensor();
-        public static Wait Wait { get; } = new Wait();
     }
 }
 ```
@@ -608,22 +572,10 @@ namespace SpaceInvasion {
                 ProcessShip();
                 ProcessBullet();
                 ProcessMonster();
-                BrainPad.Display.ShowOnScreen();
+                BrainPad.Display.RefreshScreen();
                 BrainPad.Wait.Minimum();
             }
         }
-    }
-
-    public static class BrainPad {
-        public static Accelerometer Accelerometer { get; } = new Accelerometer();
-        public static Buttons Buttons { get; } = new Buttons();
-        public static Buzzer Buzzer { get; } = new Buzzer();
-        public static Display Display { get; } = new Display();
-        public static LightBulb LightBulb { get; } = new LightBulb();
-        public static LightSensor LightSensor { get; } = new LightSensor();
-        public static ServoMotors ServoMotors { get; } = new ServoMotors();
-        public static TemperatureSensor TemperatureSensor { get; } = new TemperatureSensor();
-        public static Wait Wait { get; } = new Wait();
     }
 }
 ```

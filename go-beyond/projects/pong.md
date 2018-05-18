@@ -115,32 +115,20 @@ namespace Pong {
 
                 if (ScoreL >= 5) {
                     BrainPad.Display.DrawScaledText(0, 40, "You Lose!", 3, 1);
-                    BrainPad.Display.ShowOnScreen();
+                    BrainPad.Display.RefreshScreen();
                     BrainPad.Wait.Seconds(-1);
                 }
 
                 if (ScoreR >= 5) {
                     BrainPad.Display.DrawScaledText(0, 40, "You Win!", 3, 1);
-                    BrainPad.Display.ShowOnScreen();
+                    BrainPad.Display.RefreshScreen();
                     while (true) BrainPad.Wait.Seconds(1);
                 }
 
-                BrainPad.Display.ShowOnScreen();
+                BrainPad.Display.RefreshScreen();
                 BrainPad.Wait.Minimum();
             }
         }
-    }
-
-    public static class BrainPad {
-        public static Accelerometer Accelerometer { get; } = new Accelerometer();
-        public static Buttons Buttons { get; } = new Buttons();
-        public static Buzzer Buzzer { get; } = new Buzzer();
-        public static Display Display { get; } = new Display();
-        public static LightBulb LightBulb { get; } = new LightBulb();
-        public static LightSensor LightSensor { get; } = new LightSensor();
-        public static ServoMotors ServoMotors { get; } = new ServoMotors();
-        public static TemperatureSensor TemperatureSensor { get; } = new TemperatureSensor();
-        public static Wait Wait { get; } = new Wait();
     }
 }
 ```
