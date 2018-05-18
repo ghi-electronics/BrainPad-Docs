@@ -8,7 +8,7 @@ As a demo, we built this robot with a chassis we ordered from Amazon http://a.co
 BrainPad.ServoMotors.ServoOne.ConfigureAsContinuous(false);
 BrainPad.ServoMotors.ServoTwo.ConfigureAsContinuous(true);
 
-BrainPad.Display.DrawSmallTextAndShowOnScreen(0, 20, "Press Left");
+BrainPad.Display.DrawSmallTextAndRefreshScreen(0, 20, "Press Left");
 while (BrainPad.Buttons.IsLeftPressed() == false)
 {
     // Beep 
@@ -16,13 +16,13 @@ while (BrainPad.Buttons.IsLeftPressed() == false)
     BrainPad.Wait.Seconds(0.3);
 }
 BrainPad.Display.ClearScreen();
-BrainPad.Display.DrawSmallTextAndShowOnScreen(40, 20, "Go!");
+BrainPad.Display.DrawSmallTextAndRefreshScreen(40, 20, "Go!");
 
 //BrainPad.ServoMotorsIsServoTwoInverted(true);
 
 bool dirrection = true;
 BrainPad.ServoMotors.ServoOne.Set(50);
-BrainPad.Display.DrawSmallTextAndShowOnScreen(40, 20, "Reflect");
+BrainPad.Display.DrawSmallTextAndRefreshScreen(40, 20, "Reflect");
 
 // using reflector
 bool use_builtin = true;
@@ -42,7 +42,7 @@ if (use_builtin)
 
                     
         double l = echolen.Read();
-        BrainPad.Display.DrawSmallTextAndShowOnScreen(0, 0, l.ToString());
+        BrainPad.Display.DrawSmallTextAndRefreshScreen(0, 0, l.ToString());
         if (l < 600)
         {
             Move(-100, -100);

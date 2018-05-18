@@ -37,7 +37,7 @@ After installation is complete, click on the `Launch` button. You will be asked 
 
 If Visual Studio is open, close it before continuing with the TinyCLR installation.
 
-Download the [TinyCLR Visual Studio Project System](../resources/downloads.md#visual-studio-project-system) from our [Downloads](../resources/downloads.md) page.
+Download the TinyCLR [Visual Studio Project System](../resources/downloads.md#visual-studio-project-system) from our [Downloads](../resources/downloads.md) page.
 [![Download Visual Studio Project System](images/download-vs-project-system.png)](../resources/downloads.md#visual-studio-project-system)
 
 After the download is complete, open or run the downloaded file.
@@ -111,7 +111,8 @@ namespace Counter {
     class Program {
         public void Main() {
             for (int count = 1; count < 11; count++) {
-                BrainPad.Display.DrawNumberAndShowOnScreen(0, 0, count);
+                BrainPad.Display.DrawNumber(0, 0, count);
+                BrainPad.Display.RefreshScreen();
                 BrainPad.Wait.Seconds(1);
             }
         }
@@ -124,7 +125,8 @@ And here is the equivalent code in Visual Basic:
 Class Program
     Public Sub Main()
         For count = 1 To 10
-            BrainPad.Display.DrawNumberAndShowOnScreen(0, 0, count)
+            BrainPad.Display.DrawNumber(0, 0, count)
+            BrainPad.Display.RefreshScreen()
             BrainPad.Wait.Seconds(1)
         Next count
     End Sub
