@@ -2,7 +2,9 @@
 ---
 The BrainPad display is an output device. The BrainPad has commands allowing you to display numbers and text and draw simple pictures and shapes. These shapes including points, lines, circles and rectangles. All display commands use pixels (screen dots) as units.
 
-Display commands in this section only change the memory buffer of the display and are not seen until you also call the BrainPad.Display.RefreshScreen() method.  
+Display commands in this section only change the memory buffer of the display and are not seen until you also call the BrainPad.Display.RefreshScreen() method.
+
+## Display Methods
  
 * `BrainPad.Display.Height()` - returns the BrainPad display's height in pixels (64). 
 
@@ -58,3 +60,33 @@ Display commands in this section only change the memory buffer of the display an
 
 * `BrainPad.Display.RefreshScreen()` - Writes the entire display buffer to the display. Used to show what has been drawn to the screen buffer on the display.
    
+## Display Sample Code
+The following program draws a point, line, rectangle, circle and a picture of a heart in two sizes.
+
+To try it, [start a C# new project](../csharp/intro.md#start-a-new-project), [manage the NuGet packages](../csharp/intro.md#manage-the-nuget-packages), and [add the BrainPad helper code](../csharp/intro.md#add-the-brainpad-helper-code). Then copy this code and paste it into the `Program.cs` window replacing just the `main` method in the original program.
+
+```
+static void Main()
+{
+    BrainPad.Display.DrawPoint(64, 32);
+    BrainPad.Display.DrawLine(0, 52, 127, 52);
+    BrainPad.Display.DrawRectangle(48, 20, 32, 24);
+    BrainPad.Display.DrawCircle(64, 32, 20);
+
+    byte[] pictureData = new byte[]
+    { 0, 0, 1, 0, 0 ,0, 1, 0, 0,
+      0, 1, 0, 1, 0, 1, 0, 1, 0,
+      1, 0, 0, 0, 1, 0, 0, 0, 1,
+      1, 0, 0, 0, 1, 0, 0, 0, 1,
+      1, 0, 0, 0, 0, 0, 0, 0, 1,
+      0, 1, 0, 0, 0, 0, 0, 1, 0,
+      0, 0, 1, 0, 0, 0, 1, 0, 0,
+      0, 0, 0, 1, 0, 1, 0, 0, 0,
+      0, 0, 0, 0, 1, 0, 0, 0, 0,
+    };
+
+    BrainPad.Display.DrawPicture(0, 0, BrainPad.Display.CreatePicture(9, 9, pictureData));
+    BrainPad.Display.DrawPicture(10, 10, BrainPad.Display.CreateScaledPicture(9, 9, pictureData, 2));
+    BrainPad.Display.RefreshScreen();
+}
+```

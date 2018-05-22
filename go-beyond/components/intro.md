@@ -9,15 +9,15 @@ The buzzer is an output device. When you program the BrainPad to produce sound, 
 In humans, ears are input devices, and the mouth is an output device. Together they allow us to communicate. Just like the BrainPad, your brain gets input from your ears, processes it and figures out what to say, and then sends output to your mouth and vocal cords to generate speech.
 
 The BrainPad has all of its inputs arranged on the left side of the board:
-* [Accelerometer](accelerometer.md)
-* [Buttons](buttons.md)
-* [Light Sensor](light-sensor.md)
-* [Temperature Sensor](temperature-sensor.md)
+* [**Accelerometer**](accelerometer.md)
+* [**Buttons**](buttons.md)
+* [**Light Sensor**](light-sensor.md)
+* [**Temperature Sensor**](temperature-sensor.md)
 
 All of the output devices are on the right side of the BrainPad:
-* [Buzzer](buzzer.md)
-* [Display](display.md)
-* [Light Bulb](light-bulb.md)
-* [Servo Motors](servo-motors.md)
+* [**Buzzer**](buzzer.md)
+* [**Display**](display.md)
+* [**Light Bulb**](light-bulb.md)
+* [**Servo Motors**](servo-motors.md)
 
 So the flow of information on the BrainPad goes from left to right. Inputs come in from the sensors on the left side of the BrainPad, are processed by the "brain," and then sent to the output devices on the right side of the board. Note that most devices are not set up this way -- we did this to make the BrainPad more intuitive.
