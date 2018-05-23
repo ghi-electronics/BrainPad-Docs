@@ -18,6 +18,9 @@ In this game a single player plays against the BrainPad.  The player uses the up
 Modify the code to so tilt (the accelerometer) is used instead of buttons. Hint: Use the [Tilt Etch A Sketch](tilt-etch-a-sketch.md) for help.
 
 ## The Code
+> [!Tip]
+> Make sure the namespace in your program matches your project's namespace.  Your project's namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  [**More Info**](../csharp/intro.md#a-few-words-about-namespaces).
+
 ```
 using System;
 using System.Collections;
@@ -25,7 +28,7 @@ using System.Text;
 using System.Threading;
 using GHIElectronics.TinyCLR.BrainPad;
 
-namespace Pong {
+namespace ModifyThis {
     class Program {
         static void Main() {
             double BallX = 10, BallY = 10, BallDX = 2.3, BallDY = 2.8;

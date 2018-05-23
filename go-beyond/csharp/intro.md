@@ -35,7 +35,7 @@ Under `Visual C#` select the `TinyCLR` option.
 
 In the center panel of the `New Project` window select `TinyCLR Application`.
 
-At the bottom of the `New Project` window you can change the name and location of your application or just stick with the default. When starting out you may wish to click on the `Browse` button and select the folder `Desktop` (in the left panel) to make your application easier to find.
+At the bottom of the `New Project` window you can change the name and location of your application. Change the name to "BrainPadDemo." You may wish to click on the `Browse` button and select the folder `Desktop` (in the left panel) to make your application easier to find.
 
 Click the `OK` button on the bottom right of the `New Project` window.  This will create a new blank project.
 
@@ -109,6 +109,20 @@ namespace BrainPadDemo {
 
 Your `Program.cs` window should look like this:
 ![Pasted Code](images/introduction/pasted-code.png)
+
+#### A few words about namespaces
+
+When you create a new C# project, a default namespace is automatically created for you. If you cut and paste code into your project you have to keep the original namespace for the project to work. You can view the project's namespace in the BrainPad Helper file as shown below.
+
+**Namespace shown in BrainPad helper file:**
+![BrainPad helper namespace](images/introduction/helper-namespace.gif)
+
+**Namespace shown in program file. This must match the namespace in the BrainPad Helper file:**
+![Program namespace](images/introduction/program-namespace.gif)
+
+If you did not name your project "BrainPadDemo" when you created it, you will have a namespace mismatch when you paste the above sample program into your project. Just change the namespace in the `Program.cs` window to match the namespace in the BrainPad Helper file and you should be good to go.
+
+Another option is to add a `using` statement at the top of the program file that references the namespace in the BrainPad helper file. If you created a project named "BrainPadDemo" and paste in code with a different namespace, you can add the line `using BrainPadDemo;` at the top of the pasted code to fix the namespace mismatch. The name following `using` must match the namespace in the BrainPad Helper file.
 
 ### Deploy the Program
 Make sure your BrainPad is plugged into the computer's USB port. Now hit the start button as shown in the above image (or hit the `F5` key). If you've done everything correctly the program will compile and deploy to your device. The message "Hello World!" should appear on the BrainPad display, and the light bulb should start blinking.

@@ -101,11 +101,13 @@ static void ProcessShip() {
 
 ### Testing The Ship
 
-Time to load the code and test it out. Here is the code so far.
+> [!Tip]
+> Make sure the namespace in your program matches your project's namespace.  Your project's namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  [**More Info**](../csharp/intro.md#a-few-words-about-namespaces).
 
+Time to load the code and test it out. Here is the code so far.
 ```
 using GHIElectronics.TinyCLR.BrainPad;
-namespace SpaceInvasion {
+namespace ModifyThis {
     class Sprite {
         Picture Pic;
         public int X, Y;
@@ -199,7 +201,7 @@ This is the game code so far. Things are getting more interesting!
 
 ```
 using GHIElectronics.TinyCLR.BrainPad;
-namespace SpaceInvasion {
+namespace ModifyThis {
     class Sprite {
         Picture Pic;
         public int X, Y;
@@ -310,7 +312,7 @@ The monster will move down and go out of view off the bottom of the screen. We a
 
 ```
 using GHIElectronics.TinyCLR.BrainPad;
-namespace SpaceInvasion {
+namespace ModifyThis {
     class Sprite {
         Picture Pic;
         public int X, Y;
@@ -449,7 +451,7 @@ if (Monster.Y > 40) {
 ## The Complete Project
 ```
 using GHIElectronics.TinyCLR.BrainPad;
-namespace SpaceInvasion {
+namespace ModifyThis {
     class Sprite {
         Picture Pic;
         public int X, Y;

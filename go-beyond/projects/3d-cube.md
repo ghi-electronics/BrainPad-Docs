@@ -13,11 +13,14 @@ A simple wire-frame drawing of a three-dimensional cube.
 This program renders a three-dimensional cube on the BrainPad screen. As you tilt the BrainPad the cube is rotated simulating what it would look like if you were rotating the cube itself. The output of the X and Y axes of the accelerometer is also shown.
 
 ## The Code
+> [!Tip]
+> Make sure the namespace in your program matches your project's namespace.  Your project's namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  [**More Info**](../csharp/intro.md#a-few-words-about-namespaces).
+
 ```
 using System;
 using GHIElectronics.TinyCLR.BrainPad;
 
-namespace Cube {
+namespace ModifyThis {
     class Program {
         class Vector3 {
             public double X;

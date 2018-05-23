@@ -10,11 +10,13 @@ This classic game now works on the BrainPad. Simply use the buttons to sketch.
 This program is simple. We draw a circle on the screen and move it when the buttons are pressed.
 
 ## The Code
+> [!Tip]
+> Make sure the namespace in your program matches your project's namespace.  Your project's namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  [**More Info**](../csharp/intro.md#a-few-words-about-namespaces).
 
 ```
 using GHIElectronics.TinyCLR.BrainPad;
 
-namespace Etch_A_Sketch {
+namespace ModifyThis {
     class Program {
         static void Main() {
             BrainPad.Display.DrawSmallText(0, 57, "Use Buttons to Draw");

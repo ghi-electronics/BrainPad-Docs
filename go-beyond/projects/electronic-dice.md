@@ -12,12 +12,14 @@ You do not need a real dice. BrainPad Electronic Dice is a more fun, plus you ca
 A simple box is drawn to show the shape of a die. Then, we go in a loop generating random numbers and showing them as a die on the  display. Our loop has a an increasing delay giving a cool effect.
 
 ## The Code
+> [!Tip]
+> Make sure the namespace in your program matches your project's namespace.  Your project's namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  [**More Info**](../csharp/intro.md#a-few-words-about-namespaces).
 
 ```
 using System;
 using GHIElectronics.TinyCLR.BrainPad;
 
-namespace Dice {
+namespace ModifyThis {
     class Program {
         const int DICE_BASE_X = 55;
         const int DICE_BASE_Y = 10;

@@ -10,11 +10,13 @@ Did you know that you can get any color by simply mixing different levels of red
 We build a simple selection menu to select a color, which we then can increase and decrease. We are limiting the light to max level of 10 to protect your eyes since you will be looking directly at it. The max level is actually 100.
 
 ## The Code
+> [!Tip]
+> Make sure the namespace in your program matches your project's namespace.  Your project's namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  [**More Info**](../csharp/intro.md#a-few-words-about-namespaces).
 
 ```
 using GHIElectronics.TinyCLR.BrainPad;
 
-namespace ColorMixer {
+namespace ModifyThis {
     class Program {
         static void Main() {
             int selection = 0;
