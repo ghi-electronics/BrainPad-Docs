@@ -87,13 +87,15 @@
 <h2 id="an-exercise">An Exercise</h2>
 <p>Modify the code to so tilt (the accelerometer) is used instead of buttons. Hint: Use the <a href="tilt-etch-a-sketch.html">Tilt Etch A Sketch</a> for help.</p>
 <h2 id="the-code">The Code</h2>
+<div class="TIP"><h5>Tip</h5><p>Make sure the namespace in your program matches your project&#39;s namespace.  Your project&#39;s namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  <a href="../csharp/intro.html#a-few-words-about-namespaces"><strong>More Info</strong></a>.</p>
+</div>
 <pre><code>using System;
 using System.Collections;
 using System.Text;
 using System.Threading;
 using GHIElectronics.TinyCLR.BrainPad;
 
-namespace Pong {
+namespace ModifyThis {
     class Program {
         static void Main() {
             double BallX = 10, BallY = 10, BallDX = 2.3, BallDY = 2.8;

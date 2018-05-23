@@ -78,6 +78,7 @@
 
 <hr>
 <p>The BrainPad Light Bulb actually contains three light emitting diodes (LEDs) in one package. One LED is red, one is green, and one is blue. These can independently set to varying intensities to create up to a million different colors.</p>
+<h2 id="light-bulb-methods">Light Bulb Methods</h2>
 <ul>
 <li><p><code>BrainPad.LightBulb.TurnColor(double r, double g, double b)</code> - Used to create a variety of colors by controlling the brightness of the red, green and blue LEDs. The minimum color intensity is 0 (off) and the maximum is 100. </p>
 </li>
@@ -92,7 +93,24 @@
 <li><p><code>BrainPad.LightBulb.TurnOff()</code> - Turns off the light bulb. Same as BrainPad.LightBulb.TurnColor(0.0, 0.0, 0.0)</p>
 </li>
 </ul>
-</article>
+<h2 id="light-bulb-sample-code">Light Bulb Sample Code</h2>
+<p>The following program turns the light bulb red, blue, green and then a custom color. It changes color every second and repeats forever.</p>
+<p>To try it, <a href="../csharp/intro.html#start-a-new-project">start a new C# project</a>, <a href="../csharp/intro.html#manage-the-nuget-packages">manage the NuGet packages</a>, and <a href="../csharp/intro.html#add-the-brainpad-helper-code">add the BrainPad helper code</a>. Then copy this code and paste it into the <code>Program.cs</code> window replacing just the <code>main</code> method in the original program.</p>
+<pre><code>static void Main()
+{
+    while (true)
+    {
+        BrainPad.LightBulb.TurnRed();
+        BrainPad.Wait.Seconds(1);
+        BrainPad.LightBulb.TurnBlue();
+        BrainPad.Wait.Seconds(1);
+        BrainPad.LightBulb.TurnGreen();
+        BrainPad.Wait.Seconds(1);
+        BrainPad.LightBulb.TurnColor(5, 25, 100);
+        BrainPad.Wait.Seconds(1);
+    }
+}
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

@@ -149,9 +149,11 @@
     Ship.Draw();
 }
 </code></pre><h3 id="testing-the-ship">Testing The Ship</h3>
+<div class="TIP"><h5>Tip</h5><p>Make sure the namespace in your program matches your project&#39;s namespace.  Your project&#39;s namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  <a href="../csharp/intro.html#a-few-words-about-namespaces"><strong>More Info</strong></a>.</p>
+</div>
 <p>Time to load the code and test it out. Here is the code so far.</p>
 <pre><code>using GHIElectronics.TinyCLR.BrainPad;
-namespace SpaceInvasion {
+namespace ModifyThis {
     class Sprite {
         Picture Pic;
         public int X, Y;
@@ -231,7 +233,7 @@ namespace SpaceInvasion {
 </code></pre><h3 id="testing-the-bullet">Testing The Bullet</h3>
 <p>This is the game code so far. Things are getting more interesting!</p>
 <pre><code>using GHIElectronics.TinyCLR.BrainPad;
-namespace SpaceInvasion {
+namespace ModifyThis {
     class Sprite {
         Picture Pic;
         public int X, Y;
@@ -332,7 +334,7 @@ static void ProcessMonster() {
 </code></pre><h3 id="testing-the-monster">Testing The Monster</h3>
 <p>The monster will move down and go out of view off the bottom of the screen. We are not checking for collisions yet. You have to reset the BrainPad to see the monster again.</p>
 <pre><code>using GHIElectronics.TinyCLR.BrainPad;
-namespace SpaceInvasion {
+namespace ModifyThis {
     class Sprite {
         Picture Pic;
         public int X, Y;
@@ -461,7 +463,7 @@ namespace SpaceInvasion {
 }
 </code></pre><h2 id="the-complete-project">The Complete Project</h2>
 <pre><code>using GHIElectronics.TinyCLR.BrainPad;
-namespace SpaceInvasion {
+namespace ModifyThis {
     class Sprite {
         Picture Pic;
         public int X, Y;

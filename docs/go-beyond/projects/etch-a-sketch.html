@@ -83,9 +83,11 @@
 <h2 id="how-it-works">How It Works</h2>
 <p>This program is simple. We draw a circle on the screen and move it when the buttons are pressed.</p>
 <h2 id="the-code">The Code</h2>
+<div class="TIP"><h5>Tip</h5><p>Make sure the namespace in your program matches your project&#39;s namespace.  Your project&#39;s namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  <a href="../csharp/intro.html#a-few-words-about-namespaces"><strong>More Info</strong></a>.</p>
+</div>
 <pre><code>using GHIElectronics.TinyCLR.BrainPad;
 
-namespace Etch_A_Sketch {
+namespace ModifyThis {
     class Program {
         static void Main() {
             BrainPad.Display.DrawSmallText(0, 57, &quot;Use Buttons to Draw&quot;);

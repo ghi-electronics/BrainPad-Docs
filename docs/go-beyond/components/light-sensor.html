@@ -78,10 +78,25 @@
 
 <hr>
 <p>The BrainPad Light Sensor is used to measure the amount of light hitting the sensor.</p>
+<h2 id="light-sensor-method">Light Sensor Method</h2>
 <ul>
-<li><code>BrainPad.LightSensor.ReadLightLevel()</code> - Reads the amount of light hitting the light sensor and returns an integer corresponding to the brightness. The higher the returned value greater the intensity of the light.</li>
+<li><code>BrainPad.LightSensor.ReadLightLevel()</code> - Reads the amount of light hitting the light sensor and returns an integer corresponding to the brightness. The higher the returned value greater the intensity of the light. The output range is from 0 to 100.</li>
 </ul>
-</article>
+<h2 id="light-sensor-sample-code">Light Sensor Sample Code</h2>
+<p>This program acts as a simple night light. The lower the intensity of light hitting the sensor the brighter the light bulb gets.</p>
+<p>To try it, <a href="../csharp/intro.html#start-a-new-project">start a new C# project</a>, <a href="../csharp/intro.html#manage-the-nuget-packages">manage the NuGet packages</a>, and <a href="../csharp/intro.html#add-the-brainpad-helper-code">add the BrainPad helper code</a>. Then copy this code and paste it into the <code>Program.cs</code> window replacing just the <code>main</code> method in the original program.</p>
+<pre><code>static void Main()
+{
+    double lightLevel;
+    while (true)
+    {
+        lightLevel = BrainPad.LightSensor.ReadLightLevel();
+        lightLevel = 100 - lightLevel;
+        BrainPad.LightBulb.TurnColor(lightLevel, lightLevel, lightLevel);
+        BrainPad.Wait.Minimum();
+    }
+}
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

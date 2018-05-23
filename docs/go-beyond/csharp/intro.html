@@ -100,7 +100,7 @@
 <p>You should see the <code>Visual C#</code> language listed under the <code>Installed</code> heading in the left panel of the <code>New Project</code> window.</p>
 <p>Under <code>Visual C#</code> select the <code>TinyCLR</code> option.</p>
 <p>In the center panel of the <code>New Project</code> window select <code>TinyCLR Application</code>.</p>
-<p>At the bottom of the <code>New Project</code> window you can change the name and location of your application or just stick with the default. When starting out you may wish to click on the <code>Browse</code> button and select the folder <code>Desktop</code> (in the left panel) to make your application easier to find.</p>
+<p>At the bottom of the <code>New Project</code> window you can change the name and location of your application. Change the name to &quot;BrainPadDemo.&quot; You may wish to click on the <code>Browse</code> button and select the folder <code>Desktop</code> (in the left panel) to make your application easier to find.</p>
 <p>Click the <code>OK</code> button on the bottom right of the <code>New Project</code> window.  This will create a new blank project.</p>
 <p><img src="images/introduction/new-project-window.png" alt="Start New Visual C# Project"></p>
 <p>Once created, you&#39;ll be presented with a <code>Program.cs</code> tab.</p>
@@ -146,6 +146,14 @@ namespace BrainPadDemo {
 }
 </code></pre><p>Your <code>Program.cs</code> window should look like this:
 <img src="images/introduction/pasted-code.png" alt="Pasted Code"></p>
+<h4 id="a-few-words-about-namespaces">A few words about namespaces</h4>
+<p>When you create a new C# project, a default namespace is automatically created for you. If you cut and paste code into your project you have to keep the original namespace for the project to work. You can view the project&#39;s namespace in the BrainPad Helper file as shown below.</p>
+<p><strong>Namespace shown in BrainPad helper file:</strong>
+<img src="images/introduction/helper-namespace.gif" alt="BrainPad helper namespace"></p>
+<p><strong>Namespace shown in program file. This must match the namespace in the BrainPad Helper file:</strong>
+<img src="images/introduction/program-namespace.gif" alt="Program namespace"></p>
+<p>If you did not name your project &quot;BrainPadDemo&quot; when you created it, you will have a namespace mismatch when you paste the above sample program into your project. Just change the namespace in the <code>Program.cs</code> window to match the namespace in the BrainPad Helper file and you should be good to go.</p>
+<p>Another option is to add a <code>using</code> statement at the top of the program file that references the namespace in the BrainPad helper file. If you created a project named &quot;BrainPadDemo&quot; and paste in code with a different namespace, you can add the line <code>using BrainPadDemo;</code> at the top of the pasted code to fix the namespace mismatch. The name following <code>using</code> must match the namespace in the BrainPad Helper file.</p>
 <h3 id="deploy-the-program">Deploy the Program</h3>
 <p>Make sure your BrainPad is plugged into the computer&#39;s USB port. Now hit the start button as shown in the above image (or hit the <code>F5</code> key). If you&#39;ve done everything correctly the program will compile and deploy to your device. The message &quot;Hello World!&quot; should appear on the BrainPad display, and the light bulb should start blinking.</p>
 <p>Congratulations! You&#39;re on your way to learning advanced programming on the BrainPad!</p>

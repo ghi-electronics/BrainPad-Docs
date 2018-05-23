@@ -83,9 +83,11 @@
 <h2 id="how-it-works">How It Works</h2>
 <p>We build a simple selection menu to select a color, which we then can increase and decrease. We are limiting the light to max level of 10 to protect your eyes since you will be looking directly at it. The max level is actually 100.</p>
 <h2 id="the-code">The Code</h2>
+<div class="TIP"><h5>Tip</h5><p>Make sure the namespace in your program matches your project&#39;s namespace.  Your project&#39;s namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  <a href="../csharp/intro.html#a-few-words-about-namespaces"><strong>More Info</strong></a>.</p>
+</div>
 <pre><code>using GHIElectronics.TinyCLR.BrainPad;
 
-namespace ColorMixer {
+namespace ModifyThis {
     class Program {
         static void Main() {
             int selection = 0;

@@ -79,14 +79,39 @@
 <hr>
 <p>The BrainPad buzzer is an output device. It is really not a buzzer but a crude speaker that is even capable of playing voice or music, but with poor sound quality. The buzzer&#39;s beep command allows you to make a beep sound with no control over the beep&#39;s frequency or duration.</p>
 <p>You can also tell the BrainPad to play a tone where you decide the frequency. The BrainPad will keep playing that sound until you tell it to stop or tell it to play a different tone. This allows you to play sound effects for games as well as simple melodies.</p>
+<h2 id="buzzer-methods">Buzzer Methods</h2>
 <ul>
 <li><p><code>BrainPad.Buzzer.Beep()</code> - Plays a short duration beep on the BrainPad&#39;s buzzer.  </p>
 </li>
-<li><p><code>BrainPad.Buzzer.StartBuzzing(double frequency)</code> - Plays a sound of given frequency. Will keep playing until told to stop. [Example: <code>BrainPad.Buzzer.StartBuzzing(251.00)</code>] </p>
+<li><p><code>BrainPad.Buzzer.StartBuzzing(double frequency)</code> - Plays a sound of given frequency. Will keep playing until told to stop.</p>
 </li>
 <li><code>BrainPad.Buzzer.StopBuzzing()</code> - Stops the buzzer if it is currently playing.</li>
 </ul>
-</article>
+<h2 id="buzzer-sample-code">Buzzer Sample Code</h2>
+<p>The following program makes a siren sound while the down button is pressed.</p>
+<p>To try it, <a href="../csharp/intro.html#start-a-new-project">start a new C# project</a>, <a href="../csharp/intro.html#manage-the-nuget-packages">manage the NuGet packages</a>, and <a href="../csharp/intro.html#add-the-brainpad-helper-code">add the BrainPad helper code</a>. Then copy this code and paste it into the <code>Program.cs</code> window replacing just the <code>main</code> method in the original program.</p>
+<pre><code>static void Main()
+{
+    while (true)
+    {
+        if (BrainPad.Buttons.IsDownPressed())
+        {
+            for (int frequency = 1200; frequency &lt; 3200; frequency += 160)
+            {
+                BrainPad.Buzzer.StartBuzzing(frequency);
+                BrainPad.Wait.Milliseconds(8);
+            }
+
+            for (int frequency = 3200; frequency &gt; 1200; frequency -= 160)
+            {
+                BrainPad.Buzzer.StartBuzzing(frequency);
+                BrainPad.Wait.Milliseconds(8);
+            }
+        }
+        else BrainPad.Buzzer.StopBuzzing();
+    }
+}
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">

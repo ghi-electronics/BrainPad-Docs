@@ -78,13 +78,27 @@
 
 <hr>
 <p>The BrainPad temperature sensor is basically a digital thermometer. There are seperate commands for reading the temperature in Celsius and Fahrenheit.</p>
+<h2 id="temperature-sensor-methods">Temperature Sensor Methods</h2>
 <ul>
 <li><p><code>BrainPad.TemperatureSensor.ReadTemperatureInCelsius()</code> - Returns the temperature in Celsius from the BrainPad&#39;s sensor. Returns the temperature as type double.  </p>
 </li>
 <li><p><code>BrainPad.TemperatureSensor.ReadTemperatureInFahrenheit()</code> - Returns the temperature in Fahrenheit from the BrainPad&#39;s sensor. Returns the temperature as type double.</p>
 </li>
 </ul>
-</article>
+<h2 id="temperature-sensor-sample-code">Temperature Sensor Sample Code</h2>
+<p>The following program displays the temperature in Fahrenheit on the BrainPad screen.</p>
+<p>To try it, <a href="../csharp/intro.html#start-a-new-project">start a new C# project</a>, <a href="../csharp/intro.html#manage-the-nuget-packages">manage the NuGet packages</a>, and <a href="../csharp/intro.html#add-the-brainpad-helper-code">add the BrainPad helper code</a>. Then copy this code and paste it into the <code>Program.cs</code> window replacing just the <code>main</code> method in the original program.</p>
+<pre><code>static void Main()
+{
+    while (true)
+    {
+        BrainPad.Display.DrawSmallText(30, 12, &quot;Temperature&quot;);
+        BrainPad.Display.DrawNumber(35, 24, BrainPad.TemperatureSensor.ReadTemperatureInFahrenheit());
+        BrainPad.Display.RefreshScreen();
+        BrainPad.Wait.Minimum();
+    }
+}
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
