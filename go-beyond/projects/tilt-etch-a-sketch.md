@@ -12,11 +12,13 @@ A BrainPad version of the classic mechanical drawing toy. Simply tilt the screen
 This program is simple. We draw a circle on the screen and move it when the BrainPad is tilted. We measure the force of the Earth's gravity on the BrainPad's accelerometer to measure how much the BrainPad is tilted.
 
 ## The Code
+> [!Tip]
+> Make sure the namespace in your program matches your project's namespace.  Your project's namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  [**More Info**](../csharp/intro.md#a-few-words-about-namespaces).
 
 ```
 using GHIElectronics.TinyCLR.BrainPad;
 
-namespace Etch_A_Sketch {
+namespace ModifyThis {
     class Program {
         static void Main() {
             BrainPad.Display.DrawSmallText(0, 57, "Tilt: Draw - D: Erase");

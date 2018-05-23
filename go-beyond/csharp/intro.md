@@ -122,7 +122,7 @@ When you create a new C# project, a default namespace is automatically created f
 
 If you did not name your project "BrainPadDemo" when you created it, you will have a namespace mismatch when you paste the above sample program into your project. Just change the namespace in the `Program.cs` window to match the namespace in the BrainPad Helper file and you should be good to go.
 
-Another option is to add a `using` statement at the top of the program file that references the namespace in the BrainPad helper file. If you created a project named "BrainPadDemo" and paste in code with a different namespace, you can add the line `using BrainPadDemo;` at the top of the pasted code to fix the namespace mismatch. The name following `using` must match the namespace given in the BrainPad Helper file.
+Another option is to add a `using` statement at the top of the program file that references the namespace in the BrainPad helper file. If you created a project named "BrainPadDemo" and paste in code with a different namespace, you can add the line `using BrainPadDemo;` at the top of the pasted code to fix the namespace mismatch. The name following `using` must match the namespace in the BrainPad Helper file.
 
 ### Deploy the Program
 Make sure your BrainPad is plugged into the computer's USB port. Now hit the start button as shown in the above image (or hit the `F5` key). If you've done everything correctly the program will compile and deploy to your device. The message "Hello World!" should appear on the BrainPad display, and the light bulb should start blinking.
