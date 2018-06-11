@@ -8,17 +8,23 @@ This is a collection of C# projects ranging from easy to advanced. If you want t
 
 |  |  |
 |--|--|
-| [**Space Invasion**](space-invasion.md)  |  [**Tilt Etch A Sketch**](tilt-etch-a-sketch.md)  |
-| [![Space Invasion](images/space-invasion.gif)](space-invasion.md) | [![Tilt Etch A Sketch](images/tilt-etch-a-sketch.gif)](tilt-etch-a-sketch.md) |
-| [**Etch A Sketch**](etch-a-sketch.md)  |  [**Pong**](pong.md) |
-|  | [![Pong](images/pong.gif)](pong.md) |
-| [**Screen TicTacToe**](screen-tictactoe.md)  |  [**Live TicTacToe**](live-tictactoe.md) |
+| [**Space Invasion**](space-invasion.md)  |  [**Pong**](pong.md)  |
+| [![Space Invasion](images/space-invasion.gif)](space-invasion.md) | [![Pong](images/pong.gif)](pong.md) |
+| [**Space Force Robot**](space-force.md)</br>(*additional hardware required*) | [**Snap Circuits Lift-Off**](lift-off.md)</br>(*additional hardware required*) |
 |  |  |
-| [**3D Cube**](3d-cube.md) | [**Color Mixer**](color-mixer.md) |
+| [**Marble Sorting Robot**](marble-sorter.md)</br>(*additional hardware required*) | [**Sun Seeking Robot**](sun-seeker.md)</br>(*additional hardware required*) |
+|  |  |
+| [**Burgler Alarm**](burgler-alarm.md) | [**FM Radio Sleep Timer**](sleep-timer.md)</br>(*additional hardware required*) |
+|  |  |
+| [**Tilt Etch A Sketch**](tilt-etch-a-sketch.md) | [**Etch A Sketch**](etch-a-sketch.md) |
+| [![Tilt Etch A Sketch](images/tilt-etch-a-sketch.gif)](tilt-etch-a-sketch.md) |  |
+| [**High/Low Thermometer**](high-low-thermometer.md) | [**Stepper Motors**](stepper-motors.md)</br>(*additional hardware required*) |
+|  |  |
+| [**Linear Clock**](linear-clock.md)</br>(*additional hardware required*) | [**Electronic Dice**](electronic-dice.md) |
+|  |  |
+| [**3D Cube**](3d-cube.md)  | [**Color Mixer**](color-mixer.md) |
 | [![3D Cube](images/3d-cube.gif)](3d-cube.md) |  |
-| [**Electronic Dice**](electronic-dice.md) | [**Flappy Bird**](flappy-bird.md) |
-| [![Electronic Dice](images/electronic-dice.gif)](electronic-dice.md) |  |
-| [**Stepper Motors**](stepper-motors.md) |  |
+| [**Flappy Bird**](flappy-bird.md) |  |
 |  |  |
 
 ---

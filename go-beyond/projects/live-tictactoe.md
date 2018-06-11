@@ -1,2 +1,0 @@
-# Live Tic Tac Toe
----
