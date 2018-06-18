@@ -1,8 +1,8 @@
 # Space Force Robot
 ---
-**Difficulty: More Difficult**
+**Difficulty: More Difficult.**
 
-**Objective: Simple robotics**
+**Objective: Simple robotics.**
 
 This project requires the SpaceForce game (or similar) and a fairly strong servo motor. Both are available online (more info at botttom of page). It also requires rods (we used welding rod) to connect the game to the servo motor, and some skill to fabricate a larger horn (control arm) for the servo motor.
 
@@ -77,11 +77,11 @@ namespace ModifyThis {
 
 ## The Space Force Game
 
-The space force game can be found at several online retailers by searching for "Space Force Game" in your favorite search engine. Similar games go by the names "Shoot the Moon," "Space Launch," and "Executive Roll-Up." We have been able to get this program working with both versions of the game we tried. There are also smaller versions of the game that should work and could probably be used with a smaller servo motor.
+The space force game can be found at several online retailers by searching for "Space Force Game" in your favorite search engine. We've found it on both Amazon and eBay. Similar games go by the names "Shoot the Moon," "Space Launch," and "Executive Roll-Up." We have been able to get this program working with both versions of the game we tried. There are also smaller versions of the game that should work and could probably be used with a smaller servo motor.
 
 ## The Servo Motor
 
-The servo motor we used is a model number KS-3518 we found on eBay. It is a 180 degree positional servo with a stall torque of 12 kg/cm at 4.8 volts. Any motor with similar specs should work. We feel that this motor had more power than we needed, so slightly smaller motors (less torque) should work as well. As is usually the case, it's better if your motor is a little over powered than under powered.
+The servo motor we used is a model number KS-3518 we found on eBay. It is a 180 degree positional servo with a stall torque of 12 kg/cm at 4.8 volts. Any motor with similar specs should work. We feel that this motor had more power than we needed, so slightly smaller motors (less torque) should work as well. As is usually the case, it's better if your motor is a little over powered than under powered. The servo motor simply plugs into the BrainPad's number one servo port with the brown wire closest to the bottom to the bottom of the BrainPad.
 
 ## The Horn
 

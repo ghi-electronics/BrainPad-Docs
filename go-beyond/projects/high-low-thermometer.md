@@ -2,12 +2,14 @@
 ---
 A simple high/low thermometer.
 
-**Difficulty: Easy**
+**Difficulty: Easy.**
 
-**Objective: Basic sensing and control**
+**Objective: Basic sensing and control.**
 
 ## How it Works
-This program uses the temperature sensor to read the current temperature and keep track of the high and low temperatures from the time the program starts. It also changes the LED color depending on the current temperature and shows a bar graph at the bottom of the screen which reflects where the current temperature is relative to the high and low temperatures.
+This program uses the temperature sensor to read the current temperature and keep track of the high and low temperatures from the time the program starts. It changes the light bulb color depending on the current temperature. It also shows a bar graph at the bottom of the screen which reflects where the current temperature is relative to the high and low temperatures.
+
+This project is a demonstration of a simple programmable control system. For example, instead of controlling the light bulb the temperature sensor could be used to control a fan. Such a system could be used to keep sensitive electronic components from overheating by turning on a cooling fan before the temperature gets too high.
 
 ## The code in C#
 > [!Tip]

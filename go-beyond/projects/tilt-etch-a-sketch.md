@@ -4,12 +4,12 @@
 
 A BrainPad version of the classic mechanical drawing toy. Simply tilt the screen to show the sketch and press the down button to erase it.
 
-**Difficulty: Easy**
+**Difficulty: Easy.**
 
-**Objective: Gaming, Drawing**
+**Objective: Gaming, Drawing.**
 
 ## How It Works
-This program is simple. We draw a circle on the screen and move it when the BrainPad is tilted. We measure the force of the Earth's gravity on the BrainPad's accelerometer to measure how much the BrainPad is tilted.
+This program is simple. We draw a point on the screen and move it when the BrainPad is tilted. We measure the force of the Earth's gravity on the BrainPad's accelerometer to measure how much and in which direction the BrainPad is tilted.
 
 ## The Code
 > [!Tip]

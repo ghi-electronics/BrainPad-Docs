@@ -2,9 +2,9 @@
 ---
 A simple motion activated alarm.
 
-**Difficulty: Easy**
+**Difficulty: Easy.**
 
-**Objective: Learning about the accelerometer, buttons, light bulb and display**
+**Objective: Learning about the accelerometer, buttons, light bulb and display.**
 
 ## How it Works
 

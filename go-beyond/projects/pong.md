@@ -4,9 +4,9 @@
 
 The classic Pong game -- the grandfather of all video games! Now over 45 years old!
 
-**Difficulty: Easy**
+**Difficulty: Easy.**
 
-**Objective: Retro gaming**
+**Objective: Retro gaming.**
 
 ## How It Works
 Suprisingly, this very simple game requires about as much code as the [Space Invasion](space-invasion.md) game.
@@ -34,7 +34,7 @@ namespace ModifyThis {
             double BallX = 10, BallY = 10, BallDX = 2.3, BallDY = 2.8;
             int ScoreL = 0, ScoreR = 0;
             int PlayerPos = 30;
-            int CompPros = 30;
+            int CompPos = 30;
 
             BrainPad.Display.DrawRectangle(0, 0, 128, 64);
 
@@ -47,7 +47,7 @@ namespace ModifyThis {
                 if (BallX < 10) {
                     BallDX *= -1;
 
-                    if (BallY >= CompPros - 1 && BallY <= CompPros + 12) {
+                    if (BallY >= CompPos - 1 && BallY <= CompPos + 12) {
                         // hit back
                         BrainPad.Buzzer.Beep();
                     }
@@ -105,12 +105,12 @@ namespace ModifyThis {
                 BrainPad.Display.DrawFilledRectangle(120, PlayerPos, 2, 10);
 
                 // Computer
-                BrainPad.Display.ClearPartOfScreen(10, CompPros, 2, 10);
-                if (BallY > CompPros + 10) CompPros += 2;
-                if (BallY < CompPros) CompPros -= 2;
-                if (CompPros < 5) CompPros = 5;
-                if (CompPros > 50) CompPros = 50;
-                BrainPad.Display.DrawFilledRectangle(10, CompPros, 2, 10);
+                BrainPad.Display.ClearPartOfScreen(10, CompPos, 2, 10);
+                if (BallY > CompPos + 10) CompPos += 2;
+                if (BallY < CompPos) CompPos -= 2;
+                if (CompPos < 5) CompPos = 5;
+                if (CompPos > 50) CompPos = 50;
+                BrainPad.Display.DrawFilledRectangle(10, CompPos, 2, 10);
 
                 // Score
                 BrainPad.Display.DrawSmallNumber(50, 5, ScoreL);

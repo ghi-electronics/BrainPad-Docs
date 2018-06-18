@@ -4,9 +4,9 @@
 
 A simple wire-frame drawing of a three-dimensional cube.
 
-**Difficulty: Easy**
+**Difficulty: Easy.**
 
-**Objective: 3D Math**
+**Objective: 3D Math.**
 
 ## How It Works
 

@@ -1,10 +1,10 @@
 # Snap Circuits Lift-Off!
 ---
-**Difficulty: Easy**
+**Difficulty: Easy.**
 
-**Objective: Simple motor control**
+**Objective: Simple motor control.**
 
-This project requires an Elenco Snap Circuits kit with the fan blade and the motor to drive it.
+This project requires an Elenco Snap Circuits kit that includes the fan blade.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8tVkJDCwG3w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -122,5 +122,9 @@ namespace ModifyThis {
 }
 ```
 
+## Snap Circuits Set Up
 
+To build this circuit just follow the diagram below.
+
+![Snap Circuits Lift-Off](images/snap-circuits-lift-off.gif)
 

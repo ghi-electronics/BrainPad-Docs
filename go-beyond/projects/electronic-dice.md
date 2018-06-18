@@ -4,12 +4,12 @@
 
 You do not need a real dice. BrainPad Electronic Dice is a more fun, plus you can cheat by changing the program!
 
-**Difficulty: Easy**
+**Difficulty: Easy.**
 
-**Objective: Math**
+**Objective: Math.**
 
 ## How It Works
-A simple box is drawn to show the shape of a die. Then, we go in a loop generating random numbers and showing them as a die on the  display. Our loop has a an increasing delay giving a cool effect.
+A simple box is drawn to show the shape of a die. Then, we go in a loop generating random numbers and showing them as a die on the display. The loop has a an increasing delay giving a cool effect.
 
 ## The Code
 > [!Tip]
@@ -88,3 +88,9 @@ namespace ModifyThis {
     }
 }
 ```
+
+## The Challenge
+
+OK, we don't encourage you to cheat your friends (or anyone else for that matter). You will find that if you cheat your friends they might not be your friends for long. What goes around comes around. But, just as a joke, can you figure out a way to use this game to get an advantage over unsuspecting players?
+
+For example, could you program the BrainPad to always roll a seven or eleven if the BrainPad is shaken in a certain way? Or if the button(s) are pushed in a certain way or for a certain length of time?

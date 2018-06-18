@@ -2,9 +2,9 @@
 ---
 Did you know that you can get any color by simply mixing different levels of red, green and blue?
 
-**Difficulty: Easy**
+**Difficulty: Easy.**
 
-**Objective: Science**
+**Objective: Science.**
 
 ## How It Works
 We build a simple selection menu to select a color, which we then can increase and decrease. We are limiting the light to max level of 10 to protect your eyes since you will be looking directly at it. The max level is actually 100.

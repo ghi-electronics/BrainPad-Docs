@@ -2,12 +2,12 @@
 ---
 This classic game now works on the BrainPad. Simply use the buttons to sketch.
 
-**Difficulty: Easy**
+**Difficulty: Easy.**
 
-**Objective: Gaming, Drawing**
+**Objective: Gaming, Drawing.**
 
 ## How It Works
-This program is simple. We draw a circle on the screen and move it when the buttons are pressed.
+This program is simple. We draw a point on the screen and move it when the buttons are pressed.
 
 ## The Code
 > [!Tip]
