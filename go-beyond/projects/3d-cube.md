@@ -12,13 +12,12 @@ A simple wire-frame drawing of a three-dimensional cube.
 
 This program renders a three-dimensional cube on the BrainPad screen. As you tilt the BrainPad the cube is rotated simulating what it would look like if you were rotating the cube itself. The output of the X and Y axes of the accelerometer is also shown.
 
-## The Code
+## The Code in C#
 > [!Tip]
 > Make sure the namespace in your program matches your project's namespace.  Your project's namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  [**More Info**](../csharp/intro.md#a-few-words-about-namespaces).
 
 ```
 using System;
-using GHIElectronics.TinyCLR.BrainPad;
 
 namespace ModifyThis {
     class Program {
@@ -121,7 +120,7 @@ namespace ModifyThis {
             while (true) {
                 double accelX = BrainPad.Accelerometer.ReadX();
                 double accelY = BrainPad.Accelerometer.ReadY();
-                BrainPad.Display.ClearScreen();
+                BrainPad.Display.Clear();
                 //rot.Z += 5;
                 //rot.X += 5;
                 rot.X = 360 - accelY * 50;
@@ -132,10 +131,10 @@ namespace ModifyThis {
                 for (int i = 0; i < start.Length; i++) {    // draw the lines that make up the object
                     int vertex = start[i];                  // temp = start vertex for this line
                     int sx = (int)cube2[vertex].X;          // set line start x to vertex[i] x position
-                    int sy = (int)cube2[vertex              // set line start y to vertex[i] y position
+                    int sy = (int)cube2[vertex].Y;          // set line start y to vertex[i] y position
                     vertex = end[i];                        // temp = end vertex for this line
                     int ex = (int)cube2[vertex].X;          // set line end x to vertex[i+1] x position
-                    int ey = (int)cube2[vertex].Y           // set line end y to vertex[i+1] y position
+                    int ey = (int)cube2[vertex].Y;          // set line end y to vertex[i+1] y position
                     BrainPad.Display.DrawLine(sx, sy, ex, ey);
                 }
                 BrainPad.Display.DrawSmallText(0, 55, "X: " + (accelX * 100).ToString("F0"));

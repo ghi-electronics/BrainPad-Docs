@@ -9,7 +9,7 @@ This classic game now works on the BrainPad. Simply use the buttons to sketch.
 ## How It Works
 This program is simple. We draw a point on the screen and move it when the buttons are pressed.
 
-## The Code
+## The Code in C#
 > [!Tip]
 > Make sure the namespace in your program matches your project's namespace.  Your project's namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  [**More Info**](../csharp/intro.md#a-few-words-about-namespaces).
 

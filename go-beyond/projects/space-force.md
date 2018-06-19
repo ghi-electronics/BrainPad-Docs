@@ -16,7 +16,7 @@ The program for this project is quite simple and code is available for both Micr
 Click [here](https://makecode.com/_3PMH7CidXa6A) to go directly to the program on Microsoft MakeCode. You can also copy and paste the following JavaScript code into Microsoft MakeCode's JavaScript editor.
 
 ```
-motors.servo1.setAngle(110)
+servos.servo1.setAngle(110)
 forever(function () {
     display.showString("Place ball and ", 2)
     display.showString("  press down", 4)
@@ -26,11 +26,10 @@ forever(function () {
         pause(20)
     }
 
-    motors.servo1.setAngle(50)
+    servos.servo1.setAngle(50)
     pause(200)
-    
     for (let i = 0; i <= 60; i++) {
-        motors.servo1.setAngle(50 + i)
+        servos.servo1.setAngle(50 + i)
         pause(14)
     }
 })

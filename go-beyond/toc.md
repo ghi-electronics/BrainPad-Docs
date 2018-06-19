@@ -25,7 +25,6 @@
 ## [Marble Sorting Robot](projects/marble-sorter.md)
 ## [Sun Seeking Robot](projects/sun-seeker.md)
 ## [Burgler Alarm](projects/burgler-alarm.md)
-## [FM Radio Sleep Timer](projects/sleep-timer.md)
 ## [Tilt Etch A Sketch](projects/tilt-etch-a-sketch.md)
 ## [Etch A Sketch](projects/etch-a-sketch.md)
 ## [High/Low Thermometer](projects/high-low-thermometer.md)
@@ -34,7 +33,6 @@
 ## [Electronic Dice](projects/electronic-dice.md)
 ## [3D Cube](projects/3d-cube.md)
 ## [Color Mixer](projects/color-mixer.md)
-## [Flappy Bird](projects/flappy-bird.md)
 
 # [Other Software](other-software/intro.md)
 ## [Arduino](other-software/arduino.md)

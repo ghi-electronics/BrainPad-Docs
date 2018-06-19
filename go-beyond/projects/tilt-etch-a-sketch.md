@@ -11,7 +11,7 @@ A BrainPad version of the classic mechanical drawing toy. Simply tilt the screen
 ## How It Works
 This program is simple. We draw a point on the screen and move it when the BrainPad is tilted. We measure the force of the Earth's gravity on the BrainPad's accelerometer to measure how much and in which direction the BrainPad is tilted.
 
-## The Code
+## The Code in C#
 > [!Tip]
 > Make sure the namespace in your program matches your project's namespace.  Your project's namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  [**More Info**](../csharp/intro.md#a-few-words-about-namespaces).
 
@@ -41,7 +41,7 @@ namespace ModifyThis {
                 BrainPad.Display.RefreshScreen();
 
                 if (BrainPad.Buttons.IsDownPressed())
-                    BrainPad.Display.ClearPartOfScreen(0, 0, 128, 55);
+                    BrainPad.Display.ClearPart(0, 0, 128, 55);
 
                 BrainPad.Wait.Minimum();
 

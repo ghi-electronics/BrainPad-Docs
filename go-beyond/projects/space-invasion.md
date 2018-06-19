@@ -61,7 +61,7 @@ class Sprite {
     }
 
     public void Clear() {
-        BrainPad.Display.ClearPartOfScreen(X, Y, Pic.Width, Pic.Height);
+        BrainPad.Display.ClearPart(X, Y, Pic.Width, Pic.Height);
     }
 
     public void Draw() {
@@ -120,7 +120,7 @@ namespace ModifyThis {
         }
 
         public void Clear() {
-            BrainPad.Display.ClearPartOfScreen(X, Y, Pic.Width, Pic.Height);
+            BrainPad.Display.ClearPart(X, Y, Pic.Width, Pic.Height);
         }
 
         public void Draw() {
@@ -214,7 +214,7 @@ namespace ModifyThis {
         }
         
         public void Clear() {
-            BrainPad.Display.ClearPartOfScreen(X, Y, Pic.Width, Pic.Height);
+            BrainPad.Display.ClearPart(X, Y, Pic.Width, Pic.Height);
         }
         
         public void Draw() {
@@ -325,7 +325,7 @@ namespace ModifyThis {
         }
         
         public void Clear() {
-            BrainPad.Display.ClearPartOfScreen(X, Y, Pic.Width, Pic.Height);
+            BrainPad.Display.ClearPart(X, Y, Pic.Width, Pic.Height);
         }
         
         public void Draw() {
@@ -464,7 +464,7 @@ namespace ModifyThis {
         }
         
         public void Clear() {
-            BrainPad.Display.ClearPartOfScreen(X, Y, Pic.Width, Pic.Height);
+            BrainPad.Display.ClearPart(X, Y, Pic.Width, Pic.Height);
         }
         
         public void Draw() {

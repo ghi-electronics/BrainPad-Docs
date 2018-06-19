@@ -18,7 +18,7 @@ This project is a demonstration of a simple programmable control system. For exa
 ```
 using System;
 
-namespace BrainPadHighLowThermometer {
+namespace ModifyThis {
     class Program {
     static double CurrentTemperature, MaximumTemperature, MinimumTemperature, TemperaturePosition;
 

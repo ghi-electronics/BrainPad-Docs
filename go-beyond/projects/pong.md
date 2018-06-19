@@ -17,17 +17,11 @@ In this game a single player plays against the BrainPad.  The player uses the up
 
 Modify the code to so tilt (the accelerometer) is used instead of buttons. Hint: Use the [Tilt Etch A Sketch](tilt-etch-a-sketch.md) for help.
 
-## The Code
+## The Code in C#
 > [!Tip]
 > Make sure the namespace in your program matches your project's namespace.  Your project's namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  [**More Info**](../csharp/intro.md#a-few-words-about-namespaces).
 
 ```
-using System;
-using System.Collections;
-using System.Text;
-using System.Threading;
-using GHIElectronics.TinyCLR.BrainPad;
-
 namespace ModifyThis {
     class Program {
         static void Main() {
@@ -40,7 +34,7 @@ namespace ModifyThis {
 
             while (true) {
                 // The Ball
-                BrainPad.Display.ClearPartOfScreen((int)BallX, (int)BallY, 4, 4);
+                BrainPad.Display.ClearPart((int)BallX, (int)BallY, 4, 4);
                 BallX += BallDX;
                 BallY += BallDY;
 
@@ -97,7 +91,7 @@ namespace ModifyThis {
                 }
 
                 // Player
-                BrainPad.Display.ClearPartOfScreen(120, PlayerPos, 2, 10);
+                BrainPad.Display.ClearPart(120, PlayerPos, 2, 10);
                 if (BrainPad.Buttons.IsUpPressed()) PlayerPos -= 4;
                 if (BrainPad.Buttons.IsDownPressed()) PlayerPos += 4;
                 if (PlayerPos < 5) PlayerPos = 5;
@@ -105,7 +99,7 @@ namespace ModifyThis {
                 BrainPad.Display.DrawFilledRectangle(120, PlayerPos, 2, 10);
 
                 // Computer
-                BrainPad.Display.ClearPartOfScreen(10, CompPos, 2, 10);
+                BrainPad.Display.ClearPart(10, CompPos, 2, 10);
                 if (BallY > CompPos + 10) CompPos += 2;
                 if (BallY < CompPos) CompPos -= 2;
                 if (CompPos < 5) CompPos = 5;
