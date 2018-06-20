@@ -589,5 +589,5 @@ We also need to show the score. Would the lower right corner be good place?
 
 Just like before, add ProcessLives() and ProcessScore() methods. This should be a fun exercise!
 
-Need more of a challenge? Make the monster should move faster as the score increases.
+Need more of a challenge? Make the monster move faster as the score increases.
 

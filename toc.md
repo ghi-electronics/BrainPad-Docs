@@ -1,3 +1,7 @@
 # [Start Making](start-making/intro.md)
 # [Go Beyond](go-beyond/intro.md)
+# [Projects](projects/intro.md)
+# [Expandability](expandability.intro.md)
 # [Resources](resources/intro.md)
+# [Main Site](https://ghielectronics.com)
+# [Forums](https://forums.ghielectronics.com/c/brainpad)
