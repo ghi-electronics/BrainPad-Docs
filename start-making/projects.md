@@ -1,7 +1,7 @@
 # Projects
 ---
 > [!Tip]
-> Also see the more advanced [**TinyCLR OS Projects**](../go-beyond/projects/intro.md)
+> Also see the more advanced [**TinyCLR OS Projects**](../projects/intro.md)
 
 ![Microsoft MakeCode Screen Image](images/makecode-screen.png)
 
