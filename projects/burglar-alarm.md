@@ -10,7 +10,7 @@ A simple motion activated alarm.
 
 ## How it Works
 
-Place the BrainPad in such a way that you would want to be alerted when it is moved. For example, you could place it in a desk drawer so the alarm will be triggered when someone tries to open the drawer. Press the left button to arm the alarm. After the countdown, any movement will trigger the alarm.
+Place the BrainPad in such a way that you would want to be alerted when it is moved. For example, you could place it in a desk drawer so the alarm will be triggered when someone tries to open the drawer. Press the left button to arm the alarm. After the countdown, any movement of the BrainPad will trigger the alarm.
 
 ## The Code in C#
 > [!Tip]

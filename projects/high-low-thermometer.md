@@ -1,5 +1,7 @@
 # High/Low Thermometer
 ---
+![Thermometer screen](images/thermometer.gif)
+
 A simple high/low thermometer.
 
 **Difficulty: Easy.**

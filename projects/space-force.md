@@ -1,10 +1,12 @@
 # Space Force Robot
 ---
+![Space force robot](images/space-force.gif)
+
 **Difficulty: More Difficult.**
 
 **Objective: Simple robotics.**
 
-This project requires the SpaceForce game (or similar) and a fairly strong servo motor. Both are available online (more info at botttom of page). It also requires rods (we used welding rod) to connect the game to the servo motor, and some skill to fabricate a larger horn (control arm) for the servo motor.
+**Note: This project requires the SpaceForce game (or similar) and a fairly strong servo motor. Both are available online (more info at botttom of page). It also requires rods (we used welding rod) to connect the game to the servo motor, and some skill to fabricate a larger horn (control arm) for the servo motor.**
 
 ## How it Works
 This project uses the BrainPad and a single servo motor to play the classic Space Force game which dates back to the 1940s.

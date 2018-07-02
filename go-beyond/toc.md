@@ -14,9 +14,9 @@
 ## [Display](components/display.md)
 ## [Light Bulb](components/light-bulb.md)
 ## [Light Sensor](components/light-sensor.md)
-## [Servo Motors](components/servo-motors.md)
 ## [Temperature Sensor](components/temperature-sensor.md)
-
+## [Servo Motors](components/servo-motors.md)
+## [Other Components](components/other-components.md)
 # [Other Software](other-software/intro.md)
 ## [Arduino](other-software/arduino.md)
 ## [MicroPython](other-software/micropython.md)

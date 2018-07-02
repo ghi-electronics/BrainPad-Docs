@@ -1,5 +1,7 @@
 # Color Mixer
 ---
+![Color wheel](images/color-wheel.jpg)
+
 Did you know that you can get any color by simply mixing different levels of red, green and blue?
 
 **Difficulty: Easy.**

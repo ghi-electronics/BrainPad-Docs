@@ -1,14 +1,15 @@
 # Marble Sorting Robot
 ---
+![Marble Sorter](images/marble-sorter.gif)
 
 **Difficulty: Fairly difficult. Construction required.**
 
 **Objective: Servo control / simple robotics.**
 
-This project requires two positional servo motors and two pushbuttons. More details are found at the bottom of this page.
+**Note: This project requires two positional servo motors and two pushbuttons. More details are found at the bottom of this page.**
 
 ## How it Works
-The BrainPad is programmed to separate black and white marbles using the light sensor, two servo motors, and two pushbuttons. The first button is used to calibrate the light sensor for the current lighting. You must place ten marbles in the machine starting with a black marble and alternating in color. The first button is pressed to start the calibration. Then second button is used to sort the marbles.
+The BrainPad is programmed to separate black and white marbles using the light sensor, two servo motors, and two pushbuttons. The first button is used to calibrate the light sensor for the current lighting. To calibrate you must place ten marbles in the machine starting with a black marble and alternating in color. Pressing the first button will then start the calibration. The second button is used to start sorting marbles which are placed in the machine in random order.
 
 ## The Code in C#
 > [!Tip]
@@ -96,3 +97,15 @@ namespace ModifyThis {
 }
 
 ```
+
+## Construction
+
+The red button is used to start the calibration procedure and is connected between the PWM pin and the GND pin on the BrainPad's expansion header. The yellow button is used to start sorting marbles and is connected between the INT and GND pins on the expansion header.
+
+The two servo motors are ordinary SG90 micro servos. They are available online for about two dollars (US) each. You should be able to find several sources for these servos by searching for "SG90 micro servo."
+
+Servo motor one moves two paperclips up and down in opposite directions to release one marble while blocking the next marble. Each marble is held in front of the BrainPad's light sensor so it can be determined if it is a black or white marble. The BrainPad is mounted on the back of the box. A hole is cut in the box so the light sensor can peek through the hole and "see" each marble.
+
+Servo motor two moves a cardboard deflector which determines which of two paths each marble will take. When the deflector is in the up position the marble can go underneath it where it falls through a hole in the corner of the box. When the deflector is down the marble is guided to a hole in the opposite corner of the box.
+
+The entire assembly is hot glued to another box at an angle which allows the marbles to be gravity fed. The box is also tilted in a manner such that the undeflected marbles will move toward a hole in one corner of the box, while the deflected marbles will roll toward the other corner.

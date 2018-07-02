@@ -13,7 +13,7 @@ This is a collection of BrainPad projects ranging from easy to advanced. If you 
 | [**Space Force Robot**](space-force.md)</br>(*additional hardware required*) | [**Snap Circuits Lift-Off**](lift-off.md)</br>(*additional hardware required*) |
 | [![Space Force](images/space-force.gif)](space-force.md) | [![Snap Circuits](images/snap-circuits.gif)](lift-off.md) |
 | [**Marble Sorting Robot**](marble-sorter.md)</br>(*additional hardware required*) | [**Sun Seeking Robot**](sun-seeker.md)</br>(*additional hardware required*) |
-|  | [![Sun seeker](images/sun-seeker.gif)](sun-seeker.md) |
+| [![Marble Sorter](images/marble-sorter.gif)](marble-sorter.md) | [![Sun seeker](images/sun-seeker.gif)](sun-seeker.md) |
 | [**Burgler Alarm**](burglar-alarm.md) | [**Tilt Etch A Sketch**](tilt-etch-a-sketch.md) |
 | [![Burglar](images/burglar.gif)](burglar-alarm.md) | [![Tilt Etch A Sketch](images/tilt-etch-a-sketch.gif)](tilt-etch-a-sketch.md) |
 | [**Etch A Sketch**](etch-a-sketch.md) | [**High/Low Thermometer**](high-low-thermometer.md) |

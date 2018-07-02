@@ -11,7 +11,7 @@ A clock made from a cardboard box using LED strips.
 **Note: This project requires the RTC 6 click module and an LED light strip incorporating the LPD8806S driver chip.**
 
 ## How it Works
-This project uses the RTC 6 click module and LED light strips as the basis for a BrainPad based clock. The BrainPad program provides a means of setting the time on the clock module and drives the LED light strip. When you remove power from the BrainPad the battery backup on the RTC 6 click module will keep the clock from losing time. When the BrainPad is powered up, it automatically reads the time from the clock module.
+This project uses the RTC 6 click module and LED light strips as the basis for a BrainPad based clock. The BrainPad program provides a means of setting the time on the clock module and drives the LED light strip. When you remove power from the BrainPad the battery backup on the RTC 6 click module will keep the clock from losing time. When the BrainPad is powered up, it automatically reads the time from the clock module. Press the left and right buttons together to set the time.
 
 ## The Code in C#
 > [!Tip]

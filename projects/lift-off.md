@@ -6,7 +6,7 @@
 
 **Objective: Simple motor control.**
 
-This project requires an Elenco Snap Circuits kit that includes the fan blade.
+**Note: This project requires an Elenco Snap Circuits kit that includes the fan blade.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8tVkJDCwG3w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
