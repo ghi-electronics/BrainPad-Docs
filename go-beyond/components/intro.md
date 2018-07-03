@@ -21,3 +21,5 @@ All of the output devices are on the right side of the BrainPad:
 * [**Servo Motors**](servo-motors.md)
 
 So the flow of information on the BrainPad goes from left to right. Inputs come in from the sensors on the left side of the BrainPad, are processed by the "brain," and then sent to the output devices on the right side of the board. Note that most devices are not set up this way -- we did this to make the BrainPad more intuitive.
+
+There are a few other components of the BrainPad which don't quite fit into the input or output category. Information about the brain (processor), expansion headers, and USB port can be found [**here**](other-components.md)

@@ -1,3 +1,7 @@
 # [Start Making](start-making/intro.md)
 # [Go Beyond](go-beyond/intro.md)
+# [Projects](projects/intro.md)
+# [Expansion](expansion/intro.md)
 # [Resources](resources/intro.md)
+# [Main Site](https://www.brainpad.com)
+# [Forums](https://forums.ghielectronics.com/c/brainpad)
