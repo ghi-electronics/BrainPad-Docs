@@ -17,7 +17,7 @@ This is a collection of BrainPad projects ranging from easy to advanced. If you 
 | [**Burgler Alarm**](burglar-alarm.md) | [**Tilt Etch A Sketch**](tilt-etch-a-sketch.md) |
 | [![Burglar](images/burglar.gif)](burglar-alarm.md) | [![Tilt Etch A Sketch](images/tilt-etch-a-sketch.gif)](tilt-etch-a-sketch.md) |
 | [**Etch A Sketch**](etch-a-sketch.md) | [**High/Low Thermometer**](high-low-thermometer.md) |
-|  | [![Thermometer Screen](images/thermometer.gif)](high-low-thermometer.md) |
+| [![Etch A Sketch Drawing](images/etch-a-sketch.gif)](etch-a-sketch.md) | [![Thermometer Screen](images/thermometer.gif)](high-low-thermometer.md) |
 | [**Stepper Motors**](stepper-motors.md)</br>(*additional hardware required*) | [**Linear Clock**](linear-clock.md)</br>(*additional hardware required*) |
 | [![Stepper Motor](images/stepper-motor.png)](stepper-motors.md) | [![Linear Clock](images/linear-clock.jpg)](linear-clock.md) |
 | [**Electronic Dice**](electronic-dice.md) | [**3D Cube**](3d-cube.md) |

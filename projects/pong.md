@@ -9,7 +9,7 @@ The classic Pong game -- the grandfather of all video games! Now over 45 years o
 **Objective: Retro gaming.**
 
 ## How It Works
-Suprisingly, this very simple game requires about as much code as the [Space Invasion](space-invasion.md) game.
+Surprisingly, this very simple game requires about as much code as the [Space Invasion](space-invasion.md) game.
 
 In this game a single player plays against the BrainPad.  The player uses the up and down buttons to move his paddle (on the right side of the screen) and tries to hit a moving ball across the net (the dashed line) to the other side of the court. You score points when the BrainPad misses the ball. The BrainPad scores when you miss the ball. The first player (you or the BrainPad) to get five points wins. 
 

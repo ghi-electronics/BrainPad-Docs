@@ -163,7 +163,7 @@ namespace ModifyThis {
 This section will add a bullet that shoots when the up button is pressed. The sound will be added later.
 
 ### Creating The Bullet
-The bullet's Y positions starts at -10, outside of the screen boundries. This is done so the bullet will not be seen until the player shoots at the monster. The Y position of the bullet is also used to tell the program not to process it until it is fired at the monster.
+The bullet's Y positions starts at -10, outside of the screen boundaries. This is done so the bullet will not be seen until the player shoots at the monster. The Y position of the bullet is also used to tell the program not to process it until it is fired at the monster.
 
 ```
 static Sprite Bullet = new Sprite(BrainPad.Display.CreatePicture(2, 2, new byte[] {

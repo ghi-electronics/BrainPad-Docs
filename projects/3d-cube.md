@@ -161,4 +161,4 @@ Each corner of the 3D cube is represented by three coordinates (X,Y, and Z). Eac
 
 Now we can draw the lines that represent the edges of the cube between the points on the window. We now have a wire-frame 2D image of the 3D cube. Every time the cube is rotated we must make a new 3D to 2D translation.
 
-Todays computers are so fast that they can render complex, almost life-like three-dimensional models quickly enough to make the realistic video games we have today. The computing power needed to do this is enormous -- some video game systems are capable of performing hundreds of billions of calculations per second! Yet the math used is all based on the same math we use to render this cube.
+Today's computers are so fast that they can render complex, almost life-like three-dimensional models quickly enough to make the realistic video games we have today. The computing power needed to do this is enormous -- some video game systems are capable of performing hundreds of billions of calculations per second! Yet the math used is all based on the same math we use to render this cube.

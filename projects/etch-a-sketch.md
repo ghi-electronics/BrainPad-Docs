@@ -19,7 +19,7 @@ using GHIElectronics.TinyCLR.BrainPad;
 namespace ModifyThis {
     class Program {
         static void Main() {
-            BrainPad.Display.DrawSmallText(0, 57, "Use Buttons to Draw");
+            BrainPad.Display.DrawSmallText(8, 57, "Use Buttons to Draw");
             BrainPad.Display.DrawLine(0, 55, 127, 55);
             int x = 64, y = 32;
 
