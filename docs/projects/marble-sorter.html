@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Marble Sorting Robot </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Marble Sorting Robot ">
+    <meta name="generator" content="docfx 2.29.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="marble-sorting-robot">Marble Sorting Robot</h1>
+
+<hr>
+<p><img src="images/marble-sorter.gif" alt="Marble Sorter"></p>
+<p><strong>Difficulty: Fairly difficult. Construction required.</strong></p>
+<p><strong>Objective: Servo control / simple robotics.</strong></p>
+<p><strong>Note: This project requires two positional servo motors and two pushbuttons. More details are found at the bottom of this page.</strong></p>
+<h2 id="how-it-works">How it Works</h2>
+<p>The BrainPad is programmed to separate black and white marbles using the light sensor, two servo motors, and two pushbuttons. The first button is used to calibrate the light sensor for the current lighting. To calibrate you must place ten marbles in the machine starting with a black marble and alternating in color. Pressing the first button will then start the calibration. The second button is used to start sorting marbles which are placed in the machine in random order.</p>
+<h2 id="the-code-in-c">The Code in C#</h2>
+<div class="TIP"><h5>Tip</h5><p>Make sure the namespace in your program matches your project&#39;s namespace.  Your project&#39;s namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  <a href="../go-beyond/csharp/intro.html#a-few-words-about-namespaces"><strong>More Info</strong></a>.</p>
+</div>
+<pre><code>using GHIElectronics.TinyCLR.Devices.Gpio;
+
+namespace ModifyThis {
+    class Program {
+        static int threshold;
+
+        // Servo1 is marble release.  73 degrees lets marble in for scanning.
+        const double ServoOneLoad = 73;
+
+        // 117 degrees releases marble and blocks next one.
+        const double ServoOneRelease = 117;
+
+        // Servo2 is deflector.  80 degrees lifts deflector allowing marble underneath.
+        const double ServoTwoUp = 80;
+
+        // 127 degrees lowers and deflects marble.
+        const double ServoTwoDown = 127;
+
+        // Amount of time to let servo motors finish moving (in milliseconds).
+        const double WaitTime = 180;
+
+        static void Main() {
+            GpioController GPIO = GpioController.GetDefault();
+            GpioPin redButton = GPIO.OpenPin(GHIElectronics.TinyCLR.Pins.BrainPad.Expansion.GpioPin.Pwm);
+            redButton.SetDriveMode(GpioPinDriveMode.InputPullUp);
+
+            GpioPin yellowButton = GPIO.OpenPin(GHIElectronics.TinyCLR.Pins.BrainPad.Expansion.GpioPin.Int);
+            yellowButton.SetDriveMode(GpioPinDriveMode.InputPullUp);
+
+            BrainPad.ServoMotors.ServoOne.ConfigureAsPositional(false);
+            BrainPad.ServoMotors.ServoOne.ConfigurePulseParameters(0.5, 2.5);
+            BrainPad.ServoMotors.ServoOne.Set(ServoOneRelease);
+
+            BrainPad.ServoMotors.ServoTwo.ConfigureAsPositional(false);
+            BrainPad.ServoMotors.ServoTwo.ConfigurePulseParameters(0.5, 2.5);
+            BrainPad.ServoMotors.ServoTwo.Set(ServoTwoDown);
+
+            while (true) {
+                if (redButton.Read() == GpioPinValue.Low) {
+                    // Calibrate mode.  Load 10 marbles black white black white . . .
+                    int highestBlackLevel = 0;
+                    int lowestWhiteLevel = 100;
+
+                    for (int marblePair = 0; marblePair &lt; 5; marblePair++) {
+                        int currentLightLevel = ReadMarble();
+                        if (currentLightLevel &gt; highestBlackLevel) highestBlackLevel = currentLightLevel;
+                        ReleaseMarble(false);
+
+                        currentLightLevel = ReadMarble();
+                        if (currentLightLevel &lt; lowestWhiteLevel) lowestWhiteLevel = currentLightLevel;
+                        ReleaseMarble(false);
+                    }
+                    threshold = (lowestWhiteLevel + highestBlackLevel) &gt;&gt; 1;
+                }
+
+                if (yellowButton.Read() == GpioPinValue.Low) {
+                    // Sort mode.  Load with 19 marbles.
+                    for (int marbleNumber = 0; marbleNumber &lt; 19; marbleNumber++) {
+                        ReleaseMarble(ReadMarble() &gt; threshold);
+                    }
+                }
+            }
+        }
+
+        static int ReadMarble() {
+            BrainPad.ServoMotors.ServoOne.Set(ServoOneLoad);
+            BrainPad.Wait.Milliseconds(WaitTime);
+            return BrainPad.LightSensor.ReadLightLevel();
+        }
+
+        static void ReleaseMarble(bool up) {
+            if (up) BrainPad.ServoMotors.ServoTwo.Set(ServoTwoUp);
+            else BrainPad.ServoMotors.ServoTwo.Set(ServoTwoDown);
+
+            BrainPad.ServoMotors.ServoOne.Set(ServoOneRelease);
+            BrainPad.Wait.Milliseconds(WaitTime);
+        }
+    }
+}
+</code></pre><h2 id="construction">Construction</h2>
+<p>The red button is used to start the calibration procedure and is connected between the PWM pin and the GND pin on the BrainPad&#39;s expansion header. The yellow button is used to start sorting marbles and is connected between the INT and GND pins on the expansion header.</p>
+<p>The two servo motors are ordinary SG90 micro servos. They are available online for about two dollars (US) each. You should be able to find several sources for these servos by searching for &quot;SG90 micro servo.&quot;</p>
+<p>Servo motor one moves two paperclips up and down in opposite directions to release one marble while blocking the next marble. Each marble is held in front of the BrainPad&#39;s light sensor so it can be determined if it is a black or white marble. The BrainPad is mounted on the back of the box. A hole is cut in the box so the light sensor can peek through the hole and &quot;see&quot; each marble.</p>
+<p>Servo motor two moves a cardboard deflector which determines which of two paths each marble will take. When the deflector is in the up position the marble can go underneath it where it falls through a hole in the corner of the box. When the deflector is down the marble is guided to a hole in the opposite corner of the box.</p>
+<p>The entire assembly is hot glued to another box at an angle which allows the marbles to be gravity fed. The box is also tilted in a manner such that the undeflected marbles will move toward a hole in one corner of the box, while the deflected marbles will roll toward the other corner.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/projects/marble-sorter.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 GHI Electronics, LLC<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

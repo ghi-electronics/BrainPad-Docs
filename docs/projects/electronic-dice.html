@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Electronic Dice </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Electronic Dice ">
+    <meta name="generator" content="docfx 2.29.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="electronic-dice">Electronic Dice</h1>
+
+<hr>
+<p><img src="images/dice.jpg" alt="Electronic Dice"></p>
+<p>You do not need a real dice. BrainPad Electronic Dice is a more fun, plus you can cheat by changing the program!</p>
+<p><strong>Difficulty: Easy.</strong></p>
+<p><strong>Objective: Math.</strong></p>
+<h2 id="how-it-works">How It Works</h2>
+<p>A simple box is drawn to show the shape of a die. Then, we go in a loop generating random numbers and showing them as a die on the display. The loop has a an increasing delay giving a cool effect.</p>
+<h2 id="the-code-in-c">The Code in C#</h2>
+<div class="TIP"><h5>Tip</h5><p>Make sure the namespace in your program matches your project&#39;s namespace.  Your project&#39;s namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  <a href="../go-beyond/csharp/intro.html#a-few-words-about-namespaces"><strong>More Info</strong></a>.</p>
+</div>
+<pre><code>using System;
+
+namespace DeleteMeNow {
+    class Program {
+        const int Dice_Base_X = 55;
+        const int Dice_Base_Y = 10;
+
+        static void Main() {
+            var Rnd = new Random();
+            while (true) {
+                BrainPad.Display.DrawSmallText(10, 55, &quot;Shake or Up to roll&quot;);
+                BrainPad.Display.DrawRectangle(Dice_Base_X - 5, Dice_Base_Y - 5, 31, 31);
+
+                for (var i = 0; i &lt; 100; i += 5) {
+                    ShowDice(Rnd.Next(6) + 1);
+                    BrainPad.Buzzer.Beep();
+                    BrainPad.Wait.Milliseconds(i);
+                    BrainPad.Display.RefreshScreen();
+                }
+                while (BrainPad.Accelerometer.ReadX() &lt; 1 &amp;&amp; BrainPad.Buttons.IsUpPressed() == false) BrainPad.Wait.Minimum();
+                BrainPad.Wait.Minimum();
+            }
+        }
+
+        static void ShowDice(int num) {
+            BrainPad.Display.ClearPart(Dice_Base_X + 3, Dice_Base_Y + 3, 16, 16);
+
+            switch (num) {
+                case 1:
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 10, Dice_Base_Y + 10, 2);
+                    break;
+
+                case 2:
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 5, Dice_Base_Y + 5, 2);
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 15, Dice_Base_Y + 15, 2);
+                    break;
+
+                case 3:
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 5, Dice_Base_Y + 5, 2);
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 10, Dice_Base_Y + 10, 2);
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 15, Dice_Base_Y + 15, 2);
+                    break;
+
+                case 4:
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 5, Dice_Base_Y + 5, 2);
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 5, Dice_Base_Y + 15, 2);
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 15, Dice_Base_Y + 15, 2);
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 15, Dice_Base_Y + 5, 2);
+                    break;
+
+                case 5:
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 5, Dice_Base_Y + 5, 2);
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 5, Dice_Base_Y + 15, 2);
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 15, Dice_Base_Y + 15, 2);
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 15, Dice_Base_Y + 5, 2);
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 10, Dice_Base_Y + 10, 2);
+                    break;
+
+                case 6:
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 5, Dice_Base_Y + 5, 2);
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 5, Dice_Base_Y + 10, 2);
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 5, Dice_Base_Y + 15, 2);
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 15, Dice_Base_Y + 5, 2);
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 15, Dice_Base_Y + 10, 2);
+                    BrainPad.Display.DrawCircle(Dice_Base_X + 15, Dice_Base_Y + 15, 2);
+                    break;
+            }
+        }
+    }
+}
+</code></pre><h2 id="the-challenge">The Challenge</h2>
+<p>OK, we don&#39;t encourage you to cheat your friends (or anyone else for that matter). You will find that if you cheat your friends they might not be your friends for long. What goes around comes around. But, just as a joke, can you figure out a way to use this game to get an advantage over unsuspecting players?</p>
+<p>For example, could you program the BrainPad to always roll a seven or eleven if the BrainPad is shaken in a certain way? Or if the button(s) are pushed in a certain way or for a certain length of time?</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/projects/electronic-dice.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 GHI Electronics, LLC<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

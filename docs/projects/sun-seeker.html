@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Projects </title>
+    <title>Sun Seeking Robot </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Projects ">
+    <meta name="title" content="Sun Seeking Robot ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
@@ -75,15 +75,46 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="projects">Projects</h1>
+<h1 id="sun-seeking-robot">Sun Seeking Robot</h1>
 
 <hr>
-<div class="TIP"><h5>Tip</h5><p>Also see the more advanced <a href="../projects/intro.html"><strong>TinyCLR OS Projects</strong></a></p>
+<p><img src="images/sun-seeker.gif" alt="Sun Seeking Chick"></p>
+<p><strong>Difficulty: Moderately easy, some assembly required.</strong></p>
+<p><strong>Objective: Servo control / simple robotics.</strong></p>
+<p><strong>Note: This project requires a two wheel drive mini robot platform and battery. More details are found at the bottom of this page.</strong></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4hw6XpSp9Hs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<h2 id="how-it-works">How it Works</h2>
+<p>A toy car is programmed to stay in the sunlight and turn any time the light sensor senses shade. Both rear wheels of the car are driven by continuous servo motors. When the program starts both motors are driving the car forward. When the light sensor detects light below a given threshold, the program will stop one of the rear wheels causing the car to turn. When the sensor once again senses the sunlight both wheels push forward. The program alternates which wheel will stop when the light sensed is below the threshold.</p>
+<h2 id="the-code">The Code</h2>
+<h3 id="microsoft-makecode">Microsoft Makecode</h3>
+<p>Click <a href="https://makecode.com/_PFX5r3bgLcPh">here</a> to go directly to the program on Microsoft MakeCode. You can also copy and paste the following JavaScript code into Microsoft MakeCode&#39;s JavaScript editor.</p>
+<pre><code>let Direction = 0
+input.onLightConditionChanged(LightCondition.Dark, function () {
+    if (Direction == 0) {
+        pins.SERVO2.servoWrite(90)
+        Direction = 1
+    } else {
+        pins.SERVO1.servoWrite(90)
+        Direction = 0
+    }
+})
+input.onLightConditionChanged(LightCondition.Bright, function () {
+    pins.SERVO1.servoWrite(180)
+    pins.SERVO2.servoWrite(0)
+})
+input.setLightThreshold(LightCondition.Dark, 250)
+pins.SERVO1.servoWrite(180)
+pins.SERVO2.servoWrite(0)
+</code></pre><p>Microsoft MakeCode block program:</p>
+<p><img src="images/sun-seeker-blocks.png" alt="Sun seeker block program"></p>
+<h2 id="the-two-wheel-drive-mini-robot-platform">The Two Wheel Drive Mini Robot Platform</h2>
+<p>We found our car chassis on Amazon, but they can also be found on eBay or by searching in your favorite search engine for &quot;2WD Mini Robot Platform Kit.&quot; Make sure you get one that looks the same as the chassis in the video to assure it&#39;s compatible with the BrainPad and programs on this page.</p>
+<h2 id="the-battery">The Battery</h2>
+<p>There are many rechargeable battery packs available that are meant to power devices (like phones) that have a micro USB connector. You can check Amazon, eBay, or even local dollar stores or other retail outlets. The battery is not necessary to make this car work, but without it the car will be tethered by the USB cable to your computer or laptop. In the video above and the picture below you can see our blue battery mounted underneath the BrainPad.</p>
+<div class="TIP"><h5>Tip</h5><p>Make sure to push the battery towards the back of the car as far as possible. This will put more weight over the drive wheels and give the car better traction.</p>
 </div>
-<p><img src="images/makecode-screen.png" alt="Microsoft MakeCode Screen Image"></p>
-<p>All Microsoft MakeCode projects, curriculum and lessons are found at <a href="https://makecode.brainpad.com/">makecode.brainpad.com</a></p>
-<hr>
-<p>You are on the documentation website for the BrainPad. The main website is found at <a href="http://www.brainpad.com/">www.brainpad.com</a></p>
+<p><img src="images/sun-seeker.jpg" alt="Sun seeking car"></p>
 </article>
           </div>
           
@@ -92,7 +123,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/start-making/projects.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/projects/sun-seeker.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

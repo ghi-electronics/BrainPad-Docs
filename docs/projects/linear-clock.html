@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Linear Clock </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Linear Clock ">
+    <meta name="generator" content="docfx 2.29.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="linear-clock">Linear Clock</h1>
+
+<hr>
+<p><img src="images/linear-clock.jpg" alt="Linear Clock"></p>
+<p>A clock made from a cardboard box using LED strips.</p>
+<p><strong>Difficulty: Moderate -- soldering required.</strong></p>
+<p><strong>Objective: Build a simple clock using real time clock Click module.</strong></p>
+<p><strong>Note: This project requires the RTC 6 click module and an LED light strip incorporating the LPD8806S driver chip.</strong></p>
+<h2 id="how-it-works">How it Works</h2>
+<p>This project uses the RTC 6 click module and LED light strips as the basis for a BrainPad based clock. The BrainPad program provides a means of setting the time on the clock module and drives the LED light strip. When you remove power from the BrainPad the battery backup on the RTC 6 click module will keep the clock from losing time. When the BrainPad is powered up, it automatically reads the time from the clock module. Press the left and right buttons together to set the time.</p>
+<h2 id="the-code-in-c">The Code in C#</h2>
+<div class="TIP"><h5>Tip</h5><p>Make sure the namespace in your program matches your project&#39;s namespace.  Your project&#39;s namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  <a href="../go-beyond/csharp/intro.html#a-few-words-about-namespaces"><strong>More Info</strong></a>.</p>
+</div>
+<pre><code>using GHIElectronics.TinyCLR.Devices.Spi;
+using GHIElectronics.TinyCLR.Devices.I2c;
+
+namespace ModifyThis {
+    class Program {
+        private static byte[] i2cReadData = new byte[1];
+        private static byte[] i2cWriteData = new byte[2];
+        private static byte[] i2cMultipleReadData = new byte[3];
+        private static byte hours, minutes, seconds, cursorLocation, secondsCurrent;
+        private static int secondsBrightness;
+
+        static void Main() {
+            byte[] colors = new byte[3 * 36];
+            byte[] zeros = new byte[3 * ((36 + 63) / 64)];
+            bool ok = false;
+
+            var i2cSettings = new I2cConnectionSettings(0b01101111) {
+                SharingMode = I2cSharingMode.Shared,
+                BusSpeed = I2cBusSpeed.FastMode,
+            };
+            var realTimeClock = I2cDevice.FromId(GHIElectronics.TinyCLR.Pins.BrainPad.Expansion.I2cBus.I2c1, i2cSettings);
+
+            var spiSettings = new SpiConnectionSettings(GHIElectronics.TinyCLR.Pins.BrainPad.Expansion.GpioPin.Cs) {
+                Mode = SpiMode.Mode0,
+                ClockFrequency = 20000000,
+                DataBitLength = 8,
+            };
+            var ledStrip = SpiDevice.FromId(GHIElectronics.TinyCLR.Pins.BrainPad.Expansion.SpiBus.Spi1, spiSettings);
+
+            while (true) {
+                i2cReadData[0] = (0x00);
+                realTimeClock.WriteRead(i2cReadData, i2cMultipleReadData);
+
+                seconds = (byte)((i2cMultipleReadData[0] &amp; 0b00001111) + ((i2cMultipleReadData[0] &amp; 0b01110000) &gt;&gt; 4) * 10);
+                minutes = (byte)((i2cMultipleReadData[1] &amp; 0b00001111) + (i2cMultipleReadData[1] &gt;&gt; 4) * 10);
+                hours = (byte)((i2cMultipleReadData[2] &amp; 0b00001111) + ((i2cMultipleReadData[2] &amp; 0b00010000) &gt;&gt; 4) * 10);
+
+                if (BrainPad.Buttons.IsLeftPressed() &amp;&amp; BrainPad.Buttons.IsRightPressed()) SetTime();
+
+                for (var i = 0; i &lt; colors.Length; ++i) colors[i] = 0x80;
+
+                if (seconds != secondsCurrent) {
+                    BrainPad.Display.Clear();
+                    BrainPad.Display.DrawText(18, 23, hours.ToString(&quot;D2&quot;) + &quot;:&quot; + minutes.ToString(&quot;D2&quot;) + &quot;:&quot; + seconds.ToString(&quot;D2&quot;));
+                    BrainPad.Display.RefreshScreen();
+                    secondsCurrent = seconds;
+                    secondsBrightness = 0;
+                    BrainPad.Buzzer.StartBuzzing(1);
+                    BrainPad.Buzzer.StopBuzzing();
+                }
+
+                colors[hours * 3 - 2] = 0xFF;
+                colors[(int)(minutes / 5 + 0.5) * 3 + 36] = (byte)(0x80 | (((minutes % 5) + 1) * ((minutes % 5) + 1) * ((minutes % 5) + 1)));
+                colors[(int)(seconds / 5 + 0.5) * 3 + 72 + 2] = (byte)(0x80 | secondsBrightness);
+                if (secondsBrightness &lt; 127) secondsBrightness += 1;
+
+                ledStrip.Write(colors);
+                ledStrip.Write(zeros);
+                BrainPad.Wait.Milliseconds(25);
+            }
+
+            void SetTime() {
+                cursorLocation = 0;
+                ok = false;
+                ShowSetTimeScreen();
+
+                while (!ok) {
+                    if (BrainPad.Buttons.IsLeftPressed()) {
+                        if (cursorLocation &gt; 0) cursorLocation--;
+                        ShowSetTimeScreen();
+                    }
+
+                    if (BrainPad.Buttons.IsRightPressed()) {
+                        if (cursorLocation &lt; 5) cursorLocation++;
+                        ShowSetTimeScreen();
+                    }
+
+                    if (BrainPad.Buttons.IsUpPressed()) {
+                        switch (cursorLocation) {
+                            case 0:
+                                hours++;
+                                if (hours &gt; 12) hours = 1;
+                                break;
+
+                            case 1:
+                                minutes += 10;
+                                if (minutes &gt; 59) minutes -= 60;
+                                break;
+
+                            case 2:
+                                if ((minutes + 1) % 10 == 0) minutes -= 9;
+                                else minutes++;
+                                break;
+
+                            case 3:
+                                seconds += 10;
+                                if (seconds &gt; 59) seconds -= 60;
+                                break;
+
+                            case 4:
+                                if ((seconds + 1) % 10 == 0) seconds -= 9;
+                                else seconds++;
+                                break;
+
+                            case 5:
+                                ok = true;
+                                break;
+                        }
+                        ShowSetTimeScreen();
+                    }
+
+                    if (BrainPad.Buttons.IsDownPressed()) {
+                        switch (cursorLocation) {
+                            case 0:
+                                hours--;
+                                if (hours &lt; 1) hours = 12;
+                                break;
+
+                            case 1:
+                                if (minutes &gt; 9) minutes -= 10;
+                                else minutes += 50;
+                                break;
+
+                            case 2:
+                                if (minutes % 10 == 0) minutes += 9;
+                                else minutes--;
+                                break;
+
+                            case 3:
+                                if (seconds &gt; 9) seconds -= 10;
+                                else seconds += 50;
+                                break;
+
+                            case 4:
+                                if (seconds % 10 == 0) seconds += 9;
+                                else seconds--;
+                                break;
+
+                            case 5:
+                                ok = true;
+                                break;
+                        }
+                        ShowSetTimeScreen();
+                    }
+                }
+
+
+                i2cWriteData[0] = (0x00);
+                i2cWriteData[1] = (byte)(0x80 | ((seconds / 10) &lt;&lt; 4) | seconds % 10);
+                realTimeClock.Write(i2cWriteData);
+
+                i2cWriteData[0] = (0x01);
+                i2cWriteData[1] = (byte)(((minutes / 10) &lt;&lt; 4) | minutes % 10);
+                realTimeClock.Write(i2cWriteData);
+
+                i2cWriteData[0] = (0x02);
+                i2cWriteData[1] = (byte)(0x40 | ((hours / 10) &lt;&lt; 4) | hours % 10);
+                realTimeClock.Write(i2cWriteData);
+            }
+
+            void ShowSetTimeScreen() {
+                BrainPad.Display.Clear();
+                BrainPad.Display.DrawText(16, 0, &quot;Set Time&quot;);
+                BrainPad.Display.DrawText(55, 47, &quot;OK&quot;);
+                if (cursorLocation &lt; 5) BrainPad.Display.DrawText(18 + (cursorLocation + 1) * 12 + (cursorLocation + 1) / 2 * 12, 28, &quot;_&quot;);
+                else BrainPad.Display.DrawRectangle(50, 44, 32, 20);
+                BrainPad.Display.DrawText(18, 23, hours.ToString(&quot;D2&quot;) + &quot;:&quot; + minutes.ToString(&quot;D2&quot;) + &quot;:&quot; + seconds.ToString(&quot;D2&quot;));
+                BrainPad.Display.RefreshScreen();
+            }
+        }
+    }
+}
+</code></pre></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/projects/linear-clock.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 GHI Electronics, LLC<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

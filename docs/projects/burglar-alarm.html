@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Projects </title>
+    <title>Burglar Alarm </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Projects ">
+    <meta name="title" content="Burglar Alarm ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
@@ -75,16 +75,91 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="projects">Projects</h1>
+<h1 id="burglar-alarm">Burglar Alarm</h1>
 
 <hr>
-<div class="TIP"><h5>Tip</h5><p>Also see the more advanced <a href="../projects/intro.html"><strong>TinyCLR OS Projects</strong></a></p>
+<p><img src="images/burglar.gif" alt="Burglar"></p>
+<p>A simple motion activated alarm.</p>
+<p><strong>Difficulty: Easy.</strong></p>
+<p><strong>Objective: Learning about the accelerometer, buttons, light bulb and display.</strong></p>
+<h2 id="how-it-works">How it Works</h2>
+<p>Place the BrainPad in such a way that you would want to be alerted when it is moved. For example, you could place it in a desk drawer so the alarm will be triggered when someone tries to open the drawer. Press the left button to arm the alarm. After the countdown, any movement of the BrainPad will trigger the alarm.</p>
+<h2 id="the-code-in-c">The Code in C#</h2>
+<div class="TIP"><h5>Tip</h5><p>Make sure the namespace in your program matches your project&#39;s namespace.  Your project&#39;s namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  <a href="../go-beyond/csharp/intro.html#a-few-words-about-namespaces"><strong>More Info</strong></a></p>
 </div>
-<p><img src="images/makecode-screen.png" alt="Microsoft MakeCode Screen Image"></p>
-<p>All Microsoft MakeCode projects, curriculum and lessons are found at <a href="https://makecode.brainpad.com/">makecode.brainpad.com</a></p>
-<hr>
-<p>You are on the documentation website for the BrainPad. The main website is found at <a href="http://www.brainpad.com/">www.brainpad.com</a></p>
-</article>
+<pre><code>using System;
+
+namespace ModifyThis {
+    class Program {
+        static void Main() {
+            BrainPad.Display.DrawText(16, 0, &quot;BrainPad&quot;);
+            BrainPad.Display.DrawText(34, 18, &quot;Alarm&quot;);
+            BrainPad.Display.DrawSmallText(0, 37, &quot;To arm alarm place on&quot;);
+            BrainPad.Display.DrawSmallText(0, 47, &quot;surface and press the&quot;);
+            BrainPad.Display.DrawSmallText(0, 57, &quot;left button.&quot;);
+            BrainPad.Display.RefreshScreen();
+
+            while (!BrainPad.Buttons.IsLeftPressed())
+                BrainPad.Wait.Milliseconds(20);
+
+            for (var CountDown = 10; CountDown &gt; 0; CountDown -= 1) {
+                BrainPad.Display.Clear();
+                BrainPad.Display.DrawText(10, 0, &quot;Arming...&quot;);
+                BrainPad.Display.DrawNumber(59, 30, CountDown);
+                BrainPad.Display.RefreshScreen();
+                BrainPad.Wait.Seconds(0.5);
+            }
+
+            double x, y, z, sensitivity;
+            x = BrainPad.Accelerometer.ReadX();
+            y = BrainPad.Accelerometer.ReadY();
+            z = BrainPad.Accelerometer.ReadZ();
+            sensitivity = 0.035;
+
+            BrainPad.Display.Clear();
+            BrainPad.Display.DrawText(35, 22, &quot;Armed&quot;);
+            BrainPad.Display.RefreshScreen();
+
+            while ((Math.Abs(BrainPad.Accelerometer.ReadX() - x) &lt; sensitivity &amp; Math.Abs(BrainPad.Accelerometer.ReadY() - y) &lt; sensitivity &amp; Math.Abs(BrainPad.Accelerometer.ReadZ() - z) &lt; sensitivity))
+                BrainPad.Wait.Milliseconds(20);
+
+            BrainPad.Display.Clear();
+            BrainPad.Display.DrawText(35, 22, &quot;ALARM&quot;);
+            BrainPad.Display.RefreshScreen();
+
+            while (true) {
+                for (var frequency = 1200; frequency &lt;= 3200; frequency += 160) {
+                    BrainPad.Buzzer.StartBuzzing(frequency);
+                    BrainPad.Wait.Milliseconds(8);
+
+                    LightColorChanger();
+                }
+
+                for (var frequency = 3200; frequency &gt;= 1200; frequency += -160) {
+                    BrainPad.Buzzer.StartBuzzing(frequency);
+                    BrainPad.Wait.Milliseconds(8);
+
+                    LightColorChanger();
+                }
+            }
+        }
+
+        public static void LightColorChanger() {
+            var lightTimer = 0;
+
+            lightTimer += 1;
+
+            if (lightTimer == 15)
+                BrainPad.LightBulb.TurnBlue();
+
+            if (lightTimer == 30) {
+                BrainPad.LightBulb.TurnRed();
+                lightTimer = 0;
+            }
+        }
+    }
+}
+</code></pre></article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
@@ -92,7 +167,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/start-making/projects.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/projects/burglar-alarm.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

@@ -142,17 +142,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "advanced/csharp/images/introduction/new-project-window.gif",
-      "output": {
-        "resource": {
-          "relative_path": "advanced/csharp/images/introduction/new-project-window.gif"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "advanced/csharp/images/introduction/new-project-window.jpg",
       "output": {
         "resource": {
@@ -672,12 +661,169 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
-      "source_relative_path": "get-inspiderd/ai.md",
+      "source_relative_path": "expansion/electronics.md",
       "output": {
         ".html": {
-          "relative_path": "get-inspiderd/ai.html",
-          "hash": "qtRnDXirMeqBtH7GVcFfYA=="
+          "relative_path": "expansion/electronics.html",
+          "hash": "+628A/AZk78beCVTk9madQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "expansion/images/breadboard-connections.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "expansion/images/breadboard-connections.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "expansion/images/breadboard-led.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "expansion/images/breadboard-led.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "expansion/images/breadboard.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "expansion/images/breadboard.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "expansion/images/csharp-logo.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "expansion/images/csharp-logo.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "expansion/images/fm-click.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "expansion/images/fm-click.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "expansion/images/ir-click.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "expansion/images/ir-click.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "expansion/images/mikro-click.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "expansion/images/mikro-click.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "expansion/images/snap-circuits.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "expansion/images/snap-circuits.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "expansion/images/snap-circuits2.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "expansion/images/snap-circuits2.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "expansion/images/touchclamp-click.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "expansion/images/touchclamp-click.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "expansion/images/visual-basic-logo.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "expansion/images/visual-basic-logo.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "expansion/images/visual-studio-logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "expansion/images/visual-studio-logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "expansion/images/wires.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "expansion/images/wires.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "expansion/images/www.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "expansion/images/www.jpg"
         }
       },
       "is_incremental": false,
@@ -688,110 +834,35 @@
         "InvalidYamlHeader"
       ],
       "type": "Conceptual",
-      "source_relative_path": "get-inspiderd/electronics.md",
+      "source_relative_path": "expansion/intro-old.md",
       "output": {
         ".html": {
-          "relative_path": "get-inspiderd/electronics.html",
-          "hash": "Zl9G9SKPta7PKjvAVxdZJQ=="
+          "relative_path": "expansion/intro-old.html",
+          "hash": "cI4mV3kmalYiAziPUKz5cQ=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "get-inspiderd/images/csharp-logo.jpg",
+      "type": "Conceptual",
+      "source_relative_path": "expansion/intro.md",
       "output": {
-        "resource": {
-          "relative_path": "get-inspiderd/images/csharp-logo.jpg"
+        ".html": {
+          "relative_path": "expansion/intro.html",
+          "hash": "MietAkZSe3z/UeNenFvuWw=="
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "get-inspiderd/images/fm-click.jpg",
+      "type": "Conceptual",
+      "source_relative_path": "expansion/iot.md",
       "output": {
-        "resource": {
-          "relative_path": "get-inspiderd/images/fm-click.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "get-inspiderd/images/ir-click.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "get-inspiderd/images/ir-click.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "get-inspiderd/images/mikro-click.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "get-inspiderd/images/mikro-click.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "get-inspiderd/images/snap-circuits.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "get-inspiderd/images/snap-circuits.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "get-inspiderd/images/snap-circuits2.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "get-inspiderd/images/snap-circuits2.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "get-inspiderd/images/touchclamp-click.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "get-inspiderd/images/touchclamp-click.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "get-inspiderd/images/visual-basic-logo.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "get-inspiderd/images/visual-basic-logo.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "get-inspiderd/images/visual-studio-logo.png",
-      "output": {
-        "resource": {
-          "relative_path": "get-inspiderd/images/visual-studio-logo.png"
+        ".html": {
+          "relative_path": "expansion/iot.html",
+          "hash": "no+XBP2FOeH9Xs/JW8Wq7A=="
         }
       },
       "is_incremental": false,
@@ -802,11 +873,11 @@
         "InvalidYamlHeader"
       ],
       "type": "Conceptual",
-      "source_relative_path": "get-inspiderd/intro.md",
+      "source_relative_path": "expansion/mikroe-click.md",
       "output": {
         ".html": {
-          "relative_path": "get-inspiderd/intro.html",
-          "hash": "7r5zsqFhx8OBdSxbev/XJQ=="
+          "relative_path": "expansion/mikroe-click.html",
+          "hash": "AXy1sawDszuWkkJdhTHItA=="
         }
       },
       "is_incremental": false,
@@ -814,11 +885,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "get-inspiderd/iot.md",
+      "source_relative_path": "expansion/robotics.md",
       "output": {
         ".html": {
-          "relative_path": "get-inspiderd/iot.html",
-          "hash": "A2slb89SIywtB3yaFyKnzw=="
+          "relative_path": "expansion/robotics.html",
+          "hash": "mnnysm6qhcQi+edU3z+hyA=="
         }
       },
       "is_incremental": false,
@@ -826,11 +897,11 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "get-inspiderd/robotics.md",
+      "source_relative_path": "expansion/snap-circuits.md",
       "output": {
         ".html": {
-          "relative_path": "get-inspiderd/robotics.html",
-          "hash": "LabIPH72QK1msWUWKWw8Jw=="
+          "relative_path": "expansion/snap-circuits.html",
+          "hash": "zRedzz3qvFtPC0BcrIUycw=="
         }
       },
       "is_incremental": false,
@@ -838,11 +909,11 @@
     },
     {
       "type": "Toc",
-      "source_relative_path": "get-inspiderd/toc.md",
+      "source_relative_path": "expansion/toc.md",
       "output": {
         ".html": {
-          "relative_path": "get-inspiderd/toc.html",
-          "hash": "PHLmcsk17/ZMcNu3Eu5IpQ=="
+          "relative_path": "expansion/toc.html",
+          "hash": "pDgmU1e9Edsz9k44rI6Aww=="
         }
       },
       "is_incremental": false,
@@ -914,7 +985,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/intro.html",
-          "hash": "X70NygKe0K5DhdA7nk+LGg=="
+          "hash": "9oOVRTZg5FBaZdXGh+q9IQ=="
         }
       },
       "is_incremental": false,
@@ -939,6 +1010,18 @@
         ".html": {
           "relative_path": "go-beyond/components/light-sensor.html",
           "hash": "bU2drAnI1DKp/PYdrC2TWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "go-beyond/components/other-components.md",
+      "output": {
+        ".html": {
+          "relative_path": "go-beyond/components/other-components.html",
+          "hash": "fRs9tBrlZx1/eV92rnumWQ=="
         }
       },
       "is_incremental": false,
@@ -1069,17 +1152,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "go-beyond/csharp/images/introduction/helper-namespace.gif",
-      "output": {
-        "resource": {
-          "relative_path": "go-beyond/csharp/images/introduction/helper-namespace.gif"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "go-beyond/csharp/images/introduction/manage-nuget-packages-menu.png",
       "output": {
         "resource": {
@@ -1157,17 +1229,6 @@
     },
     {
       "type": "Resource",
-      "source_relative_path": "go-beyond/csharp/images/introduction/program-namespace.gif",
-      "output": {
-        "resource": {
-          "relative_path": "go-beyond/csharp/images/introduction/program-namespace.gif"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
       "source_relative_path": "go-beyond/csharp/images/introduction/solution-explorer.png",
       "output": {
         "resource": {
@@ -1211,6 +1272,9 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "go-beyond/csharp/intro.md",
       "output": {
@@ -1588,233 +1652,6 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "go-beyond/projects/3d-cube.md",
-      "output": {
-        ".html": {
-          "relative_path": "go-beyond/projects/3d-cube.html",
-          "hash": "5BCVj/Wgig0yT72NDFq4Pg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "go-beyond/projects/color-mixer.md",
-      "output": {
-        ".html": {
-          "relative_path": "go-beyond/projects/color-mixer.html",
-          "hash": "cpPpzjchH1j08r0XisT2Jw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "go-beyond/projects/electronic-dice.md",
-      "output": {
-        ".html": {
-          "relative_path": "go-beyond/projects/electronic-dice.html",
-          "hash": "/q/j8x0mJsiwnNarXpDRUQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "go-beyond/projects/etch-a-sketch.md",
-      "output": {
-        ".html": {
-          "relative_path": "go-beyond/projects/etch-a-sketch.html",
-          "hash": "RD/bN5tf1iPqPRLzSc9YAA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "go-beyond/projects/flappy-bird.md",
-      "output": {
-        ".html": {
-          "relative_path": "go-beyond/projects/flappy-bird.html",
-          "hash": "dF1AUdAhIVfCWaACh+DWKA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "go-beyond/projects/images/3d-cube.gif",
-      "output": {
-        "resource": {
-          "relative_path": "go-beyond/projects/images/3d-cube.gif"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "go-beyond/projects/images/electronic-dice.gif",
-      "output": {
-        "resource": {
-          "relative_path": "go-beyond/projects/images/electronic-dice.gif"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "go-beyond/projects/images/pong.gif",
-      "output": {
-        "resource": {
-          "relative_path": "go-beyond/projects/images/pong.gif"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "go-beyond/projects/images/space-invasion.gif",
-      "output": {
-        "resource": {
-          "relative_path": "go-beyond/projects/images/space-invasion.gif"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "go-beyond/projects/images/space-invasion.jpg",
-      "output": {
-        "resource": {
-          "relative_path": "go-beyond/projects/images/space-invasion.jpg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "go-beyond/projects/images/test.gif",
-      "output": {
-        "resource": {
-          "relative_path": "go-beyond/projects/images/test.gif"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "go-beyond/projects/images/tilt-etch-a-sketch.gif",
-      "output": {
-        "resource": {
-          "relative_path": "go-beyond/projects/images/tilt-etch-a-sketch.gif"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidYamlHeader"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "go-beyond/projects/intro.md",
-      "output": {
-        ".html": {
-          "relative_path": "go-beyond/projects/intro.html",
-          "hash": "Gj8scToDdiR3NcUR725NrA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "go-beyond/projects/live-tictactoe.md",
-      "output": {
-        ".html": {
-          "relative_path": "go-beyond/projects/live-tictactoe.html",
-          "hash": "EXWLYjKpEX127YHPpoU9NA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "go-beyond/projects/pong.md",
-      "output": {
-        ".html": {
-          "relative_path": "go-beyond/projects/pong.html",
-          "hash": "1QX0UNqgskgZPvuxbJyyiA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "go-beyond/projects/screen-tictactoe.md",
-      "output": {
-        ".html": {
-          "relative_path": "go-beyond/projects/screen-tictactoe.html",
-          "hash": "NwrZLqkRwh0xnLEt/GeatQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "log_codes": [
-        "InvalidYamlHeader"
-      ],
-      "type": "Conceptual",
-      "source_relative_path": "go-beyond/projects/space-invasion.md",
-      "output": {
-        ".html": {
-          "relative_path": "go-beyond/projects/space-invasion.html",
-          "hash": "KMuaoDa/gZloN9PaZ7UfpA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "go-beyond/projects/stepper-motors.md",
-      "output": {
-        ".html": {
-          "relative_path": "go-beyond/projects/stepper-motors.html",
-          "hash": "1nnbalhBc5KE4gZ4tZa2bg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "go-beyond/projects/tilt-etch-a-sketch.md",
-      "output": {
-        ".html": {
-          "relative_path": "go-beyond/projects/tilt-etch-a-sketch.html",
-          "hash": "IAQAWJtpo3KMjFO7K/9McQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "log_codes": [
         "InvalidYamlHeader"
       ],
@@ -1835,7 +1672,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/toc.html",
-          "hash": "DrY5+PVfB9/oXkMh6BoNbA=="
+          "hash": "7zeaQrmeS3LY0n2TZLft7w=="
         }
       },
       "is_incremental": false,
@@ -2255,6 +2092,333 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "projects/3d-cube.md",
+      "output": {
+        ".html": {
+          "relative_path": "projects/3d-cube.html",
+          "hash": "+n1mxJZzAdKfOw9V+Afj5A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "projects/burglar-alarm.md",
+      "output": {
+        ".html": {
+          "relative_path": "projects/burglar-alarm.html",
+          "hash": "M2e+/apFPL95YoldZT7EKg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "projects/color-mixer.md",
+      "output": {
+        ".html": {
+          "relative_path": "projects/color-mixer.html",
+          "hash": "RhvXcSYYbXt5W1chp0kzrg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "projects/electronic-dice.md",
+      "output": {
+        ".html": {
+          "relative_path": "projects/electronic-dice.html",
+          "hash": "T/Auq58DRrv93rlI8hmuiw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "projects/etch-a-sketch.md",
+      "output": {
+        ".html": {
+          "relative_path": "projects/etch-a-sketch.html",
+          "hash": "GKw7uM3qlpovbsTJzXC8+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "projects/high-low-thermometer.md",
+      "output": {
+        ".html": {
+          "relative_path": "projects/high-low-thermometer.html",
+          "hash": "6mTth5nwIzjNSU6uGfMZPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/color-wheel.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/color-wheel.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/dice.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/dice.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/lift-off-blocks.png",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/lift-off-blocks.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/linear-clock.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/linear-clock.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/spaceforce-blocks.png",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/spaceforce-blocks.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/stepper-motor.png",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/stepper-motor.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/sun-seeker-blocks.png",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/sun-seeker-blocks.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/sun-seeker.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/sun-seeker.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidYamlHeader",
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "projects/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "projects/intro.html",
+          "hash": "CbCr9IbQibDhZWmjEOpM6A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "projects/lift-off.md",
+      "output": {
+        ".html": {
+          "relative_path": "projects/lift-off.html",
+          "hash": "t2Q1jC532oTp9tbm5JT7pQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "projects/linear-clock.md",
+      "output": {
+        ".html": {
+          "relative_path": "projects/linear-clock.html",
+          "hash": "6sqeazzAUo6z4B+lteC+4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "projects/marble-sorter.md",
+      "output": {
+        ".html": {
+          "relative_path": "projects/marble-sorter.html",
+          "hash": "Xg/OQxnVBbqz4oUPwOVCkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "projects/pong.md",
+      "output": {
+        ".html": {
+          "relative_path": "projects/pong.html",
+          "hash": "LwTjEWIw+eeHmzNmB+eapg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "projects/space-force.md",
+      "output": {
+        ".html": {
+          "relative_path": "projects/space-force.html",
+          "hash": "0C04L31FMkv28RQMjx8Lmg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidYamlHeader",
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "projects/space-invasion.md",
+      "output": {
+        ".html": {
+          "relative_path": "projects/space-invasion.html",
+          "hash": "P8Q5u2TxWmiUTLcvCs6sBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "projects/stepper-motors.md",
+      "output": {
+        ".html": {
+          "relative_path": "projects/stepper-motors.html",
+          "hash": "7y3C6PGE+ldIcGvfWKxQEA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "projects/sun-seeker.md",
+      "output": {
+        ".html": {
+          "relative_path": "projects/sun-seeker.html",
+          "hash": "j3zzrxtiWKqdD0JCOgKFVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "projects/tilt-etch-a-sketch.md",
+      "output": {
+        ".html": {
+          "relative_path": "projects/tilt-etch-a-sketch.html",
+          "hash": "ZkxGcz2f3ce4cJRLbsMwEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "projects/toc.md",
+      "output": {
+        ".html": {
+          "relative_path": "projects/toc.html",
+          "hash": "v9IYLEEbVf3+yAWVC9c4MQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "resources/bootloader.md",
       "output": {
@@ -2468,7 +2632,7 @@
       "output": {
         ".html": {
           "relative_path": "start-making/projects.html",
-          "hash": "LL8fNsFC+Ih7kyyngLGgUA=="
+          "hash": "UCgHl7sOr10/Qh8JeAR9+A=="
         }
       },
       "is_incremental": false,
@@ -2492,7 +2656,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "AjN0XYZ8lMOwRnbwgwr6cQ=="
+          "hash": "T5sxqb6sc+jCJuZwaHI5qw=="
         }
       },
       "is_incremental": false,
@@ -2512,13 +2676,13 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
           "incrementalPhase": "build"
         }
       }

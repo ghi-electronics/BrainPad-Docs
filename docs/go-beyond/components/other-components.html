@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Components </title>
+    <title>Other Components </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Components ">
+    <meta name="title" content="Other Components ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
@@ -75,29 +75,23 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="components">Components</h1>
+<h1 id="other-components">Other Components</h1>
 
 <hr>
-<p>This section provides descriptions of the various BrainPad components and a list of the methods used to interact with each component. Each of these components acts as either an input device or an output device. Input and output are defined by whether the information for the component goes into, or comes out of, the &quot;brain.&quot; The &quot;brain&quot; is the processor chip or microcontroller in the center of the BrainPad.</p>
-<p>If information flows into the processor it is considered an input device. For example, the temperature sensor is read by the processor when your program wants to know the temperature. The temperature sensor is an input device -- the temperature information moves from the sensor <em>into</em> the processor.</p>
-<p>The buzzer is an output device. When you program the BrainPad to produce sound, the sound information is <em>output</em> from the processor to the buzzer.</p>
-<p>In humans, ears are input devices, and the mouth is an output device. Together they allow us to communicate. Just like the BrainPad, your brain gets input from your ears, processes it and figures out what to say, and then sends output to your mouth and vocal cords to generate speech.</p>
-<p>The BrainPad has all of its inputs arranged on the left side of the board:</p>
+<h2 id="the-brain">The &quot;Brain&quot;</h2>
+<p>The &quot;brain&quot; or processor is the most important part of the BrainPad. The processor is the black square, or &quot;chip&quot;, in the center of the BrainPad between the input and output components. This processor is a single chip computer which is known in the engineering world as a microcontroller. This microcontroller stores the instructions, or code, that you write and follows those instructions exactly as written. The processor also reads information from the input devices and follows your instructions to process that information. The processor will then send information and/or instructions to the output devices exactly as it is told by your program.</p>
+<p>The program, code, and instructions are all the same thing, and the microcontroller is worthless without them. Just like any computer, without a program to run a microcontroller will do nothing.</p>
+<p>Microcontrollers are built into many electronic devices. A typical car has dozens of microcontrollers, while high-end luxury vehicles often have more than a hundred. As microcontrollers are both versatile and inexpensive, they are now used in most household electronic devices including thermostats, washing machines, microwave ovens, air conditioners, and refrigerators. </p>
+<p>Microcontrollers have memory that stores the programs you write, a central processing unit (CPU) that does math and executes program instructions, and their own built-in input and output devices.</p>
+<p>Because microcontroller use is widespread and all microcontrollers need to be programmed, the ability to code has never been more useful. If you&#39;re interested in finding out more information about the processor on the BrainPad, the following links will take you to the (highly technical) documentation for the BrainPad&#39;s &quot;brain.&quot; Don&#39;t worry if these documents are difficult or impossible to understand. If microcontrollers are something you are interested in, you will be surprised how much you will learn over time.</p>
 <ul>
-<li><a href="accelerometer.html"><strong>Accelerometer</strong></a></li>
-<li><a href="buttons.html"><strong>Buttons</strong></a></li>
-<li><a href="light-sensor.html"><strong>Light Sensor</strong></a></li>
-<li><a href="temperature-sensor.html"><strong>Temperature Sensor</strong></a></li>
+<li><a href="https://www.st.com/resource/en/datasheet/stm32f401re.pdf"><strong>STM32F401xE Data Sheet</strong></a></li>
+<li><a href="https://www.st.com/content/ccc/resource/technical/document/reference_manual/5d/b1/ef/b2/a1/66/40/80/DM00096844.pdf/files/DM00096844.pdf/jcr:content/translations/en.DM00096844.pdf"><strong>STM32F401xD/E Reference Manual</strong></a></li>
 </ul>
-<p>All of the output devices are on the right side of the BrainPad:</p>
-<ul>
-<li><a href="buzzer.html"><strong>Buzzer</strong></a></li>
-<li><a href="display.html"><strong>Display</strong></a></li>
-<li><a href="light-bulb.html"><strong>Light Bulb</strong></a></li>
-<li><a href="servo-motors.html"><strong>Servo Motors</strong></a></li>
-</ul>
-<p>So the flow of information on the BrainPad goes from left to right. Inputs come in from the sensors on the left side of the BrainPad, are processed by the &quot;brain,&quot; and then sent to the output devices on the right side of the board. Note that most devices are not set up this way -- we did this to make the BrainPad more intuitive.</p>
-<p>There are a few other components of the BrainPad which don&#39;t quite fit into the input or output category. Information about the brain (processor), expansion headers, and USB port can be found <a href="other-components.html"><strong>here</strong></a></p>
+<h2 id="expansion-headers">Expansion Headers</h2>
+<p>The expansion headers are one reason the BrainPad is so special. They are MikroBUS compatible which means the BrainPad can be used with literally hundreds of available expansion modules. In addition, you can also make your own custom circuits to control or get data from external devices by simply plugging wires into the expansion header connectors. You can also build your own circuits using solderless breadboards, or use prototyping boards to make your own expansion boards. More information can be found in the <a href="../../expansion/intro.html">Expansion</a> section of this documentation.</p>
+<h2 id="usb-port">USB Port</h2>
+<p>The USB port is used to power the BrainPad and to connect the BrainPad to your computer. The programs you write are sent to the BrainPad through the USB port. Information can be sent from the BrainPad back to the computer to help you debug or fix your programs. The BrainPad uses a standard micro USB connector which has become commonplace do to its use in smartphones. The BrainPad is also compatible with inexpensive rechargeable USB battery packs (also known as power banks) that are used to charge phones, making it easy to take the BrainPad anywhere!</p>
 </article>
           </div>
           
@@ -106,7 +100,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/go-beyond/components/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/go-beyond/components/other-components.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

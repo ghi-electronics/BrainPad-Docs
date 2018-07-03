@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Snap Circuits Lift-Off! </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Snap Circuits Lift-Off! ">
+    <meta name="generator" content="docfx 2.29.1.0">
+    
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="snap-circuits-lift-off">Snap Circuits Lift-Off!</h1>
+
+<hr>
+<p><img src="images/snap-circuits.gif" alt="Snap Circuits"></p>
+<p><strong>Difficulty: Easy.</strong></p>
+<p><strong>Objective: Simple motor control.</strong></p>
+<p><strong>Note: This project requires an Elenco Snap Circuits kit that includes the fan blade.</strong></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8tVkJDCwG3w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<h2 id="how-it-works">How it Works</h2>
+<p>After pressing the up button on the BrainPad, the motor starts spinning and turns the fan blade (propeller). The BrainPad display starts counting down and at the end of the countdown the motor stops which releases the fan blade launching it into the air.</p>
+<h2 id="the-code">The Code</h2>
+<h3 id="microsoft-makecode">Microsoft MakeCode</h3>
+<p>Click <a href="https://makecode.com/_gKkcjM3KbHce">here</a> to go directly to the program on Microsoft MakeCode. There is a tutorial for building the project <a href="https://makecode.brainpad.com/projects/snap-circuits">here</a>. You can also copy and paste the following JavaScript code into Microsoft MakeCode&#39;s JavaScript editor.</p>
+<pre><code>let count = 0
+forever(function () {
+    display.clear()
+    display.showString(&quot;Press up button&quot;, 2)
+    display.showString(&quot;   to start&quot;, 4)
+    while (!(input.buttonU.wasPressed())) {
+        pause(25)
+    }
+    music.playSound(music.sounds(Sounds.JumpUp))
+    pins.AN.digitalWrite(true)
+    count = 10
+    while (count &gt;= 0) {
+        display.clear()
+        display.showValue(&quot; Countdown&quot;, count, 3)
+        count += -1
+        music.playTone(262, music.beat(BeatFraction.Half))
+        pause(500)
+    }
+    pins.AN.digitalWrite(false)
+})
+</code></pre><p>Microsoft MakeCode block program:</p>
+<p><img src="images/lift-off-blocks.png" alt="Lift-off block program"></p>
+<h3 id="c-code">C# Code</h3>
+<p>This C# program actually does a little more than the Microsoft MakeCode program above.</p>
+<div class="TIP"><h5>Tip</h5><p>Make sure the namespace in your program matches your project&#39;s namespace.  Your project&#39;s namespace can be found in the BrainPad Helper file by clicking on the BrainPad1.cs tab.  <a href="../go-beyond/csharp/intro.html#a-few-words-about-namespaces"><strong>More Info</strong></a>.</p>
+</div>
+<pre><code>using GHIElectronics.TinyCLR.Devices.Gpio;
+
+namespace ModifyThis {
+    class Program {
+        static GpioPin MotorControlPin = GpioController.GetDefault().OpenPin(GHIElectronics.TinyCLR.Pins.BrainPad.Expansion.GpioPin.An);
+
+        static void Main() {
+            MotorControlPin.SetDriveMode(GpioPinDriveMode.Output);
+
+            while (true) {
+                BrainPad.Display.Clear();
+                BrainPad.Display.DrawText(38, 0, &quot;Press&quot;);
+                BrainPad.Display.DrawText(20, 20, &quot;Up Button&quot;);
+                BrainPad.Display.DrawText(17, 40, &quot;to Start&quot;);
+                BrainPad.Display.RefreshScreen();
+
+                while (!BrainPad.Buttons.IsUpPressed()) BrainPad.Wait.Milliseconds(25);
+
+                BrainPad.Display.Clear();
+                BrainPad.Display.DrawText(12, 15, &quot;Initiate&quot;);
+                BrainPad.Display.DrawText(32, 35, &quot;Motor&quot;);
+                BrainPad.Display.RefreshScreen();
+                BrainPad.LightBulb.TurnGreen();
+                BrainPad.Wait.Seconds(2);
+                BrainPad.LightBulb.TurnBlue();
+
+                MotorControlPin.Write(GpioPinValue.High);
+
+                BrainPad.Display.Clear();
+                BrainPad.Display.DrawText(36, 15, &quot;Begin&quot;);
+                BrainPad.Display.DrawText(13, 35, &quot;Countdown&quot;);
+                BrainPad.Display.RefreshScreen();
+                BrainPad.Wait.Seconds(2);
+
+                for (int i = 10; i &gt; 0; i--) {
+                    BrainPad.Display.Clear();
+
+                    if (i == 10) {
+                        BrainPad.Display.DrawScaledText(20, 6, &quot;&quot; + i, 7, 7);
+                        BrainPad.Display.RefreshScreen();
+                    }
+                    else {
+                        BrainPad.Display.DrawScaledText(45, 6, &quot;&quot; + i, 7, 7);
+                        BrainPad.Display.RefreshScreen();
+                    }
+
+                    BrainPad.Buzzer.StartBuzzing(50);
+                    BrainPad.LightBulb.TurnBlue();
+                    BrainPad.Wait.Seconds(.25);
+                    BrainPad.Buzzer.StopBuzzing();
+                    BrainPad.LightBulb.TurnOff();
+                }
+
+                BrainPad.LightBulb.TurnGreen();
+                BrainPad.Display.DrawText(30, 24, &quot;Launch&quot;);
+                BrainPad.Display.RefreshScreen();
+
+                MotorControlPin.Write(GpioPinValue.Low);
+                BrainPad.Buzzer.StartBuzzing(300);
+                BrainPad.Wait.Seconds(1);
+                BrainPad.Buzzer.StopBuzzing();
+                BrainPad.Wait.Seconds(4);
+                BrainPad.LightBulb.TurnOff();
+            }
+        }
+    }
+}
+</code></pre><h2 id="snap-circuits-set-up">Snap Circuits Set Up</h2>
+<p>To build this circuit just follow the diagram below.</p>
+<p><img src="images/snap-circuits-lift-off.gif" alt="Snap Circuits Lift-Off"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/projects/lift-off.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            <span>Copyright © 2018 GHI Electronics, LLC<br>Generated by <strong>DocFX</strong></span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

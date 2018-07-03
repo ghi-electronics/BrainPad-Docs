@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Projects </title>
+    <title>Robotics </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Projects ">
+    <meta name="title" content="Robotics ">
     <meta name="generator" content="docfx 2.29.1.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
@@ -75,15 +75,63 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="projects">Projects</h1>
+<h1 id="robotics">Robotics</h1>
 
 <hr>
-<div class="TIP"><h5>Tip</h5><p>Also see the more advanced <a href="../projects/intro.html"><strong>TinyCLR OS Projects</strong></a></p>
-</div>
-<p><img src="images/makecode-screen.png" alt="Microsoft MakeCode Screen Image"></p>
-<p>All Microsoft MakeCode projects, curriculum and lessons are found at <a href="https://makecode.brainpad.com/">makecode.brainpad.com</a></p>
-<hr>
-<p>You are on the documentation website for the BrainPad. The main website is found at <a href="http://www.brainpad.com/">www.brainpad.com</a></p>
+<p><img src="../images/brainbot.jpg" alt="BrainBot"> </p>
+<p>As a demo, we built this robot with a chassis we ordered from Amazon <a href="http://a.co/dwzywoI">http://a.co/dwzywoI</a> The continuous servo motors simply plug in. Pay attention to wires, where the orange wire should be connected to the pin labeled with ~. We then used a breadboard with an ultrasonic distance sensor. This will be used to detect objects, to back up the robot.</p>
+<pre><code class="lang-csharp">BrainPad.ServoMotors.ServoOne.ConfigureAsContinuous(false);
+BrainPad.ServoMotors.ServoTwo.ConfigureAsContinuous(true);
+
+BrainPad.Display.DrawSmallTextAndRefreshScreen(0, 20, &quot;Press Left&quot;);
+while (BrainPad.Buttons.IsLeftPressed() == false)
+{
+    // Beep 
+    BrainPad.Buzzer.Beep();
+    BrainPad.Wait.Seconds(0.3);
+}
+BrainPad.Display.ClearScreen();
+BrainPad.Display.DrawSmallTextAndRefreshScreen(40, 20, &quot;Go!&quot;);
+
+//BrainPad.ServoMotorsIsServoTwoInverted(true);
+
+bool dirrection = true;
+BrainPad.ServoMotors.ServoOne.Set(50);
+BrainPad.Display.DrawSmallTextAndRefreshScreen(40, 20, &quot;Reflect&quot;);
+
+// using reflector
+bool use_builtin = true;
+if (use_builtin)
+{
+    GpioPulseReaderWriter echolen = new GpioPulseReaderWriter(
+        GpioPulseReaderWriter.Mode.EchoDuration,
+        true, 10, BrainPad.Expansion.GpioPin.Mosi,
+        true, BrainPad.Expansion.GpioPin.Miso);
+
+    Move(100, 60);
+
+
+    //dance!
+    while (true)
+    {
+
+
+        double l = echolen.Read();
+        BrainPad.Display.DrawSmallTextAndRefreshScreen(0, 0, l.ToString());
+        if (l &lt; 600)
+        {
+            Move(-100, -100);
+            BrainPad.Wait.Seconds(1);
+            Move(-100, 100);
+            BrainPad.Wait.Seconds(0.5);
+            Move(100, 60);
+        }
+
+        BrainPad.Wait.Seconds(0.3);
+    }
+}
+</code></pre><p>This other demo video talk about stepper motors and uses the BrainPad.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SdUkC9XtTSo" frameborder="0" allowfullscreen=""></iframe>
 </article>
           </div>
           
@@ -92,7 +140,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/start-making/projects.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/ghi-electronics/BrainPad-Docs/blob/dev/expansion/robotics.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
