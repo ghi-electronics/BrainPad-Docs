@@ -142,6 +142,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "advanced/csharp/images/introduction/new-project-window.gif",
+      "output": {
+        "resource": {
+          "relative_path": "advanced/csharp/images/introduction/new-project-window.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "advanced/csharp/images/introduction/new-project-window.jpg",
       "output": {
         "resource": {
@@ -661,9 +672,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "expansion/electronics.md",
       "output": {
@@ -1152,6 +1160,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/helper-namespace.gif",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/helper-namespace.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "go-beyond/csharp/images/introduction/manage-nuget-packages-menu.png",
       "output": {
         "resource": {
@@ -1229,6 +1248,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "go-beyond/csharp/images/introduction/program-namespace.gif",
+      "output": {
+        "resource": {
+          "relative_path": "go-beyond/csharp/images/introduction/program-namespace.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "go-beyond/csharp/images/introduction/solution-explorer.png",
       "output": {
         "resource": {
@@ -1272,9 +1302,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "go-beyond/csharp/intro.md",
       "output": {
@@ -2092,9 +2119,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "projects/3d-cube.md",
       "output": {
@@ -2107,9 +2131,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "projects/burglar-alarm.md",
       "output": {
@@ -2158,15 +2179,34 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "projects/high-low-thermometer.md",
       "output": {
         ".html": {
           "relative_path": "projects/high-low-thermometer.html",
           "hash": "6mTth5nwIzjNSU6uGfMZPw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/3d-cube.gif",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/3d-cube.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/burglar.gif",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/burglar.gif"
         }
       },
       "is_incremental": false,
@@ -2196,6 +2236,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "projects/images/electronic-dice.gif",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/electronic-dice.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/etch-a-sketch.gif",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/etch-a-sketch.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "projects/images/lift-off-blocks.png",
       "output": {
         "resource": {
@@ -2211,6 +2273,94 @@
       "output": {
         "resource": {
           "relative_path": "projects/images/linear-clock.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/marble-sorter.gif",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/marble-sorter.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/pong.gif",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/pong.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/pong2.gif",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/pong2.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/snap-circuits-lift-off.gif",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/snap-circuits-lift-off.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/snap-circuits.gif",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/snap-circuits.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/space-force.gif",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/space-force.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/space-invasion.gif",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/space-invasion.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/space-invasion2.gif",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/space-invasion2.gif"
         }
       },
       "is_incremental": false,
@@ -2251,6 +2401,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "projects/images/sun-seeker.gif",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/sun-seeker.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "projects/images/sun-seeker.jpg",
       "output": {
         "resource": {
@@ -2261,9 +2422,52 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "projects/images/test.gif",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/test.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/thermometer.gif",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/thermometer.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/tilt-etch-a-sketch.gif",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/tilt-etch-a-sketch.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "projects/images/tilt-etch-a-sketch2.gif",
+      "output": {
+        "resource": {
+          "relative_path": "projects/images/tilt-etch-a-sketch2.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "log_codes": [
-        "InvalidYamlHeader",
-        "InvalidFileLink"
+        "InvalidYamlHeader"
       ],
       "type": "Conceptual",
       "source_relative_path": "projects/intro.md",
@@ -2277,9 +2481,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "projects/lift-off.md",
       "output": {
@@ -2304,9 +2505,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "projects/marble-sorter.md",
       "output": {
@@ -2319,9 +2517,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "projects/pong.md",
       "output": {
@@ -2334,9 +2529,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "projects/space-force.md",
       "output": {
@@ -2350,8 +2542,7 @@
     },
     {
       "log_codes": [
-        "InvalidYamlHeader",
-        "InvalidFileLink"
+        "InvalidYamlHeader"
       ],
       "type": "Conceptual",
       "source_relative_path": "projects/space-invasion.md",
@@ -2377,9 +2568,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "projects/sun-seeker.md",
       "output": {
@@ -2392,9 +2580,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "projects/tilt-etch-a-sketch.md",
       "output": {
@@ -2671,11 +2856,6 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -2683,6 +2863,11 @@
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
