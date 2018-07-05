@@ -2,6 +2,8 @@
 ---
 One of the things that makes the BrainPad so special is the broad range of possibilities achievable through its expandability.  From Snap Circuits to MikroBUS Click Modules to robotics and solderless breadboarding there is always another way to have fun with the BrainPad!
 
+![Expansion legend](images/expansion-legend.gif)
+
 |  |  |
 |--|--|
 | Choose from hundreds of MikroBUS Click Modules. [Learn more...](mikroe-click.md) |  Use the BrainPad to build your own robot! [Find out more...](robotics.md) |
