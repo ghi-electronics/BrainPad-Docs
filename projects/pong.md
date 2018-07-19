@@ -8,6 +8,8 @@ The classic Pong game -- the grandfather of all video games! Now over 45 years o
 
 **Objective: Retro gaming.**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Sr2rzfXc9VA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 ## How It Works
 Surprisingly, this very simple game requires about as much code as the [Space Invasion](space-invasion.md) game.
 
