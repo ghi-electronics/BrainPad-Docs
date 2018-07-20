@@ -729,6 +729,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "expansion/images/expansion-legend.gif",
+      "output": {
+        "resource": {
+          "relative_path": "expansion/images/expansion-legend.gif"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "expansion/images/fm-click.jpg",
       "output": {
         "resource": {
@@ -858,7 +869,7 @@
       "output": {
         ".html": {
           "relative_path": "expansion/intro.html",
-          "hash": "MietAkZSe3z/UeNenFvuWw=="
+          "hash": "sswUazDra07aYDRS6a9WCQ=="
         }
       },
       "is_incremental": false,
@@ -2510,7 +2521,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/marble-sorter.html",
-          "hash": "Xg/OQxnVBbqz4oUPwOVCkw=="
+          "hash": "ZDPzvB90wyKLepC0qdOXQg=="
         }
       },
       "is_incremental": false,
@@ -2522,7 +2533,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/pong.html",
-          "hash": "LwTjEWIw+eeHmzNmB+eapg=="
+          "hash": "i3V7J2Sf5pH3L/GjAFlOjg=="
         }
       },
       "is_incremental": false,
@@ -2534,7 +2545,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/space-force.html",
-          "hash": "0C04L31FMkv28RQMjx8Lmg=="
+          "hash": "iac60fPJfGpfVgFfuLHsmg=="
         }
       },
       "is_incremental": false,
@@ -2549,7 +2560,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/space-invasion.html",
-          "hash": "P8Q5u2TxWmiUTLcvCs6sBQ=="
+          "hash": "b8qOiZEmaQkc/cBYVNbUKg=="
         }
       },
       "is_incremental": false,
@@ -2573,7 +2584,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/sun-seeker.html",
-          "hash": "j3zzrxtiWKqdD0JCOgKFVQ=="
+          "hash": "A8ua9vXDbrFvj2ASMuRXDA=="
         }
       },
       "is_incremental": false,
@@ -2719,15 +2730,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidYamlHeader"
-      ],
       "type": "Conceptual",
       "source_relative_path": "resources/older-brainpad.md",
       "output": {
         ".html": {
           "relative_path": "resources/older-brainpad.html",
-          "hash": "/l/NjsIj2aH2xNTBWGMmOg=="
+          "hash": "QXcwxmmzO5rPNknx+Fk3EQ=="
         }
       },
       "is_incremental": false,
@@ -2856,18 +2864,18 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
+        "TocDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build"
         },
-        "TocDocumentProcessor": {
+        "ResourceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }
