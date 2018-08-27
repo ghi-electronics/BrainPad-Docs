@@ -21,7 +21,7 @@ When the LightBulb turns Green, the BrainPad will present itself as a virtual st
 This virtual drive opens a window containing a text file that contains information such as the boot loader version. You can update the loader to the newest version to get the latest and greatest BrainPad features.
 
 ## Sample Demo
-Once you know you have a working bootloader, you can try to run our [sample demo](http://files.ghielectronics.com/downloads/BrainPad/BrainPad%20Loader%20Test.uf2) program. Instructions are found [here](../start-making/intro.md#a-quick-test) in the Introduction page of the Start Making section under the heading "[A Quick Test!](../start-making/intro.md#a-quick-test)" If they BrainPad doesn't pass this test, you may have a defective BrainPad. Try to reinstall the bootloader (above section) and then retry the sample demo first to be sure.
+Once you know you have a working bootloader, you can try to run our [sample demo](http://files.ghielectronics.com/downloads/BrainPad/BrainPad%20Loader%20Test.uf2) program. Instructions are found [here](../start-making/intro.md#a-quick-test). The BrainPad should pass the test. If it doesn't, try to reinstall the bootloader (above section) and then retry the sample demo.
 
 ## TinyCLR OS
 We recommend starting with Microsoft MakeCode to verify the hardware is functional first. Then, load TinyCLR OS as detailed in the [System Setup](../go-beyond/system-setup.md). Once loaded, your PC will detect a TinyCLR OS device as shown below.
