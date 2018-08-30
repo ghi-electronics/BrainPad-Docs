@@ -40,11 +40,11 @@ namespace ModifyThis {
                 BrainPad.Wait.Seconds(0.5);
             }
 
-            double x, y, z, sensitivity;
+            int x, y, z, sensitivity;
             x = BrainPad.Accelerometer.ReadX();
             y = BrainPad.Accelerometer.ReadY();
             z = BrainPad.Accelerometer.ReadZ();
-            sensitivity = 0.035;
+            sensitivity = 4;
 
             BrainPad.Display.Clear();
             BrainPad.Display.DrawText(35, 22, "Armed");
@@ -89,4 +89,5 @@ namespace ModifyThis {
         }
     }
 }
+
 ```

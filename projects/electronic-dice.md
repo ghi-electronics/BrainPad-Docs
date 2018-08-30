@@ -18,13 +18,15 @@ A simple box is drawn to show the shape of a die. Then, we go in a loop generati
 ```
 using System;
 
-namespace DeleteMeNow {
+namespace ModifyThis {
     class Program {
         const int Dice_Base_X = 55;
         const int Dice_Base_Y = 10;
 
         static void Main() {
             var Rnd = new Random();
+            BrainPad.Accelerometer.EnableFullRange = true;
+
             while (true) {
                 BrainPad.Display.DrawSmallText(10, 55, "Shake or Up to roll");
                 BrainPad.Display.DrawRectangle(Dice_Base_X - 5, Dice_Base_Y - 5, 31, 31);
@@ -35,7 +37,7 @@ namespace DeleteMeNow {
                     BrainPad.Wait.Milliseconds(i);
                     BrainPad.Display.RefreshScreen();
                 }
-                while (BrainPad.Accelerometer.ReadX() < 1 && BrainPad.Buttons.IsUpPressed() == false) BrainPad.Wait.Minimum();
+                while (BrainPad.Accelerometer.ReadX() < 100 && BrainPad.Buttons.IsUpPressed() == false) BrainPad.Wait.Minimum();
                 BrainPad.Wait.Minimum();
             }
         }
