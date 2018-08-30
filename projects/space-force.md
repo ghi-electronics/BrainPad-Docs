@@ -26,7 +26,7 @@ forever(function () {
     display.showString("  press down", 4)
     display.showString("    button", 6)
 
-    while (!(input.buttonD.wasPressed())) {
+    while (!(input.buttonDown.wasPressed())) {
         pause(20)
     }
 
@@ -37,6 +37,7 @@ forever(function () {
         pause(14)
     }
 })
+
 ```
 
 Microsoft MakeCode block program:
