@@ -26,7 +26,7 @@ forever(function () {
     display.clear()
     display.showString("Press up button", 2)
     display.showString("   to start", 4)
-    while (!(input.buttonU.wasPressed())) {
+    while (!(input.buttonUp.wasPressed())) {
         pause(25)
     }
     music.playSound(music.sounds(Sounds.JumpUp))
@@ -41,6 +41,7 @@ forever(function () {
     }
     pins.AN.digitalWrite(false)
 })
+
 ```
 
 Microsoft MakeCode block program:
