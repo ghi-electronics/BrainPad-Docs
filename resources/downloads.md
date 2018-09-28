@@ -6,6 +6,7 @@ This extension is what gets loaded into Visual Studio to allow it to communicate
 
 File | Date | MD5
 --- | --- | ---
+[v1.0.0-preview2](http://files.ghielectronics.com/downloads/TinyCLR/Extensions/TinyCLR%20OS%20Project%20System%20v1.0.0-preview2.vsix) | 2018-09-28 | 9854917F72723AE94B005420A8F6512D
 [v1.0.0-preview1](http://files.ghielectronics.com/downloads/TinyCLR/Extensions/TinyCLR%20OS%20Project%20System%20v1.0.0-preview1.vsix) | 2018-08-15 | 049923C25A981EF84E2CFB25CFB87855
 [v0.12.0](http://files.ghielectronics.com/downloads/TinyCLR/Extensions/TinyCLR%20OS%20Project%20System%20v0.12.0.vsix) | 2018-07-05 | 6E101D4D4A31CD9B3C174B849A41F84B
 [v0.11.0](http://files.ghielectronics.com/downloads/TinyCLR/Extensions/TinyCLR%20OS%20Project%20System%20v0.11.0.vsix) | 2018-05-10 | ECED507FCAF84B7104A8470126769F48
@@ -15,6 +16,7 @@ Libraries are hosted though a local NuGet feed for now as we are making lot of c
 
 File | Date | MD5
 --- | --- | ---
+[v1.0.0-preview2](http://files.ghielectronics.com/downloads/TinyCLR/Libraries/TinyCLR%20OS%20Libraries%20v1.0.0-preview2.zip) | 2018-09-28 | 6D5BA0E125FC42CDA7D2C893CEDB5F7C 
 [v1.0.0-preview1](http://files.ghielectronics.com/downloads/TinyCLR/Libraries/TinyCLR%20OS%20Libraries%20v1.0.0-preview1.zip) | 2018-08-15 | DF7DAB3754DE092D787D48ECBE42B82B 
 [v0.12.0](http://files.ghielectronics.com/downloads/TinyCLR/Libraries/TinyCLR%20OS%20Libraries%20v0.12.0.zip) | 2018-07-05 | EC7C4190984C5B26FF59874713B80B93
 [v0.11.0](http://files.ghielectronics.com/downloads/TinyCLR/Libraries/TinyCLR%20OS%20Libraries%20v0.11.0.zip) | 2018-05-10 | 041ED0458AC82595BD33C34284BF6661
@@ -24,6 +26,7 @@ This is the TinyCLR OS [BrainPad](http://www.brainpad.com) firmware. For install
 
 File | Date | MD5
 --- | --- | ---
+[v1.0.0-preview2](http://files.ghielectronics.com/downloads/BrainPad/Firmwares/TinyCLR/BrainPad%20Firmware%20v1.0.0-preview2.uf2) | 2018-09-28 | 66FCCEA9CEA38719DA85A84D7C73DB2B
 [v1.0.0-preview1](http://files.ghielectronics.com/downloads/BrainPad/Firmwares/TinyCLR/BrainPad%20Firmware%20v1.0.0-preview1.uf2) | 2018-08-15 | 9D627A6E4FD52AD3D51CA0354B9F55CD
 [v0.12.0](http://files.ghielectronics.com/downloads/BrainPad/Firmwares/TinyCLR/BrainPad%20Firmware%20v0.12.0.uf2) | 2018-07-05 | 055C226F15EF82BE45B93C0C7641924B
 [v0.11.0](http://files.ghielectronics.com/downloads/BrainPad/Firmwares/TinyCLR/BrainPad%20Firmware%20v0.11.0.uf2) | 2018-05-10 | F6C978F44BAFB13FFDF1C2577CB9D079
