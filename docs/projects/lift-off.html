@@ -94,7 +94,7 @@ forever(function () {
     display.clear()
     display.showString(&quot;Press up button&quot;, 2)
     display.showString(&quot;   to start&quot;, 4)
-    while (!(input.buttonU.wasPressed())) {
+    while (!(input.buttonUp.wasPressed())) {
         pause(25)
     }
     music.playSound(music.sounds(Sounds.JumpUp))

@@ -95,13 +95,13 @@ namespace ModifyThis {
             BrainPad.Display.DrawSmallText(0, 57, &quot;Tilt: Draw - D: Erase&quot;);
             BrainPad.Display.DrawLine(0, 55, 127, 55);
             int x = 64, y = 32;
-            const double ACC_TOLERANCE = .20;
+            const int ACC_TOLERANCE = 20;
 
             while (true) {
-                if (BrainPad.Accelerometer.ReadY() &gt; -ACC_TOLERANCE) y--;
-                if (BrainPad.Accelerometer.ReadY() &lt; ACC_TOLERANCE) y++;
                 if (BrainPad.Accelerometer.ReadX() &gt; ACC_TOLERANCE) x++;
                 if (BrainPad.Accelerometer.ReadX() &lt; -ACC_TOLERANCE) x--;
+                if (BrainPad.Accelerometer.ReadY() &gt; ACC_TOLERANCE) y--;
+                if (BrainPad.Accelerometer.ReadY() &lt; -ACC_TOLERANCE) y++;
 
                 if (x &lt; 0) x = 0;
                 if (y &lt; 0) y = 0;
