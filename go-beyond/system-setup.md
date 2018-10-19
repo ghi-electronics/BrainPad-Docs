@@ -1,6 +1,6 @@
 # System Setup
 ---
-TinyCLR OS is the tiny operating system used by the BrainPad to run your C# and Visual Basic programs. Microsoft Visual Studio is used to write these programs on your computer and is also used by professional programmers the world over. Both TinyCLR and Visual Studio are available for free, but must be set up before using them to program the BrainPad to start having fun.
+TinyCLR OS is the tiny operating system used by the BrainPad to run your C# and Visual Basic programs. Microsoft Visual Studio is used to write these programs on your computer and is also used by professional programmers the world over. Both TinyCLR and Visual Studio are available for free, but must be set up before you can program the BrainPad and start having fun.
 
 > [!Tip]
 > You can learn more about TinyCLR OS on the [**GHI Electronics website**](https://www.ghielectronics.com/tinyclr/features)
@@ -11,7 +11,6 @@ The instructions on this page describe how to setup your computer to start progr
 **Step 1: Setup Your Computer**
   * [Install Visual Studio](#install-visual-studio).
   * [Install the TinyCLR Project System](#install-the-tinyclr-project-system).
-  * [Install the TinyCLR NuGet packages](#install-the-tinyclr-nuget-packages).
 
 **Step 2: Setup Your Brainpad**
   * [Install the BrainPad firmware](#install-the-brainpad-firmware).
@@ -44,37 +43,6 @@ After the download is complete, open or run the downloaded file.
 
 In the `VSIX Installer` dialog box click the `Install` button.
 ![Install VSIX](images/install-vsix.png)
-
-### Install the TinyCLR Nuget Packages
-
-1. Since TinyCLR OS is still so new, we haven't yet uploaded any packages to NuGet. Click [here](../resources/downloads.md#nuget-libraries) and download the latest Nuget library.
-[![Download Nuget Library](images/download-nuget.png)](../resources/downloads.md#nuget-libraries)
-
-2. Open or run the downloaded file.
-
-3. A window will pop up with a list of the files in the library. Click on the `Extract all` button.
-![Extract all](images/extract-all.png)
-
-4. A dialog box will appear allowing you to select a folder to save the files. You can change the folder location or accept the default location. You will need to remember the folder location for step 11. Click on the `Extract` button to extract and save the files.
-![Select location to save files](images/select-location.png)
-
-5. If a window with the files appears, you can close it before continuing.
-
-6. Start Visual Studio. From the `Tools` menu select `NuGet Package Manager` and then select `Package Manager Settings`.
-
-7. In the left panel under `Nuget Package Manager` select `Package Sources`.
-
-8. Click on the button with the green plus sign near the upper right corner of the `Options` dialog box. A new package source will be created in the `Available package sources` box.
-![Click green plus sign button](images/click-green-plus-sign.png)
-
-9. Change the name of the package source from "package source" to "offline." You may have to click on the package source (in the available package sources box) before you can change the name.
-
-10. Now change the folder name in the text box to the right of `Source:` to the folder where you saved the NuGet packages in step 5. You can either type in the folder name or click on the `...` button to search for the folder.
-
-11. Click on the `Update` button. The folder name should now appear under the `offline` entry under `Available package sources`.
-
-12. Click the `OK` button.
-![Click the OK button](images/click-ok.png) 
 
 ## Step 2: Setup Your BrainPad
 ---
@@ -137,7 +105,6 @@ Click on a link below to get started:
 
 * [C# Introducton](csharp/intro.md)
 * [Visual Basic Introduction](vb/intro.md)
-
 
 ---
 You are on the documentation website for the BrainPad. The main website is found at [www.brainpad.com](http://www.brainpad.com/)

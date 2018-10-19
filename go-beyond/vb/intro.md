@@ -32,7 +32,7 @@ Under `Visual Basic` select the `TinyCLR` option.
 
 In the center panel of the `New Project` window select `TinyCLR Application`.
 
-At the bottom of the `New Project` window you can change the name and location of your application or just stick with the default. When starting out you may wish to click on the `Browse` button and select the folder `Desktop` (in the left panel) to make your application easier to find.
+At the bottom of the `New Project` window you can change the name and location of your application or just stick with the default. Let's use the name `BrainPadDemo`. When starting out you may wish to click on the `Browse` button and select the folder `Desktop` (in the left panel) to make your application easier to find.
 
 Click the `OK` button on the bottom right of the `New Project` window.  This will create a new blank project.
 
@@ -47,25 +47,31 @@ Visual Basic source files are listed in the `Solution Explorer` window. If the `
 
 ![Solution Explorer](images/introduction/solution-explorer.png)
 
-The squiggly red lines under items in the `Solution Explorer` window indicate errors. In this case the errors are caused by missing Nuget packages. Let's tell Visual Studio to include the Nuget packages and fix that now.
-
 If you right click on the project name in the Solution Explorer window a drop down menu will appear. Select `Manage NuGet Packages...` from the menu.
 
 ![View Show Solution Explorer](images/introduction/manage-nuget-packages-menu.png) 
 
-Now you should see the installed TinyCLR NuGet library (GHIElectronics.TinyCLR.Core). We need to install a couple more libraries for our program to run.
+Now you should see the installed TinyCLR NuGet library (GHIElectronics.TinyCLR.Core). We need to install a couple more libraries for our program to run. Click on the `Browse` tab.
 
 ![Installed NuGet](images/introduction/click-on-browse.png)
 
-Click on `Browse`. From the drop down list next to `Package source:` select "offline" (if it is not the current package source). You should see a list of available Nuget packages in your local feed.
+Make sure the package source is set to `Package source` or `All`.
 
-![Browse Nuget Packages](images/introduction/browse-nuget-packages.jpg)
+![Set package source](../csharp/images/introduction/package-source.png)
 
-Click on the `GHIElectronics.TinyCLR.BrainPad` package and then click on the `Install` button.
+In the search box type "tinyclr" and make sure the `Include prerelease` box is checked.
+
+![Search for TinyCLR](../csharp/images/introduction/search-for-tinyclr.png)
+
+You should see a list of available TinyCLR Nuget packages similar to the image below.
+
+![Browse Nuget Packages](images/introduction/browse-nuget-packages.gif)
+
+Find and click on the `GHIElectronics.TinyCLR.BrainPad` package and then click on the `Install` button.
 
 ![Click Install Button](images/introduction/click-install-button.png)
 
-Installing the BrainPad Nuget package will automatically install the `GHIElectronics.TinyCLR.Devices` and `GHIElectronics.TinyCLR.Pins` packages as well. Click on `OK`.
+Installing the BrainPad Nuget package will automatically install other packages as well. Click on `OK`.
 
 ![Install Nugets](images/introduction/install-nugets.png)
 
@@ -73,7 +79,7 @@ Now accept the license agreement to install the packages.
 
 ![Accept the License Agreement](images/introduction/accept-license.png)
 
-Close the `NuGet...` tab to get back to your `BrainPad1.vb` window. The red squiggles should now be gone.
+Close the `NuGet...` tab to get back to your `Program.cs` window.
 
 ### Add the BrainPad Helper Code
 
@@ -85,8 +91,6 @@ The BrainPad Helper code provides needed definitions for some BrainPad objects. 
 In the `Module1.vb` tab we will enter short sample program (our "Hello World" code). Cut and paste the following code into the `Module1.vb` window.
 
 ```
-Imports GHIElectronics.TinyCLR.BrainPad
-
 Module Module1
     Public Sub Main()
         BrainPad.Display.DrawText(0, 0, "Hello!")
@@ -104,8 +108,6 @@ End Module
 
 Your `Module1.vb` window should look like this:
 ![Pasted Code](images/introduction/pasted-code.png)
-
-
 
 ### Deploy the Program
 Make sure your BrainPad is plugged into the computer's USB port. Now hit the start button as shown in the above image (or hit the `F5` key). If you've done everything correctly the program will compile and deploy to your device. The message "Hello World!" should appear on the BrainPad display, and the light bulb should start blinking.
