@@ -10,10 +10,10 @@ The instructions on this page describe how to setup your computer to start progr
 
 **Step 1: Setup Your Computer**
   * [Install Visual Studio](#install-visual-studio).
-  * [Install the TinyCLR Project System](#install-the-tinyclr-project-system).
+  * [Install the TinyCLR Extension](#install-the-tinyclr-extension).
 
 **Step 2: Setup Your Brainpad**
-  * [Install the BrainPad firmware](#install-the-brainpad-firmware).
+  * [Load the BrainPad firmware](#load-the-brainpad-firmware).
 
 ---
 
@@ -35,8 +35,8 @@ After installation is complete, click on the `Launch` button. You will be asked 
 
 ### Install the TinyCLR Extension
 
-This extensions allows Visual Studio to work with the BrainPad. To install, first run Visual Studio and then go to `Tools->Extensions and Updates...`. In the search box enter tinyclr and you should now be able to see the extension. Go ahead and install it.
-![Install Extension](images/Install-tinyclr-extension.png)
+This project system extension allows Visual Studio to work with the BrainPad. To install, first run Visual Studio and then go to `Tools->Extensions and Updates...`. In the search box enter tinyclr and you should now be able to see the extension. Go ahead and install it.
+![Install Extension](images/Install-tinyclr-extension.gif)
 
 > [!Tip]
 > It is possible to download the extension seperately to install on a computer without internet access.
@@ -60,13 +60,14 @@ The TinyCLR OS firmware is loaded the same way MakeCode programs are loaded.
 7. It only takes a few seconds for the firmware to be copied to the BrainPad. When it is done, the green light on the BrainPad will stop flickering and the `BrainPad2` window will close.
 8. Congratulations! Your BrainPad is now running TinyCLR OS.
 
-The BrainPad will not do anything at this point but you can check under device manager to verify it is runnig TinyCLR.
+While the BrainPad will seem to not do anything at this point, it is actually running TinyCLR OS and is waiting for Visual Studio. For verification, you can check under `device manager` to verify it is runnig TinyCLR OS.
+
 ![Device Manager TinyCLR](images/device-manager-tinyclr.png)
 
 > [!Note]
 > The BrainPad comes with a "bootloader" pre-installed. You shouldn't have to reinstall it unless you are an advanced user using advanced programming techniques. Check out our [**bootloader**](../resources/bootloader.md) page to find out more.
 
-## Going Beyond!
+## Ready... Steady... GoByond!
 Congratulations! You are now ready to start programming like a professional. You have the option of using the [C#](csharp/intro.md) programming language or the [Visual Basic](vb/intro.md) programming language. If you are not sure which one to pick, C# is used more often in the professional world and is recommended for those serious about learning programming. Visual Basic is easier to use -- especially for beginners. We use C# for our own software development, but we usually start with Visual Basic for those who are new to programming.
 
 You are not locked in to one language -- you can freely switch between C# and Visual Basic.
