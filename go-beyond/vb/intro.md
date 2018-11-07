@@ -43,7 +43,9 @@ Once created, you'll be presented with a `Module1.vb` tab.
 ![First Project](images/introduction/first-project.png)
 
 ### Manage the NuGet Packages
-Visual Basic source files are listed in the `Solution Explorer` window. If the `Solution Explorer` window is not visible, click on `View > Solution Explorer` to open it.
+Code packages to handle specific tasks are built into libraries. These libraries are found on a cloud service, called NuGet. This is where you will find drivers for many things, including the sensors found on the BrainPad.
+
+Soure files are listed in the `Solution Explorer` window. If the `Solution Explorer` window is not visible, click on `View > Solution Explorer` to open it.
 
 ![Solution Explorer](images/introduction/solution-explorer.png)
 

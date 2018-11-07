@@ -13,7 +13,7 @@ The instructions on this page describe how to setup your computer to start progr
   * [Install the TinyCLR Extension](#install-the-tinyclr-extension).
 
 **Step 2: Setup Your Brainpad**
-  * [Load the BrainPad firmware](#load-the-brainpad-firmware).
+  * [Load the BrainPad TinyCLR Firmware](#load-the-brainpad-tinyclr-firmware).
 
 ---
 
