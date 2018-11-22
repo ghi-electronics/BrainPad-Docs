@@ -2,6 +2,9 @@
 ---
 TinyCLR OS is the tiny operating system used by the BrainPad to run your C# and Visual Basic programs. Microsoft Visual Studio is used to write these programs on your computer and is also used by professional programmers the world over. Both TinyCLR and Visual Studio are available for free, but must be set up before you can program the BrainPad and start having fun.
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eYCXK4JUwyg" frameborder="0" allowfullscreen></iframe>
+
 > [!Tip]
 > You can learn more about TinyCLR OS on the [**GHI Electronics website**](https://www.ghielectronics.com/tinyclr/features)
 

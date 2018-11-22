@@ -3,8 +3,6 @@
 
 This is a collection of BrainPad projects ranging from easy to advanced. If you want to use Visual Basic, please refer to the [C# to Visual Basic](../go-beyond/vb/csharp-to-vb.md) page.
 
-> [!Tip]
-> Also see the simpler Microsoft MakeCode [**Projects**](../start-making/projects.md)
 
 |  |  |
 |--|--|
