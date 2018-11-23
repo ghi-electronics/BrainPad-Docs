@@ -1,12 +1,22 @@
-# Get started with the BrainPad!
+# The BrainPad Documentaion
 ---
 ![BrainPad](images/production-brainpad.jpg)
+
+The BrainPad is an exciting STEM mini computer for learning and coding video games, robots and electronics.
+
+For a quick getting started, the **Beginners' Guide ebook is available in mutiple languages** [here](http://brainpad.com/start). This decumentaion website adds a lot more details.
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wMGXnSN2Xvk" frameborder="0" allowfullscreen></iframe>
 
 ## STEM is a path, not a toy.
 
 **From beginner to expert, the BrainPad evolves to expand your abilities. BrainPad: For every age\*, for every skill level -- for everyone!**
 
 \*Adult supervision required for ages 12 and under.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8v1uMic-fog" frameborder="0" allowfullscreen></iframe>
+
 
 ### There are two main paths to get started with the BrainPad:
 
@@ -21,9 +31,7 @@
 | **Requirements** | Any operating system with any modern web browser | Windows (version 7 or newer) computers only |
 | **Troubleshooting** | Limited | Full featured debugging tools |
 | **Ages** | 6+ | 12+ |
-
----
-**Additional BrainPad Resources can be found** [**here**](resources/intro.md).
+| | [Start Making Now](start-making/intro.md) | [Go Beyond Now](go-beyond/intro.md) |
 
 ---
 You are on the documentation website for the BrainPad. The main website is found at [www.brainpad.com](http://www.brainpad.com/)

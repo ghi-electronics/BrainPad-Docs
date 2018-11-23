@@ -9,6 +9,10 @@ Snap Circuits is a fun and easy way to build your own circuits and learn about e
 
 We have a simple example of using the BrainPad, Microsoft MakeCode, and Snap Circuits [here](../projects/lift-off.md).  
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8tVkJDCwG3w?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+
 [![Snap Circuits](../projects/images/snap-circuits-lift-off.gif)](../projects/lift-off.md)
 
 ## Breadboarding

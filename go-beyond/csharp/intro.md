@@ -46,7 +46,9 @@ Once created, you'll be presented with a `Program.cs` tab.
 ![First C# Project](images/introduction/first-project.png)
 
 ### Manage the NuGet Packages
-C# source files are listed in the `Solution Explorer` window. If the `Solution Explorer` window is not visible, click on `View > Solution Explorer` to open it.
+Code packages to handle specific tasks are built into libraries. These libraries are found on a cloud service, called NuGet. This is where you will find drivers for many things, including the sensors found on the BrainPad.
+
+Source files are listed in the `Solution Explorer` window. If the `Solution Explorer` window is not visible, click on `View > Solution Explorer` to open it.
 
 ![Solution Explorer](images/introduction/solution-explorer.png)
 
@@ -69,6 +71,9 @@ In the search box type "tinyclr" and make sure the `Include prerelease` box is c
 You should see a list of available TinyCLR Nuget packages similar to the image below.
 
 ![Browse Nuget Packages](../vb/images/introduction/browse-nuget-packages.gif)
+
+> [!Tip]
+> There maybe different version of the same library. You need to select a version that matches the BrainPad firmware version you loaded at [System Setup](../system-setup.md).
 
 Find and click on the `GHIElectronics.TinyCLR.BrainPad` package and then click on the `Install` button.
 

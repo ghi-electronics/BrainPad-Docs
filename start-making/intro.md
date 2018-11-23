@@ -12,7 +12,7 @@ Microsoft MakeCode is a great way to learn programming. Microsoft MakeCode allow
 
 When you get your program working on the simulator, you can just drag and drop it to run it on the real BrainPad!
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nijKM_TLoxM?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gu8o83XRvK8" frameborder="0" allowfullscreen></iframe>
 
 > [!Tip]
 > The BrainPad has a simulator in [**Microsoft MakeCode**](https://makecode.brainpad.com). This means you can start making even if you do not have a BrainPad yet.
