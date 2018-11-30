@@ -8,7 +8,7 @@
     <title>Introduction to C# (C sharp) </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Introduction to C# (C sharp) ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../../images/favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -20,7 +20,7 @@
     <meta property="docfx:rel" content="../../">
     <meta property="docfx:newtab" content="true">
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -60,7 +60,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -107,30 +109,34 @@
 <p>Once created, you&#39;ll be presented with a <code>Program.cs</code> tab.</p>
 <p><img src="images/introduction/first-project.png" alt="First C# Project"></p>
 <h3 id="manage-the-nuget-packages">Manage the NuGet Packages</h3>
-<p>C# source files are listed in the <code>Solution Explorer</code> window. If the <code>Solution Explorer</code> window is not visible, click on <code>View &gt; Solution Explorer</code> to open it.</p>
+<p>Code packages to handle specific tasks are built into libraries. These libraries are found on a cloud service, called NuGet. This is where you will find drivers for many things, including the sensors found on the BrainPad.</p>
+<p>Source files are listed in the <code>Solution Explorer</code> window. If the <code>Solution Explorer</code> window is not visible, click on <code>View &gt; Solution Explorer</code> to open it.</p>
 <p><img src="images/introduction/solution-explorer.png" alt="Solution Explorer"></p>
-<p>The squiggly red lines under items in the <code>Solution Explorer</code> window indicate errors. In this case the errors are caused by missing Nuget packages. Let&#39;s tell Visual Studio to include the Nuget packages and fix that now.</p>
 <p>If you right click on the project name in the Solution Explorer window a drop down menu will appear. Select <code>Manage NuGet Packages...</code> from the menu.</p>
-<p><img src="images/introduction/manage-nuget-packages-menu.png" alt="View Show Solution Explorer"> </p>
-<p>Now you should see the installed TinyCLR NuGet library (GHIElectronics.TinyCLR.Core). We need to install a couple more libraries for our program to run.</p>
+<p><img src="images/introduction/manage-nuget-packages-menu.png" alt="View Show Solution Explorer"></p>
+<p>Now you should see the installed TinyCLR NuGet library (GHIElectronics.TinyCLR.Core). We need to install a couple more libraries for our program to run. Click on the <code>Browse</code> tab.</p>
 <p><img src="images/introduction/click-on-browse.png" alt="Installed NuGet"></p>
-<p>Click on <code>Browse</code>. You should see a list of available Nuget packages in your local feed.</p>
-<p><img src="../vb/images/introduction/browse-nuget-packages.jpg" alt="Browse Nuget Packages"></p>
-<p>Click on the <code>GHIElectronics.TinyCLR.BrainPad</code> package and then click on the <code>Install</code> button.</p>
+<p>Make sure the package source is set to <code>Package source</code> or <code>All</code>.</p>
+<p><img src="images/introduction/package-source.png" alt="Set package source"></p>
+<p>In the search box type &quot;tinyclr&quot; and make sure the <code>Include prerelease</code> box is checked.</p>
+<p><img src="images/introduction/search-for-tinyclr.png" alt="Search for TinyCLR"></p>
+<p>You should see a list of available TinyCLR Nuget packages similar to the image below.</p>
+<p><img src="../vb/images/introduction/browse-nuget-packages.gif" alt="Browse Nuget Packages"></p>
+<div class="TIP"><h5>Tip</h5><p>There maybe different version of the same library. You need to select a version that matches the BrainPad firmware version you loaded at <a href="../system-setup.html">System Setup</a>.</p>
+</div>
+<p>Find and click on the <code>GHIElectronics.TinyCLR.BrainPad</code> package and then click on the <code>Install</code> button.</p>
 <p><img src="../vb/images/introduction/click-install-button.png" alt="Click Install Button"></p>
-<p>Installing the BrainPad Nuget package will automatically install the <code>GHIElectronics.TinyCLR.Devices</code> and <code>GHIElectronics.TinyCLR.Pins</code> packages as well. Click on <code>OK</code>.</p>
+<p>Installing the BrainPad Nuget package will automatically install other packages as well. Click on <code>OK</code>.</p>
 <p><img src="../vb/images/introduction/install-nugets.png" alt="Install Nugets"></p>
 <p>Now accept the license agreement to install the packages.</p>
 <p><img src="../vb/images/introduction/accept-license.png" alt="Accept the License Agreement"></p>
-<p>Close the <code>NuGet...</code> tab to get back to your <code>Program.cs</code> window. The red squiggles should now be gone.</p>
+<p>Close the <code>NuGet...</code> tab to get back to your <code>Program.cs</code> window.</p>
 <h3 id="add-the-brainpad-helper-code">Add the BrainPad Helper Code</h3>
 <p>The BrainPad Helper code provides needed definitions for some BrainPad objects. To add this file to your program, select <code>Add New Item...</code> in the <code>Project</code> menu. Then in the <code>Add New Item</code> dialog box click on <code>BrainPad Helper</code> and then click on the <code>Add</code> button. You will see a tab labeled <code>BrainPad1.cs</code> with contents as shown below.</p>
 <p><img src="images/introduction/brainpad-helper.jpg" alt="BrainPad Helper"></p>
 <h3 id="add-the-sample-program">Add the Sample Program</h3>
 <p>In the <code>Program.cs</code> tab we will enter short sample program (our &quot;Hello World&quot; code). Cut and paste the following code into the <code>Program.cs</code> window.</p>
-<pre><code>using GHIElectronics.TinyCLR.BrainPad;
-
-namespace BrainPadDemo {
+<pre><code>namespace BrainPadDemo {
     class Program {
         static void Main() {
             BrainPad.Display.DrawText(0, 0, &quot;Hello!&quot;);

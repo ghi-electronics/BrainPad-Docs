@@ -8,7 +8,7 @@
     <title>System Setup </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="System Setup ">
-    <meta name="generator" content="docfx 2.29.1.0">
+    <meta name="generator" content="docfx 2.40.0.0">
     
     <link rel="shortcut icon" href="../images/favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -20,7 +20,7 @@
     <meta property="docfx:rel" content="../">
     <meta property="docfx:newtab" content="true">
   </head>
-  <body data-spy="scroll" data-target="#affix">
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -60,7 +60,9 @@
         
         <div id="search-results">
           <div class="search-list"></div>
-          <div class="sr-items"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
           <ul id="pagination"></ul>
         </div>
       </div>
@@ -78,7 +80,9 @@
 <h1 id="system-setup">System Setup</h1>
 
 <hr>
-<p>TinyCLR OS is the tiny operating system used by the BrainPad to run your C# and Visual Basic programs. Microsoft Visual Studio is used to write these programs on your computer and is also used by professional programmers the world over. Both TinyCLR and Visual Studio are available for free, but must be set up before using them to program the BrainPad to start having fun.</p>
+<p>TinyCLR OS is the tiny operating system used by the BrainPad to run your C# and Visual Basic programs. Microsoft Visual Studio is used to write these programs on your computer and is also used by professional programmers the world over. Both TinyCLR and Visual Studio are available for free, but must be set up before you can program the BrainPad and start having fun.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eYCXK4JUwyg" frameborder="0" allowfullscreen=""></iframe>
+
 <div class="TIP"><h5>Tip</h5><p>You can learn more about TinyCLR OS on the <a href="https://www.ghielectronics.com/tinyclr/features"><strong>GHI Electronics website</strong></a></p>
 </div>
 <h2 id="system-setup-overview">System Setup Overview</h2>
@@ -86,12 +90,11 @@
 <p><strong>Step 1: Setup Your Computer</strong></p>
 <ul>
 <li><a href="#install-visual-studio">Install Visual Studio</a>.</li>
-<li><a href="#install-the-tinyclr-project-system">Install the TinyCLR Project System</a>.</li>
-<li><a href="#install-the-tinyclr-nuget-packages">Install the TinyCLR NuGet packages</a>.</li>
+<li><a href="#install-the-tinyclr-extension">Install the TinyCLR Extension</a>.</li>
 </ul>
 <p><strong>Step 2: Setup Your Brainpad</strong></p>
 <ul>
-<li><a href="#install-the-brainpad-firmware">Install the BrainPad firmware</a>.</li>
+<li><a href="#load-the-brainpad-tinyclr-firmware">Load the BrainPad TinyCLR Firmware</a>.</li>
 </ul>
 <hr>
 <h2 id="step-1-setup-your-computer">Step 1: Setup Your Computer</h2>
@@ -103,64 +106,32 @@
 <p>When the installation program shows the <code>Workloads</code> screen, select <code>.NET desktop development</code> (you should see a check mark in the <code>.NET desktop development</code> box) and then click the <code>Install</code> button.</p>
 <p><img src="images/visual-studio-workloads.png" alt="Workloads"></p>
 <p>After installation is complete, click on the <code>Launch</code> button. You will be asked to sign in or sign up for Visual Studio developer services. You can either sign in (or sign up) now or click the &#39;Not now, maybe later&#39; option. You will then be asked to pick a color scheme and Visual Studio will start.</p>
-<h3 id="install-the-tinyclr-project-system">Install the TinyCLR Project System</h3>
-<p>If Visual Studio is open, close it before continuing with the TinyCLR installation.</p>
-<p>Download the TinyCLR <a href="../resources/downloads.html#visual-studio-project-system">Visual Studio Project System</a> from our <a href="../resources/downloads.html">Downloads</a> page.
-<a href="../resources/downloads.html#visual-studio-project-system"><img src="images/download-vs-project-system.png" alt="Download Visual Studio Project System"></a></p>
-<p>After the download is complete, open or run the downloaded file.</p>
-<p>In the <code>VSIX Installer</code> dialog box click the <code>Install</code> button.
-<img src="images/install-vsix.png" alt="Install VSIX"></p>
-<h3 id="install-the-tinyclr-nuget-packages">Install the TinyCLR Nuget Packages</h3>
-<ol>
-<li><p>Since TinyCLR OS is still so new, we haven&#39;t yet uploaded any packages to NuGet. Click <a href="../resources/downloads.html#nuget-libraries">here</a> and download the latest Nuget library.
-<a href="../resources/downloads.html#nuget-libraries"><img src="images/download-nuget.png" alt="Download Nuget Library"></a></p>
-</li>
-<li><p>Open or run the downloaded file.</p>
-</li>
-<li><p>A window will pop up with a list of the files in the library. Click on the <code>Extract all</code> button.
-<img src="images/extract-all.png" alt="Extract all"></p>
-</li>
-<li><p>A dialog box will appear allowing you to select a folder to save the files. You can change the folder location or accept the default location. You will need to remember the folder location for step 11. Click on the <code>Extract</code> button to extract and save the files.
-<img src="images/select-location.png" alt="Select location to save files"></p>
-</li>
-<li><p>If a window with the files appears, you can close it before continuing.</p>
-</li>
-<li><p>Start Visual Studio. From the <code>Tools</code> menu select <code>NuGet Package Manager</code> and then select <code>Package Manager Settings</code>.</p>
-</li>
-<li><p>In the left panel under <code>Nuget Package Manager</code> select <code>Package Sources</code>.</p>
-</li>
-<li><p>Click on the button with the green plus sign near the upper right corner of the <code>Options</code> dialog box. A new package source will be created in the <code>Available package sources</code> box.
-<img src="images/click-green-plus-sign.png" alt="Click green plus sign button"></p>
-</li>
-<li><p>Change the name of the package source from &quot;package source&quot; to &quot;offline.&quot; You may have to click on the package source (in the available package sources box) before you can change the name.</p>
-</li>
-<li><p>Now change the folder name in the text box to the right of <code>Source:</code> to the folder where you saved the NuGet packages in step 5. You can either type in the folder name or click on the <code>...</code> button to search for the folder.</p>
-</li>
-<li><p>Click on the <code>Update</code> button. The folder name should now appear under the <code>offline</code> entry under <code>Available package sources</code>.</p>
-</li>
-<li><p>Click the <code>OK</code> button.
-<img src="images/click-ok.png" alt="Click the OK button"> </p>
-</li>
-</ol>
+<h3 id="install-the-tinyclr-extension">Install the TinyCLR Extension</h3>
+<p>This project system extension allows Visual Studio to work with the BrainPad. To install, first run Visual Studio and then go to <code>Tools-&gt;Extensions and Updates...</code>. In the search box enter tinyclr and you should now be able to see the extension. Go ahead and install it.
+<img src="images/Install-tinyclr-extension.gif" alt="Install Extension"></p>
+<div class="TIP"><h5>Tip</h5><p>It is possible to download the extension seperately to install on a computer without internet access.</p>
+</div>
 <h2 id="step-2-setup-your-brainpad">Step 2: Setup Your BrainPad</h2>
 <hr>
 <div class="TIP"><h5>Tip</h5><p>If you have an older concept or prototype BrainPad the setup is slightly different. See the <a href="../resources/older-brainpad.html"><strong>Older BrainPads</strong></a> page for more details.</p>
 </div>
-<h3 id="install-the-brainpad-firmware">Install the BrainPad Firmware</h3>
-<p>To prepare the BrainPad you only need to install the latest firmware as described below.</p>
+<h3 id="load-the-brainpad-tinyclr-firmware">Load the BrainPad TinyCLR Firmware</h3>
+<p>The TinyCLR OS firmware is loaded the same way MakeCode programs are loaded.</p>
 <ol>
-<li>Download the latest TinyCLR OS firmware for the BrainPad from <a href="../resources/downloads.html#tinyclr-os-brainpad-firmware">Downloads</a>.</li>
+<li>Download the desired BrainPad TinyCLR OS firmware from <a href="../resources/downloads.html">Downloads</a>.</li>
 <li>Select <code>Show in folder</code> or <code>Save</code> and <code>Open folder</code> (depending on your browser).</li>
 <li>Connect the BrainPad to your computer using a micro USB cable. The power (PWR) light on the BrainPad should be on.</li>
 <li>Press and hold the RESET button on the BrainPad for at least three seconds until the Light Bulb on the BrainPad lights up green.</li>
-<li>A window will open named <code>BrainPad2</code>. Copy or drag the firmware file from the folder in step 2 into this window.</li>
+<li>Window will detect a media device named <code>BrainPad</code>. Copy or drag the firmware file from the folder in step 2 into this media.</li>
 <li>The Light Bulb on the BrainPad will flicker and a progress gauge will appear on the computer screen.</li>
 <li>It only takes a few seconds for the firmware to be copied to the BrainPad. When it is done, the green light on the BrainPad will stop flickering and the <code>BrainPad2</code> window will close.</li>
-<li>Congratulations! Your BrainPad is now running the latest firmware!</li>
+<li>Congratulations! Your BrainPad is now running TinyCLR OS.</li>
 </ol>
+<p>While the BrainPad will seem to not do anything at this point, it is actually running TinyCLR OS and is waiting for Visual Studio. For verification, you can check under <code>device manager</code> to verify it is runnig TinyCLR OS.</p>
+<p><img src="images/device-manager-tinyclr.png" alt="Device Manager TinyCLR"></p>
 <div class="NOTE"><h5>Note</h5><p>The BrainPad comes with a &quot;bootloader&quot; pre-installed. You shouldn&#39;t have to reinstall it unless you are an advanced user using advanced programming techniques. Check out our <a href="../resources/bootloader.html"><strong>bootloader</strong></a> page to find out more.</p>
 </div>
-<h2 id="going-beyond">Going Beyond!</h2>
+<h2 id="ready-steady-gobyond">Ready... Steady... GoByond!</h2>
 <p>Congratulations! You are now ready to start programming like a professional. You have the option of using the <a href="csharp/intro.html">C#</a> programming language or the <a href="vb/intro.html">Visual Basic</a> programming language. If you are not sure which one to pick, C# is used more often in the professional world and is recommended for those serious about learning programming. Visual Basic is easier to use -- especially for beginners. We use C# for our own software development, but we usually start with Visual Basic for those who are new to programming.</p>
 <p>You are not locked in to one language -- you can freely switch between C# and Visual Basic.</p>
 <p>To give you a better idea, here is code that counts from 1 to 10 on the BrainPad display in C#:</p>
