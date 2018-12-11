@@ -4,7 +4,7 @@
 
 The BrainPad is an exciting STEM mini computer for learning and coding video games, robots and electronics.
 
-For a quick getting started, the **Beginners' Guide ebook is available in mutiple languages** [here](http://brainpad.com/start). This documentation website adds a lot more details.
+For a quick getting started, the **Beginners' Guide ebook is available in multiple languages** [here](http://brainpad.com/start). This documentation website adds a lot more details.
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wMGXnSN2Xvk" frameborder="0" allowfullscreen></iframe>
