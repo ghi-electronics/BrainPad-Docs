@@ -2145,7 +2145,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "IRMiV08nWVLawKYFujRLcA=="
+          "hash": "PvYZhzS1DWkEqGcPJiZjEw=="
         }
       },
       "is_incremental": false,
@@ -2666,7 +2666,7 @@
       "output": {
         ".html": {
           "relative_path": "resources/downloads.html",
-          "hash": "7xTehmXQyLG/cX91OYSGrw=="
+          "hash": "NuLGAsRccZsZ3hGlQxfRZA=="
         }
       },
       "is_incremental": false,
@@ -2859,14 +2859,14 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ResourceDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
         "TocDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
