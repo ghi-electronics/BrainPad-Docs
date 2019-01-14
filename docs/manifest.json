@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "README.html",
-          "hash": "ZyLZ9BaAfW6udQSRTg/7xQ=="
+          "hash": "c0qO4HTkkH5g0a5Y8MUGkg=="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/arduino.html",
-          "hash": "M0M03i0COEG1fRYvhgBXYA=="
+          "hash": "ftbZXpxyA3/OewSuI2h/lw=="
         }
       },
       "is_incremental": false,
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/bare-metal.html",
-          "hash": "eGsJpsUiHvOhSXQ/7XvAAA=="
+          "hash": "jJfD5X11IRkxRXWSno4eRA=="
         }
       },
       "is_incremental": false,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/csharp/csharp.html",
-          "hash": "ihJAlnQvtRpDeAwSvZ3Syw=="
+          "hash": "+gX7ScH3KReYWZTRLE8htQ=="
         }
       },
       "is_incremental": false,
@@ -256,7 +256,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/csharp/threading-and-events.html",
-          "hash": "Gjx7VzROWLIzlmU0qHGizQ=="
+          "hash": "LB6q/JANVsD5wngfb8hSaw=="
         }
       },
       "is_incremental": false,
@@ -268,7 +268,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/csharp/variables-and-nested-statements.html",
-          "hash": "Xd9MqwRAt7s77oM0k0Uicg=="
+          "hash": "GN394wZPVS/oqV63cfORWw=="
         }
       },
       "is_incremental": false,
@@ -412,7 +412,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/intro.html",
-          "hash": "FawjwWz4vtKoxKQ1j1YMaA=="
+          "hash": "XRnpikvny6rSJGHYiMHGzw=="
         }
       },
       "is_incremental": false,
@@ -424,7 +424,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/mbed.html",
-          "hash": "GyqB70iUKX3Nj4fQqup6vw=="
+          "hash": "i/jAz0HB5miuLcRa690c1g=="
         }
       },
       "is_incremental": false,
@@ -436,7 +436,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/micropython.html",
-          "hash": "kXs5pXKpqWErUJILk9255Q=="
+          "hash": "GBZoAfq7wtF4dVUx056Ocg=="
         }
       },
       "is_incremental": false,
@@ -448,7 +448,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/stm32-bootloader.html",
-          "hash": "IvWGmYit8kTfmh+kC6zA8Q=="
+          "hash": "jAJ8InuQfEOjS3o4OnWHxQ=="
         }
       },
       "is_incremental": false,
@@ -626,7 +626,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/vb/threading-and-events.html",
-          "hash": "Tle/aV+V/lTs+1dJXJyxfQ=="
+          "hash": "oMY1w+nlwOX5s9Hd56l7gw=="
         }
       },
       "is_incremental": false,
@@ -638,7 +638,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/vb/variables-and-nested-statements.html",
-          "hash": "uZZuPnXZ1rBs0EpeOxCA5A=="
+          "hash": "Pqy925hjilcMBMLRATgWKA=="
         }
       },
       "is_incremental": false,
@@ -653,7 +653,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/vb/visual-basic.html",
-          "hash": "m6IDTjPffOEpXXeVWdxGwg=="
+          "hash": "PXbPgvkhX3WvIp9unyALLQ=="
         }
       },
       "is_incremental": false,
@@ -665,7 +665,7 @@
       "output": {
         ".html": {
           "relative_path": "advanced/visual-studio.html",
-          "hash": "e2cWZFrtGAPuIMfvRAXtEg=="
+          "hash": "zQJwhWw/sjl6fkNyH+BTyw=="
         }
       },
       "is_incremental": false,
@@ -677,7 +677,7 @@
       "output": {
         ".html": {
           "relative_path": "expansion/electronics.html",
-          "hash": "JZeHuBKRklfuu40Ic/BcyA=="
+          "hash": "jS+SzIu1iq51D5Bn+ln9xA=="
         }
       },
       "is_incremental": false,
@@ -857,7 +857,7 @@
       "output": {
         ".html": {
           "relative_path": "expansion/intro-old.html",
-          "hash": "/xnwRI4BU9qPQX6VQuaVQA=="
+          "hash": "HMu71OZpNYPkil3x2ZhUeA=="
         }
       },
       "is_incremental": false,
@@ -869,7 +869,7 @@
       "output": {
         ".html": {
           "relative_path": "expansion/intro.html",
-          "hash": "XPrkE4Ohygb34RnaTEoMFQ=="
+          "hash": "wSjRIt2f7fsiQjvoGuQ3Jg=="
         }
       },
       "is_incremental": false,
@@ -881,7 +881,7 @@
       "output": {
         ".html": {
           "relative_path": "expansion/iot.html",
-          "hash": "Fy4pDcYgFPaBkT5aJ8TWJA=="
+          "hash": "TonyWVqSMj5Squ6OHVKKTA=="
         }
       },
       "is_incremental": false,
@@ -896,7 +896,7 @@
       "output": {
         ".html": {
           "relative_path": "expansion/mikroe-click.html",
-          "hash": "GE9OGEBdwZS+0wJKDEATDA=="
+          "hash": "GQEv6eWcwkfiS1UaJDA66g=="
         }
       },
       "is_incremental": false,
@@ -908,7 +908,7 @@
       "output": {
         ".html": {
           "relative_path": "expansion/robotics.html",
-          "hash": "GxSeGZD5MTKqkLBYi7XSAw=="
+          "hash": "tcJTvGX8I6/xzslDdXu5iA=="
         }
       },
       "is_incremental": false,
@@ -920,7 +920,7 @@
       "output": {
         ".html": {
           "relative_path": "expansion/snap-circuits.html",
-          "hash": "PlroRKBuHGLNGTpqpGMfsQ=="
+          "hash": "/8QhySMkMgHQZiosnaNqRw=="
         }
       },
       "is_incremental": false,
@@ -944,7 +944,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/brainpad-class-reference.html",
-          "hash": "wvENE3XAU0kj1M8fHP0x3g=="
+          "hash": "j+zB1knNXz9lpYsPFg3iYQ=="
         }
       },
       "is_incremental": false,
@@ -956,7 +956,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/accelerometer.html",
-          "hash": "kAiBQguNg8LZuHPuyKRZmw=="
+          "hash": "sNljr3aqfhb2AQfeMUilsg=="
         }
       },
       "is_incremental": false,
@@ -968,7 +968,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/buttons.html",
-          "hash": "OQk6NUZJ4Ii1qK47DWDsOw=="
+          "hash": "cbOozCiKo2gcbj7fkQULkQ=="
         }
       },
       "is_incremental": false,
@@ -980,7 +980,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/buzzer.html",
-          "hash": "Rl2Sts1/b3ZvOlteFXQn/Q=="
+          "hash": "vwMVb571F+8aUT4R5Zu+hQ=="
         }
       },
       "is_incremental": false,
@@ -992,7 +992,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/display.html",
-          "hash": "u4zml9vqcsgV1dfiDkZs3g=="
+          "hash": "fn26bcJ6SPyRXs8H5B22CQ=="
         }
       },
       "is_incremental": false,
@@ -1004,7 +1004,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/intro.html",
-          "hash": "Px3cvb88vu6UZ85LokBoQw=="
+          "hash": "HQhLUJaMQHTu7ZgZ3NtYIQ=="
         }
       },
       "is_incremental": false,
@@ -1016,7 +1016,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/light-bulb.html",
-          "hash": "i5cViBpwWaIJ35BZwiT7xw=="
+          "hash": "ROs25SZZjayRzkr3SbL5jg=="
         }
       },
       "is_incremental": false,
@@ -1028,7 +1028,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/light-sensor.html",
-          "hash": "voMrlAZ9XW0QjrYTmsjXaQ=="
+          "hash": "0ZhpbGz7lPIYLBE4UrO8pg=="
         }
       },
       "is_incremental": false,
@@ -1040,7 +1040,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/other-components.html",
-          "hash": "21P1DAV8nSassGFMAAu+dg=="
+          "hash": "ClMIT5BUdf/AIpDNUJdpJg=="
         }
       },
       "is_incremental": false,
@@ -1052,7 +1052,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/servo-motors.html",
-          "hash": "XXrjwFQWpZDNsAy6Fp31tA=="
+          "hash": "8GzNd45nWUSQyt1QEj7C2A=="
         }
       },
       "is_incremental": false,
@@ -1064,7 +1064,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/components/temperature-sensor.html",
-          "hash": "jC7jarR9I9meTvtZZWUyLw=="
+          "hash": "WYaQJ4SbaT4fRDAPBLqXOw=="
         }
       },
       "is_incremental": false,
@@ -1340,7 +1340,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/csharp/intro.html",
-          "hash": "iLCVeFU0TTQL3rGz2Xjhhg=="
+          "hash": "Vbik0J7Q1oP5ht1YCHlqEw=="
         }
       },
       "is_incremental": false,
@@ -1352,7 +1352,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/csharp/vb-to-csharp.html",
-          "hash": "viSFDlwrfcswiD+/kbx5NA=="
+          "hash": "GrIDt0Btzgi2D29yr+kPaQ=="
         }
       },
       "is_incremental": false,
@@ -1609,7 +1609,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/intro.html",
-          "hash": "qGG6/8sxydM5OGrfQVVgfA=="
+          "hash": "cP31EU6s06sOYM2NBJ6Pzg=="
         }
       },
       "is_incremental": false,
@@ -1621,7 +1621,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/other-software/arduino.html",
-          "hash": "Itj4axglRR7LqTcmRBUkng=="
+          "hash": "xlf9BwTY5T2+IdAIsXexGw=="
         }
       },
       "is_incremental": false,
@@ -1633,7 +1633,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/other-software/bare-metal.html",
-          "hash": "YptenH/0xTW5P9xDcSvagg=="
+          "hash": "fwJ+DD3u2kr0HdcnkjdURw=="
         }
       },
       "is_incremental": false,
@@ -1681,7 +1681,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/other-software/intro.html",
-          "hash": "LT4bE+XxIkYCakpa3Pruuw=="
+          "hash": "x54vU6Na6GBD4i2N7WN/2A=="
         }
       },
       "is_incremental": false,
@@ -1693,7 +1693,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/other-software/mbed.html",
-          "hash": "rxVU1X2NpOUuXilEd9Bvqg=="
+          "hash": "0kiQEMtjU7lv5fdRuXEJrA=="
         }
       },
       "is_incremental": false,
@@ -1705,7 +1705,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/other-software/micropython.html",
-          "hash": "r7I10cXraSIJuhTLobaq3g=="
+          "hash": "gj8IV8qcL55TsiOhi8LkKg=="
         }
       },
       "is_incremental": false,
@@ -1720,7 +1720,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/system-setup.html",
-          "hash": "vIQjlYye+89z52HAqJvz7Q=="
+          "hash": "pR0u8E/kDyizN2K8B9G24w=="
         }
       },
       "is_incremental": false,
@@ -1744,7 +1744,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/vb/csharp-to-vb.html",
-          "hash": "1T0tgm8+wqczUmt3x0XmJA=="
+          "hash": "lSx+KlUrD1Ma6cYbX8zLUg=="
         }
       },
       "is_incremental": false,
@@ -2020,7 +2020,7 @@
       "output": {
         ".html": {
           "relative_path": "go-beyond/vb/intro.html",
-          "hash": "M9T6B5b+OcXq43R5pFRZmQ=="
+          "hash": "Z/1eM3RIhQAMEVrBogSxPg=="
         }
       },
       "is_incremental": false,
@@ -2145,7 +2145,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "PvYZhzS1DWkEqGcPJiZjEw=="
+          "hash": "g+SnlC6rAHghFH2bSm8yTQ=="
         }
       },
       "is_incremental": false,
@@ -2157,7 +2157,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/3d-cube.html",
-          "hash": "QLYagxrYyUs40wTmZOfz2Q=="
+          "hash": "dV0Ha0PN02QyQdqaiGizcw=="
         }
       },
       "is_incremental": false,
@@ -2169,7 +2169,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/burglar-alarm.html",
-          "hash": "CPPgwSNMUi1y3Q/eeG68mQ=="
+          "hash": "H9z4vwUtY7XrY4hcbg+dkQ=="
         }
       },
       "is_incremental": false,
@@ -2181,7 +2181,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/color-mixer.html",
-          "hash": "NAUxFezdMfHs8TopGI8aKw=="
+          "hash": "PGD1RA9Q2/4gfQO4syox4g=="
         }
       },
       "is_incremental": false,
@@ -2193,7 +2193,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/electronic-dice.html",
-          "hash": "C2GhPferFY3f4E3ysf/kmg=="
+          "hash": "/yy1+fBqspC9ixCwESCGTA=="
         }
       },
       "is_incremental": false,
@@ -2205,7 +2205,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/etch-a-sketch.html",
-          "hash": "TO9mclM5Xl3NVO/rOaiRMQ=="
+          "hash": "wPAI3E96VFNnZT9ijNVD6Q=="
         }
       },
       "is_incremental": false,
@@ -2217,7 +2217,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/high-low-thermometer.html",
-          "hash": "m6XmAqczDhOLTxpsHzx/sg=="
+          "hash": "4Vndjd+iQ57OXgOaQCBJ9w=="
         }
       },
       "is_incremental": false,
@@ -2507,7 +2507,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/intro.html",
-          "hash": "MyX/apyhBYpP0K6ixNFuOA=="
+          "hash": "hH5GUq6XBBHzUl/+7goSgg=="
         }
       },
       "is_incremental": false,
@@ -2519,7 +2519,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/lift-off.html",
-          "hash": "Fa7KmpJvCpPFD8dd9PJYbg=="
+          "hash": "dRu32uD3pxY5ZiBOgmdOwg=="
         }
       },
       "is_incremental": false,
@@ -2531,7 +2531,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/linear-clock.html",
-          "hash": "w6kow3IstDYW9mPbWqX37Q=="
+          "hash": "Q0q0AO5dEzxnAseOseqxHA=="
         }
       },
       "is_incremental": false,
@@ -2543,7 +2543,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/marble-sorter.html",
-          "hash": "hLLCu7kpvye5RaXc8Arreg=="
+          "hash": "x6JLULrqIFvyIaVFGXHX4w=="
         }
       },
       "is_incremental": false,
@@ -2555,7 +2555,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/pong.html",
-          "hash": "cvxpDoFBZS4lgc7h0rAUAQ=="
+          "hash": "1vFQ8eofiOIFsLjR71KlSQ=="
         }
       },
       "is_incremental": false,
@@ -2567,7 +2567,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/space-force.html",
-          "hash": "FIAlptCLlFOBewyYTMyAaw=="
+          "hash": "dECIbPPZaO75Xd5i7wYrNw=="
         }
       },
       "is_incremental": false,
@@ -2582,7 +2582,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/space-invasion.html",
-          "hash": "Ax2/Qu+i4NcLjzU3JSppEA=="
+          "hash": "6w1KLt/dpgV6L4xo7o2CxA=="
         }
       },
       "is_incremental": false,
@@ -2594,7 +2594,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/stepper-motors.html",
-          "hash": "OiL+OFErDKuRFynlzUTncw=="
+          "hash": "xJOxg/z5Q5C20MH3jv9zcA=="
         }
       },
       "is_incremental": false,
@@ -2606,7 +2606,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/sun-seeker.html",
-          "hash": "gscvO278fhip0nqPX8odlQ=="
+          "hash": "iwRig17BxuykRrjlZTtEag=="
         }
       },
       "is_incremental": false,
@@ -2618,7 +2618,7 @@
       "output": {
         ".html": {
           "relative_path": "projects/tilt-etch-a-sketch.html",
-          "hash": "jUYMlvlZBMLm4THvl47byw=="
+          "hash": "46Jxd9OD+p8cit0kMwFqlw=="
         }
       },
       "is_incremental": false,
@@ -2642,7 +2642,7 @@
       "output": {
         ".html": {
           "relative_path": "resources/bootloader.html",
-          "hash": "1g9blR0/AoYMPfmGLraSqw=="
+          "hash": "sKPTgqk/nLJYTtbM1HxV3Q=="
         }
       },
       "is_incremental": false,
@@ -2654,7 +2654,7 @@
       "output": {
         ".html": {
           "relative_path": "resources/dfu-files.html",
-          "hash": "4SLOHprW5w1wTt3I2xbp5Q=="
+          "hash": "xsWIZbmX1xJPnS7AFNDiTg=="
         }
       },
       "is_incremental": false,
@@ -2666,7 +2666,7 @@
       "output": {
         ".html": {
           "relative_path": "resources/downloads.html",
-          "hash": "NuLGAsRccZsZ3hGlQxfRZA=="
+          "hash": "jSSqd1QCjW3qcpt3WoRfMw=="
         }
       },
       "is_incremental": false,
@@ -2733,7 +2733,7 @@
       "output": {
         ".html": {
           "relative_path": "resources/intro.html",
-          "hash": "pDKm5A0iS+UDejzP3bEf0g=="
+          "hash": "PaXhgSiuEY+2K/Gv5p3vag=="
         }
       },
       "is_incremental": false,
@@ -2745,7 +2745,7 @@
       "output": {
         ".html": {
           "relative_path": "resources/media.html",
-          "hash": "VPbEEYm/sS7oSfLiqnw4Kg=="
+          "hash": "DAv4RncRK6zPQeHj4Nf6vg=="
         }
       },
       "is_incremental": false,
@@ -2757,7 +2757,7 @@
       "output": {
         ".html": {
           "relative_path": "resources/older-brainpad.html",
-          "hash": "dfD/trEYKb6HuR3/+Ol0rw=="
+          "hash": "KOQ2nIHVOOT/dnj9zUjNuQ=="
         }
       },
       "is_incremental": false,
@@ -2784,7 +2784,7 @@
       "output": {
         ".html": {
           "relative_path": "resources/troubleshooting-guide.html",
-          "hash": "I5dJ3Ws1wJPWyz/Sv69yNQ=="
+          "hash": "KgUc6pAFIMF2PVNc9ILMpQ=="
         }
       },
       "is_incremental": false,
@@ -2832,7 +2832,7 @@
       "output": {
         ".html": {
           "relative_path": "start-making/intro.html",
-          "hash": "NfA89ygdHpwpzRb+S/kHnQ=="
+          "hash": "gjgG0oeTUzTw9NQWyuMhfw=="
         }
       },
       "is_incremental": false,
