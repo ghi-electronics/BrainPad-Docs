@@ -6,9 +6,6 @@ This tiny operating system can be loaded onto the BrainPad to enable it to work 
 File | Date | MD5
 --- | --- | ---
 [v1.0.0](http://files.ghielectronics.com/downloads/BrainPad/Firmwares/TinyCLR/BrainPad%20Firmware%20v1.0.0.uf2) | 2018-12-27 | 121F8824EEFA6AC3CFD5D9CD13A057D1
-[v1.0.0-preview3](http://files.ghielectronics.com/downloads/BrainPad/Firmwares/TinyCLR/BrainPad%20Firmware%20v1.0.0-preview3.uf2) | 2018-11-30 | E2E9817B6382DCB13DEB3E43CCBF864B
-[v1.0.0-preview2](http://files.ghielectronics.com/downloads/BrainPad/Firmwares/TinyCLR/BrainPad%20Firmware%20v1.0.0-preview2.uf2) | 2018-09-28 | 66FCCEA9CEA38719DA85A84D7C73DB2B
-[v1.0.0-preview1](http://files.ghielectronics.com/downloads/BrainPad/Firmwares/TinyCLR/BrainPad%20Firmware%20v1.0.0-preview1.uf2) | 2018-08-15 | 9D627A6E4FD52AD3D51CA0354B9F55CD
 
 ## Bootloader
 This is the TinyCLR OS [BrainPad](http://www.brainpad.com) bootloader. This is already loaded on the BrainPad at factory. It is made available here for advanced users.

@@ -2,8 +2,10 @@
 ---
 TinyCLR OS is the tiny operating system used by the BrainPad to run your C# and Visual Basic programs. Microsoft Visual Studio is used to write these programs on your computer and is also used by professional programmers the world over. Both TinyCLR and Visual Studio are available for free, but must be set up before you can program the BrainPad and start having fun.
 
+This video details the instructions on this page.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eYCXK4JUwyg" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TDvHfaDPlWk" frameborder="0" allowfullscreen></iframe>
+
 
 > [!Tip]
 > You can learn more about TinyCLR OS on the [**GHI Electronics website**](https://www.ghielectronics.com/tinyclr/features)
@@ -15,8 +17,8 @@ The instructions on this page describe how to setup your computer to start progr
   * [Install Visual Studio](#install-visual-studio).
   * [Install the TinyCLR Extension](#install-the-tinyclr-extension).
 
-**Step 2: Setup Your Brainpad**
-  * [Load the BrainPad TinyCLR Firmware](#load-the-brainpad-tinyclr-firmware).
+**Step 2: Setup Your BrainPad**
+  * [Load the BrainPad TinyCLR OS Firmware](#load-the-brainpad-tinyclr-firmware).
 
 ---
 
@@ -46,9 +48,6 @@ This project system extension allows Visual Studio to work with the BrainPad. To
 
 ## Step 2: Setup Your BrainPad
 ---
-
-> [!Tip]
-> If you have an older concept or prototype BrainPad the setup is slightly different. See the [**Older BrainPads**](../resources/older-brainpad.md) page for more details.
 
 ### Load the BrainPad TinyCLR Firmware
 
@@ -108,6 +107,3 @@ Click on a link below to get started:
 
 * [C# Introducton](csharp/intro.md)
 * [Visual Basic Introduction](vb/intro.md)
-
----
-You are on the documentation website for the BrainPad. The main website is found at [www.brainpad.com](http://www.brainpad.com/)

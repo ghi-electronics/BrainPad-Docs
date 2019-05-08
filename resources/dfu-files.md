@@ -11,22 +11,3 @@ ST Microelectronics, the microcontroller manufacturer, provides the tools needed
 4. Under "Upgrade and Verify Action", click the "Choose..." button and select the DFU file you want to load.
 5. Click the "Upgrade" button.
 6. Click the "Leave DFU mode" button.
-
-## Creating DFU file
-If you have a DFU file to load then these steps are not necessary. For example, the BrainPad bootloader is already a DFU file.
-
-The instructions are slightly different depending on whether you are starting with a HEX file or a BIN file.
-
-### From HEX files
-1. Find and open "Dfu file manager" and select "I want to generate a DFU file".
-2. Click on "S19 or Hex..." button to select the hex file.
-3. Click "Generate..."
-4. You now have the DFU file!
-
-### From BIN files
-1. Find and open "Dfu file manager" and select "I want to generate a DFU file".
-2. Click on "Multi BIN..." button to select the bin file.
-3. Change the address to 08000000
-4. Click on the "Add to list >>" button then click the "OK" button.
-5. Click "Generate..."
-6. You now have the DFU file!
