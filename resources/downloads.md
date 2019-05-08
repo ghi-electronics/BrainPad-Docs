@@ -8,8 +8,7 @@ File | Date | MD5
 [v1.0.0](http://files.ghielectronics.com/downloads/BrainPad/Firmwares/TinyCLR/BrainPad%20Firmware%20v1.0.0.uf2) | 2018-12-27 | 121F8824EEFA6AC3CFD5D9CD13A057D1
 
 ## Bootloader
-This is the TinyCLR OS [BrainPad](http://www.brainpad.com) bootloader. This is already loaded on the BrainPad at factory. It is made available here for advanced users.
-See the [DFU Files](dfu-files.md) page for instructions on loading DFU files.
+This is the bootloader for the BrainPad. You only need it if you are an advanced user and you accidently wiped or corrupted your device.
 
 File | Date | MD5
 --- | --- | ---

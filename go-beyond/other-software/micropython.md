@@ -12,4 +12,3 @@ This video shows the steps needed to use MicroPython on the BrainPad.
 * [MicroPython Website](http://www.micropython.org/)
 * The MicroPython project [GitHub repo](https://github.com/micropython/micropython)
 * This [GitHub repo](https://github.com/chalei/brainpad-micropython) has some nice Micropython examples.
-* [DFU Files](../../resources/dfu-files.md)

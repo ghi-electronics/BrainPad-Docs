@@ -10,5 +10,4 @@ This video shows the use of Arduino with the BrainPad.
 
 * [Arduino Website](https://www.arduino.cc/)
 * [Arduino STM32 Github](https://github.com/stm32duino)
-* [DFU Files](../../resources/dfu-files.md)
 * [Forum discussion about getting BrainPad display to work using Arduino](https://forums.ghielectronics.com/t/brainpad-v2-stm32f401-re-i2c-display-problems-with-arduino-code/20696)

@@ -62,7 +62,7 @@ While the BrainPad will seem to not do anything at this point, it is actually ru
 ![Device Manager TinyCLR](images/device-manager-tinyclr.png)
 
 > [!Note]
-> The BrainPad comes with a "bootloader" pre-installed. You shouldn't have to reinstall it unless you are an advanced user using advanced programming techniques. Check out our [**bootloader**](../resources/bootloader.md) page to find out more.
+> The BrainPad comes with a "bootloader" pre-installed. You shouldn't have to reinstall it unless you are an advanced user using advanced programming techniques. If you need to reflash it, you can get it from our [**downloads**](../resources/downloads.md) page to find out more.
 
 ## Ready... Steady... GoByond!
 Congratulations! You are now ready to start programming like a professional. You have the option of using the [C#](csharp/intro.md) programming language or the [Visual Basic](vb/intro.md) programming language. If you are not sure which one to pick, C# is used more often in the professional world and is recommended for those serious about learning programming. Visual Basic is easier to use -- especially for beginners. We use C# for our own software development, but we usually start with Visual Basic for those who are new to programming.

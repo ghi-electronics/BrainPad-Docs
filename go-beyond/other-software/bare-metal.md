@@ -5,5 +5,3 @@ You can also write programs from scratch using one of the more traditional C/C++
 * [Keil Website](http://www.keil.com/)
 * [Keil ARM MDK tools](http://www2.keil.com/mdk5)
 * [GNU ARM Tools (GCC)](https://developer.arm.com/open-source/gnu-toolchain/gnu-rm/downloads)
-* [DFU Files](../../resources/dfu-files.md)
-
