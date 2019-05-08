@@ -1,8 +1,5 @@
 # Other Software Options
----
 The BrainPad focuses on Start Making (link) with Microsoft MakeCode and lets you Go Beyond (link) with TinyCLR OS and .NET. However, there are other software options that also work on the BrainPad. We only give you a starting point in case you want to test the other possibilities.
-
----
 
 ## Arduino <img style="float: right;" src="images/arduino-logo.png">
 If you are familiar with the Arduino programming environment you can use it to program the BrainPad in C++.    We encourage students to learn Visual Studio as it is more widely used professionally, but Arduino has become a very common and widely accepted standard among students, hobbyists, and engineers.

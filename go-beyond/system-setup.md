@@ -1,5 +1,4 @@
 # System Setup
----
 TinyCLR OS is the tiny operating system used by the BrainPad to run your C# and Visual Basic programs. Microsoft Visual Studio is used to write these programs on your computer and is also used by professional programmers the world over. Both TinyCLR and Visual Studio are available for free, but must be set up before you can program the BrainPad and start having fun.
 
 This video details the instructions on this page.
@@ -20,10 +19,7 @@ The instructions on this page describe how to setup your computer to start progr
 **Step 2: Setup Your BrainPad**
   * [Load the BrainPad TinyCLR OS Firmware](#load-the-brainpad-tinyclr-firmware).
 
----
-
 ## Step 1: Setup Your Computer
----
 
 ### Install Visual Studio
 The Visual Studio Community Edition is free and can be found here: [Microsoft Visual Studio 2017 Community Edition.](https://www.visualstudio.com/vs/community/)
@@ -47,7 +43,6 @@ This project system extension allows Visual Studio to work with the BrainPad. To
 > It is possible to download the extension seperately to install on a computer without internet access.
 
 ## Step 2: Setup Your BrainPad
----
 
 ### Load the BrainPad TinyCLR Firmware
 
