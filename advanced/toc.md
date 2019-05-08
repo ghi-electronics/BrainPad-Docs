@@ -1,7 +1,0 @@
-# [Introduction](intro.md)
-# [C#](csharp/csharp.md)
-# [Visual Basic](vb/visual-basic.md)
-# [Arduino](arduino.md)
-# [MicroPython](micropython.md)
-# [Mbed](mbed.md)
-# [Bare Metal](bare-metal.md)
