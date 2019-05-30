@@ -18,8 +18,14 @@ static void Main()
 {
     while (true)
     {
-        BrainPad.Display.DrawSmallText(30, 12, "Temperature");
-        BrainPad.Display.DrawNumber(35, 24, BrainPad.TemperatureSensor.ReadTemperatureInFahrenheit());
+        BrainPad.Display.Clear();
+        BrainPad.Display.DrawSmallText(30, 0, "Temperature");
+        BrainPad.Display.DrawNumber(25, 12, BrainPad.TemperatureSensor.ReadTemperatureInFahrenheit());
+        BrainPad.Display.DrawText(90, 12, "F");
+        BrainPad.Display.DrawCircle(105, 14, 2); // Degree mark
+        BrainPad.Display.DrawNumber(25, 36, BrainPad.TemperatureSensor.ReadTemperatureInCelsius());
+        BrainPad.Display.DrawText(90, 36, "C");
+        BrainPad.Display.DrawCircle(105, 38, 2); // Degree mark
         BrainPad.Display.RefreshScreen();
         BrainPad.Wait.Minimum();
     }
