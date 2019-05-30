@@ -58,8 +58,6 @@ Display commands in this section only change the memory buffer of the display an
 
 * `BrainPad.Display.Clear()` - Clears the entire screen buffer. 
 
-* `BrainPad.Display.InvertColors(bool invert)` - Inverts each pixel on the entire screen. Pixels that are on will be turned off, and pixels that are off will be turned on.
-
 * `BrainPad.Display.RefreshScreen()` - Writes the entire display buffer to the display. Used to show what has been drawn to the screen buffer on the display.
    
 ## Display Sample Code
