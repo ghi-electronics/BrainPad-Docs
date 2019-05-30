@@ -52,11 +52,11 @@ Display commands in this section only change the memory buffer of the display an
 
 * `BrainPad.Display.DrawPictureRotated90Degrees(int x, int y, Picture picture)` - Rotates the given picture 90 degrees clockwise and draws it at the given x and y coordinates.
                          
-* `BrainPad.Display.ClearPartOfScreen(int x, int y, int width, int height)` - Clears a rectangular section of the display where x and y are the top left corner of a rectangle of given width and height.
+* `BrainPad.Display.ClearPart(int x, int y, int width, int height)` - Clears a rectangular section of the display where x and y are the top left corner of a rectangle of given width and height.
  
 * `BrainPad.Display.ClearPoint(int x, int y)` - Clears the pixel located at the given x and y coordinates.  
 
-* `BrainPad.Display.ClearScreen()` - Clears the entire screen buffer. 
+* `BrainPad.Display.Clear()` - Clears the entire screen buffer. 
 
 * `BrainPad.Display.InvertColors(bool invert)` - Inverts each pixel on the entire screen. Pixels that are on will be turned off, and pixels that are off will be turned on.
 
