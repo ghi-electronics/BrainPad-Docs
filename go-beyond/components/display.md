@@ -4,11 +4,13 @@ The BrainPad display is an output device. The BrainPad has commands allowing you
 
 Display commands in this section only change the memory buffer of the display and are not seen until you also call the BrainPad.Display.RefreshScreen() method.
 
-## Display Methods
+## Display Properties
  
-* `BrainPad.Display.Height()` - returns the BrainPad display's height in pixels (64). 
+* `BrainPad.Display.Height` - returns the BrainPad display's height in pixels (64). 
 
-* `BrainPad.Display.Width()` - returns the BrainPad display's width in pixels (128).
+* `BrainPad.Display.Width` - returns the BrainPad display's width in pixels (128).
+
+## Display Methods
  
 * `BrainPad.Display.DrawSmallNumber(int x, int y, long number)` - Displays a number of type long in small text at the given x and y coordinates. [Example: `BrainPad.Display.DrawSmallNumber(10, 20, 52)`]
 
@@ -50,13 +52,11 @@ Display commands in this section only change the memory buffer of the display an
 
 * `BrainPad.Display.DrawPictureRotated90Degrees(int x, int y, Picture picture)` - Rotates the given picture 90 degrees clockwise and draws it at the given x and y coordinates.
                          
-* `BrainPad.Display.ClearPartOfScreen(int x, int y, int width, int height)` - Clears a rectangular section of the display where x and y are the top left corner of a rectangle of given width and height.
+* `BrainPad.Display.ClearPart(int x, int y, int width, int height)` - Clears a rectangular section of the display where x and y are the top left corner of a rectangle of given width and height.
  
 * `BrainPad.Display.ClearPoint(int x, int y)` - Clears the pixel located at the given x and y coordinates.  
 
-* `BrainPad.Display.ClearScreen()` - Clears the entire screen buffer. 
-
-* `BrainPad.Display.InvertColors(bool invert)` - Inverts each pixel on the entire screen. Pixels that are on will be turned off, and pixels that are off will be turned on.
+* `BrainPad.Display.Clear()` - Clears the entire screen buffer. 
 
 * `BrainPad.Display.RefreshScreen()` - Writes the entire display buffer to the display. Used to show what has been drawn to the screen buffer on the display.
    

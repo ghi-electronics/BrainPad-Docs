@@ -76,6 +76,7 @@ namespace Counter {
     class Program {
         public void Main() {
             for (int count = 1; count < 11; count++) {
+                BrainPad.Display.Clear();
                 BrainPad.Display.DrawNumber(0, 0, count);
                 BrainPad.Display.RefreshScreen();
                 BrainPad.Wait.Seconds(1);
@@ -90,6 +91,7 @@ And here is the equivalent code in Visual Basic:
 Class Program
     Public Sub Main()
         For count = 1 To 10
+            BrainPad.Display.Clear();
             BrainPad.Display.DrawNumber(0, 0, count)
             BrainPad.Display.RefreshScreen()
             BrainPad.Wait.Seconds(1)
